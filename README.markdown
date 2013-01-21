@@ -6,4 +6,4 @@ __Todo__
 - Try out images
 
 
-I used (https://github.com/maciakl/Sample-Jekyll-Site)[Sample Jekyll Site by maciakl] as a foundation. If you're going to build a Jekyll site, it saves a lot of time.
+I used [Sample Jekyll Site by maciakl](https://github.com/maciakl/Sample-Jekyll-Site) as a foundation. If you're going to build a Jekyll site, it saves a lot of time.
