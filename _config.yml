@@ -23,3 +23,5 @@ category_dir: /
 auto: true
 
 # Makes pretty (descriptive) permalinks. See Jekyll docs for alternatives.
+
+paginate: 10
