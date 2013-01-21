@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+	<channel>
+		<title>Matthew Palmer</title>
+		<description>I'm a web and iOS developer</description>
+		<link></link>
+		
+			<item>
+				<title>My Plans For The Upcoming TV Seasons</title>
+				<description>&lt;p&gt;I&amp;#8217;m a pretty big fan of good TV shows (as well as books), so through the next six months or so I&amp;#8217;m going to do reviews and analyses of my favourite TV shows. I&amp;#8217;ll probably do &lt;em&gt;Mad Men&lt;/em&gt;, &lt;em&gt;Breaking Bad&lt;/em&gt;, &lt;em&gt;The Walking Dead&lt;/em&gt; and &lt;em&gt;Game of Thrones&lt;/em&gt;. &lt;em&gt;Mad Men&lt;/em&gt; is probably the most technical of the shows, while &lt;em&gt;Breaking Bad&lt;/em&gt; is somewhat more engaging.&lt;/p&gt;
+
+&lt;p&gt;The plan is to analyse each show from a fundamental technical view; literary and visual techniques will be an important part of the posts. These will &lt;strong&gt;not&lt;/strong&gt; be reviews - there are too many of them and they are fairly uninteresting. I love exploring techniques, so that will take up the majority of the post. I may also include some character and plot analysis, but there won&amp;#8217;t be too much of that.&lt;/p&gt;
+
+&lt;p&gt;I might not doing all of the shows, but I definitely want to do &lt;em&gt;Mad Men&lt;/em&gt; and &lt;em&gt;Breaking Bad&lt;/em&gt;. I can&amp;#8217;t wait for them to return.&lt;/p&gt;</description>
+				<published>Mon Jan 21 00:00:00 +1100 2013</published>
+				<link>/tv/2013/01/21/my-plan-for-tv.html</link>
+			</item>
+		
+			<item>
+				<title>Hello World</title>
+				<description>&lt;p&gt;Welcome.&lt;/p&gt;
+
+&lt;p&gt;This is going to be my new blog for the rest of 2013 (and hopefully into the future). I&amp;#8217;m looking forward to hosting with Github pages because it&amp;#8217;s free, simple and they&amp;#8217;re a great bunch of people. Create a Github account if you haven&amp;#8217;t already. I&amp;#8217;m going to be importing my old posts to the new blog system in the next few days, so if you see some strange things happen don&amp;#8217;t stress about it.&lt;/p&gt;
+
+&lt;p&gt;For those wondering, I&amp;#8217;ve gone with a pretty standard configuration of:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Jekyll with Github pages&lt;/li&gt;
+
+&lt;li&gt;LESS style framework&lt;/li&gt;
+
+&lt;li&gt;A local and remote repository (which are obviously managed through Git)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I&amp;#8217;ll write posts in iA Writer (in Markdown), commit them and push to the remote Github repo. This is by no means a revolutionary system, but it certainly beats the old blogging platform I was using. Plus, free hosting!&lt;/p&gt;
+
+&lt;p&gt;Let&amp;#8217;s hope I&amp;#8217;m able to continue blogging like I was at the end of 2012, and less like the practically non-existent start of 2012.&lt;/p&gt;</description>
+				<published>Mon Jan 21 00:00:00 +1100 2013</published>
+				<link>/meta/2013/01/21/helloworld.html</link>
+			</item>
+		
+	</channel>
+</rss>
