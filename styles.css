@@ -2,6 +2,8 @@ html{background-color:#f8f8f8;}
 body{font-family:'Source Sans Pro',sans-serif;width:50%;max-width:600px;margin-left:25%;margin-right:25%;}
 #header{font-size:28px;color:#393b47;}
 #header h4{font-size:19px;margin-top:-20px;}
+#header h4 a{color:inherit;opacity:0.7;}
+#header h4 a:hover{opacity:1.0;-webkit-transition:all 1s linear;-moz-transition:all 1s linear;-o-transition:all 1s linear;-ms-transition:all 1s linear;transition:all 1s linear;}
 #home{position:fixed;font-size:40px;left:10px;top:10px;padding:5px 5px 5px 5px;background-color:#393b47;-webkit-border-radius:2px;-moz-border-radius:2px;border-radius:2px;color:#f8f8f8;}
 #home a{text-decoration:none;color:inherit;}
 #home:hover{color:#393b47;background-color:#f8f8f8;-webkit-transition:all 0.4s ease-out;-moz-transition:all 0.4s ease-out;-o-transition:all 0.4s ease-out;-ms-transition:all 0.4s ease-out;transition:all 0.4s ease-out;}
