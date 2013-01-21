@@ -13,6 +13,22 @@ layout: postdefault
 	<div class="entry">{{ content }}</div>
 
     <span class="meta2"><small>By {{ site.author }}</small></span>
-<div class="category">Tags: {{ page.categories | category_links }}</span>
+<div class="category">
+	
+	
+	<ul>
+            {% for post in site.categories[page.category] %}
+            {% if page.title == post.title %}
+                
+                {% else %}
+                Related Posts:
+            
+                
+                <br/>
+                <a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a>
+                {% endif %}
+            
+            {% endfor %}
+        </ul>
 </div>
-
+</div>

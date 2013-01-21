@@ -1,9 +1,10 @@
 ---
 layout: post
-title: 
-category: 
+title: This is a test post
+category: tv
 
-excerpt: 
+excerpt: Please ignore
 ---
 
 
+Please ignore this test post thanks
