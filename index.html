@@ -8,7 +8,7 @@ title: Home
 	
 	<div class="post">
 
-		<h2>{{ post.title }}</h2>
+		<h3><a href="{{site.baseurl}}{{post.url}}">{{ post.title }}</a></h3>
 		<span class="date">{{ post.date | date_to_string }}</span>
 	
 		<div class="entry">{{ post.excerpt }}</div>
