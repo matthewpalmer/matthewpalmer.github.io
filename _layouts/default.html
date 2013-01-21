@@ -4,35 +4,24 @@
 <html>
 	<head>
 		<title>{% if page.title %} {{ page.title }} | {% endif %} My Page</title>
-        <link rel="stylesheet" href="{{site.baseurl}}/style.css" />
+        <link rel="stylesheet" href="{{site.baseurl}}/styles.css" />
+        <link rel="stylesheet" href="{{site.baseurl}}/font-awesome.min.css">
+
+
+        <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,400italic' rel='stylesheet' type='text/css'>
+
         <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="{{site.baseurl}}/feed.xml" />
 	</head>
 
 	<body>
+		<div id = "home"><a href="/"><i class="icon-home"></i></a></div>
 		<div id="header">
-			<h1>Welcome to my page</h1>
-			<h4>Here is some tagline</h4>
-			<hr />
+
+			<h1>Matthew Palmer</h1>
+			<h4>I am a seventeen year old web and iOS developer from Australia.</h4>
 		</div>
 
-		<div id="sidebar">
-
-			<h3>First Heading</h3>
-
-			<ul>
-                <li><a href="{{site.baseurl}}/">Home</a></li>
-                <li><a href="{{site.baseurl}}/archive">Archive</a></li>
-                <li><a href="{{site.baseurl}}/feed.xml">RSS Feed</a></li>
-			</ul>
-
-			<h3>Second Heading</h3>
-
-			<ul>
-				<li><a href="#">Link 1</a></li>
-				<li><a href="#">Link 2</a></li>
-				<li><a href="#">Link 3</a></li>
-			</ul>
-		</div>
+		
 
 		<div id="content">
 
@@ -41,8 +30,8 @@
 		</div>
 
 		<div id="footer">
-			<hr />
-            <p>&copy; 2012 {{ site.author }}</p>
+			
+            
 		</div>
 
 	</body>
