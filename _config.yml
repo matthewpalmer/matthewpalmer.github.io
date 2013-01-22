@@ -23,7 +23,8 @@ safe: true
 
 # Continue compiling even if there are errors. Keep it true, unless troubleshooting.
 auto: true
-
-# Makes pretty (descriptive) permalinks. See Jekyll docs for alternatives.
-
+server: true
+markdown: rdiscount
+pygments: true
+permalink: /:year/:month/:title
 paginate: 10
