@@ -7,6 +7,7 @@ excerpt: Yesterday, overcome by an unfortunate desire to waste time, I decided I
 ---
 
 Yesterday, overcome by an unfortunate desire to waste time, I decided I wanted to remap some of my keyboard keys to other things. Initially, I wanted to remap the `Caps Lock` key to `Command+R` for two reasons:
+
 - I'm always hitting `Command+R` for building and running iOS apps and to refresh web pages
 - `Caps Lock` is otherwise entirely useless
 
