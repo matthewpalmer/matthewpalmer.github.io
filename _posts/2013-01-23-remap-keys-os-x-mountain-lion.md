@@ -29,15 +29,13 @@ Not exactly perfect, right? There's a very limited selection of keys you can rem
 12. Open this [private.xml](http://pqrs.org/macosx/keyremap4macbook/files/private.xml) file in your browser. Copy and paste the code from this remote file to replace the contents of the local `private.xml` file. 
 13. The basic syntax for adding a new remapping is this:
 
+	<item>
+	</item>
+
 14. Replace `KEYTOSTART` with some key from [this list](https://github.com/tekezo/KeyRemap4MacBook/blob/version_7.8.0/src/bridge/generator/keycode/data/KeyCode.data). Make sure you use the __uppercase__ name in the left column to replace `KEYTOSTART`. (`KeyCode::` must be left as it is.)
 15. As an example, here is what I used to remap `Caps Lock` (i.e. `PC_APPLICATION`) to `Command+R`:
 
-		 &lt;item&gt;
-   	 &lt;name&gt;SOMENAME&lt;/name&gt;
-   	 &lt;identifier&gt;private.some_name&lt;/identifier&gt;
-   	 &lt;autogen&gt;--KeyToKey-- KeyCode::STARTKEY, KeyCode::DESTINATIONKEY&lt;/autogen&gt;
-	  &lt;/item&gt;
-		&lt;/root&gt;
+
 
 16. Save the `private.xml` file.
 17. Go back to KeyRemap4MacBook and hit 'ReloadXML' and your newly defined remaps should appear at the top of the list.
