@@ -31,3 +31,4 @@ ul li ul li:hover{-webkit-transition:opacity 0.4s ease-in-out;-moz-transition:op
 .post{margin-top:5%;}
 .category{margin-top:20%;}
 .entry{margin-top:-12px;}
+.gist .gist-file .gist-meta{display:none;}
