@@ -3,10 +3,10 @@ layout: post
 title: How To Remove the Bottom Bar From Github Gist
 category: web
 
-excerpt: 
+excerpt: Github Gist is an awesome snippet sharing site for code, however the bar they add to the bottom of embedded snippets is kind of annoying and ruins the look of the site. Here's how to change the style of or delete the meta footer bar that appears at the bottom of embedded Gists.
 ---
 
-[Github Gist](http://gist.github.com) is an awesome snippet sharing site for code, however the bar they add to the bottom is kind of annoying and ruins the look of the site. Here's how to change the style of or delete the meta footer bar that appears at the bottom of embedded Gists.
+[Github Gist](http://gist.github.com) is an awesome snippet sharing site for code, however the bar they add to the bottom of embedded snippets is kind of annoying and ruins the look of the site. Here's how to change the style of or delete the meta footer bar that appears at the bottom of embedded Gists.
 
 #####To Remove (i.e. make it non visible):######
 Add this to your `.css` file:
