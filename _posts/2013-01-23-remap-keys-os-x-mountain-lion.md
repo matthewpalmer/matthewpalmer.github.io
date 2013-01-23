@@ -29,34 +29,23 @@ Not exactly perfect, right? There's a very limited selection of keys you can rem
 12. Open this [private.xml](http://pqrs.org/macosx/keyremap4macbook/files/private.xml) file in your browser. Copy and paste the code from this remote file to replace the contents of the local `private.xml` file. 
 13. The basic syntax for adding a new remapping is this:
 
-	<!-- HTML generated using hilite.me --><div style="background: #272822; overflow:auto;width:auto;color:black;background:white;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;item&gt;</span>
-	<span style="color: #f92672">&lt;name&gt;</span>SOMENAME<span style="color: #f92672">&lt;/name&gt;</span>
-	<span style="color: #f92672">&lt;appendix&gt;</span>This is a new item<span style="color: #f92672">&lt;/append&gt;</span>
-	<span style="color: #f92672">&lt;identifier&gt;</span>private.some_name<span style="color: #f92672">&lt;/identifier&gt;</span>
-	<span style="color: #f92672">&lt;autogen&gt;</span>
-  	--KeyToKey--
- 		KeyCode::KEYTOSTART,
-  	KeyCode::DESTINATIONKEY(S)
-	<span style="color: #f92672">&lt;/autogen&gt;</span>
-	<span style="color: #f92672">&lt;/item&gt;</span>
-</pre></div>
+If you want your page to validate under XHTML 1.0 Strict,
+you've got to put paragraph tags in your blockquotes:
+
+    <blockquote>
+        <p>For example.</p>
+    </blockquote>
 
 
 14. Replace `KEYTOSTART` with some key from [this list](https://github.com/tekezo/KeyRemap4MacBook/blob/version_7.8.0/src/bridge/generator/keycode/data/KeyCode.data). Make sure you use the __uppercase__ name in the left column to replace `KEYTOSTART`. (`KeyCode::` must be left as it is.)
 15. As an example, here is what I used to remap `Caps Lock` (i.e. `PC_APPLICATION`) to `Command+R`:
 
-	<!-- HTML generated using hilite.me --><div style="background: #272822; overflow:auto;width:auto;color:black;background:white;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;item&gt;</span>
-	<span style="color: #f92672">&lt;name&gt;</span>CAPSLOCKTOCMDR<span style="color: #f92672">&lt;/name&gt;</span>
-	<span style="color: #f92672">&lt;appendix&gt;</span>this is to remap caps lock to cmdR<span style="color: #f92672">&lt;/append&gt;</span>
-	<span style="color: #f92672">&lt;identifier&gt;</span>private.swap_capslock<span style="color: #f92672">&lt;/identifier&gt;</span>
-	<span style="color: #f92672">&lt;autogen&gt;</span>
-	  --KeyToKey--
-  
- 		KeyCode::PC_APPLICATION,
-  	KeyCode::R, ModifierFlag::COMMAND_L
-	<span style="color: #f92672">&lt;/autogen&gt;</span>
-	<span style="color: #f92672">&lt;/item&gt;</span>
-</pre></div>
+	If you want your page to validate under XHTML 1.0 Strict,
+you've got to put paragraph tags in your blockquotes:
+
+    <blockquote>
+        <p>For example.</p>
+    </blockquote>
 
 
 16. Save the `private.xml` file.
