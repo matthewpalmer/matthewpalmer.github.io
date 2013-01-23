@@ -7,7 +7,11 @@
 @orange:#E97856;
 @aqua:#84C3B0;
 @yellow:#FBF16B;
-@pink:#CA5F7B;
+@pink:#26ADE4;
+
+
+
+
 
 /* Mixin */
 .border-radius (@radius: 5px) {
@@ -23,6 +27,12 @@
     -ms-transition: @prop @time @ease;
     transition: @prop @time @ease;
 }
+/* Mixin */
+.box-shadow (@x: 0px, @y: 3px, @blur: 5px, @alpha: 0.5) {
+    -webkit-box-shadow: @x @y @blur rgba(0, 0, 0, @alpha);
+    -moz-box-shadow: @x @y @blur rgba(0, 0, 0, @alpha);
+    box-shadow: @x @y @blur rgba(0, 0, 0, @alpha);
+}
 
 html {
 	background-color: @white;
@@ -33,7 +43,7 @@ body {
   
   
   width:50%;
-  max-width: 600px;
+  max-width: 720px;
   margin-left: 25%;
   margin-right: 25%;
 }
@@ -69,6 +79,7 @@ body {
 #content a {
 	color:@pink;
 	text-decoration: none;
+
 	border-bottom: 1px solid @pink;
 }
 #content a:hover {
@@ -121,17 +132,17 @@ body {
 	.border-radius(2px);
 	
 	color:@white;
+
 }
 #home a {
 	color:@white;
-	background-color:@charcoal;
+	background-color:@pink;
 	text-decoration: none;
 	color: inherit;
 	
 }
 #home a:hover {
-	color:@charcoal;
-	background-color:@white;
+	opacity: 1.0;
 	.transition(all,0.1s,ease-in-out);
 }
 #home:hover{
@@ -143,7 +154,7 @@ body {
 #home li {
 	list-style: none;
 	margin-left: 0;
-	border:5px solid @charcoal;
+	
 }
 #home ul {
 	list-style: none;
@@ -160,7 +171,7 @@ ul ul {
 /* Targets the child elements in the list */
 ul li > ul {
         display: block;
-
+        
         opacity: 0;
         position: absolute;
         left:0px;
@@ -169,12 +180,25 @@ ul li > ul {
 }
 ul li:hover > ul {
         display: block;
-        opacity: 1;
+        
         position: absolute;
         left:0px;
-        .transition(opacity,0.4s,ease-in-out);
+        
+        background-color: @white;
+        opacity: 1.0;
      
 }
+ul li ul li {
+	.transition(opacity,0.4s,ease-in-out);
+
+}
+ul li ul li:hover {
+	opacity: 0.8;
+	.transition(opacity,0.4s,ease-in-out);
+
+}
+
+
 .post>h2 {
 	margin-bottom: 5px;
 }
@@ -205,3 +229,6 @@ ul li:hover > ul {
 .entry {
 	margin-top: -12px;
 }
+
+
+

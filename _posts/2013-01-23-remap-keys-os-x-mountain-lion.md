@@ -29,17 +29,18 @@ Not exactly perfect, right? There's a very limited selection of keys you can rem
 11. Open the `private.xml` file in TextEdit.
 12. Open this [private.xml](http://pqrs.org/macosx/keyremap4macbook/files/private.xml) file in your browser. Copy and paste the code from this remote file to replace the contents of the local `private.xml` file. 
 13. The basic syntax for adding a new remapping is this:
+<<<<<<< HEAD
+<script src="https://gist.github.com/4601667.js"></script>	
+=======
 
 	SOME KEY
-
 	SOME CODE
-
 	MORE CODE	
+>>>>>>> parent of cba5e88... new post
 
 14. Replace `KEYTOSTART` with some key from [this list](https://github.com/tekezo/KeyRemap4MacBook/blob/version_7.8.0/src/bridge/generator/keycode/data/KeyCode.data). Make sure you use the __uppercase__ name in the left column to replace `KEYTOSTART`. (`KeyCode::` must be left as it is.)
 15. As an example, here is what I used to remap `Caps Lock` (i.e. `PC_APPLICATION`) to `Command+R`:
-
-
+<script src="https://gist.github.com/4601678.js"></script>
 
 16. Save the `private.xml` file.
 17. Go back to KeyRemap4MacBook and hit 'ReloadXML' and your newly defined remaps should appear at the top of the list.
@@ -50,6 +51,9 @@ Not exactly perfect, right? There's a very limited selection of keys you can rem
 
 So, eventually, we worked out a way to remap any key we want to another key or combination of keys. It works really well, and it's probably good for RSI or something. At the very least, our laziness has been satiated. If I've done something wrong or you have questions, feel free to [contact me on Twitter](http://www.twitter.com/p_almer).
 
+
+For anyone interested, here is my full `private.xml` file:
+<script src="https://gist.github.com/4601687.js"></script>
 
 
 
