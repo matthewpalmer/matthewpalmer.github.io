@@ -3,7 +3,7 @@ layout: post
 title: Remapping Keys on Mac OS X Mountain Lion
 category: mac
 
-excerpt: Yesterday, overcome by an unfortunate desire to waste time, I decided I wanted to remap some of my keyboard keys to other things. Initially, I wanted to remap the Caps Lock key to Command+R …
+excerpt: Yesterday, overcome by an unfortunate desire to waste time, I decided I wanted to remap some of my keyboard keys to other things. Initially, I wanted to remap the Caps Lock key to Command+R ...
 ---
 
 Yesterday, overcome by an unfortunate desire to waste time, I decided I wanted to remap some of my keyboard keys to other things. Initially, I wanted to remap the `Caps Lock` key to `Command+R` for two reasons:
@@ -29,14 +29,7 @@ Not exactly perfect, right? There's a very limited selection of keys you can rem
 11. Open the `private.xml` file in TextEdit.
 12. Open this [private.xml](http://pqrs.org/macosx/keyremap4macbook/files/private.xml) file in your browser. Copy and paste the code from this remote file to replace the contents of the local `private.xml` file. 
 13. The basic syntax for adding a new remapping is this:
-<<<<<<< HEAD
 <script src="https://gist.github.com/4601667.js"></script>	
-=======
-
-	SOME KEY
-	SOME CODE
-	MORE CODE	
->>>>>>> parent of cba5e88... new post
 
 14. Replace `KEYTOSTART` with some key from [this list](https://github.com/tekezo/KeyRemap4MacBook/blob/version_7.8.0/src/bridge/generator/keycode/data/KeyCode.data). Make sure you use the __uppercase__ name in the left column to replace `KEYTOSTART`. (`KeyCode::` must be left as it is.)
 15. As an example, here is what I used to remap `Caps Lock` (i.e. `PC_APPLICATION`) to `Command+R`:

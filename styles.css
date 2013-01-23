@@ -13,8 +13,8 @@ body{font-family:'Source Sans Pro',sans-serif;width:50%;max-width:720px;margin-l
 .meta2{display:inline-block;position:relative;margin-top:5%;left:65%;font-style:italic;text-align:right;}
 #arrowdown{position:absolute;left:62px;top:85px;color:#393b47;font-size:14px;}
 #home{position:fixed;font-size:40px;left:0px;top:0px;-webkit-border-radius:2px;-moz-border-radius:2px;border-radius:2px;color:#f8f8f8;}
-#home a{color:#f8f8f8;background-color:#26ade4;text-decoration:none;color:inherit;}
-#home a:hover{opacity:1.0;-webkit-transition:all 0.1s ease-in-out;-moz-transition:all 0.1s ease-in-out;-o-transition:all 0.1s ease-in-out;-ms-transition:all 0.1s ease-in-out;transition:all 0.1s ease-in-out;}
+#home a{color:#f8f8f8;background-color:#393b47;text-decoration:none;-webkit-transition:all 0.25s ease-in-out;-moz-transition:all 0.25s ease-in-out;-o-transition:all 0.25s ease-in-out;-ms-transition:all 0.25s ease-in-out;transition:all 0.25s ease-in-out;}
+#home a:hover{opacity:0.88;}
 #home:hover{-webkit-transition:all 0.4s ease-out;-moz-transition:all 0.4s ease-out;-o-transition:all 0.4s ease-out;-ms-transition:all 0.4s ease-out;transition:all 0.4s ease-out;}
 #home li{list-style:none;margin-left:0;}
 #home ul{list-style:none;margin-left:0;}
@@ -22,7 +22,7 @@ ul ul{display:none;opacity:0;}
 ul li>ul{display:block;opacity:0;position:absolute;left:0px;-webkit-transition:opacity 0.4s ease-in-out;-moz-transition:opacity 0.4s ease-in-out;-o-transition:opacity 0.4s ease-in-out;-ms-transition:opacity 0.4s ease-in-out;transition:opacity 0.4s ease-in-out;}
 ul li:hover>ul{display:block;position:absolute;left:0px;background-color:#f8f8f8;opacity:1.0;}
 ul li ul li{-webkit-transition:opacity 0.4s ease-in-out;-moz-transition:opacity 0.4s ease-in-out;-o-transition:opacity 0.4s ease-in-out;-ms-transition:opacity 0.4s ease-in-out;transition:opacity 0.4s ease-in-out;}
-ul li ul li:hover{opacity:0.8;-webkit-transition:opacity 0.4s ease-in-out;-moz-transition:opacity 0.4s ease-in-out;-o-transition:opacity 0.4s ease-in-out;-ms-transition:opacity 0.4s ease-in-out;transition:opacity 0.4s ease-in-out;}
+ul li ul li:hover{-webkit-transition:opacity 0.4s ease-in-out;-moz-transition:opacity 0.4s ease-in-out;-o-transition:opacity 0.4s ease-in-out;-ms-transition:opacity 0.4s ease-in-out;transition:opacity 0.4s ease-in-out;}
 .post>h2{margin-bottom:5px;}
 .pagination{margin-top:10%;}
 #content>.post>h3>a{color:#393b47;background-color:#f8f8f8;text-decoration:none;border-bottom:0px solid #393b47;}
