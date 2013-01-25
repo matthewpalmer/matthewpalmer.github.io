@@ -3,7 +3,7 @@ layout: post
 title: What I Want in a Keyboard (i.e. someone kickstart this)
 category: web, hardware
 
-excerpt: 
+excerpt: Okay, hardware makers, listen. I've been looking around for a nice ergonomic keyboard recently, and none of them seem to fit exactly what I want. Even as I type this my fingers tingle atop the old Lenovo keyboard - frustrating. So, you should make this.
 ---
 
 Okay, hardware makers, listen. I've been looking around for a nice ergonomic keyboard recently, and none of them seem to fit exactly what I want. Even as I type this my fingers tingle atop the old Lenovo keyboard - frustrating. So, you should make this.
