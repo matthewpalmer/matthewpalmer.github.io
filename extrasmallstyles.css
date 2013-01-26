@@ -4,7 +4,7 @@ body{font-family:'Source Sans Pro',sans-serif;width:80%;margin-left:10%;margin-r
 #header h4{font-size:19px;margin-top:-20px;font-weight:500;}
 #header h4 a{color:inherit;opacity:0.7;}
 #header h4 a:hover{opacity:1.0;-webkit-transition:all 1s linear;-moz-transition:all 1s linear;-o-transition:all 1s linear;-ms-transition:all 1s linear;transition:all 1s linear;}
-#content{line-height:1.4;letter-spacing:0px;color:#393b47;font-size:18px;font-weight:400;}
+#content{line-height:1.4;letter-spacing:0px;color:#393b47;font-size:28px;font-weight:400;}
 #content a{color:#0088cc;text-decoration:none;}
 #content a:hover{-webkit-transition:all 0.5s ease-in-out;-moz-transition:all 0.5s ease-in-out;-o-transition:all 0.5s ease-in-out;-ms-transition:all 0.5s ease-in-out;transition:all 0.5s ease-in-out;color:#0068ac;text-decoration:underline;}
 #footer{margin-top:10%;}
