@@ -6,29 +6,12 @@ title: Home
 <!-- Show last 5 posts here -->
 {% for post in paginator.posts %}
 	
-	<div class="post">
-
-		<h3><a href="{{site.baseurl}}{{post.url}}">{{ post.title }}</a></h3>
-		
-	
-		<div class="entry">{{ post.excerpt }}</div>
-
-        <span class="meta"><a href="{{site.baseurl}}{{ post.url }}">Read More</a></span>
-	</div>
+	<a href="{{site.baseurl}}{{ post.url }}" title="{{ post.title }}"><li>
+        
+          
+          {{ post.title }}
+        
+      </li></a>
 
 	
 {% endfor %}
-<!-- Pagination links -->
-<div class="pagination">
-	<!--
-  {% if paginator.previous_page %}
-    <a href="/page{{paginator.previous_page}}" class="previous">Previous</a>
-  {% else %}
-    <span class="previous">Previous</span>
-  {% endif %}
-  <span class="page_number ">Page: {{paginator.page}} of {{paginator.total_pages}}</span> -->
-  {% if paginator.next_page %}
-    <a href="/page{{paginator.next_page}}" class="next ">Older Posts</a>
-  
-  {% endif %}
-</div>
