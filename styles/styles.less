@@ -1,0 +1,775 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@base:#7ec3d3;
+@complement1: spin(@base, 180);
+@complement2: darken(spin(@base, 180), 5%);
+@lighten1: lighten(@base, 15%);
+@lighten2: lighten(@base, 30%);
+@white:#f8f8f8;
+
+/* Mixin */
+.transition (@prop: all, @time: 1s, @ease: linear) {
+    -webkit-transition: @prop @time @ease;
+    -moz-transition: @prop @time @ease;
+    -o-transition: @prop @time @ease;
+    -ms-transition: @prop @time @ease;
+    transition: @prop @time @ease;
+}
+
+ 
+/* Implementation */
+
+.one   {color: @base;}
+.two   {color: @complement1;}
+.three {color: @complement2;}
+.four  {color: @lighten1;}
+.five  {color: @lighten2;}
+
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*========START CSS =========
+==========================================================
+==========================================================
+=============================*/
+
+html {
+	-webkit-font-smoothing: antialiased;
+}
+body {
+	font-family: 'Open Sans', sans-serif;
+	background-color:rgba(119,196,211,1); 
+	
+	color:rgba(0,0,0,0);
+}
+.mobileheader {
+	display:none;
+}
+.header {
+font-size:2.5em;
+color:;
+display:block;
+
+position:absolute;
+padding-top: 10px;
+width:100%;
+height:auto;
+color:#77C4D3;
+font-weight: 400;
+z-index: 40;
+}
+
+.bigbox {
+	
+	width:60%;
+	
+	font-size: 14pt;
+	line-height: 1.5;
+	font-weight: 100;
+	background-color:rgba(119,196,211,1);
+	color:#f8f8f8;
+	
+	padding-top: 21%;
+	padding-bottom: 22%;
+	padding-left:20%;
+	padding-right: 20%;
+	
+	
+	
+	
+
+	background-color:#77C4D3; 
+	
+	
+	z-index: 55;
+	 
+	 color:#f8f8f8;
+
+
+font-size:1.5em;
+line-height:1.3;
+}
+.bigbox > p {
+	position:relative;
+	left:;
+	display:inline-block;
+	width:100%;
+	
+}
+.bigbox > .named {
+position:relative;
+font-size: 2em;
+	top:-2%;
+	opacity:0;
+}
+.bigbox > .skilled {
+position:relative;
+	left:280%;
+	top:40%;
+	opacity:0;
+}
+/*
+.arrow-down {
+	width: 0; 
+	height: 0; 
+	position:absolute;
+	right:5%;
+	top:1%;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	
+	border-top: 20px solid rgba(119,196,211,1);
+	z-index:40;
+}*/
+
+a {
+	text-decoration:none;
+	color:inherit;
+}
+.container {
+	z-index:5;
+	position:absolute;
+	top:auto;
+	width:100%;
+	height:auto;
+	padding-left:;
+	
+	background-color:#f8f8f8;
+/*	-webkit-animation: headerslide 0.2s linear 9.5s 1;*/
+	-webkit-animation-fill-mode: forwards;
+/*-webkit-box-shadow: 0px 28px 52px 2px black;
+-o-box-shadow: 0px 28px 52px 2px black;
+-mozilla-box-shadow: 0px 28px 52px 2px black;
+
+box-shadow: 0px 28px 52px 2px rgba(0,0,0,0.4);
+*/
+}
+.portfolioalert {
+	margin-top: 4%;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	line-height: 1.5;
+	font-weight: 400;
+	font-size: 1.0em;
+	background-color:#FEFBAF;
+	color:#333333;
+	border-radius: 3px;
+	width:100%;
+	
+	text-align: center; 
+
+		-webkit-transition: opacity 0.3s ease-in-out;
+-moz-transition: opacity 0.3s ease-in-out;
+-ms-transition: opacity 0.3s ease-in-out;
+-o-transition: opacity 0.3s ease-in-out;
+transition: opacity 0.3s ease-in-out;
+
+	
+}
+.portfolioalert:hover {
+	opacity: 0.9;
+}
+@-webkit-keyframes headerslide /* Safari and Chrome */
+{
+0%   {}
+
+100% {top:1%;}
+}
+
+
+.recentarticles {
+font-size:0.8em;
+color:rgba(0,0,0,0.3);
+padding-bottom:1%;
+display:inline-block;
+padding-bottom:5%;
+}
+/*Blog Feed*/
+.postlist {
+
+	
+	padding-left:25%;
+	width:50%;
+	max-width: 664px;
+	padding-bottom: 10%;
+	z-index: 8;
+}
+.articlecontainer {
+	margin-top:1%;
+	
+
+	height:auto;
+	padding-bottom:15%;
+	
+	
+
+	width:100%;
+	height:auto;
+	padding-left:;
+	padding-top:0.05%;
+	background-color:#F8F8F8;
+	
+	
+
+}
+.articlecontainer p {
+	margin-top:2%;
+	margin-bottom:2%;
+	letter-spacing: 0.4px;
+	line-height:;
+	line-height:1.6;
+}
+.articlecontainer h1 {
+	margin-bottom:6%;
+}
+.articlecontainer h2 {
+margin-top: 4%;
+	font-weight: bold;
+}
+
+.articlecontainer a {
+	color:#4c7c72;
+	text-decoration: none;
+	
+}
+.articlecontainer li {
+	list-style: disc;
+	margin-top:2%;
+}
+.articlecontainer a:hover {
+	opacity:0.8;
+	text-decoration: underline;
+	
+}
+.articlecontainer pre {
+	overflow: auto;
+	font-family: monospace;
+	
+	-ms-word-break: break-all;
+     word-break: break-all;
+
+     // Non standard for webkit
+     word-break: break-word;
+
+-webkit-hyphens: auto;
+   -moz-hyphens: auto;
+        hyphens: auto;
+}
+em {
+	text-transform:none;
+	/*font-style:italic;*/
+	text-decoration:none;
+	color:#A2BAB6;
+	/*color:#EB4D4D;*/
+}
+
+.postlist > ul li {
+list-style:none;
+text-transform:;
+font-size:1em;
+font-weight: 400;
+letter-spacing:0.7px;
+background-color:#f1f1f1;
+line-height:1.5;
+padding-top: 2%;
+padding-bottom: 2%;
+color:rgba(0,0,0,0.5);
+padding-left:5%;
+margin-top:1%;
+border-radius:3px;
+margin-left:3.2%;
+font-family: 'Open Sans', sans-serif;
+
+background-image: url('http://static.tumblr.com/shvuyfh/3H7mf5pq8/arrowright.png');
+background-repeat:no-repeat;
+background-attachment:;
+background-position:95%; 
+background-size: 1em;
+
+-webkit-animation: chain 3s linear;
+
+-webkit-transition: background-color 0.5s ease-in-out;
+-moz-transition: background-color 0.5s ease-in-out;
+-ms-transition: background-color 0.5s ease-in-out;
+-o-transition: background-color 0.5s ease-in-out;
+transition: background-color 0.5s ease-in-out;
+
+}
+
+.container a:hover {
+	opacity:0.9;
+}
+.postlist > ul > a {
+	display:inline-block;
+	width:100%;
+}
+
+.postlist > ul li:hover {
+background-color:#77C4D3;
+color:white;
+background-image: url('http://static.tumblr.com/shvuyfh/3H7mf5pq8/arrowright.png');
+background-repeat:no-repeat;
+background-attachment:;
+background-position:96%; 
+background-size: 1em;
+
+-webkit-transition: color 0.2s ease-in-out;
+-moz-transition: color 0.2s ease-in-out;
+-ms-transition: color 0.2s ease-in-out;
+-o-transition: color 0.2s ease-in-out;
+transition: color 0.2s ease-in-out;
+
+-webkit-transition: background-position 0.2s ease-in-out;
+-moz-transition: background-position 0.2s ease-in-out;
+-ms-transition: background-position 0.2s ease-in-out;
+-o-transition: background-position 0.2s ease-in-out;
+transition: background-position 0.2s ease-in-out;
+
+}
+/*work feed*/
+.portfolioarea {
+		padding-left:25%;
+	width:50%;
+	padding-right: 25%;
+	padding-top:6%;
+	padding-bottom: 8%;
+	background-color: #333333;
+}
+#banner-slide {
+	margin-left: 3%;
+}
+.portfoliosnip {
+	color:gray;
+}
+.portfoliosnip em {
+	color: #FEFBAF;
+}
+.portfolioarea img {
+	border-radius: 2px;
+}
+/*Dribbble feed*/
+.shotsarea {
+	padding-left:25%;
+	width:50%;
+	padding-right: 25%;
+	padding-top:6%;
+	padding-bottom: 8%;
+	background-color: #f8bed4;
+}
+.shotsarea > ul {
+	margin-left:3%;
+	margin-top:;
+	z-index:;
+	
+	
+}
+.shotsarea > ul > li {
+	display:inline-block;
+	margin-left:1%;
+	margin-top:1%;
+	width:30%;
+	
+
+}
+.shotsarea > ul.feed {
+	width:100%;
+}
+.shotsarea img {
+	width:100%;
+	border-radius:1px;
+	z-index:-1;
+}
+.shotsarea a {
+	-webkit-transition: opacity 0.3s ease-in-out;
+-moz-transition: opacity 0.3s ease-in-out;
+-ms-transition: opacity 0.3s ease-in-out;
+-o-transition: opacity 0.3s ease-in-out;
+transition: opacity 0.3s ease-in-out;
+}
+.shotsarea a:hover {
+opacity:0.9;
+
+
+
+}
+.three {
+	width:96%;
+}
+/*Twitter feed*/
+.tweetarea {
+	padding-top:6%;
+	padding-bottom: 8%;
+	
+	padding-left:25%;
+	padding-right: 25%;
+	width:50%;
+	background-color: #4099FF;
+	
+		line-height:1.2;
+		font-weight:400;
+color:#f8f8f8;
+}
+.tweetarea li a {
+	font-weight: 100;
+	color:#f1f1f1;
+		-webkit-transition: color 0.3s ease-in-out;
+-moz-transition: opacity 0.3s ease-in-out;
+-ms-transition: opacity 0.3s ease-in-out;
+-o-transition: opacity 0.3s ease-in-out;
+transition: opacity 0.3s ease-in-out;
+}
+.tweetarea a:hover {
+	
+	color:#333745
+	
+}
+.tweetarea > ul {
+	padding-left:3%;
+}
+.tweetarea li {
+	margin-left:4.5%;
+	margin-bottom:3%;
+	
+}
+span a {
+	color:inherit;
+	
+}
+.tweetsnip a:hover {
+	color:#77C4D3;
+}
+.recentarticles a {
+	
+}
+.recentarticles a:hover {
+	color:inherit;
+	text-decoration: underline;
+	opacity:0.9;
+}
+.bottommost {
+	padding-top:12%;
+	padding-left:30%;
+	padding-right:30%;
+	padding-top:1%;
+	padding-bottom:1%;
+	text-align: center;
+	width:40%;
+	background-color:#77C4D3; 
+	
+	
+
+	 
+	 color:#f8f8f8;
+
+
+font-size:0.9em;
+line-height:1.3;
+}
+.bottommost aside {
+	
+	color:#f8f8f8;
+	
+}
+.bottommost a {
+	text-decoration: underline;
+}
+.bottommost a:hover {
+	color:#77C4D3;
+	background-color: #f8f8f8;
+	text-decoration: none;
+}
+.bottommost aside a {
+	
+}
+.meta {
+	display:block;
+	text-align:right;
+	margin-right:9%;
+	font-size:0.73em;
+}
+.meta a {
+	opacity:0.5;
+}
+
+
+
+/*INSTAGRAM FEED*/
+.instagramarea {
+		width:50%;
+	padding-left:25%;
+	padding-right: 25%;
+	background-color:#517EA3;
+	padding-top:6%;
+	padding-bottom: 8%;
+}
+#test {
+	width:100%;
+}
+.rssBody {
+	
+	padding:none;
+	
+}
+#test a {
+	display:none;
+}
+
+#test > .rssBody > ul  {
+	margin-left:3%;
+	width:100%;
+}
+
+#test > div > ul > li {
+	display:inline-block;
+	margin-left:1%;
+	margin-top:1%;
+	width:30%;
+}
+
+#test img {
+	width:100%;
+	max-width:400px;
+	height:auto;
+			-webkit-transition: opacity 0.3s ease-in-out;
+-moz-transition: opacity 0.3s ease-in-out;
+-ms-transition: opacity 0.3s ease-in-out;
+-o-transition: opacity 0.3s ease-in-out;
+transition: opacity 0.3s ease-in-out;
+}
+
+#test img:hover {
+	opacity:0.9;
+}
+
+
+
+/* SNIPS */
+.dribbblesnip > em {
+	color:#ea4c89;
+}
+.tweetsnip > em {
+	color:#0f4166;
+}
+.tweetsnip a:hover {
+	
+}
+.postsnip > em{
+	color:rgba(59,134,134,0.67)
+}
+.instagramsnip > em{
+	color:#EEE9E2;
+}
+
+
+
+section {
+		margin-top:8%;
+	line-height:1.25;
+	width:40%;
+	padding-left:30%;
+	color:rgba(0,0,0,0.7);
+	letter-spacing:0.7px;
+}
+h1 {
+	font-size:1.5em;
+	font-weight:bold;
+}
+
+
+
+
+
+/*RIBBON CSS_TRICKS*/
+.ribbon {
+ font-size: 16px !important;
+ /* This ribbon is based on a 16px font side and a 24px vertical rhythm. I've used em's to position each element for scalability. If you want to use a different font size you may have to play with the position of the ribbon elements */
+
+ width: auto;
+    
+ position: relative;
+	background-color: #d191a9;
+ 
+	/*background-image:url('noise2.png');*/
+	color:white;
+font-weight: 400;
+ text-align: center;
+
+ padding: 1em 2em; /* Adjust to suit */
+ 
+
+ margin-top:12%;
+margin-bottom:-15%;
+z-index:10;
+}
+.ribbon:before, .ribbon:after {
+ content: "";
+ position: absolute;
+ display: block;
+ bottom: -1em;
+ border: 1.5em solid rgba(0,0,0,0);
+ z-index:-1;
+}
+.ribbon:before {
+ left: -2em;
+ border-right-width: 1.5em;
+ border-left-color: transparent;
+}
+.ribbon:after {
+ right: -2em;
+ border-left-width: 1.5em;
+ border-right-color: transparent;
+}
+.ribbon .ribbon-content:before, .ribbon .ribbon-content:after {
+ content: "";
+ position: absolute;
+ display: block;
+ border-style: solid;
+ border-color: #b66482 transparent transparent transparent;
+ bottom: -1em;
+}
+.ribbon .ribbon-content:before {
+ left: 0;
+ border-width: 1em 0 0 1em;
+}
+.ribbon .ribbon-content:after {
+ right: 0;
+ border-width: 1em 1em 0 0;
+}
+
+/*PORTFOLIO SPECIFIC STUFF*/
+
+/* left navbar */
+#home {
+    position: fixed;
+    font-size: 40px;
+    left: 20px;
+    top: 70px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    background-color: @white;
+    line-height: 1.2;
+}
+
+#home a {
+    color: @base;
+    background-color: @white;
+    text-decoration: none;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    -ms-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+}
+
+#home a:hover {
+    opacity: 1.0;
+    color: @base - 20;
+    background-color: @white;
+}
+
+#home:hover {
+    -webkit-transition: all 0.4s ease-out;
+    -moz-transition: all 0.4s ease-out;
+    -o-transition: all 0.4s ease-out;
+    -ms-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+}
+
+#home li {
+
+    list-style: none;
+    margin-left: 0;
+}
+
+#home ul {
+    list-style: none;
+    margin-left: 0;
+}
+
+ul ul {
+    display: none;
+    opacity: 0;
+}
+
+ul li>ul {
+    display: block;
+    opacity: 0;
+    position: absolute;
+    left: 0px;
+    -webkit-transition: opacity 0.4s ease-in-out;
+    -moz-transition: opacity 0.4s ease-in-out;
+    -o-transition: opacity 0.4s ease-in-out;
+    -ms-transition: opacity 0.4s ease-in-out;
+    transition: opacity 0.4s ease-in-out;
+}
+
+ul li:hover>ul {
+    display: block;
+    position: absolute;
+    left: 0px;
+    background-color: @white;
+    opacity: 1.0;
+}
+
+ul li ul li {
+    -webkit-transition: opacity 0.4s ease-in-out;
+    -moz-transition: opacity 0.4s ease-in-out;
+    -o-transition: opacity 0.4s ease-in-out;
+    -ms-transition: opacity 0.4s ease-in-out;
+    transition: opacity 0.4s ease-in-out;
+}
+
+ul li ul li:hover {
+    -webkit-transition: opacity 0.4s ease-in-out;
+    -moz-transition: opacity 0.4s ease-in-out;
+    -o-transition: opacity 0.4s ease-in-out;
+    -ms-transition: opacity 0.4s ease-in-out;
+    transition: opacity 0.4s ease-in-out;
+}
+
