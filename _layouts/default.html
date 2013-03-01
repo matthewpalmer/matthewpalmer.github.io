@@ -237,7 +237,15 @@ $(document).ready(function() {
 </script>
 
 <script type="text/javascript">
-  mixpanel.track("MXPNALE Page viewed");
+  mixpanel.track("MIXPANEL Page viewed");
+</script>
+
+<script type="text/javascript">
+$(".postsLinks").click(function() {
+  analytics.track('Post link clicked', {
+
+  });
+});
 </script>
 
 <script type="text/javascript">
