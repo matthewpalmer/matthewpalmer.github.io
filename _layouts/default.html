@@ -218,6 +218,9 @@ $(document).ready(function() {
 });
 </script>
 <script type="text/javascript">
+  mixpanel.track("Video Play");
+</script>
+<script type="text/javascript">
 analytics.pageview();
 </script>
 <script type="text/javascript">
@@ -230,7 +233,7 @@ analytics.trackLink(link, 'Clicked Post Link', {
 var link = $('.twitterLink');
 
 analytics.trackLink(link, 'Clicked Twitter Link', {
-    test:mixpanel.track("TwitterClicked");
+    
 });
 
 </script>
