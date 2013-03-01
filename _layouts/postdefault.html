@@ -61,11 +61,21 @@ $(function() {
 <div class = "articlecontainer">
 <section class="content">
     {{ content }}
-    <div id="test">TestClick</div>
+    <div id="test" onclick="myFunction()">TestClick</div>
 </section>
 
 
 </div>
+
+<script>
+function myFunction()
+{
+alert("hello");
+  analytics.track('testAnchorClicked', {
+    
+  });
+}
+</script>
 
 <script type="text/javascript">
 $("#test").click(function() {
