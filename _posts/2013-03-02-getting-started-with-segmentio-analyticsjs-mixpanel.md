@@ -8,6 +8,8 @@ excerpt: I was watching Jack Dorsey (creator of Twitter) do an interview the oth
 
 I was watching Jack Dorsey (creator of Twitter) do an interview the other day, and he said that the number one tip he'd give to aspiring developers was to develop and implement meaningful and custom analytics. I decided to look into that.
 
+## I've been having some weird issues with Github Gist, so while I'm sorting it out the code can be viewed at the [actual Gist page](https://gist.github.com/matthewpalmer). It might work perfectly for you, but if it's looking funny have a look through the code on Gist. Sorry about that.
+
 We'll start with this:
 <script src="https://gist.github.com/matthewpalmer/5068097.js"></script>
 
