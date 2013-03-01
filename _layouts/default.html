@@ -218,6 +218,12 @@ $(document).ready(function() {
 analytics.pageview();
 </script>
 <script type="text/javascript">
+var link = $('.postsLinks');
+analytics.trackLink(link, 'Clicked Post Link', {
+    link:'homepage'
+});
+</script>
+<script type="text/javascript">
 var link = $('.twitterLink');
 
 analytics.trackLink(link, 'Clicked Twitter Link', {
