@@ -62,19 +62,30 @@ $(function() {
 <section class="content">
     {{ content }}
 </section>
+
+
 </div>
+<a id="test">TestClick</a>
+<script type="text/javascript">
+$("#test").click(function() {
+  analytics.track('testAnchorClicked', {
+    
+  });
+  alert("TEST CLICKED");
+});
+</script>
 
 <script type="text/javascript">
 $(".dropDownLink").click(function() {
   analytics.track('Social Links on Post CLicked', {
-    alert("SOCIAL CLICKED");
+    
   });
 });
 </script>
 <script type="text/javascript">
 $(".relatedLinks").click(function() {
   analytics.track('Related Post CLicked', {
- alert("RELATED CLICKED");
+ 
   });
 });
 </script>
