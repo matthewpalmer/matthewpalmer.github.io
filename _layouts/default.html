@@ -146,6 +146,8 @@ $(document).ready(function () {
  <br/>
  <br/>
  <a href="https://mixpanel.com/f/partner"><img src="//cdn.mxpnl.com/site_media/images/partner/badge_blue.png" alt="Mobile Analytics" /></a>
+ <br/>
+ <a id="testClicker">Click this</a>
   </div>
   <div id="shotsByPlayerId">
   
@@ -240,11 +242,15 @@ analytics.trackLink(link, 'Clicked Twitter Link', {
 
 </script>
 <script type="text/javascript">
+$('#testClicker').click(function() {
 analytics.track('Purchased an Item', {
     revenue        : 39.95,
     shippingMethod : '2-day'
 });
+alert("clicker clicked");
+});
 </script>
+
 	</body>
 
 </html>
