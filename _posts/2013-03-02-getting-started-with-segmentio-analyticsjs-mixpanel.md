@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started With Segment.io, Analytics.js and Mixpanel
-category: ios
+category: web
 
 excerpt: I was watching Jack Dorsey (creator of Twitter) do an interview the other day, and he said that the number one tip he'd give to aspiring developers was to develop and implement meaningful and custom analytics. I decided to look into that...
 ---
