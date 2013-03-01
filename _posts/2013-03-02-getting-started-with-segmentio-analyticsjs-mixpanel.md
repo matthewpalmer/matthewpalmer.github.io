@@ -30,4 +30,11 @@ Now if you refresh, you should have a new event in both Segment.io and Mixpanel.
 
 ## Tracking Custom Events
 To track custom events, you need to use the Analytics.js (which comes with Segment.io) API. It's super easy. Basically, you just call a function whenever you want an event to be tracked. 
+<script src="https://gist.github.com/matthewpalmer/5068295.js"></script>
+So every time the link is clicked, `analytics.track` runs and will send the data to the events in Segment.io and Mixpanel. Awesome. You can include more data with the track call, but that's for another day.
+
+It's likely that I've made some code errors here, so if you're having trouble feel free to contact me on [Twitter](http://twitter.com/_matthewpalmer). As always, for a better and more powerful understanding check out the Segment.io and Mixpanel docs.
+
+If you're wondering, here's the full code.
+<script src="https://gist.github.com/matthewpalmer/5068348.js"></script>
 
