@@ -7,6 +7,7 @@ blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
 table{border-collapse:collapse;border-spacing:0;}
 html{-webkit-font-smoothing:antialiased;}
 body{font-family:'Open Sans',sans-serif;background-color:#77c4d3;color:rgba(0, 0, 0, 0);}
+.gist .gist-file .gist-data .line-pre{font-family:Consolas,"Liberation Mono",Courier,monospace;color:black;}
 .mobileheader{display:none;}
 .header{font-size:2.5em;color:;display:block;position:absolute;padding-top:10px;width:100%;height:auto;color:#77C4D3;font-weight:400;z-index:40;}
 .bigbox{height:43%;width:90%;padding-top:10%;font-weight:100;background-color:#77c4d3;padding-left:5%;padding-right:5%;padding-bottom:10%;background-color:#77C4D3;z-index:55;color:#f8f8f8;font-size:2.5em;line-height:1.3;}

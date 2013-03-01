@@ -1,5 +1,6 @@
 html{background-color:#f8f8f8;}
 body{font-family:'Source Sans Pro',sans-serif;width:80%;margin-left:10%;margin-right:10%;}
+.gist .gist-file .gist-data .line-pre{font-family:Consolas,"Liberation Mono",Courier,monospace;color:black;}
 #header{font-size:28px;margin-top:4%;color:#393b47;}
 #header h4{font-size:19px;margin-top:-20px;font-weight:500;}
 #header h4 a{color:inherit;opacity:0.7;}
