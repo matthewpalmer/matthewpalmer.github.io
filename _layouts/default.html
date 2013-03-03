@@ -143,25 +143,27 @@ $(document).ready(function () {
   <div class = "tweetarea">
     <span class = "recentarticles tweetsnip">LATEST <em><a href="http://twitter.com/p_almer">TWEETS</a></em></span>
     <script>Chirp({
-      user:'p_almer',
-      max:3,
-      templates: {
-        base: '<ul class="chirp">{{tweets}}</ul>',
-        tweet: '<li><p><a href="http://twitter.com/{{user.screen_name}}" title="{{user.name}} — {{user.description}}"></a> {{html}}</p><span class="meta"><time><a href="http://twitter.com/{{user.screen_name}}/statuses/{{id_str}}">{{time_ago}}</a></time> </span></li>'
-      }
-    })</script>
-    <br/>My tweet feed isn't working at the moment. Please follow me on <a class="twitterLink" href="http://twitter.com/_matthewpalmer">Twitter @_matthewpalmer</a> while I work on it.
+  user: '_matthewpalmer', //Twitter username
+  max: 6, //Maximum number of tweets to show 
+  count: 6 //Total tweets to retrieve
+  
+});</script>
  <br/>
  <br/>
- <a href="https://mixpanel.com/f/partner"><img src="//cdn.mxpnl.com/site_media/images/partner/badge_blue.png" alt="Mobile Analytics" /></a>
+ 
  <br/>
- <a id="testClicker">Click this</a>
+ 
   </div>
   <div id="shotsByPlayerId">
   
   </div>
+  <div class="foot">
+    <a href="http://twitter.com/_matthewpalmer">Twitter</a> &nbsp; <a href="http://dribbble.com/mp">Dribbble</a> &nbsp; <a href="http://instagram.com/_matthewpalmer">Instagram</a><br/>
+    <a href="https://mixpanel.com/f/partner"><img src="//cdn.mxpnl.com/site_media/images/partner/badge_blue.png" alt="Mobile Analytics" /></a>
+    
+  </div>  
 <script>
-  $.jribbble.getShotsThatPlayerLikes('mp', function (playerShots) {
+  $.jribbble.getShotsByPlayerId('mp', function (playerShots) {
     var html = [];
     $.each(playerShots.shots, function (i, shot) {
       html.push('<li>');
@@ -272,7 +274,6 @@ alert("clicker clicked");
 alert("2chainz");
 </script>
 -->
-
-	</body>
+</body>
 
 </html>
