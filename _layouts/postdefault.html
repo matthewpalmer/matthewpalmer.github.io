@@ -20,14 +20,7 @@
   analytics.load("n0ri1eg7hp");
 </script>
 
-<script type="text/javascript">
 
-    
-     analytics.track('Post page viewed', {
-      date: new Date()
-     
-    });
-</script>
       
 	</head>
 
@@ -54,7 +47,7 @@
 <div class = "articlecontainer">
 <section class="content">
     {{ content }}
-    <div id="test" onclick="myFunction()">TestClick</div>
+
 </section>
 
 
@@ -93,6 +86,15 @@ $(".relatedLinks").click(function() {
   });
 });
 </script>
-	</body>
+<script type="text/javascript">
+var post = document.getElementById('postTitle');
+var postTitle = post.innerHTML;
+
+analytics.track('Post page viewed', {
+  date: new Date(),
+  title: postTitle
+});
+</script>
+</body>
 
 </html>
