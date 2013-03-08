@@ -231,6 +231,11 @@ $(document).ready(function() {
 </script>
 <div id="replacement">
 
+<div id="postsDropDown">
+  Blog Posts
+</div>
+
+
   <a href="http://palmer.im/portfolio">
   
   <div class="portfolioMobile">
@@ -260,7 +265,14 @@ $(document).ready(function() {
 </a>
 
 </div>
+<script type="text/javascript">
 
+$('#postsDropDown').click(function() {
+  $('.postlist').toggle('slow');
+  
+});
+
+</script>
 
 <!--
 <script type="text/javascript">

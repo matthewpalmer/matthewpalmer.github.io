@@ -1,4 +1,11 @@
 /*LESS*/
+.transition (@prop: all, @time: 0.3s, @ease: linear) {
+    -webkit-transition: @prop @time @ease;
+    -moz-transition: @prop @time @ease;
+    -o-transition: @prop @time @ease;
+    -ms-transition: @prop @time @ease;
+    transition: @prop @time @ease;
+}
 .mobileBannerBars () {
     text-align: center;
     color: red;
@@ -6,9 +13,15 @@
     width: 100%;
     padding-top: 3%;
     padding-bottom: 3%;
-
+    .transition();
 }
-
+/*COLOURS - MOVE TO TOP WHEN DONE*/
+@niceWhite:#f8f8f8;
+@dribbblePink:#ea4c89;
+@instagramBlue:#517EA3;
+@twitterBlue:#4099FF;
+@github:#52595D;
+@portfolioYellow:#FEFBAF;
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -44,7 +57,7 @@ body {
 	line-height: 1;
 }
 ol, ul {
-	list-style: none;
+	
 }
 blockquote, q {
 	quotes: none;
@@ -203,8 +216,8 @@ padding-bottom:5%;
 }
 /*Blog Feed*/
 .postlist {
-	
-	
+	display: none;
+	padding-top: 8%;
 	padding-left:5%;
 	width:86.9%;
 	padding-bottom: 5%;
@@ -212,12 +225,12 @@ padding-bottom:5%;
 }
 .articlecontainer {
 	margin-top:1%;
-	
+	font-size: 1.5em;
 
 	height:auto;
 	padding-bottom:15%;
 	
-	
+	line-height: 2;
 
 	width:100%;
 	height:auto;
@@ -348,13 +361,7 @@ color: black;
 }
 
 
-/*COLOURS - MOVE TO TOP WHEN DONE*/
-@niceWhite:#f8f8f8;
-@dribbblePink:#ea4c89;
-@instagramBlue:#517EA3;
-@twitterBlue:#4099FF;
-@github:#52595D;
-@portfolioYellow:#FEFBAF;
+
 
 
 .portfolioMobile, .twitterMobile, 
@@ -363,6 +370,13 @@ color: black;
 	.mobileBannerBars();
 	color: @niceWhite;
 }
+#postsDropDown {
+	.mobileBannerBars();
+	cursor: pointer;
+	background-color: #f1f1f1;
+	color: @github - 10;
+}
+
 .portfolioMobile {
 	background-color: @portfolioYellow;
 	color: @github;
@@ -380,4 +394,114 @@ color: black;
 }
 .dribbbleMobile {
 	background-color: @dribbblePink;
+}
+
+.portfolioMobile:hover, .twitterMobile:hover, 
+.dribbbleMobile:hover, .instagramMobile:hover, 
+.githubMobile:hover {
+	opacity: 0.9;
+	.transition();
+}
+#postsDropDown:hover {
+	opacity: 0.9;
+	background-color: @github + 160;
+	.transition();
+	
+}
+.foot {
+	display: none;
+}
+
+
+
+/*ARTICLE / POST STUFF*/
+
+a {
+	text-decoration:none;
+	color:inherit;
+}
+.container {
+	z-index:5;
+	position:absolute;
+	top:auto;
+	width:100%;
+	height:auto;
+	padding-left:;
+	
+	background-color:#f8f8f8;
+/*	-webkit-animation: headerslide 0.2s linear 9.5s 1;*/
+	-webkit-animation-fill-mode: forwards;
+/*-webkit-box-shadow: 0px 28px 52px 2px black;
+-o-box-shadow: 0px 28px 52px 2px black;
+-mozilla-box-shadow: 0px 28px 52px 2px black;
+
+box-shadow: 0px 28px 52px 2px rgba(0,0,0,0.4);
+*/
+}
+
+.articlecontainer {
+	
+	
+
+	height:auto;
+	padding-bottom:15%;
+	
+	color: @github;
+
+	width:90%;
+	
+	padding-left:5%;
+	padding-right: 5%;
+	
+	background-color:#F8F8F8;
+	
+	
+
+}
+.articlecontainer p {
+	margin-top:2%;
+	margin-bottom:2%;
+	letter-spacing: 0.4px;
+	line-height:;
+	line-height:1.6;
+}
+.articlecontainer h1 {
+	margin-bottom:6%;
+}
+.articlecontainer h2 {
+margin-top: 4%;
+	font-weight: bold;
+}
+
+.articlecontainer a {
+	color:rgba(119,196,211,1);
+	text-decoration: underline;
+}
+.articlecontainer a:hover {
+	opacity:0.8;
+	
+}
+.articlecontainer pre {
+	overflow: auto;
+	font-family: monospace;
+	
+	-ms-word-break: break-all;
+     word-break: break-all;
+
+     // Non standard for webkit
+     word-break: break-word;
+
+-webkit-hyphens: auto;
+   -moz-hyphens: auto;
+        hyphens: auto;
+}
+em {
+	
+	font-style:italic;
+	text-decoration:none;
+	color:@instagramBlue;
+	/*color:#EB4D4D;*/
+}
+.homeicon {
+	display: none;
 }

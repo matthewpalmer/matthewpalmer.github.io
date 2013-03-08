@@ -1,3 +1,13 @@
+/*COLOURS - MOVE TO TOP WHEN DONE*/
+@niceWhite:#f8f8f8;
+@dribbblePink:#ea4c89;
+@instagramBlue:#517EA3;
+@twitterBlue:#4099FF;
+@github:#52595D;
+@portfolioYellow:#FEFBAF;
+
+
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -58,7 +68,7 @@ body {
 	line-height: 1;
 }
 ol, ul {
-	list-style: none;
+	
 }
 blockquote, q {
 	quotes: none;
@@ -814,3 +824,100 @@ ul li ul li:hover {
 #replacement {
 	display: none;
 }
+
+.articlecontainer ul li {
+	list-style: disc;
+}
+.articlecontainer ol li {
+	list-style: decimal;
+}
+
+/*ARTICLE / POST STUFF*/
+
+a {
+	text-decoration:none;
+	color:inherit;
+}
+.container {
+	z-index:5;
+	position:absolute;
+	top:auto;
+	width:100%;
+	height:auto;
+	padding-left:;
+	
+	background-color:#f8f8f8;
+/*	-webkit-animation: headerslide 0.2s linear 9.5s 1;*/
+	-webkit-animation-fill-mode: forwards;
+/*-webkit-box-shadow: 0px 28px 52px 2px black;
+-o-box-shadow: 0px 28px 52px 2px black;
+-mozilla-box-shadow: 0px 28px 52px 2px black;
+
+box-shadow: 0px 28px 52px 2px rgba(0,0,0,0.4);
+*/
+}
+
+.articlecontainer {
+	
+	
+
+	height:auto;
+	padding-bottom:15%;
+	
+	color: @github;
+
+	width:90%;
+	
+	padding-left:5%;
+	padding-right: 5%;
+	
+	background-color:#F8F8F8;
+	
+	
+
+}
+.articlecontainer p {
+	margin-top:2%;
+	margin-bottom:2%;
+	letter-spacing: 0.4px;
+	line-height:;
+	line-height:1.6;
+}
+.articlecontainer h1 {
+	margin-bottom:6%;
+}
+.articlecontainer h2 {
+margin-top: 4%;
+	font-weight: bold;
+}
+
+.articlecontainer a {
+	color:rgba(119,196,211,1);
+	text-decoration: underline;
+}
+.articlecontainer a:hover {
+	opacity:0.8;
+	
+}
+.articlecontainer pre {
+	overflow: auto;
+	font-family: monospace;
+	
+	-ms-word-break: break-all;
+     word-break: break-all;
+
+     // Non standard for webkit
+     word-break: break-word;
+
+-webkit-hyphens: auto;
+   -moz-hyphens: auto;
+        hyphens: auto;
+}
+.articlecontainer em {
+	
+	font-style:italic;
+	text-decoration:none;
+	color:@instagramBlue;
+	/*color:#EB4D4D;*/
+}
+
