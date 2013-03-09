@@ -115,3 +115,4 @@ a{text-decoration:none;color:inherit;}
 .articlecontainer a:hover{opacity:0.8;}
 .articlecontainer pre{overflow:auto;font-family:monospace;-ms-word-break:break-all;word-break:break-all;word-break:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;hyphens:auto;}
 .articlecontainer em{font-style:italic;text-decoration:none;color:#517ea3;}
+.articlecontainer strong{font-weight:bold;}

@@ -52,3 +52,4 @@ a{text-decoration:none;color:inherit;}
 .articlecontainer pre{overflow:auto;font-family:monospace;-ms-word-break:break-all;word-break:break-all;word-break:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;hyphens:auto;}
 em{font-style:italic;text-decoration:none;color:#517ea3;}
 .homeicon{display:none;}
+.articlecontainer strong{font-weight:bold;}
