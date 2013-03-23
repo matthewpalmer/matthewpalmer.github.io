@@ -36,7 +36,11 @@
      
     });
 </script>
+<script>
+  $(document).ready(function() {
 
+  });
+</script>
 
 
   </head>
@@ -189,28 +193,7 @@ $(document).ready(function() {
 
 
 </script>
-<script>
-$(document).ready(function() {
-  
-        $( ".skilled" ).animate({
-  left: "", opacity: 1
-}, { duration: 1900, queue: false 
-  
-});
-});
 
-</script>
-<script>
-$(document).ready(function() {
-  
-        $( ".postlist" ).animate({
-  paddingTop:"8%", opacity: 1
-}, { duration: 2000, queue: false 
-  
-});
-});
-
-</script>
     <script src="bootstrap-carousel.js"></script>
     <script>
       !function ($) {
@@ -274,49 +257,65 @@ $('#postsDropDown').click(function() {
 
 </script>
 
-<!--
-<script type="text/javascript">
-  mixpanel.track("MIXPANEL Page viewed");
-</script>
 
-<script type="text/javascript">
-$(".postsLinks").click(function() {
-  analytics.track('Post link clicked', {
-
-  });
-});
-</script>
-
-<script type="text/javascript">
-var link = $('.postsLinks');
-analytics.trackLink(link, 'Clicked Post Link', {
-    link:'homepage'
-});
-</script>
-<script type="text/javascript">
-var link = $('.twitterLink');
-
-analytics.trackLink(link, 'Clicked Twitter Link', {
-    
-});
-
-</script>
--->
   <script type="text/javascript">
    analytics.trackLink($(".postsLinks"), 'Post link clicked');
   </script>
-<!--
+
 <script type="text/javascript">
-$('#testClicker').click(function() {
-analytics.track('testClicker loader', {
-    revenue        : 39.95,
-    shippingMethod : '2-day'
-});
-alert("clicker clicked");
-});
-alert("2chainz");
+
+var maxScrolled = 0;
+
+    
+    var totalHeight = $(document).height();
+    
+    var percentage = maxScrolled/totalHeight;
+
+
+$(document).scroll(function() {
+    console.log($(document).scrollTop());
+    if($(document).scrollTop()>maxScrolled) {
+      maxScrolled=$(document).scrollTop();
+      
+      percentage = ((maxScrolled/totalHeight)*100);
+      
+
+      if(percentage==0) {
+        analytics.track('Max Scroll (%)', {
+          percentage: percentage
+        });
+        
+      } else if (percentage>24 && percentage < 26) {
+        analytics.track('Max Scroll (%)', {
+          percentage: percentage
+        });
+        
+      } else if (percentage>49 && percentage <51) {
+        analytics.track('Max Scroll (%)', {
+          percentage: percentage
+        });
+        
+      } else if (percentage>74 && percentage<76) {
+        analytics.track('Max Scroll (%)', {
+          percentage: percentage
+        });
+        
+      } else if (percentage>100 && percentage<102) {
+        analytics.track('Max Scroll (%)', {
+          percentage: percentage
+        });
+        
+      }
+
+    } 
+
+    console.log('something else');
+  });
+
+
 </script>
--->
+
+
 </body>
 
 </html>

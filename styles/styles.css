@@ -17,13 +17,12 @@ body{font-family:'Open Sans',sans-serif;background-color:#77c4d3;color:rgba(0, 0
 .bigbox{width:60%;font-size:14pt;line-height:1.5;font-weight:100;background-color:#77c4d3;padding-top:21%;padding-bottom:22%;padding-left:20%;padding-right:20%;background-color:#77C4D3;z-index:55;color:#f8f8f8;font-size:1.5em;line-height:1.3;}
 .bigbox>p{position:relative;left:;display:inline-block;width:100%;}
 .bigbox>.named{position:relative;font-size:2em;top:-2%;opacity:0;}
-.bigbox>.skilled{position:relative;left:280%;top:40%;opacity:0;}
 a{text-decoration:none;color:inherit;}
 .container{z-index:5;position:absolute;top:auto;width:100%;height:auto;padding-left:;background-color:#f8f8f8;-webkit-animation-fill-mode:forwards;}
 .portfolioalert{margin-top:4%;padding-top:2%;padding-bottom:2%;line-height:1.5;font-weight:400;font-size:1.0em;background-color:#FEFBAF;color:#333333;border-radius:3px;width:100%;text-align:center;-webkit-transition:opacity 0.3s ease-in-out;-moz-transition:opacity 0.3s ease-in-out;-ms-transition:opacity 0.3s ease-in-out;-o-transition:opacity 0.3s ease-in-out;transition:opacity 0.3s ease-in-out;}
 .portfolioalert:hover{opacity:0.9;}
 @-webkit-keyframes headerslide /* Safari and Chrome */{100%{top:1%;}}.recentarticles{font-size:0.8em;color:rgba(0, 0, 0, 0.3);padding-bottom:1%;display:inline-block;padding-bottom:5%;}
-.postlist{padding-left:25%;width:50%;max-width:664px;padding-bottom:10%;z-index:8;}
+.postlist{padding-top:6%;padding-left:25%;width:50%;max-width:664px;padding-bottom:10%;z-index:8;}
 .articlecontainer{margin-top:1%;padding-bottom:15%;width:100%;height:auto;padding-left:;padding-top:0.05%;background-color:#F8F8F8;}
 .articlecontainer p{margin-top:2%;margin-bottom:2%;letter-spacing:0.4px;line-height:;line-height:1.6;}
 .articlecontainer h1{margin-bottom:6%;}
@@ -117,3 +116,5 @@ a{text-decoration:none;color:inherit;}
 .articlecontainer em{font-style:italic;text-decoration:none;background-color:#e3eaee;color:#517ea3;}
 .articlecontainer strong{font-weight:bold;}
 .gist-meta{display:none;}
+.skilled{position:relative;left:0px;animation:mymove 2.4s;-moz-animation:mymove 2.4s;-webkit-animation:mymove 2.4s;-o-animation:mymove 2.4s;}
+@keyframes mymove{0%{left:30%;opacity:0;} 100%{left:0;opacity:1;}}@-moz-keyframes mymove /* Firefox */{0%{left:30%;opacity:0;} 100%{left:0;opacity:1;}}@-webkit-keyframes mymove /* Safari and Chrome */{0%{left:30%;opacity:0;} 100%{left:0;opacity:1;}}@-o-keyframes mymove /* Opera */{0%{left:30%;opacity:0;} 100%{left:0;opacity:1;}}
