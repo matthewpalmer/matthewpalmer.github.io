@@ -7,20 +7,18 @@ layout: postdefault
     <h2 id="postTitle">{{ page.title }}</h2>
     <div class="entry">{{ content }}</div>
 
-    <span class="meta2"><small>By {{ site.author }}</small></span>
+    
 <div class="category">
-	<br/><br/>
-	Related Posts:
+	<br/><br/><br/>
+	<strong>Related Posts:</strong>
+
 	<ul>
             {% for post in site.categories[page.category] %}
             {% if page.title == post.title %}
                 
                 {% else %}
-                
-            
-                
                 <br/>
-                <a class="relatedLinks" href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a><br/>
+                &nbsp;<a class="relatedLinks" href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a><br/>
                 {% endif %}
             
             {% endfor %}
