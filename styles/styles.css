@@ -117,6 +117,6 @@ a{text-decoration:none;color:inherit;}
 .articlecontainer strong{font-weight:bold;}
 .gist{font-size:12px;}
 .gist-meta{display:none;}
-#disqus_thread{width:40%;margin-left:30%;border-top:1px solid gainsboro;padding-top:3%;margin-top:8%;}
+#disqus_thread{border-top:1px solid gainsboro;padding-top:3%;margin-top:8%;}
 .skilled{position:relative;left:0px;animation:mymove 2.4s;-moz-animation:mymove 2.4s;-webkit-animation:mymove 2.4s;-o-animation:mymove 2.4s;}
 @keyframes mymove{0%{left:30%;opacity:0;} 100%{left:0;opacity:1;}}@-moz-keyframes mymove /* Firefox */{0%{left:30%;opacity:0;} 100%{left:0;opacity:1;}}@-webkit-keyframes mymove /* Safari and Chrome */{0%{left:30%;opacity:0;} 100%{left:0;opacity:1;}}@-o-keyframes mymove /* Opera */{0%{left:30%;opacity:0;} 100%{left:0;opacity:1;}}
