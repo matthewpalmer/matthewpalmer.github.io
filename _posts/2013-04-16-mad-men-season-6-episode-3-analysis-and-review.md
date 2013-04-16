@@ -30,7 +30,7 @@ Don arrives at Sylvia's doorstep, and a flashback arrives. I love Mad Men's flas
 
 Uncle Mack's evaluation of "I'm the rooster around here" surely has deeper meaning: Don considers this man the 'alpha male', and as such attempts to emulate him. Thus, Don's philandering has a root cause - his attempt at being the rooster of the flock has allowed him to "help all the hens."
 
-__"This didn't happen… just in here."__
+__"This didn't happen... just in here."__
 
 Don's assessment of their relationship is surely hinting at a mental deterioration on either Don or Sylvia's part, but further than that I'm not sure. Through the conflictions of the radio and the people, we get a nice juxtaposition of love and war/terror/violence. We are also introduced to a motif that is certainly going to come up again in a more salient postition: the Christian cross on Sylvia's necklace.
 
@@ -40,7 +40,7 @@ Now we go to Peggy, who seems to have developed a great deal of confidence and s
 
 Now we change to Pete, who's meeting his lady friend in the city apartment. She's noticeably dressed in all-black, indicating the death of Pete's marriage and perhaps Pete's ultimate death.
 
-__"Peanuts… cheese crackers… bourbon… vodka… gin… champagne… music."__
+__"Peanuts... cheese crackers... bourbon... vodka... gin... champagne... music."__
 
 Much like Tolstoy's accumulation of bourgeois, materialistic desires in _The Death of Ivan Ilyich_, this indicates Pete's attempts to fill his life with things to impress others, and he is never happy as a result. I feel the life of Ivan has nice similarities with Pete's, though Ivan is an infinitely nicer guy - go and read it, it's short. In the background, Pete's cupboards appeart to be ajar or missing pieces, indicating holes in Pete's life and happiness, as well as revealing a dark core. Noticeably, Pete's lady friend (I don't know her name) still has her hat, depicting a carelessness that will ultimately lead to Pete's marriage deteriorating at the end of the episode. Perhaps carelessness will come to ruin something more than his marriage? Also, there are _two_ half drunk glasses of whiskey on the counter and table, which I thought represented Pete's loneliness. At the end of the scene, Pete leads the woman through semi-opaque, coloured glass-walls and curtains, which has connotations that lead to prostitution and promiscuity.
 
@@ -88,7 +88,7 @@ __"There's no way for me to escape."__
 
 Trudy has an awesome scene here and completely immasculates Pete, in a way that Betty or Megan would never do to Don, and I wonder how this will affect Pete's character. A great deal of foreshadowing comes into play with the close up of the blood-soaked rag; I sense an implosion or death of Pete's character.
 
-__"You're going to go to bed… you're going to realise… you don't know anything."__
+__"You're going to go to bed... you're going to realise... you don't know anything."__
 
 In the next scene Ed/Ted talks with Peggy about betraying Stan: "He's not your friend, he's the enemy." The theme of betrayal is made clear here, and links back to Don and the Doctor's relationship using dramatic irony.
 
@@ -98,13 +98,13 @@ In the final scene, Don is looking through the keyhole at his mother's/step-moth
 
 The episode closes with Don slumped in the doorway; the closing song is brilliant, considering the aforementioned themes of false love, prostitution and betrayal, as well as Don's existential and nihilistic pivot. 
 
-		If you admire me, hire me
-		A gigolo who knew a better day
-		Just a gigolo, everywhere I go
-		People know the part I'm playing
-		[…]
-		When the end comes, I know they'll say
-		'Just a gigolo,' as life goes on without me.
+_If you admire me, hire me
+A gigolo who knew a better day
+Just a gigolo, everywhere I go
+People know the part I'm playing
+[...]
+When the end comes, I know they'll say
+'Just a gigolo,' as life goes on without me._
 
 
 
