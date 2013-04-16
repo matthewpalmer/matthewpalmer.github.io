@@ -1,10 +1,11 @@
 ---
 layout: post
-title: Analysis of Mad Men S06E03
+title: Mad Men Season 6 Episode 3 Analysis
 category: tv
 
-excerpt: I analysed the third episode of the sixth season of Mad Men: Collaborators
+excerpt: An analysis of Mad Men s03e06.
 ---
+
 
 
 I thought this was, as always for Mad Men, a strong episode. The most prevalent themes present were the notions of false love and prostitution, nature and betrayal. Nature is a new addition into the Mad Men fold, and I'm not quite sure of the deeper meaning. Mostly, however, these themes are facades - a thin veil of makeup for the characters' inner blemishes. This has been a consistent part of Don's character throughout the series, but as we see Pete and Peggy grow to become more like Don, they will replicate his subterfuge. I feel the transformation of Pete and Peggy into different aspects of Don will be a major plot point for this season, while Don's decay will become increasingly prevalent.
