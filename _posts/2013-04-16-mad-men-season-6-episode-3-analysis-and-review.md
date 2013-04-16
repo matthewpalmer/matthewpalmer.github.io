@@ -98,20 +98,13 @@ In the final scene, Don is looking through the keyhole at his mother's/step-moth
 
 The episode closes with Don slumped in the doorway; the closing song is brilliant, considering the aforementioned themes of false love, prostitution and betrayal, as well as Don's existential and nihilistic pivot. 
 
-_If you admire me, hire me
-
+If you admire me, hire me
 A gigolo who knew a better day
-
 Just a gigolo, everywhere I go
-
 People know the part I'm playing
-
 [...]
-
 When the end comes, I know they'll say
-
-'Just a gigolo,' as life goes on without me._
-
+'Just a gigolo,' as life goes on without me.
 
 
 
