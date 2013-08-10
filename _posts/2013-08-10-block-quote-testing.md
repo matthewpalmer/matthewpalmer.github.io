@@ -1,8 +1,5 @@
 ---
 published: true
----
-
----
 layout: post
 title: Testing
 category: test
