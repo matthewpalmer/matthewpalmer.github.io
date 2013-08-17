@@ -8,7 +8,7 @@ excerpt: I discuss the effects of Google's constant presence and the consequence
 
 The Google Epidemic
 
-I’m writing this for the Google users who are in the same place as me: I like Google, I want to trust them, they provide great free services and they are everywhere, which is convenient.
+I'm writing this for the Google users who are in the same place as me: I like Google, I want to trust them, they provide great free services and they are everywhere, which is convenient.
 
 Recently, I wanted to change the domain name associated with my Google Apps for Businesses account. I'm currently on the old free plan for Google Apps, which is being kindly continued by Google for now; I have no doubt that Google's current hospitality is short lived, and I believe that the same is true for all free services, even if the cost is not strictly financial. It turns out that it isn’t possible to change the domain name in any easy way, and the resultant data migration is not smooth. Mail, contacts and calendars are relatively easy to export from your account, but Google Docs - the important things - have to be done on a separate basis for each individual file.  It was a huge shock to be so blatantly locked into the Google Drive sphere; my documents are the most important data that I host with Google (email is a close second, but I put a lot less time into my emails than my documents). Google Chrome the worst of all the traps: give them access to your bookmarks and browsing history for a marginally better product (let’s not mention the Chromebook). I felt like a fool for not realising my mistake earlier.
 
