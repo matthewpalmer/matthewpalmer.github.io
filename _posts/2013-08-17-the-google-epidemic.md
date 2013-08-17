@@ -21,7 +21,6 @@ What would you lose?
 - Any YouTube videos that you were hosting solely on YouTube.
 - Any calendars which were not stored locally.
 - Google Analytics data.
-- Even more (link to screenshot).
 - Your browsing history and bookmarks.
 
 Say that you aren't locked out. Even if it's just a simple outage, you won't be able to access anything that wasn't already stored locally.
