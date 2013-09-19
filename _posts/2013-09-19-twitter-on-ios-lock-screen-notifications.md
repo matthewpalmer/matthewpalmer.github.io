@@ -17,6 +17,7 @@ This is not really an issue unless you consider the potential consequences. Here
 Twitter for iPhone 6.0.0: now with Promoted Tweets to your Lock Screen!
 
 And check out __the mysterious 'Other' in this Push Notification settings__ screenshot. 
+
 ![The mysterious Push Notifications settings.](https://s3-us-west-2.amazonaws.com/droplr.storage/files/acc_99329/PzbI?AWSAccessKeyId=AKIAJSVQN3Z4K7MT5U2A&Expires=1379578786&Signature=71vhhKJZ9QO%2BbHvsJgmDK2EUfLA%3D&response-content-disposition=inline%3B%20filename%3D2013-09-19-17.15.jpg%3B%20filename%2A%3DUTF-8%2527%25272013-09-19-17.15.jpg)
 
 Tweets to your Lock Screen can be disabled by tapping the first option in this list and switching it off. I'm going to leave 'Other' on to see what happens.
