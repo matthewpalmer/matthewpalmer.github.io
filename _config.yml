@@ -2,7 +2,7 @@
 name: Matthew Palmer
 
 # Short description (goes below the title; it will also be used in the RSS feed)
-description: I'm a web and iOS developer
+description: Web and iOS developer from Australia. @_matthewpalmer.
 
 # Your name, as you want it to appear underneath each post and in the footer
 author: Matthew Palmer
@@ -19,7 +19,7 @@ safe: true
 #baseurl: /path/to/blog 
 
 # The URL of your actual domain. This will be used to make absolute links in the RSS feed.
-#url: http://yourdomain.com/
+url: http://www.palmer.im
 
 # Continue compiling even if there are errors. Keep it true, unless troubleshooting.
 auto: true
