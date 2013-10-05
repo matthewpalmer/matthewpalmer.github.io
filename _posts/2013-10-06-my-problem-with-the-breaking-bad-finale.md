@@ -16,7 +16,7 @@ In the final episode, Walt wins. Walt achieves a significant majority of the goa
 - he wanted to be known
 - he wanted to extend himself outside of being a high school teacher
 - he wanted to change
-- 
+
 His only original goal which was not fulfilled was having his family not hate him, and to have the cancer catch up to him before the police did. While not all of Walt's money reaches his family, he wanted enough to make them comfortable. Eleven million dollars sates all of those desires.
 
 This proud, murderous, poisoner, abuser of children, self-deifying, __monster wins at the end of the series.__ Gilligan, again and again, has warned us not to follow Walt's path. And yet there are no significant, lasting repercussions for him. __The high school chemistry teacher has transformed into an empirical megalomaniac and he has not faced any consequences.__ Those whom he loves have suffered, but what's Gilligan's message there? Don't be associated with meth kingpins? Seeing his family destroyed is not a significant consequence for Walt, just as they weren't the sole contributors to his initial motivations; he said so himself. Both his family's and Jesse's ultimate freedom were orchestrated by Walt. Again, __Walt gets what he wants.__
