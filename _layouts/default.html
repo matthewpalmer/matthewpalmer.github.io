@@ -76,7 +76,7 @@ title: Home
 
 
     <ul class="items wrap">
-    <span class = "recentarticles postsnip">LATEST <em><a href="archive.html">POSTS</a> </em>&mdash;<em> <a href="http://palmer.im//feed.xml">RSS</a></em></span>
+    <span class = "recentarticles postsnip">LATEST <em><a href="archive.html">POSTS</a> </em>&mdash;<em> <a href="./feed.xml">RSS</a></em></span>
       {{ content }}
 
 
@@ -113,7 +113,6 @@ title: Home
   </div>
   <div class="foot">
     <a href="http://twitter.com/_matthewpalmer">Twitter</a> &nbsp; <a href="http://dribbble.com/mp">Dribbble</a> &nbsp; <a href="http://github.com/matthewpalmer">Github</a> &nbsp; <a href="http://instagram.com/_matthewpalmer">Instagram</a><br/>
-    <a class = "partner" href="https://mixpanel.com/f/partner"><img src="//cdn.mxpnl.com/site_media/images/partner/badge_blue.png" alt="Mobile Analytics" /></a>
 
   </div>
 <script>
@@ -211,61 +210,9 @@ $('#postsDropDown').click(function() {
 
 
   <script type="text/javascript">
-   analytics.trackLink($(".postsLinks"), 'Post link clicked');
+   analytics.trackLink($(".postsLinks"), 'List link clicked');
   </script>
 
-<script type="text/javascript">
-/*
-var maxScrolled = 0;
-
-
-    var totalHeight = $(document).height();
-
-    var percentage = maxScrolled/totalHeight;
-
-
-$(document).scroll(function() {
-    console.log($(document).scrollTop());
-    if($(document).scrollTop()>maxScrolled) {
-      maxScrolled=$(document).scrollTop();
-
-      percentage = ((maxScrolled/totalHeight)*100);
-
-
-      if(percentage==0) {
-        analytics.track('Max Scroll (%)', {
-          percentage: percentage
-        });
-
-      } else if (percentage>24 && percentage < 26) {
-        analytics.track('Max Scroll (%)', {
-          percentage: percentage
-        });
-
-      } else if (percentage>49 && percentage <51) {
-        analytics.track('Max Scroll (%)', {
-          percentage: percentage
-        });
-
-      } else if (percentage>74 && percentage<76) {
-        analytics.track('Max Scroll (%)', {
-          percentage: percentage
-        });
-
-      } else if (percentage>100 && percentage<102) {
-        analytics.track('Max Scroll (%)', {
-          percentage: percentage
-        });
-
-      }
-
-    }
-
-    console.log('something else');
-  });
-*/
-
-</script>
 
 
 </body>
