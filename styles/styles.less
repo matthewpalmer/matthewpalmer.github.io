@@ -395,17 +395,31 @@ transition: background-position 0.2s ease-in-out;
 /*projects feed*/
 /* default list styles in post list section */
 .portfolioarea {
-	padding-left:25%;
-	width:50%;
-	padding-right: 25%;
-	padding-top:6%;
-	padding-bottom: 8%;
-	background-color: #333333;
+	background-color: black; /* #333333; */
+
+  padding-top: 6%;
+padding-left: 25%;
+width: 50%;
+max-width: 664px;
+padding-bottom: 10%;
+z-index: 8;
+}
+
+/*
+For whatever reason I had to put my width styling
+in the actual HTML. I feel bad, but it needs to work.
+Strange.
+ */
+
+.portfolioarea .items {
+  width: 100%;
+  max-width: 664px;
 }
 
 .portfolioarea > ul li {
 	background-color:#454545;
-	color:#D9D9D9;
+	/*color:#D9D9D9;*/
+  color: red;
 }
 
 .portfolioarea > ul li:hover {
@@ -413,9 +427,6 @@ transition: background-position 0.2s ease-in-out;
 	color:rgba(0,0,0,0.8);
 }
 
-#banner-slide {
-	margin-left: 3%;
-}
 .portfoliosnip {
 	color:gray;
 }
