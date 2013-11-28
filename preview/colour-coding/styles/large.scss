@@ -1,0 +1,60 @@
+@import "base.scss";
+
+header {
+  ul {
+    float: right;
+    li {
+      width: 85px;
+      text-align: center;
+    }
+
+  }
+}
+
+.bigTitle {
+  margin-top: -0.5%;
+  background: url(../../images/imac-4.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+
+  height: 80%;
+
+  .overlay {
+    background-color: $blueOpacity;
+    height: 100%;
+
+    h1 {
+      padding-top: 30%;
+    }
+
+  }
+}
+
+.product {
+  padding-left: 25%;
+  padding-right: 25%;
+  padding-top: 4%;
+  padding-bottom: 2%;
+
+  h2 {
+    font-size: 2em;
+  }
+
+  img {
+    width: 35%;
+  }
+  p {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+  }
+}
+
+.dictionary {
+  p {
+    float: left;
+}
+}
+

@@ -1,0 +1,63 @@
+$blue: RGBA(12.00, 123.00, 251.00, 1.0);
+$blueOpacity: RGBA(12.00, 123.00, 251.00, 0.5);
+$black: #272822;
+$white: #FDFCF8;
+$whiteOpacity: RGBA(253.00, 252.00, 248.00, 0.9);
+
+body {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  letter-spacing: 0.3px;
+  line-height: 1.5;
+  color: $black;
+  background-color: $white;
+}
+
+header {
+  background-color: $whiteOpacity;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  
+  ul {
+    list-style-type: none;
+    
+    li {
+      display: inline-block;
+    }
+    a { 
+      text-decoration: none;
+    }   
+    a:hover {
+      border-bottom: 1px solid $black;
+    } 
+  }
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.bigTitle {
+  .overlay {
+    background-color:$blueOpacity; 
+    height: 100%;
+
+    h1 {
+      padding-top: 30%;
+      padding-left: 1%;
+      opacity: 0.5;
+      font-size: 6em;
+      text-transform: uppercase;
+      color: $white;
+    }   
+  }
+}
+
+.product {
+  h2 {
+    font-size: 2em;
+  }
+}

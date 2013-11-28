@@ -1,0 +1,77 @@
+body {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  letter-spacing: 0.3px;
+  line-height: 1.5;
+  color: #272822;
+  background-color: #fdfcf8; }
+
+header {
+  background-color: RGBA(253, 252, 248, 0.9);
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; }
+  header ul {
+    list-style-type: none; }
+    header ul li {
+      display: inline-block; }
+    header ul a {
+      text-decoration: none; }
+    header ul a:hover {
+      border-bottom: 1px solid #272822; }
+
+a {
+  color: inherit;
+  text-decoration: none; }
+
+.bigTitle .overlay {
+  background-color: RGBA(12, 123, 251, 0.5);
+  height: 100%; }
+  .bigTitle .overlay h1 {
+    padding-top: 30%;
+    padding-left: 1%;
+    opacity: 0.5;
+    font-size: 6em;
+    text-transform: uppercase;
+    color: #fdfcf8; }
+
+.product h2 {
+  font-size: 2em; }
+
+header ul {
+  float: right; }
+  header ul li {
+    width: 85px;
+    text-align: center; }
+
+.bigTitle {
+  margin-top: -0.5%;
+  background: url(../../images/imac-4.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 80%; }
+  .bigTitle .overlay {
+    background-color: RGBA(12, 123, 251, 0.5);
+    height: 100%; }
+    .bigTitle .overlay h1 {
+      padding-top: 30%; }
+
+.product {
+  padding-left: 25%;
+  padding-right: 25%;
+  padding-top: 4%;
+  padding-bottom: 2%; }
+  .product h2 {
+    font-size: 2em; }
+  .product img {
+    width: 35%; }
+  .product p {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top; }
+
+.dictionary p {
+  float: left; }

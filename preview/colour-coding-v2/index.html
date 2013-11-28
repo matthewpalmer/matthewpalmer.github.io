@@ -1,0 +1,52 @@
+<html>
+  <head>
+    <!-- $TITLE -->
+    <title>Colour Coding</title>
+
+    <!-- $META -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <meta name="viewport" content="width=device-width">
+
+    <!-- $STYLES -->
+      <!-- Normalize -->
+     <link rel="stylesheet" href="styles/css/normalize.css">
+     <!-- Animate -->
+     <link rel="stylesheet" href="./styles/css/animate.min.css">
+     <!-- Media Queries -->
+       <!-- Large -->
+       <link rel="stylesheet" media="screen and (min-width: 1025px)" href="styles/css/large.css" type="text/css"/>
+
+  </head>
+  <body>
+    <div class="container">
+      <section class="feature">
+        <h1 id="name" class="animated bounceInUp">COLOUR CODING</h1>
+        <h3 class="subtitle animated bounceInDown"><span>Design &amp; Development</span></h3>
+      </section>
+      <ul class="linksList animated flipInX">
+        <li><a href="about">About</a></li>
+        <li><a href="apps">Apps</a></li>
+        <li><a href="contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <script src="./scripts/jquery.js"></script>
+    <script type="text/javascript">
+      var name = document.getElementById('name');
+      $('#name').css({
+          color: '#3E6FA6'
+          });
+
+      $('html').on('mousemove', function(d) {
+          var x = parseInt((d.clientX/$(window).width())*255.0);
+          var y = parseInt((d.clientY/$(window).height())*255.0);
+          var colorString = 'rgb('+x+','+y+', 127'+')';
+          $('#name').css({
+              color: colorString+''
+          });
+      });
+    </script>
+  </body>
+
+</html>
