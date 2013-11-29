@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <!-- $TITLE -->
+    <title>{{ site.name }}</title>
+
+    <!-- $META -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <meta name="viewport" content="width=device-width">
+
+    <!-- $STYLES -->
+     <!-- Animate -->
+     <link rel="stylesheet" href="/styles/css/animate.min.css">
+     <!-- Media Queries -->
+       <!-- Large -->
+       <link rel="stylesheet" media="screen and (min-width: 1025px)" href="/styles/css/large.css" type="text/css"/>
+       <!-- Mid -->
+       <link rel="stylesheet" media="screen and (min-width: 640px) and (max-width: 1024px)" href="/styles/css/mid.css" type="text/css"/>
+       <!-- Small -->
+       <link rel="stylesheet" media="screen and (max-width: 641px)" href="/styles/css/small.css" type="text/css"/>
+  </head>
+  <body>
+    <div class="container">
+      <section class="feature">
+        <h1 id="name" class="animated bounceInRight">COLOUR CODING</h1>
+        <h3 class="subtitle animated bounceInLeft"><span>Design &amp; Development</span></h3>
+      </section>
+
+      {{ content }}
+
+    </div>
+    <!-- Desktop colour effect -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" ></script>
+    <!-- Mobile colour effect -->
+    <script src="/scripts/gyro.min.js"></script>
+
+
+    <script type="text/javascript">
+          $('#name').css({
+          color: '#3E6FA6'
+          });
+    if (window.innerWidth > 1025) {
+
+
+      $('html').on('mousemove', function(d) {
+          var x = parseInt((d.clientX/$(window).width())*255.0);
+          var y = parseInt((d.clientY/$(window).height())*255.0);
+          var colorString = 'rgb('+x+','+y+', 127'+')';
+          $('#name').css({
+              color: colorString+''
+          });
+      });
+    } else {
+          // Set the polling frequency
+    gyro.frequency = 100;
+
+    gyro.startTracking(function(o) {
+      // o.x, o.y, o.z for accelerometer
+      // o.alpha, o.beta, o.gamma for gyro
+      var x = Math.abs(parseInt((o.alpha/180)*120.0));
+      if (x < 77) {
+        x = x + 50;
+      } else if (x > 177) {
+        x = x - 50;
+      }
+
+      var y = Math.abs(parseInt((o.beta/90.0)*255.0));
+      var z = Math.abs(parseInt((o.gamma/90.0)*255.0));
+      var colorString = 'rgb('+z+','+y+',' + x+')';
+      console.log(colorString);
+      $('#name').css({
+          color: colorString+''
+      });
+    });
+    }
+
+
+
+</script>
+  </body>
+</html>
