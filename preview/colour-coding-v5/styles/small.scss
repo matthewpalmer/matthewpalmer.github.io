@@ -1,0 +1,55 @@
+@import "base.scss";
+
+.container {
+  width: 96%;
+  margin-left: 2%;
+  margin-top: 20%;
+}
+
+.feature {
+  text-align: center;
+}
+
+h3 {
+  width: 100%;
+  border: none;
+}
+
+h3 span {
+  border: none;
+  top: -14px;
+  padding: 0 10px;
+
+}
+
+ul {
+  margin-top: 20%;
+  text-align: center;
+  line-height: 2;
+  width: 100%;
+  margin-left: -15%;
+
+  li {
+    width: 100%;
+  }
+}
+
+/**
+======================
+Content Pages
+**/
+#contentHeader {
+  margin-top: -10%;
+  top: 1%;
+}
+
+article {
+
+  line-height: 1.5;
+
+
+  p {
+    margin-bottom: 9%;
+    font-weight: 400;
+  }
+}

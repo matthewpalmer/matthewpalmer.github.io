@@ -1,0 +1,62 @@
+<html>
+  <head>
+    <!-- $TITLE -->
+    <title>About – Colour Coding</title>
+
+    <!-- $META -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <meta name="viewport" content="width=device-width">
+
+    <!-- $STYLES -->
+      <!-- Normalize -->
+     <link rel="stylesheet" href="styles/css/normalize.css">
+     <!-- Animate -->
+     <link rel="stylesheet" href="./styles/css/animate.min.css">
+     <!-- Media Queries -->
+       <!-- Large -->
+       <link rel="stylesheet" media="screen and (min-width: 1025px)" href="../styles/css/large.css" type="text/css"/>
+       <!-- Mid -->
+       <link rel="stylesheet" media="screen and (min-width: 640px) and (max-width: 1024px)" href="../styles/css/mid.css" type="text/css"/>
+       <!-- Small -->
+       <link rel="stylesheet" media="screen and (max-width: 641px)" href="../styles/css/small.css" type="text/css"/>
+
+  </head>
+  <body>
+    <div class="container">
+      <header id="contentHeader" class="feature">
+        <a href="../"><h1 id="name" class="animated flipInX">COLOUR CODING</h1></a>
+
+      </header>
+      <article class="animated fadeIn">
+        <h2>About</h2>
+
+        <p>Colour Coding is a small business devoted to design and development. We specialise in constructing robust, beautiful websites and applications.</p>
+
+        <p>You can find links to our apps and websites from the <a href="../apps/">apps page</a>, and we'd love to work with you on your projects – <a href="../contact/">get in touch</a>.</p>
+
+        <p>Colour Coding is currently based in Sydney, Australia. It was founded in 2013 by <a href="http://palmer.im">Matthew Palmer</a>, who continues to design and develop all of Colour Coding's products.</p>
+
+
+      </article>
+    </div>
+
+    <script src="../scripts/jquery.js"></script>
+    <script type="text/javascript">
+      var name = document.getElementById('name');
+      $('#name').css({
+          color: '#3E6FA6'
+          });
+
+      $('html').on('mousemove', function(d) {
+          var x = parseInt((d.clientX/$(window).width())*255.0);
+          var y = parseInt((d.clientY/$(window).height())*255.0);
+          var colorString = 'rgb('+x+','+y+', 127'+')';
+          $('#name').css({
+              color: colorString+''
+          });
+      });
+    </script>
+  </body>
+
+</html>
