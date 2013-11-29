@@ -1,0 +1,83 @@
+$white: #fafafa;
+$gray: #9D9B94 - 80;
+$blue: #3E6FA6;
+$black: #3C403E;
+$lightGray: $gray + 15;
+body {
+  font-family: "Avenir Next", "Avenir",  "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.3px;
+  background-color: $white;
+  color: $black;
+}
+
+#name {
+//  -webkit-animation-duration: 0.9s;
+  font-size: 3.5em;
+  font-weight: 400;
+}
+
+
+.subtitle {
+  font-weight: 100;
+  color: $gray;
+}
+
+h3 {
+  border-top: 1px solid $lightGray + 110;
+}
+
+h3 span {
+  position: relative;
+  background: $white;
+}
+
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style-type: none;
+  color: $gray;
+  font-weight: 100;
+
+  li {
+    display: inline-block;
+  }
+  a {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 1px solid $white;
+    border-color: none;
+  }
+  a:hover {
+    color: $blue;
+    border-color: $blue;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -transition: all 0.2s ease-in-out;
+  }
+}
+
+article {
+  color: $black;
+
+  p {
+    font-weight: 400;
+
+  }
+  a {
+    color: $blue;
+    border-bottom: 1px solid $blue;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -transition: all 0.2s ease-in-out;
+  }
+
+  a:hover {
+    background-color: $blue;
+    color: $white;
+  }
+}

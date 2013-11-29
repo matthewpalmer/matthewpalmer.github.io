@@ -1,0 +1,60 @@
+@import "base.scss";
+
+.container {
+  width: 50%;
+  margin-left: 25%;
+}
+
+.feature {
+  margin-top: 34%;
+  text-align: center;
+}
+
+
+.subtitle {
+   margin-top: -5%;
+}
+
+
+h3 {
+  margin: 20px 0 0 0;
+  width: 44%;
+  margin-left: 28%;
+}
+
+h3 span {
+  top: -14px;
+  padding: 0 10px;
+
+}
+
+
+ul {
+  margin-top: 40%;
+  margin-left: 26%;
+
+
+  li {
+    width: 20%;
+  }
+}
+
+/**
+======================
+Content Pages
+**/
+#contentHeader {
+  margin-top: 1%;
+  top: 1%;
+}
+
+article {
+  width: 64%;
+  line-height: 1.5;
+  margin-left: 18%;
+
+  p {
+    margin-bottom: 9%;
+    font-weight: 400;
+  }
+}
