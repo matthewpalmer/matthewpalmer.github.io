@@ -1,3 +1,68 @@
+$maxWidth: 580px;
+$serifFont: 'Merriweather', serif;
+$sansFont: 'Open Sans', sans-serif;
+
+
+$black: #282828;
+$white: white;
+$gray: gainsboro;
+$blue: #77C4D3;
+$darkBlue: $blue - 50;
+
+
 body {
-  color: red;
+  font-family: $serifFont;
+  font-size: 16px;
+  line-height: 1.6;
+
+  background: $white;
+}
+
+a {
+  text-decoration: none;
+}
+
+.mainCol {
+  max-width: $maxWidth;
+  margin: 0 auto;
+
+  & h1 {
+    font-weight: 100;
+    // text-transform: uppercase;
+  }
+
+  & article {
+    margin-top: 4%;
+    margin-bottom: 24%;
+
+  }
+
+  & a {
+    color: $blue;
+
+    &:hover {
+      color:$darkBlue;
+      border-bottom: 1px solid $darkBlue;
+    }
+  }
+
+
+  & > ol {
+    list-style-type: none;
+  }
+
+  & p {
+    margin-top: 3%;
+    margin-bottom: 7%;
+    text-align: justify;
+
+    & a {
+      border-bottom: 1px solid $blue;
+    }
+  }
+
+  & time {
+    color: $gray;
+  }
+
 }

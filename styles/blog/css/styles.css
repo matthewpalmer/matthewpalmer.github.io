@@ -1,0 +1,32 @@
+body {
+  font-family: "Merriweather", serif;
+  font-size: 16px;
+  line-height: 1.6;
+  background: white; }
+
+a {
+  text-decoration: none; }
+
+.mainCol {
+  max-width: 580px;
+  margin: 0 auto; }
+  .mainCol h1 {
+    font-weight: 100; }
+  .mainCol article {
+    margin-top: 4%;
+    margin-bottom: 24%; }
+  .mainCol a {
+    color: #77c4d3; }
+    .mainCol a:hover {
+      color: #4592a1;
+      border-bottom: 1px solid #4592a1; }
+  .mainCol > ol {
+    list-style-type: none; }
+  .mainCol p {
+    margin-top: 3%;
+    margin-bottom: 7%;
+    text-align: justify; }
+    .mainCol p a {
+      border-bottom: 1px solid #77c4d3; }
+  .mainCol time {
+    color: gainsboro; }
