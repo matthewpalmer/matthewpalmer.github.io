@@ -1,0 +1,16 @@
+---
+layout: blogindex
+title: Blog
+---
+
+<!-- Show last 5 posts here -->
+{% for post in site.posts limit: 15 %}
+  <li>
+    <article>
+      <h2><a class="postsLinks" href="{{ post.url }}" title="{{ post.title }}">
+        {{ post.title }}
+      </a></h2>
+        {{ post.content }}
+    </article>
+  </li>
+{% endfor %}
