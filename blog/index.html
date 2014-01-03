@@ -9,40 +9,15 @@ title: Blog
     <article>
 {% if post.link %}
           <h1><a href="{{ post.link }}" class="linkedItem">{{ post.title }}</a></h1>
-          <span class="linkIndicator"><a href="{{ post.url }}">λ</a> – <time datetime="{{ post.date }}">
+          <time class="linkIndicator" datetime="{{ post.date }}"><a href="{{ post.url }}">λ –
              {{ post.date | date: '%B %e, %Y' }}
 
-            <!-- Whitespace added for code readability -->
-            <!-- {% assign d = post.date | date: "%d" | plus:'0' %}
-            {% assign m = post.date | date: "%B" %}
-
-            {% case m %}
-              {% when 'April' or 'May' or 'June' or 'July' %}{{ m }}
-              {% when 'September' %}Sept
-              {% else %}{{ post.date | date: "%b" }}
-              {% endcase %}
-
-              {{ d }},
-            {{ post.date | date: "%Y" }} -->
-
-          </time></span>
+          </a></time>
         {% else %}
           <h1><a href="{{ post.url }}" class="longItem">{{ post.title }}</a></h1>
-          <time datetime="{{ post.date }}">
+          <time datetime="{{ post.date }}"><a href="{{ post.url }}">
              {{ post.date | date: '%B %e, %Y' }}
-
-            <!-- Whitespace added for code readability -->
-            <!-- {% assign d = post.date | date: "%d" | plus:'0' %}
-            {% assign m = post.date | date: "%B" %}
-
-            {% case m %}
-              {% when 'April' or 'May' or 'June' or 'July' %}{{ m }}
-              {% when 'September' %}Sept
-              {% else %}{{ post.date | date: "%b" }}
-              {% endcase %}
-
-              {{ d }},
-            {{ post.date | date: "%Y" }} -->
+            </a>
           </time>
         {% endif %}
 

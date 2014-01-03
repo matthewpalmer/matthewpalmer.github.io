@@ -10,6 +10,19 @@ $gray: gainsboro - 30;
 $blue: #77C4D3;
 $darkBlue: $blue - 50;
 
+@mixin fixBreak() {
+  // Fix word breaks
+   -ms-word-break: break-all;
+       word-break: break-all;
+
+       // Non standard for webkit
+       word-break: break-word;
+/*
+  -webkit-hyphens: auto;
+     -moz-hyphens: auto;
+          hyphens: auto;*/
+}
+
 
 body {
   font-family: $serifFont;
@@ -31,6 +44,8 @@ header {
   color: $blue;
   font-size: 10px;
 
+  padding-left: 2%;
+
   & a {
     color: $blue;
   }
@@ -40,9 +55,17 @@ header {
 .mainCol {
   max-width: $maxWidth;
   margin: 0 auto;
+  padding: 0 0 0 0;
+  margin-bottom: 10%;
+  font-size: 0.95em;
+  // @include fixBreak();
+
 
   & h1 {
     font-weight: 400;
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 5%;
     // text-transform: uppercase;
   }
 
@@ -50,7 +73,7 @@ header {
     border-left: 5px solid $blue;
     padding-left: 3%;
     color: $lightBlack;
-    font-size: 0.9em;
+
   }
 
   & article {
@@ -59,20 +82,31 @@ header {
 
   }
 
-  & .linkIndicator, & time {
-    margin-top: -3%;
-    margin-bottom: 3%;
-    display: inline-block;
-    color: $gray;
-    font-size: 13px;
-  }
-
   & a {
     color: $blue;
 
-    &:hover {
-      color:$darkBlue;
-      border-bottom: 1px solid $darkBlue;
+  }
+
+  & a:hover {
+      color: $blue - 50;
+      border-bottom: 1px solid $blue - 50;
+    }
+
+  & .longItem {
+    color: $black;
+  }
+
+  & time {
+    margin-top: -3%;
+    margin-bottom: 1%;
+    display: block;
+    color: $gray;
+
+    text-align: center;
+
+    & a {
+      color: $gray;
+
     }
 
   }
@@ -80,11 +114,13 @@ header {
 
   & > ol {
     list-style-type: none;
+    padding-left: 2%;
+    padding-right: 2%;
   }
 
   & p {
-    margin-top: 3%;
-    margin-bottom: 7%;
+    margin-top: 5%;
+    margin-bottom: 5%;
     text-align: justify;
 
     & a {
@@ -94,6 +130,22 @@ header {
 
   & time {
     color: $gray;
+  }
+
+  & img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  & code {
+    @include fixBreak();
+  }
+
+  & .onPostTitle {
+    margin-bottom: 5%;
+    display: block;
+    text-align: center;
   }
 
 }
