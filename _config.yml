@@ -26,5 +26,4 @@ url: http://www.matthewpalmer.net
 auto: true
 pygments: true
 permalink: /blog/:title
-paginate: 10
-markdown: rdiscount
+markdown: redcarpet

@@ -4,12 +4,12 @@ title: Blog
 ---
 
 <!-- Show last 5 posts here -->
-{% for post in site.posts limit: 15 %}
+{% for post in site.posts limit: 10 %}
   <li>
     <article>
 {% if post.link %}
           <h1><a href="{{ post.link }}" class="linkedItem">{{ post.title }}</a></h1>
-          <span class="linkIndicator"><a href="{{ site.baseurl }}{{ post.url }}">λ</a> – </span><time datetime="{{ post.date }}">
+          <span class="linkIndicator"><a href="{{ post.url }}">λ</a> – <time datetime="{{ post.date }}">
              {{ post.date | date: '%B %e, %Y' }}
 
             <!-- Whitespace added for code readability -->
@@ -25,9 +25,9 @@ title: Blog
               {{ d }},
             {{ post.date | date: "%Y" }} -->
 
-          </time>
+          </time></span>
         {% else %}
-          <h1><a href="{{ site.baseurl}}{{ post.url }}" class="longItem">{{ post.title }}</a></h1>
+          <h1><a href="{{ post.url }}" class="longItem">{{ post.title }}</a></h1>
           <time datetime="{{ post.date }}">
              {{ post.date | date: '%B %e, %Y' }}
 
@@ -50,3 +50,4 @@ title: Blog
     </article>
   </li>
 {% endfor %}
+<small><a href="/archive.html">Visit the archive for more posts.</a></small>

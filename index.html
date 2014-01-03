@@ -6,7 +6,7 @@ title: Home
 <!-- Show last 5 posts here -->
 {% for post in paginator.posts limit: 5 %}
 
-	<a class="postsLinks" href="http://palmer.im{{ post.url }}" title="{{ post.title }}"><li>
+	<a class="postsLinks" href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}"><li>
 
 
           {{ post.title }}

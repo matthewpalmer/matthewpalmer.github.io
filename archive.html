@@ -1,19 +1,35 @@
 ---
-title: Archive
+title: Archive — Matthew Palmer
 ---
-<div id="post">
-	<h2>Archive</h2>
+<html>
+    <head>
+        <title>Archive - Matthew Palmer</title>
+        <link rel='stylesheet' href='./styles/blog/css/styles.css' />
 
-    <div class="entry">
-        <table border=0>
-            {% for post in site.posts %}
-            <tr>
-                <td>&bull; &nbsp;<span class="date">{{ post.date | date_to_string }}</span></td>  
-                <td><a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a></td>
-                <td><span class="category"><small>{{post.categories | category_links}}</small></span></td>
-            </tr>
-    	{% endfor %}
-        </table>
+    </head>
+    <body>
+    <div id="archive">
+    	<h2>Archive</h2>
+
+        <div class="entry">
+            <table border=0>
+                <thead>
+                  <tr>
+                    <th>Date</th>
+                    <th>Title</th>
+                    <th>Tags</th>
+                  </tr>
+                </thead>
+                {% for post in site.posts %}
+                <tr>
+                    <td class="date"><span >{{ post.date | date_to_string }}</span></td>
+                    <td class="title"><a href="{{ post.url }}">{{ post.title }}</a></td>
+                    <td class="categories"><span class="category"><small>{{post.categories | category_links}}</small></span></td>
+                </tr>
+        	{% endfor %}
+            </table>
+        </div>
+
     </div>
-
-</div>
+    </body>
+</html>

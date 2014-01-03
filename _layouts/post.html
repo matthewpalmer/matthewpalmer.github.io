@@ -1,27 +1,24 @@
 ---
-layout: postdefault
+layout: post
 ---
+<html>
+  <head>
+    <title>{{ page.title }}</title>
+    <!-- $META -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
 
-<div class="post">
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,400italic,700' rel='stylesheet' type='text/css'>
 
-    <h2 id="postTitle">{{ page.title }}</h2>
-    <div class="entry">{{ content }}</div>
+    <link rel='stylesheet' href='/styles/blog/css/styles.css' />
+  </head>
+  <body>
+    <header><a href="/blog/"><h1>Blog</h1></a></header>
+    <div class='mainCol'>
+        <h1>{{ page.title }}</h1>
+        {{ content }}
 
-    
-<div class="category">
-	<br/><br/><br/>
-	<strong>Related Posts:</strong>
-
-	<ul>
-            {% for post in site.categories[page.category] %}
-            {% if page.title == post.title %}
-                
-                {% else %}
-                <br/>
-                &nbsp;&nbsp;<a class="relatedLinks" href="http://palmer.im{{ post.url }}">{{ post.title }}</a><br/>
-                {% endif %}
-            
-            {% endfor %}
-        </ul>
-</div>
-</div>
+    </div>
+  </body>
+</html>
