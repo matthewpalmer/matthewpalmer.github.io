@@ -77,6 +77,9 @@ header {
     margin-bottom: 5%;
     display: block;
     text-align: center; }
+  .mainCol img {
+    margin-left: -25%;
+    max-width: 150%; }
 
 #archive {
   width: 90%;
