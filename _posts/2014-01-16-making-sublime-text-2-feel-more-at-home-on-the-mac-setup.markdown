@@ -34,7 +34,9 @@ And best of all, I was able to consolidate my markdown editing into something mo
 
 ![Customised Markdown setup for Sublime Text 2](https://i.cloudup.com/FyCmA2DVF3-2000x2000.png)
 
-My Markdown set up uses the [Markdown Extended](1) plugin, with tabs, status bar and sidebar hidden.
+My Markdown set up uses the [MarkdownEditing](1) plugin, with tabs, status bar and sidebar hidden.
+
+[1]: https://sublime.wbond.net/packages/MarkdownEditing
 
 Thanks to Sublime's visual customisablity, my next editor identity crisis should be a long way off.
 
