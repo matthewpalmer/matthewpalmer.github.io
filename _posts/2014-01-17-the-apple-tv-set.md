@@ -16,7 +16,7 @@ Jobs' emphasis on the multitouch technology, in the keynote for the introduction
 
 Apple has a long and bloody history of dismembering devices' ageing connectors, especially when these inputs are approaching supersession. Components like floppy disks, CDs, spinning hard drives, PS/2 ports, VGA and DVI connectors are becoming a rarity in the Mac lineup, available only in the high-end or vintage market. Apple has led the industry towards the razor of minimalism, cutting out cruft and obsolescence.
 
-With Apple's history, a reduced amount of inputs available to an Apple TV set becomes obvious. This transforms a TV from a cabled mess to something more similar to an iOS devices' cordless magic, satisfying the requirement for minimalism.
+With Apple's history, a reduced amount of inputs available to an Apple TV set becomes obvious. This transforms a TV from a cabled mess to something more similar to an iOS device's cordless magic, satisfying the requirement for minimalism.
 
 I envisage very few inputs on the Apple TV set, only the standard Power connector (with power brick built inside the device) and HDMI.
 
