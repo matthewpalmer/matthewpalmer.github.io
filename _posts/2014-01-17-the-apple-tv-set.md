@@ -1,11 +1,11 @@
 
 ---
 layout: post
-title: "The Apple TV Set"
+title: The Apple TV Set
 category: hardware
 ---
 
-Steve Jobs' [own voice][1] has been only one current in the maelstrom of rumours eddying around the Apple TV set.
+Steve Jobs' [own voice][1] has been just one current in the maelstrom of rumours eddying around the Apple TV set.
 
 > "I’d like to create an integrated television set that is completely easy to use... It would be seamlessly synced with all of your devices and with iCloud."
 
