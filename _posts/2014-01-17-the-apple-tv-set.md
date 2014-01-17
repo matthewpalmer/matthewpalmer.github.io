@@ -1,7 +1,7 @@
 
 ---
 layout: post
-title: "The Apple TV Set”
+title: "The Apple TV Set"
 category: hardware
 ---
 
