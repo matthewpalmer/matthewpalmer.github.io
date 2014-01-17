@@ -16,9 +16,9 @@ Jobs' emphasis on the multitouch technology, in the keynote for the introduction
 
 Apple has a long and bloody history of dismembering devices' ageing connectors, especially when these inputs are approaching supersession. Components like floppy disks, CDs, spinning hard drives, PS/2 ports, VGA and DVI connectors are becoming a rarity in the Mac lineup, available only in the high-end or vintage market. Apple has led the industry towards the razor of minimalism, cutting out cruft and obsolescence.
 
-With Apple's history, a reduced amount of inputs available to an Apple TV set becomes obvious. This transforms a TV from a cabled mess to something more similar to an iOS device's cordless magic, satisfying the requirement for minimalism.
+With Apple's history, a reduced amount of inputs available to an Apple TV set becomes obvious. This transforms a TV from a cabled mess to something more similar to an iOS device's cordless magic, satisfying the requirement for minimalism. 
 
-I envisage very few inputs on the Apple TV set, only the standard Power connector (with power brick built inside the device) and HDMI.
+To predict the future with the past, we can look at the iPad's rejection of a standard USB port—a move denigrated by many in the tech press—as a huge marker of the iPad's overall simplicity. I envisage very few inputs on the Apple TV set, only the standard Power connector (with power brick built inside the device) and maybe HDMI. This will be essential to the TV's simplicity and popularity, but, like the iPad, will be met with disfavour.
 
 And most people won't even need the HDMI connector: the Apple TV set will consist of just a screen and a power cord. Wifi, Apple TV OS, IR receiver and storage will be perfectly integrated, providing access to all of the current services and more. That leaves the Apple TV set with a stunningly minimalistic *one* cord hanging out of the TV.
 
