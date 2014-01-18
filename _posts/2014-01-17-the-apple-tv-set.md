@@ -12,7 +12,7 @@ Steve Jobs' [own voice][1] has been just one current in the maelstrom of rumours
 
 Just like the original iPhone, the success of the future Apple TV set is predicated on two things: smooth user interaction and minimalism. 
 
-Jobs' emphasis on the multitouch technology, in the keynote for the introduction of the iPhone, foreshadows the importance Apple will place on input for the TV. I can't imagine what they've crafted, but it will be revolutionary.
+Jobs' emphasis on the multitouch technology, in the keynote for the introduction of the iPhone, foreshadows the importance Apple will place on input for the TV. Just like the iPod click wheel, Apple's strengths are in input techniques; I can't imagine what they've crafted, but it will be revolutionary.
 
 Apple has a long and bloody history of dismembering devices' ageing connectors, especially when these inputs are approaching supersession. Components like floppy disks, CDs, spinning hard drives, PS/2 ports, VGA and DVI connectors are becoming a rarity in the Mac lineup, available only in the high-end or vintage market. Apple has led the industry towards the razor of minimalism, cutting out cruft and obsolescence.
 
