@@ -8,7 +8,7 @@ Publishing to a Jekyll blog—or any blog—from Sublime Text 2 involves setting
 
 [1]: http://addyosmani.com/blog/custom-sublime-text-build-systems-for-popular-tools-and-languages/
 
-1. Create a shell script of the git commands. I called mine `pushToMp.sh`, and saved it in `~/bin/`.
+1. Create a bash script of the git commands. I called mine `commitpost`, and saved it in `~/bin/` (you may need to symlink it to somewhere else—I forget how I got my `bin` set up).
 
 ```
 #!/bin/bash
