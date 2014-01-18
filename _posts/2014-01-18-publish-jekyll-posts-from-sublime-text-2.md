@@ -8,20 +8,24 @@ Publishing to a Jekyll blog—or any blog—from Sublime Text 2 involves setting
 
 [1]: http://addyosmani.com/blog/custom-sublime-text-build-systems-for-popular-tools-and-languages/
 
-1. Create a bash script of the git commands. I called mine `commitpost`, and saved it in `~/bin/` (you may need to symlink it to somewhere else—I forget how I got my `bin` set up).
+1. Create a bash script of the git commands. I called mine `publishJekyllPost`, and saved it in `~/bin/` (you may need to symlink it to somewhere else—I forget how I got my `bin` set up). I also had to change permissions for the script, using `sudo chmod 755 publishJekyllPost` from within the `~/bin/` directory. The `chmod` value for the file needs to be `755`—you can clarify this by running `stat -f "%OLp" <file>`.
 
 ```
 #!/bin/bash
-git add -A && git commit -m 'post' && git push -u origin master
+git add -A :/
+git commit -m "post"
+echo "Pushing"
+git push -u origin master
 ```
 
-2. Create a `.sublime-build` file in your `~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User` directory. I saved this file as `pushToMp.sublime-build`.
+On the second line, `add -A :/` ensures that all of the files in the git tree are added; you can adjust this as required.
+
+2. Create a `.sublime-build` file in your `~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User` directory. I saved this file as `Jekyll.sublime-build`.
 
 ```
 {
-  "cmd": ["pushToMp"],
-  "working_dir": "$project_path"
+  "cmd": ["publishJekyllPost"]
 }
 ```
 
-3. Select the build system for your Markdown documents by choosing it in the menu bar Tools -> Build System -> `pushToMp`. Run the Build with `CMD+B`
+3. Select the build system for your Markdown documents by choosing it in the menu bar Tools -> Build System -> `Jekyll`. Run the Build with `CMD + B`
