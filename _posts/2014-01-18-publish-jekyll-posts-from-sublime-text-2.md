@@ -28,4 +28,4 @@ Create a `.sublime-build` file in your `~/Library/Application\ Support/Sublime\ 
 }
 ```
 
-Select the build system for your Markdown documents by choosing it in the menu bar Tools -> Build System -> `Jekyll`. Run the Build with `CMD + B`, and you should see the output of a regular `git push` command in the Sublime console.
+Select the build system for your Markdown documents by choosing it in the menu bar: Tools -> Build System -> `Jekyll`. Run the Build with `CMD + B`, and you should see the output of a regular `git push` command in the Sublime console.
