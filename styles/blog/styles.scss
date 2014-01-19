@@ -52,6 +52,12 @@ header {
 
 }
 
+.blogIndexCol > ol {
+  list-style-type: none;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
 .mainCol {
   max-width: $maxWidth;
   margin: 0 auto;
@@ -109,13 +115,6 @@ header {
 
     }
 
-  }
-
-
-  & > ol {
-    list-style-type: none;
-    padding-left: 2%;
-    padding-right: 2%;
   }
 
   & p {
