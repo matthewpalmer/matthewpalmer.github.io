@@ -111,17 +111,14 @@ header {
 
   }
 
-
-  & p ol {
-    list-style-type: none;
-    padding-left: 2%;
-    padding-right: 2%;
-  }
-
   & p {
     margin-top: 5%;
     margin-bottom: 5%;
     text-align: justify;
+
+    & ol {
+      list-style-type: normal;
+    }
 
     & a {
       border-bottom: 1px solid $blue;
