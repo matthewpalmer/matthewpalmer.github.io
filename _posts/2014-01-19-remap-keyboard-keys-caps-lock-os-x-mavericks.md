@@ -33,7 +33,7 @@ Not exactly perfect, right? There's a very limited selection of keys you can rem
 13. The basic syntax for adding a new remapping is this:
 <script src="https://gist.github.com/4601667.js"></script>	
 
-14. Replace `KEYTOSTART` with some key from [this list](https://github.com/tekezo/KeyRemap4MacBook/blob/version_7.8.0/src/bridge/generator/keycode/data/KeyCode.data). Make sure you use the __uppercase__ name in the left column to replace `KEYTOSTART`. (`KeyCode::` must be left as it is.)
+14. Replace `STARTKEY` with some key from [this list](https://github.com/tekezo/KeyRemap4MacBook/blob/version_7.8.0/src/bridge/generator/keycode/data/KeyCode.data). Make sure you use the __uppercase__ name in the left column to replace `KEYTOSTART`. (`KeyCode::` must be left as it is.)
 15. As an example, here is what I used to remap `Caps Lock` (i.e. `PC_APPLICATION`) to `Command+R`:
 <script src="https://gist.github.com/4601678.js"></script>
 
