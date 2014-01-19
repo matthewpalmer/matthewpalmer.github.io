@@ -64,7 +64,9 @@ header {
   .mainCol img {
     display: block;
     margin-left: auto;
-    margin-right: auto; }
+    margin-right: auto;
+    max-width: 100%;
+    max-height: 500px; }
   .mainCol code {
     -ms-word-break: break-all;
     word-break: break-all;
@@ -77,9 +79,6 @@ header {
     margin-bottom: 5%;
     display: block;
     text-align: center; }
-  .mainCol img {
-    margin-left: -25%;
-    max-width: 150%; }
 
 #archive {
   width: 90%;
