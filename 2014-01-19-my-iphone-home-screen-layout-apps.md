@@ -1,4 +1,9 @@
-# My Somewhat Unconventional iPhone Home Screen
+---
+layout: post
+title: My Somewhat Unconventional iPhone Home Screen
+category: software
+---
+
 My iPhone set-up attempts to maintain two axes of symmetry: horizontal symmetry is achieved by restricting icons to three screens, with my centre screen as a primary default view, and its adjacent screens on either side identically laid out; I get vertical symmetry on the centre screen, but have to acquiesce to efficiency on the other screens, which have two rows on top and one in the tray. On the fourth screen go apps that I'm developing, which creates an imbalance, but can't be any other way. 
 
 ##  Tray
