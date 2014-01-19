@@ -6,7 +6,7 @@ category: mac
 excerpt: How to remap any of your keyboard keys to any combination of keys on Mac OS X Mavericks. Initially, I wanted to remap the `Caps Lock` key to `Command+R`.
 ---
 
-*This is an **updated** version of [my original guide](http://matthewpalmer.net/blog/2013/01/23/remap-keys-os-x-mountain-lion/) on how to remap keyboard keys on OS X.*
+*This is an __updated__ version of [my original guide](http://matthewpalmer.net/blog/2013/01/23/remap-keys-os-x-mountain-lion/) on how to remap keyboard keys on OS X.*
 
 Here's how to remap any of your keyboard keys to any combination of keys on Mac OS X. Initially, I wanted to remap the `Caps Lock` key to `Command+R` for two reasons:
 
