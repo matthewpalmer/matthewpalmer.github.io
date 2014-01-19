@@ -111,6 +111,13 @@ header {
 
   }
 
+
+  & ol {
+    list-style-type: none;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+
   & p {
     margin-top: 5%;
     margin-bottom: 5%;
