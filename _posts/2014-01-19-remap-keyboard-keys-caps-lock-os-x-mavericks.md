@@ -50,7 +50,6 @@ So, eventually, we worked out a way to remap any key we want to another key or c
 For anyone interested, here is my full `private.xml` file:
 <script src="https://gist.github.com/4601687.js"></script>
 
-
-
+I'd love to hear your favourite key remappings, feel free to [share them with me on Twitter](http://twitter.com/_matthewpalmer).
 
 
