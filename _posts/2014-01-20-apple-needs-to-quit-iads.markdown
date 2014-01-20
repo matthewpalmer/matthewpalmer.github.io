@@ -20,7 +20,7 @@ This
 
 *"Our targeting is built upon a foundation of registration and media consumption data that's exclusive to iAd."*
 
-should not be a sentence on Apple's website, but [it is][apple-tracking]. Apple shouldn't be tracking user data, and they definitely shouldn't be selling it. Google services imply this transaction because they are free; we pay, sometimes exorbitantly, for the security and privacy that Apple suggests, and we don't want to be targeted by cheap and ugly advertising. But Apple are letting us down. Ads are Google's game, quality is Apple's.
+should not be a sentence on Apple's website, but [it is][apple-tracking]. Apple shouldn't be tracking user data, and they definitely shouldn't be selling it. Google services imply this transaction because they are free; we pay, sometimes exorbitantly, for the security and privacy that Apple suggests, and we don't want to be targeted by cheap and ugly advertising. But Apple is letting us down. Ads are Google's game, quality is Apple's.
 
 [apple-tracking]: http://advertising.apple.com/experience/app-network/
 
