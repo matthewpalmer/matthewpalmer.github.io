@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The Best Post on Marco.org
+title: "The Best Post on Marco.org"
 category: web
 ---``
 
