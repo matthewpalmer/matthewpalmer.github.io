@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "The Best Post on Marco.org"
+title: The Best Post on Marco.org
 category: web
----``
+---
 
 [*The One-Person Product*][the-one-person-product], by Marco Arment, strikes me as the pinnacle of blogging. It's a personal, detailed and purposeful piece telling the story of Tumblr.
 
