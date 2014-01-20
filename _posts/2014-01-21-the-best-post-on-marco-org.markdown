@@ -13,7 +13,7 @@ It offers a unique perspective on fascinating issues that are clearly close to A
 Because the photography is so great, we really get to see the people behind the product—it becomes obvious that great things are made just *by people*. 
 
 ![Source: marco.org. Jacob Bijani, Jared Hecht, Meaghan O’Connell, Peter Vidani, and Josh Rachford.](http://www.marco.org/media/2013/05/oldtumblr-9.jpg)
-<small style="display:block;text-align:center;color:gray">The unkown people of Tumblr: Jacob Bijani, Jared Hecht, Meaghan O’Connell, Peter Vidani, and Josh Rachford.</small>
+<small style="display:block;text-align:center;color:gainsboro;font-size:10px;font-family:Helvetica;margin-top:2%;">The unkown people of Tumblr: Jacob Bijani, Jared Hecht, Meaghan O’Connell, Peter Vidani, and Josh Rachford.</small>
 
 Marco's prose explains the challenges and the triumphs they experienced. The post explores the life of a company, from two people to an acquisition by Yahoo; it's a tale of growing up, with values intact.
 
