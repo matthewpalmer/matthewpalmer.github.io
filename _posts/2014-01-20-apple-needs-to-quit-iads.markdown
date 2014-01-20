@@ -26,4 +26,4 @@ should not be a sentence on Apple's website, but [it is][apple-tracking]. Apple 
 
 Most of the benefits to Apple's iAd program are financial, and generally help developers, but the generated revenue can't be more important than the drastic deterioration in quality. Besides, Apple drastically needs the web stack expertise and resources elsewhere. 
 
-For a company won't even introduce trials for paid apps because it creates a bad experience, Apple has created a monster with iAd that has somehow stumbled into the modern iOS. The ad program is an ugly deviation from Apple's principles; it needs to be not just forgotten (as Apple is doing currently), but to be killed.
+For a company that won't even introduce trials for paid apps because it creates a bad experience, Apple has created a monster with iAd that has somehow stumbled into the modern iOS. The ad program is an ugly deviation from Apple's principles; it needs to be not just forgotten (as Apple is doing currently), but to be killed.
