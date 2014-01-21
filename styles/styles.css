@@ -146,11 +146,13 @@ table {
 =============================*/
 html {
   -webkit-font-smoothing: antialiased;
+  max-width: 100%
 }
 body {
   font-family: 'Open Sans', sans-serif;
   background-color: #77c4d3;
   color: rgba(0, 0, 0, 0);
+  max-width: 100%;
 }
 .gist .gist-file .gist-data .line-pre {
   font-family: Consolas, "Liberation Mono", Courier, monospace;
@@ -194,8 +196,8 @@ body {
 .bigbox > .named {
   position: relative;
   font-size: 3em;
-  top: -2%;
-  opacity: 0;
+  top: 40%;
+
 }
 .bigbox > .skilled {
   font-size: 1.5em;
@@ -397,12 +399,12 @@ em {
   padding-top: 6%;
   padding-left: 25%;
   padding-right: 25%;
-  width: 100%;
+  max-width: 100%;
   padding-bottom: 10%;
   z-index: 8;
 }
 .portfolioarea ul {
-  width: 50%;
+  width: 100%;
   max-width: 664px;
 }
 .portfolioarea > ul li {
@@ -826,52 +828,6 @@ box-shadow: 0px 28px 52px 2px rgba(0,0,0,0.4);
 /*ANIMATION*/
 .skilled {
   position: relative;
-  left: 0px;
-  animation: mymove 2.4s;
-  -moz-animation: mymove 2.4s;
-  /* Firefox */
-  -webkit-animation: mymove 2.4s;
-  /* Safari and Chrome */
-  -o-animation: mymove 2.4s;
-  /* Opera */
-}
-@keyframes mymove {
-  0% {
-    left: 30%;
-    opacity: 0;
-  }
-  100% {
-    left: 0;
-    opacity: 1;
-  }
-}
-@-moz-keyframes mymove /* Firefox */ {
-  0% {
-    left: 30%;
-    opacity: 0;
-  }
-  100% {
-    left: 0;
-    opacity: 1;
-  }
-}
-@-webkit-keyframes mymove /* Safari and Chrome */ {
-  0% {
-    left: 30%;
-    opacity: 0;
-  }
-  100% {
-    left: 0;
-    opacity: 1;
-  }
-}
-@-o-keyframes mymove /* Opera */ {
-  0% {
-    left: 30%;
-    opacity: 0;
-  }
-  100% {
-    left: 0;
-    opacity: 1;
-  }
+
+
 }
