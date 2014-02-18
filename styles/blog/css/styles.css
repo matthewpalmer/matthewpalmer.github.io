@@ -39,6 +39,8 @@ header {
   .mainCol article {
     margin-top: 4%;
     margin-bottom: 24%; }
+  .mainCol pre {
+    background-color: lightsteelblue; }
   .mainCol a {
     color: #77c4d3; }
   .mainCol a:hover {
