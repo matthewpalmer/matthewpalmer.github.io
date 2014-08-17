@@ -4,7 +4,9 @@ title: "How to Draw a Circle Using Core Animation in Swift"
 category: ios
 ---
 
-As part of my an upcoming project, I've been playing around with drawing circular borders. I've had to find the most efficient way to programmatically draw these circles, since they'll be appearing in really long table views. This code will draw a thin, non-animated circular border around a view.
+As part of an upcoming project, I've been playing around with drawing circular borders. I needed to find the most efficient way to programmatically draw these circles, since they'll be appearing in really long table views. If you have any suggestions, or this code doesn't work for you, [get in touch on Twitter](http://twitter.com/_matthewpalmer).
+
+The following code will draw a thin, non-animated circular border around a view. (See below for drawing animated circles.)
 
 ```
 override func drawRect(rect: CGRect)
