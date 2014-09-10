@@ -12,4 +12,4 @@ category: ios
 
 Here's a screenshot.
 
-![Screenshot of how to add a launch image for the iPhone 6 Plus to an existing project in xcode](http://imgur.com/DQAfJT7 "Screenshot: Add an iPhone 6 Plus launch image in Xcode")
+![Screenshot of how to add a launch image for the iPhone 6 Plus to an existing project in xcode](http://i.imgur.com/DQAfJT7.png "Screenshot: Add an iPhone 6 Plus launch image in Xcode")
