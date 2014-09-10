@@ -7,7 +7,8 @@ category: ios
 1. In Xcode, Click on your Assets file (Images.xcassets) in the left sidebar. It should open in the main pane.
 2. In the left sidebar of the main pane (where `AppIcon`, `LaunchImage`, etc. are), right click
 3. Select `New Launch Image`
-4. Add your new launch images ([@_DavidSmith has some default ones](https://twitter.com/_davidsmith/status/509500836293378048))
+4. Add your new launch images as normal ([@_DavidSmith has some default ones](https://twitter.com/_davidsmith/status/509500836293378048))
+5. Change the `Launch Images Source` from your Target's settings.
 
 Here's a screenshot.
 
