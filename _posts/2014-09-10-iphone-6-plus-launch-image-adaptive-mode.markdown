@@ -9,7 +9,7 @@ Use the following steps to enable the new high resolution displays for iPhone 6 
 1. In Xcode, Click on your Assets file (Images.xcassets) in the left sidebar. It should open in the main pane.
 2. In the left sidebar of the main pane (where `AppIcon`, `LaunchImage`, etc. are), right click
 3. Select `New Launch Image`
-4. Add your new launch images as normal. If you want something quick and easy to use, [Paul Haddad](http://twitter.com/tapbot_paul) recommends taking a screenshot in the iPhone 6 simulator and using that, or [@_DavidSmith has created some default ones](https://twitter.com/_davidsmith/status/509500836293378048).
+4. Add your new launch images as normal. If you want something quick and easy to use, [Paul Haddad](https://twitter.com/tapbot_paul/status/509539689775517696) recommends taking a screenshot in the iPhone 6 simulator and using that, or [@_DavidSmith has created some default ones](https://twitter.com/_davidsmith/status/509500836293378048).
 5. Change the `Launch Images Source` from your Target's settings.
 
 Here's a screenshot of the main pane where you create a new launch image file.
