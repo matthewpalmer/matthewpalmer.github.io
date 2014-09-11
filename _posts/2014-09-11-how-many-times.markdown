@@ -16,7 +16,7 @@ One: Apple has supposedly solved live streaming before. It streams events severa
 
 Two: last week's news consisted of a stir around the insecurity of Apple's online services (these issues don't worry me about Apple Pay, though they do for the rest of iCloud). After a horrible week, you generally try to improve next time around. Unfortunate timing of unrelated issues—absolutely. But these occurrences are indicative of years of trends.
 
-Three: Apple has never been good at services. iWork, iCloud, Maps, iMessage. At nothing in this list is Apple close to the best in the world. They've improved, sure. But slowly and sporadically. In their other divisions, Apple won't rest until they are number one. Nothing makes Apple want to be better than not being the best, unless you're talking about services.
+Three: Apple has never been good at services. iWork, iCloud, Maps, iMessage. At nothing in this list is Apple close to the best in the world. They've improved, sure. But slowly and sporadically. In their other divisions, Apple won't rest until it is number one. Nothing makes Apple want to be better than not being the best, unless you're talking about services.
 
 Four: everything that Apple announced yesterday absolutely depends on services. The trend: Apple keeps piling weight on a horse that can't carry itself. Never has this problem been more salient than in yesterday's keynote.
 
@@ -24,4 +24,4 @@ Instead of optimistic questions about next year's watch, I have some hesitation.
 
 How many reasons do you need to make sure that the live stream of the biggest product event of the year isn't completely broken?
 
-How many times does Apple have to get this wrong before they get this right?
+How many times does Apple have to get this wrong before it gets this right?
