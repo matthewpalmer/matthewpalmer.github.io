@@ -14,4 +14,8 @@ Obviously, there will be some issues because it's a hack. A crazy, glorious hack
 
 I haven't decided whether I'm actually going to do this or not. I'll be waiting to see what Brent goes with first.
 
+**Update**
+
+So it turns out Tumblr supports custom URLs. Not by a predefined schema, but it's better than nothing. This changes things, but I'll still wait to see what Brent does. He's got me curious.
+
 [brent]: http://inessential.com/2014/10/02/need_new_blog_engine
