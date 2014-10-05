@@ -40,7 +40,14 @@ header {
     margin-top: 4%;
     margin-bottom: 24%; }
   .mainCol pre {
-    background-color: lightsteelblue; }
+    border-top: 10px solid #77c4d3;
+    border-bottom: 10px solid #77c4d3;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: whitesmoke;
+    border-radius: 3px; }
   .mainCol a {
     color: #77c4d3; }
   .mainCol a:hover {
