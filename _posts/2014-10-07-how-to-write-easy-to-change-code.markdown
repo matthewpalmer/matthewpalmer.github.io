@@ -29,12 +29,7 @@ How to code clearly?
   + avoid lines of code that do too much
   + don't try to 'count square brackets'
   + **read and understand both lines and blocks quickly**
-  + patterns
-    * singleton
-    * observer
-    * prototype
-    * chain of responsibility
-    * command
+  + patterns: singleton, observer, prototype, chain of responsibility, command
   + idioms communicate at a high level—the name communicates a collection of concepts
 
 **Clarity.**
@@ -53,6 +48,7 @@ How to code clearly?
 - use dispatch_once for singleton object initialization
 
 Could solve with
+
 - lightweight initialization at startup
 - decompose singleton objects
 - alternative accessors: sharedInstance, activeInstance, sharedInstance:createIfNeeded
@@ -77,12 +73,14 @@ Could solve with
 
 ## Notifications
 **Bad**
+
 - notifications are like goto
 - make it hard to easily tell what the notification will do, what code will run as a consequence
 - non-deterministic: multiple callbacks might run in different orders
 - notifications complicate change—more difficult to understand what software will do
 
 **Good**
+
 - loose coupling
 - think of notifications in terms of will & did—tell listeners when you are about to change a variable, and tell them after you've changed the variable
 - you should know about the endpoints
