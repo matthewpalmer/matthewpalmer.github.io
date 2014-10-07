@@ -20,6 +20,7 @@ Thinking ahead of time makes changing it later much easier.
 **Clarity** is the goal. Clear code is easier to change. Local consistency is important, but this is only the basic level of style.
 
 How to code clearly?
+
 - use good names
   + descriptive
   + `BeepOnFailure` and `DoNotBeepOnFailure` is better than `YES` and `NO`
