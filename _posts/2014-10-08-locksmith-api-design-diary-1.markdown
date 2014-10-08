@@ -137,4 +137,4 @@ For the next iteration, I'm thinking of further breaking up the implementation o
 
 Follow me on [Twitter](http://twitter.com/_matthewpalmer) to stay up to date.
 
-[sync]: http://inessential.com
+[sync]: http://inessential.com/vespersyncdiary
