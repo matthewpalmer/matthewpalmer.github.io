@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "Writing Effective Email Marketing for your App"
+title: "Writing Effective Emails"
 category: ios
 ---
 
-In marketing your app, you're going to want to send effective, personalised emails to journalists, writers, and friends.
+On his great podcast [Hello Internet][hi]—you should listen to the whole episode—C.G.P. Grey started talking about how to send effective email. The main point: you have 3 seconds to convince Grey not to delete your email. His scenario[1]—fity-plus emails per day—will be similar to the other busy people you're emailing.
 
-On his great podcast [Hello Internet][hi], C.G.P. Grey started talking about how to send effective email. The main point: you have 3 seconds to convince Grey not to delete your email. His scenario[1]—fity-plus emails per day—will be similar to the people you're emailing in marketing your app.
+This discussion particularly resonated with me because I recently launched [an app called Combust](combust). Before I'd listened to this episode, I emailed five or six people about its release, and only got one response—not a great success rate. I'm going to apply Grey's tips to the next batch of emails I send, and I'll blog about how it goes. So I'm going to write about Grey's tips in terms of app marketing, but they can be applied to any email you send.
 
 Here are his tips on how to contact busy people and get a reply.
 
@@ -15,6 +15,8 @@ Here are his tips on how to contact busy people and get a reply.
 Always keep the needs of the person you're emailing in mind. They're probably busier than you. *That's why you're emailing them*. Make it interesting and beneficial for them.
 
 **Keep it Short**
+
+![A graph of sending effective email](http://i.imgur.com/5q60J25.jpg)
 
 A wall of text is going to obscure your key message *and* disinterest the person reading your email. Huge chunks of texts are to be avoided. Scrollbars are an instant death! Grey only responds to short emails; he doesn't even read long ones.
 
@@ -44,11 +46,7 @@ If you're emailing someone who might check email on their phone, the subject lin
 
 <br/>
 
-I recently launched [an app called Combust](combust). Before I'd listened to this episode, I emailed five or six people about its release, and only got one response—not a great success rate. I'm going to apply Grey's tips to the next batch of emails I send, and I'll blog about how it goes.
-
-<br/>
-
-<small>[1]: If you aren't already aware, C.G.P. Grey makes a series of outstanding, deeply researched YouTube videos. As he says on the podcast, he sends emails to other busy people for research or otherwise. So you'd imagine Grey would be one of the best at sending messages that elicit a response, a valuable skill.</small>
+<small>[1]: If you aren't already aware, C.G.P. Grey makes a series of outstanding, deeply researched YouTube videos. As he says on the podcast, he sends emails to other busy people for research or otherwise. So you'd imagine Grey would be one of the best at sending messages that elicit a response.</small>
 
 [hi]: http://www.hellointernet.fm/podcast/6
 [combust]: http://combustapp.com
