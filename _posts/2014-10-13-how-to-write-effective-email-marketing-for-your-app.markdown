@@ -6,7 +6,7 @@ category: ios
 
 On his great podcast, [Hello Internet][hi], C.G.P. Grey[1] started talking about how to send effective email. His technique—you have 3 seconds to convince Grey not to delete your email—will be similar to the other busy people you're emailing.
 
-This discussion particularly resonated with me because I recently launched [an app called Combust](combust). Before I'd listened to this episode, I emailed five or six people about its release, and only got one response—not a great success rate. I'm going to apply Grey's tips to the next batch of emails I send, and I'll blog about how it goes. I'm going to write about Grey's tips in terms of app marketing, but they can be applied to any email you send.
+This discussion particularly resonated with me because I recently launched [an app called Combust][combust]. Before I'd listened to this episode, I emailed five or six people about its release, and only got one response—not a great success rate. I'm going to apply Grey's tips to the next batch of emails I send, and I'll blog about how it goes. I'm going to write about Grey's tips in terms of app marketing, but they can be applied to any email you send.
 
 Here are his tips on how to contact busy people and get a reply.
 
