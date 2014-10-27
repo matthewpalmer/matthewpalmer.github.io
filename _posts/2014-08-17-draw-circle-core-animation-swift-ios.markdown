@@ -8,10 +8,12 @@ As part of an upcoming project, I've been playing around with drawing circular b
 
 The following code will draw a thin, non-animated circular border around a view. (See below for drawing animated circles.)
 
+**Update:** Thanks to [@seanh](http://twitter.com/seanh) for noting that `startAngle` needs to be `Float(2 * M_PI)`, rather than `360.0`.
+
 ```
 override func drawRect(rect: CGRect)
 {
-  var startAngle: Float = 360.0
+  var startAngle: Float = Float(2 * M_PI)
   var endAngle: Float = 0.0
 
   // Drawing code
