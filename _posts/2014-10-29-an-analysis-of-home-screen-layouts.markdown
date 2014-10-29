@@ -18,18 +18,18 @@ This approach becomes less practical on larger screen iPhones, where the top lef
 ## The N-Rows Method
 
 ![Source: hellointernet.fm](https://static.squarespace.com/static/52d66949e4b0a8cec3bcdd46/t/5438203fe4b0e147a5dced92/1412964427553/)
-<small style="display:block;text-align:center;color:gray;font-weight:100;font-size:10px;font-family:Helvetica;margin-top:2%;">C.G.P. Grey's minimal 2-Row homescreen.</small>
+<small style="display:block;text-align:center;color:gray;font-weight:100;font-size:10px;font-family:Helvetica;margin-top:2%;">C.G.P. Grey's minimal 2-Row home screen.</small>
 
 I categorise these as an unbalanced extension of the Single Row Method. The N-Rows Method features—you guessed it—a couple of rows. For lower values of N, the time to access an app is high, with efficiency increasing over time as muscle memory develops.
 
-For N between 2 and 4, we achieve peak balance between minimalism, priority, and fast lookup. Though as you add more rows, the speed to find the desired icon increases quickly. Management of secondary and tertiary homescreens becomes a big issue.
+For N between 2 and 4, we achieve peak balance between minimalism, priority, and fast lookup. Though as you add more rows, the speed to find the desired icon increases quickly. Management of secondary and tertiary home screens becomes a big issue.
 
 This is a slippery slope to...
 
 ## Everything Filling Every Slot
 
 ![Source: hellointernet.fm](https://static.squarespace.com/static/52d66949e4b0a8cec3bcdd46/t/54382061e4b0e147a5dcedfa/1412964451981/)
-<small style="display:block;text-align:center;color:gray;font-weight:100;font-size:10px;font-family:Helvetica;margin-top:2%;">Brady Haran's on-the-way-to-fully-filled homescreen. Beware.</small>
+<small style="display:block;text-align:center;color:gray;font-weight:100;font-size:10px;font-family:Helvetica;margin-top:2%;">Brady Haran's on-the-way-to-fully-filled home screen. Beware.</small>
 
 This is a hugely cluttered look, balanced against the speed gained from having fewer side-swipes and folder traverals. Fewer swipes comes at the cost of searching for an app within a page. What's more, you tend to lose track of an app's spatial location when things are so full. This is the caveman of the bunch: effective, but comes with a club draped over its shoulder.
 
@@ -48,11 +48,11 @@ It kills my symmetrical heart to say this: jagged, unfilled rows probably increa
 ## Conclusion
 So we need to strike a balance. My values are these: minimalism, simplicity, speed of lookup, knowing where I am within the page layout.
 
-This immediately rules out a few options. I can't fill my homescreens, because that would be gross. I don't want uneven rows, unless I can perfect it. I need to group similar apps together. I can't have just a single row of apps, and I want to avoid folders for things I use even semi-regularly.
+This immediately rules out a few options. I can't fill my home screens, because that would be gross. I don't want uneven rows, unless I can perfect it. I need to group similar apps together. I can't have just a single row of apps, and I want to avoid folders for things I use even semi-regularly.
 
 My solution: a three row, three icons in the tray layout. I almost went four-in-the-tray for the symmetry, but I couldn't find an app to make the cut. Three has a nice feel to it, don't you think?
 
 ![my solution](http://i.imgur.com/idcSo62.png)
-<small style="display:block;text-align:center;color:gray;font-weight:100;font-size:10px;font-family:Helvetica;margin-top:2%;">Perfect.</small>
+<small style="display:block;text-align:center;color:gray;font-weight:100;font-size:10px;font-family:Helvetica;margin-top:2%;">Almost perfect. Feels a little top-heavy though.</small>
 
 (Brief side note: this is why I can't use Android. I just spent several hundred words discussing the optimal placement of icons within a fixed grid. Do you have any idea how much time I would waste with infinite customisability?)
