@@ -4,17 +4,25 @@ title: "An Analysis of Home Screen Layouts"
 category: ios
 ---
 
-This is probably one of the crazier, most useless blog posts I'll write.
+This is probably the craziest, most useless blog posts I'll write.
+
+As you could imagine, home screens are an act of balancing simplicity and speed. I've analysed a couple of the most common techniques.
 
 ## The Single Row Method
-This is appealing because of its perfect symmetry on both axes. It features an extremely low constant time lookup for your top eight apps, then increasingly slower access to other apps—proportional to how many screenfuls you have. This approach becomes less practical on larger screen iPhones, where the top left corner touch is slowed by the necessary hand-shimmy. It's about as minimal as a home screen can get. Minimal, but slow. Side swipes and folder-traversals are costly.
+![single row method](http://i.imgur.com/1kSgLZ2.jpg)
+
+This is appealing because of its perfect symmetry on both axes. It features an extremely low constant time lookup for your top eight apps, then increasingly slower access to other apps—proportional to how many screenfuls you have.
+
+This approach becomes less practical on larger screen iPhones, where the top left corner touch is slowed by the necessary hand-shimmy. It's about as minimal as a home screen can get. Minimal, but slow. Side swipes and folder-traversals are costly.
 
 ## The N-Rows Method
 
 ![Source: hellointernet.fm](https://static.squarespace.com/static/52d66949e4b0a8cec3bcdd46/t/5438203fe4b0e147a5dced92/1412964427553/)
 <small style="display:block;text-align:center;color:gray;font-weight:100;font-size:10px;font-family:Helvetica;margin-top:2%;">C.G.P. Grey's minimal 2-Row homescreen.</small>
 
-I categorise these as an unbalanced extension of the Single Row Method. The N-Rows Method features—you guessed it—a couple of rows. For lower values of N, the time to access an app is high, with efficiency increasing over time as muscle memory develops. N between 2 and 4 is peak balance between minimalism, priority, and fast lookup. Though as you add more rows, the speed to find the desired icon increases quickly. Management of secondary and tertiary homescreens becomes a big issue.
+I categorise these as an unbalanced extension of the Single Row Method. The N-Rows Method features—you guessed it—a couple of rows. For lower values of N, the time to access an app is high, with efficiency increasing over time as muscle memory develops.
+
+For N between 2 and 4, we achieve peak balance between minimalism, priority, and fast lookup. Though as you add more rows, the speed to find the desired icon increases quickly. Management of secondary and tertiary homescreens becomes a big issue.
 
 This is a slippery slope to...
 
