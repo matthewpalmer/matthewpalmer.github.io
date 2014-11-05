@@ -4,7 +4,7 @@ title: "The True Android Fragmentation"
 category: ios
 ---
 
-Gruber’s been on a bit of a tear lately, pointing out the little inconsistencies in Android’s design values. I’ve been mulling on something for a while, and I think it just crystalised.
+Gruber’s been on a bit of a tear lately, pointing out the little inconsistencies in Android’s design values. I’ve been mulling on something for a while, and I think it just crystallised.
 
 Android’s fragmentation is not of version numbers or upgrade cycles, but of values.
 
