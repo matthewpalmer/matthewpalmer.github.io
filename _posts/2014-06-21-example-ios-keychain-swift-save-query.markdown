@@ -6,11 +6,7 @@ category: ios
 
 I wrote a couple of small utility functions for using the iOS Keychain with Swift. This has two very basic functions: to save a string to the Keychain, and to load that string back later. I'll update this post if I need to update this utility service to handle deletion, updating, and so on.
 
-*Thanks to [rshelby](http://rshelby.com/2014/08/using-swift-to-save-and-query-ios-keychain-in-xcode-beta-4/), I've updated this code to work on later versions of the beta*. Let me know on [Twitter](http://twitter.com/_matthewpalmer) if it doesn't work for you.
-
-**Xcode 6.1**: [@godzirra](http://twitter.com/godzirra) let me know on Twitter that doing `let kSecClassValue = kSecClass.takeRetainedValue() as NSString` no longer works on Seed 2. Instead, you need to do `let kSecClassValue = NSString(format: kSecClass)`. This applies to all of the arguments we provide to the keychain queries listed at the top of the snippet.
-
-Simply doing `let kSecClassValue = kSecClass as NSString` might also work for you.
+**Update**: the best place to find the most up to date code is in the [Locksmith repository](https://github.com/matthewpalmer/Locksmith).
 
 ## KeychainService
 
@@ -104,3 +100,9 @@ It can then be used like this:
 KeychainService.saveToken("token")
 KeychainService.loadToken()
 ```
+
+## Updates
+
+*Thanks to [rshelby](http://rshelby.com/2014/08/using-swift-to-save-and-query-ios-keychain-in-xcode-beta-4/), I've updated this code to work on later versions of the beta*. Let me know on [Twitter](http://twitter.com/_matthewpalmer) if it doesn't work for you.
+
+**Xcode 6.1**: [@godzirra](http://twitter.com/godzirra) let me know on Twitter that doing `let kSecClassValue = kSecClass.takeRetainedValue() as NSString` no longer works on Seed 2. Instead, you need to do `let kSecClassValue = NSString(format: kSecClass)`. This applies to all of the arguments we provide to the keychain queries listed at the top of the snippet.
