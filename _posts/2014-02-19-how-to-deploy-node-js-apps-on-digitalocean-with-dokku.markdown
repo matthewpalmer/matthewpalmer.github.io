@@ -4,7 +4,7 @@ category: web
 title: "How to Deploy Node.js Apps on DigitalOcean with Dokku"
 ---
 
-[DigitalOcean](https://www.digitalocean.com) is a great place to host your web apps, being cheaper than other, managed services like Nodejitsu or Heroku. It has a $5/month plan, and using the DigitalOcean promo code `OMGSSD10` gives you $10 credit (two months) for free to try it out. This might expire, so Google for promo codes if it has.
+[DigitalOcean](https://www.digitalocean.com/?refcode=b6e88bd5d84c) is a great place to host your web apps, being cheaper than other, managed services like Nodejitsu or Heroku. It has a $5/month plan, and using the DigitalOcean promo code `OMGSSD10` gives you $10 credit (two months) for free to try it out. This might expire, so Google for promo codes if it has.
 
 Nodejitsu and Heroku justify their higher pricetag by offering better support and ease of deployment—the former is hard to gauge, but the complexities of the latter, when using DigitalOcean, can be mitigated thanks to [Dokku](https://github.com/progrium/dokku).
 
