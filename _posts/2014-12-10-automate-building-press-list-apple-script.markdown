@@ -38,6 +38,19 @@ on searchAndReplace(myString, oldText, newText)
 end searchAndReplace
 ```
 
+Adding more fields, like an email address or a notes column, is super simple. All you need to do is add a couple of lines below `set personName to text returned of result`.
+
+```
+display dialog "Email" default answer ""
+set email to text returned of result
+```
+
+And then on the last line of the `tell application "Safari"` block, append `& email & ", "` at the end.
+
+```
+set the clipboard to personName & ", " & theTitle & ", " & theURL & ", " & email & ", "
+```
+
 Save the script. Where you should save it depends on what you like. I generally save my scripts to `/Users/matthewpalmer/Library/Scripts/` so that I can use something like [FastScripts][fs] for easy access to my scripts from the menu bar.
 
 Now we can use our script.
@@ -64,7 +77,7 @@ Then just type in the right Twitter username in the last column, and we're done.
 Matthew Palmer, Matthew Palmer — Web and iOS developer and designer., http://matthewpalmer.net/, _matthewpalmer
 ```
 
-And if switching to your text editor with the keyboard is too much, you can the following code on the line above the first `end tell` statement.
+And if switching to your text editor with the keyboard is too much, you can add the following code on the line above the first `end tell` statement.
 
 ```
 tell application "Sublime Text 2" to activate
