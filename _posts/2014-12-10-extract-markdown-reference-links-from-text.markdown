@@ -13,6 +13,8 @@ More writing...
 `[lts]: http://wwww.link.com`
 ```
 
+(The backticks are there so that the Markdown parser doesn't think I'm trying to link to something.)
+
 I love using links in this style, but I often forget what I've referenced after I've linked it. I've written a short command line to grab out the link identifiers from a Markdown post.
 
 With the contents of your writing on the clipboard, run the following in Terminal.
