@@ -24,9 +24,9 @@ pbpaste | egrep -o '\]\[[a-zA-Z0-9\-]+\]' | sed -E 's/]//' | pbcopy
 Now all of the references to links will be on the clipboard, ready for you to hit Command+V to paste at the end of your blog post.
 
 ```
-\`[editor]: ...`
-\`[fs]: ...`
-\`[mp]: ...`
+\[editor]: ...
+\[fs]: ...
+\[mp]: ...
 ```
 
 If you have any questions, [let me know on Twitter](http://twitter.com/_matthewpalmer).
