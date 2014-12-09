@@ -10,7 +10,7 @@ Like a lot of people, I write in Markdown. Markdown has support for reference li
 This is a [link to something][lts] that I am sharing.
 More writing...
 
-\`[lts]: http://wwww.link.com`
+`[lts]: http://wwww.link.com`
 ```
 
 I love using links in this style, but I often forget what I've referenced after I've linked it. I've written a short command line to grab out the link identifiers from a Markdown post.
@@ -24,9 +24,9 @@ pbpaste | egrep -o '\]\[[a-zA-Z0-9\-]+\]' | sed -E 's/]//' | pbcopy
 Now all of the references to links will be on the clipboard, ready for you to hit Command+V to paste at the end of your blog post.
 
 ```
-\`[editor]: ...`
-\`[fs]: ...`
-\`[mp]: ...`
+`[editor]: ...`
+`[fs]: ...`
+`[mp]: ...`
 ```
 
 If you have any questions, [let me know on Twitter](http://twitter.com/_matthewpalmer).
