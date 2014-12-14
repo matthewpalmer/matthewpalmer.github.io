@@ -8,6 +8,7 @@ I've started doing something a bit weird. I've been calling it ['tablogging'](ht
 blogging whatever your open tabs are at the moment.
 
 For [my tablog](http://matthewpalmer.net/tablog/), I'm using the following:
+
 - Jekyll on Github Pages (with RSS)
 - Safari extension
 - Chrome extension
