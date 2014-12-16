@@ -95,7 +95,7 @@ listOfViews.map({
 
 [Check out the Github project][github], or [let me know on Twitter][twitter] if you have any questions.
 
-[weekling]: http://colourcoding.org/apps#weekling
+[weekling]: https://itunes.apple.com/us/app/weekling-weekly-budget/id949338154?mt=8
 [weeklingImage]: http://i.imgur.com/y0hC6Es.png
 [result]: http://i.imgur.com/Y5saVWH.png
 [demo]: http://i.imgur.com/xT1uIsk.png
