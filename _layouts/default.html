@@ -3,222 +3,153 @@ layout: default
 title: Home
 ---
 
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-"http://www.w3.org/TR/html4/loose.dtd">
+<!doctype HTML>
 
 <html>
 	<head>
-        <!-- $META -->
+      <!-- Meta -->
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
       <meta name="viewport" content="width=device-width">
-		<title>Matthew Palmer — Developer and designer.</title>
-    <meta name="p:domain_verify" content="96a0675d0592c513676fb27240150ead"/>
-        <link rel='stylesheet' media='screen and (max-width: 1137px)' href='./styles/smallstyles.css' />
+      <meta name="p:domain_verify" content="96a0675d0592c513676fb27240150ead"/>
 
-        <link rel='stylesheet' media='screen and (min-width: 1138px)' href='./styles/styles.css' />
-        <link rel="stylesheet" href="http://palmer.im/font-awesome.min.css">
+      <!-- Title -->
+      <title>Matthew Palmer — Developer and designer.</title>
 
+      <!-- Styles -->
+      <link rel='stylesheet' media='screen and (max-width: 960px)' href='./styles/smallstyles.css' />
+      <link rel='stylesheet' media='screen and (min-width: 961px)' href='./styles/styles.css' />
+      <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,400italic' rel='stylesheet' type='text/css'>
+      <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="http://matthewpalmer.net/feed.xml" />
 
-        <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,400italic' rel='stylesheet' type='text/css'>
+      <!-- Fonts -->
+      <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
 
-        <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="http://matthewpalmer.net/feed.xml" />
+      <!-- Javascript plugins -->
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+      <script src="../js/jquery.jribbble-1.0.0.ugly.js"></script>
 
+      <!-- Analytics.js -->
+      <script type="text/javascript">
+        var analytics=analytics||[];analytics.load=function(e){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src=("https:"===document.location.protocol?"https://":"http://")+"d2dq2ahtl5zl1z.cloudfront.net/analytics.js/v1/"+e+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n);var r=function(e){return function(){analytics.push([e].concat(Array.prototype.slice.call(arguments,0)))}},i=["identify","track","trackLink","trackForm","trackClick","trackSubmit","pageview","ab","alias","ready"];for(var s=0;s<i.length;s++)analytics[i[s]]=r(i[s])};
+        analytics.load("n0ri1eg7hp");
+      </script>
 
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
-        <script src="http://palmer.im/js/myjquery.zrssfeed.min.js" type="text/javascript"></script>
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
-        <script src="../js/jquery.jribbble-1.0.0.ugly.js"></script>
-
-
-
-<script type="text/javascript">
-  var analytics=analytics||[];analytics.load=function(e){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src=("https:"===document.location.protocol?"https://":"http://")+"d2dq2ahtl5zl1z.cloudfront.net/analytics.js/v1/"+e+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n);var r=function(e){return function(){analytics.push([e].concat(Array.prototype.slice.call(arguments,0)))}},i=["identify","track","trackLink","trackForm","trackClick","trackSubmit","pageview","ab","alias","ready"];for(var s=0;s<i.length;s++)analytics[i[s]]=r(i[s])};
-  analytics.load("n0ri1eg7hp");
-</script>
-
-<script type="text/javascript">
-
-     analytics.track('Home page viewed', {
-      date: new Date()
-
-
-    });
-</script>
-<script>
-  $(document).ready(function() {
-
-  });
-</script>
-
-
+      <script type="text/javascript">
+           analytics.track('Home page viewed', {
+            date: new Date()
+          });
+      </script>
   </head>
 
 	<body>
 		<div class = "bigbox">
-<h1 class = "named">Hi, I'm Matthew Palmer.</h1>
-<h2 class="skilled"> I'm a designer and developer from Australia.</h2>
+      <h1 class = "named">Hi, I'm Matthew Palmer.</h1>
+      <h2 class="skilled"> I'm a designer and developer from Australia.</h2>
+    </div>
 
-</div>
-<!--<div class = "headercontainer">
-  <div class = "header">
-
-  <h1 id="one">Matthew Palmer</h1>
-  <h1 id="two">Designer</h1>
-  <h1 id="three">Developer</h1>
-  <h1 id="blog"><a href=""></a><h1>
-
-  </div>
-</div>-->
-<div class = "container">
-
-
-  <div class = "postlist">
-
-
-
-
-
-    <ul class="items wrap">
-    <span class = "recentarticles postsnip">LATEST <em><a href="archive.html">POSTS</a> </em>&mdash;<em> <a href="../feed.xml">RSS</a></em></span>
-      <br/>
-      {{ content }}
-      <br/>
+    <div class = "container">
+      <!-- Blog posts -->
+      <div class = "postlist">
+        <ul class="items wrap">
+          <span class = "recentarticles postsnip">LATEST <em><a href="archive.html">POSTS</a> </em>&mdash;<em> <a href="../feed.xml">RSS</a></em></span>
+          <br/>
+          {{ content }}
+        <br/>
         <p><br/><br/></p>
-
-      <a class="postsLinks" id="viewBlog" href="tablog/" title="Matthew Palmer — Tablog"><li style="border: 1px dashed gainsboro;">
+        <a class="postsLinks" id="viewBlog" href="tablog/" title="Matthew Palmer — Tablog"><li style="border: 1px dashed gainsboro;">
          My tablog
-      </li></a>
-  </div>
-  <div class = "portfolioarea">
+        </li></a>
+      </div>
 
-    <ul class="items wrap">
-      <span class = "recentarticles portfoliosnip">LATEST <em><a>PROJECTS</em></a></span>
-      <a title = "Combust social network" class="postsLinks" href="https://combustapp.com"><li>Combust</li></a>
-      <a title = "Weekling weekly budgeting" class="postsLinks" href="https://colourcoding.org/apps/#weekling"><li>Weekling</li></a>
-      <a title = "Locksmith swift keychain library" class="postsLinks" href="https://github.com/matthewpalmer/Locksmith"><li>Locksmith</li></a>
-      <a title = "Secon Stop for iPhone and iPad" class="postsLinks" href="https://itunes.apple.com/us/app/second-stop/id669856150?mt=8"><li>Second Stop</li></a>
-    </ul>
-  </div>
-
-
-  <div class = "shotsarea">
-  <span class = "recentarticles dribbblesnip">LATEST <em><a href="http://dribbble.com/mp">SHOTS</em></a></span>
-  <!--<div class="non-semantic-protector"> -->
-
-    <ul class="feed">
-
-
-
+      <!-- Portfolio -->
+      <div class = "portfolioarea">
+        <ul class="items wrap">
+          <span class = "recentarticles portfoliosnip">LATEST <em><a>PROJECTS</em></a></span>
+          <a title = "Combust social network" class="postsLinks" href="https://combustapp.com"><li>Combust</li></a>
+          <a title = "Weekling weekly budgeting" class="postsLinks" href="https://colourcoding.org/apps/#weekling"><li>Weekling</li></a>
+          <a title = "Locksmith swift keychain library" class="postsLinks" href="https://github.com/matthewpalmer/Locksmith"><li>Locksmith</li></a>
+          <a title = "Secon Stop for iPhone and iPad" class="postsLinks" href="https://itunes.apple.com/us/app/second-stop/id669856150?mt=8"><li>Second Stop</li></a>
         </ul>
+      </div>
 
-  <!--ribbons-->
-  </div>
+      <!-- Dribbble shots -->
+      <div class = "shotsarea">
+      <span class = "recentarticles dribbblesnip">LATEST <em><a href="http://dribbble.com/mp">SHOTS</em></a></span>
+        <ul class="feed">
+        </ul>
+      </div>
+      <div id="shotsByPlayerId">
 
+      </div>
 
-  <div id="shotsByPlayerId">
+      <!-- Footer -->
+      <div class="foot">
+        <a href="http://twitter.com/_matthewpalmer">Twitter</a> &nbsp; <a href="http://dribbble.com/mp">Dribbble</a> &nbsp; <a href="http://github.com/matthewpalmer">Github</a> &nbsp; <a href="http://instagram.com/_matthewpalmer">Instagram</a><br/>
 
-  </div>
-  <div class="foot">
-    <a href="http://twitter.com/_matthewpalmer">Twitter</a> &nbsp; <a href="http://dribbble.com/mp">Dribbble</a> &nbsp; <a href="http://github.com/matthewpalmer">Github</a> &nbsp; <a href="http://instagram.com/_matthewpalmer">Instagram</a><br/>
+      </div>
+      <script>
+        // Load dribbble shots
+        $.jribbble.getShotsByPlayerId('mp', function (playerShots) {
+          var html = [];
+          $.each(playerShots.shots, function (i, shot) {
+            html.push('<li>');
+            html.push('<a href="' + shot.url + '">');
+            html.push('<img src="' + shot.image_teaser_url + '" ');
+            html.push('alt="' + shot.title + '"></a></li>');
+          });
 
-  </div>
-<script>
-  $.jribbble.getShotsByPlayerId('mp', function (playerShots) {
-    var html = [];
-    $.each(playerShots.shots, function (i, shot) {
-      html.push('<li>');
-      html.push('<a href="' + shot.url + '">');
-      html.push('<img src="' + shot.image_teaser_url + '" ');
-      html.push('alt="' + shot.title + '"></a></li>');
-    });
+          $('.shotsarea > ul.feed').html(html.join(''));
+        }, {page: 1, per_page: 9});
+      </script>
 
-    $('.shotsarea > ul.feed').html(html.join(''));
-  }, {page: 1, per_page: 9});
+    <!-- Displayed on Mobile sites -->
+    <div id="replacement">
 
+      <!-- Blog Posts -->
+      <div id="postsDropDown">
+        Blog Posts
+      </div>
 
-</script>
-<script>
-$(document).ready(function() {
+      <!-- Twitter -->
+      <a href="http://twitter.com/_matthewpalmer">
+        <div class="twitterMobile">
+          Twitter
+        </div>
+      </a>
 
-    $("#test").addClass("gramlink");
-    $('.gramlink').wrap('<a href="http://instagram.com/matthewpalmer95"></a>');
+      <!-- Dribbble -->
+      <a href="http://dribbble.com/mp">
+        <div class="dribbbleMobile">
+          Dribbble
+        </div>
+      </a>
 
-});
+      <!-- Instagram -->
+      <a href="http://instagram.com/_matthewpalmer">
+        <div class="instagramMobile">
+          Instagram
+        </div>
+      </a>
 
+      <!-- Github -->  
+      <a href="http://github.com/matthewpalmer">
+        <div class="githubMobile">
+          Github
+        </div>
+      </a>
+    </div>
 
-</script>
-
-    <script src="bootstrap-carousel.js"></script>
-    <script>
-      !function ($) {
-        $(function(){
-          // carousel demo
-          $('#myCarousel').carousel()
-        })
-      }(window.jQuery)
+    <script type="text/javascript">
+      $('#postsDropDown').click(function() {
+        $('.postlist').slideToggle({
+          'easing': 'swing'
+        });
+      });
     </script>
-    <script>
-    jQuery(document).ready(function($) {
-    $('#banner-fade').bjqs({
-        'height' : 320,
-        'width' : 620,
-        'responsive' : true
-    });
-});
-</script>
-<div id="replacement">
 
-<div id="postsDropDown">
-  Blog Posts
-</div>
-
-
-  <a href="http://palmer.im/portfolio">
-
-  <div class="portfolioMobile">
-    Portfolio
-  </div>
-  </a>
-
-  <a href="http://twitter.com/_matthewpalmer">
-  <div class="twitterMobile">
-    Twitter
-  </div>
-</a>
-  <a href="http://dribbble.com/mp">
-  <div class="dribbbleMobile">
-    Dribbble
-  </div>
-</a>
-  <a href="http://instagram.com/_matthewpalmer">
-  <div class="instagramMobile">
-    Instagram
-  </div>
-</a>
-  <a href="http://github.com/matthewpalmer">
-  <div class="githubMobile">
-    Github
-  </div>
-</a>
-
-</div>
-<script type="text/javascript">
-
-$('#postsDropDown').click(function() {
-  $('.postlist').toggle('slow');
-
-});
-
-</script>
-
-
-  <script type="text/javascript">
-   analytics.trackLink($(".postsLinks"), 'List link clicked');
-  </script>
-
-
-
-</body>
-
+    <script type="text/javascript">
+     analytics.trackLink($(".postsLinks"), 'List link clicked');
+    </script>
+  </body>
 </html>
