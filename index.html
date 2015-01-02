@@ -5,13 +5,9 @@ title: Home
 
 <!-- Show last 5 posts here -->
 {% for post in site.posts limit: 5 %}
-
-	<a class="postsLinks" href="{{ post.url }}" title="{{ post.title }}"><li>
-
-
+	<a class="postsLinks" href="{{ post.url }}" title="{{ post.title }}">
+    <li>
           {{ post.title }}
-
-      </li></a>
-
-
+    </li>
+  </a>
 {% endfor %}
