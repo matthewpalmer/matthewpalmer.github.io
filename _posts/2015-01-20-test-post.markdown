@@ -1,0 +1,13 @@
+---
+layout: note
+title: "A Quick Test Post"
+category: maths
+---
+
+This is a test post.
+
+`some` content
+
+```
+A ± B ≠ 6
+```

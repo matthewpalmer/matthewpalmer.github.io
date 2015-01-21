@@ -5,9 +5,10 @@ title: Blog
 
 <!-- Show last 5 posts here -->
 {% for post in site.posts limit: 10 %}
+  {% if post.layout contains 'post' %}
   <li>
     <article>
-{% if post.link %}
+      {% if post.link %}
           <h1><a href="{{ post.link }}" class="linkedItem">{{ post.title }}</a></h1>
           <time class="linkIndicator" datetime="{{ post.date }}"><a href="{{ post.url }}">λ –
              {{ post.date | date: '%B %e, %Y' }}
@@ -24,5 +25,6 @@ title: Blog
         {{ post.content }}
     </article>
   </li>
+  {% endif %}
 {% endfor %}
 <small><a href="/archive.html">Visit the archive for more posts.</a></small>
