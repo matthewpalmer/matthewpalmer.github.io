@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with Things for iPhone
+title: My Thoughts on Getting Started with Things for iPhone
 category: ios
 
 excerpt: "Things is a powerful GTD and Todo app for iPhone, but it can be a little daunting at first."
