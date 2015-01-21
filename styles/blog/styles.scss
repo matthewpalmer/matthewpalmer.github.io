@@ -1,8 +1,8 @@
-$maxWidth: 580px;
+$maxWidth: 480px;
 $headerFont: 'Avenir Next', 'Avenir', 'Helvetica', serif;
-$serifFont: 'Lato', sans-serif;
-$sansFont: 'Open Sans', sans-serif;
 
+$sansFont: 'Open Sans', sans-serif;
+$serifFont: $sansFont;
 
 $black: #21201D;
 $lightBlack: #4A4A4A;
@@ -134,7 +134,7 @@ header {
   & p {
     margin-top: 5%;
     margin-bottom: 5%;
-    text-align: justify;
+    // text-align: justify;
 
     & a {
       border-bottom: 1px solid $blue;
