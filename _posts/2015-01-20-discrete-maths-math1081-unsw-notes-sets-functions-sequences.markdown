@@ -164,3 +164,70 @@ For example,
     A × B = { (1, 2), (1, 3), (2, 2), (2, 3) }
 
 We can also think of these as _xy_ co-ordinate pairs, and they can be sketched on a number plane as such.
+
+## Functions
+> A function _f_ from a set X to a set Y is a subset of X × Y with the property that for each _x_ ∈ X, there is __exactly one__ ordered pair (_x_, _y_) ∈ _f_.
+
+Takeaways from that definition's mess: 
+
+1. a function is a set.
+2. each _x_ value can only be paired with _one_ _y_ value.
+
+The function
+
+_f_ : X → Y
+
+has X as the _domain_ and Y as the _codomain_ (the codomain is the set containing all of the _y_ values that _could_ occur).
+
+### Floor and ceiling
+For any _x_ ∈ ℝ,
+
+> __Floor__: the largest integer that is less than or equal to _x_. 
+> Written as ⌊_x_⌋.
+
+<br/>
+
+>  __Ceiling__: the smallest integer that is greater than or equal to _x_. 
+>  Written as ⌈_x_⌉.
+
+For example, ⌊π⌋ = 3, ⌈π⌉ = 4
+
+### Range
+> The range of a function _f_ : X → Y is the set of all _y_ ∈ Y such that there is an ordered pair (_x_, _y_) in _f_.
+> That is,
+>   { _y_ ∈ Y | (_x_, _y_) ∈ _f_ for some x ∈ X }
+
+More or less, the set of all the _y_ values that actually occur.
+
+### One-to-one
+> A function _f_ is one-to-one (or injective) if and only if for each _y_ in the codomain there is only one (i.e. one or none at all) ordered pair (_x_, _y_) in _f_.
+
+i.e., _f_ is one-to-one means that if _f_(_x_<sub>1</sub>) = _f_(_x_<sub>2</sub>), then _x_<sub>1</sub> = _x_<sub>2</sub>.
+
+- recall from Calculus that increasing functions (_f_′(x) > 0) are one-to-one and that the horizontal line test can be used
+
+### Onto
+> A function _f_ : X → Y is onto (or surjective) if and only if for every element y ∈ Y there is an element _x_ ∈ X with _y_ = _f_(x).
+
+i.e., __a function is onto if its range equals its codomain__.
+
+### Bijection
+> A function is a bijection if it is both one-to-one and onto.
+
+### Composition of functions
+> Let _g_ : X → Y and _f_ : Y → Z. Then the composition of _f_ and _g_, _f_ ∘ _g_, is the function from X to Z defined by (_f_ ∘ _g_)(_x_) = _f_(_g_(_x_)).
+
+- for proofs involving composition you will possibly need to “take f (or g) of both sides”
+
+### Inverse functions
+> Let _f_ : X → Y. If _f_ is a bijection, then there is a function _g_ : Y → X which, given any y ∈ Y, _g_(_y_) is the element _x_ ∈ X such that _y_ = _f_(x).
+> i.e., _g_(_y_) = _x_ and _y_ = _f_(_x_)
+
+- _g_ is called the inverse function of _f_, written as _f_<sup>-1</sup>
+
+### Composition of a function and its inverse
+If _f_ “does something” to a variable, then _f_<sup>-1</sup> “undoes” it.
+
+- _f_<sup>-1</sup> ∘ _f_ is the function _i_—called the identity function. It does nothing.
+
+### Applying a function to many elements
