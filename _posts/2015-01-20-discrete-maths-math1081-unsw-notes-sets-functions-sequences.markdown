@@ -1,6 +1,6 @@
 ---
 layout: note
-title: "Section 1 — Sets, Functions, and Sequences"
+title: "Discrete Maths (MATH1081): Section 1 — Sets, Functions, and Sequences"
 categories: discrete
 ---
 
@@ -166,7 +166,7 @@ For example,
 We can also think of these as _xy_ co-ordinate pairs, and they can be sketched on a number plane as such.
 
 ## Functions
-> A function _f_ from a set X to a set Y is a subset of X × Y with the property that for each _x_ ∈ X, there is __exactly one__ ordered pair (_x_, _y_) ∈ _f_.
+> A function ƒ from a set X to a set Y is a subset of X × Y with the property that for each _x_ ∈ X, there is __exactly one__ ordered pair (_x_, _y_) ∈ ƒ.
 
 Takeaways from that definition's mess: 
 
@@ -175,7 +175,7 @@ Takeaways from that definition's mess:
 
 The function
 
-_f_ : X → Y
+ƒ : X → Y
 
 has X as the _domain_ and Y as the _codomain_ (the codomain is the set containing all of the _y_ values that _could_ occur).
 
@@ -193,21 +193,21 @@ For any _x_ ∈ ℝ,
 For example, ⌊π⌋ = 3, ⌈π⌉ = 4
 
 ### Range
-> The range of a function _f_ : X → Y is the set of all _y_ ∈ Y such that there is an ordered pair (_x_, _y_) in _f_.
+> The range of a function ƒ : X → Y is the set of all _y_ ∈ Y such that there is an ordered pair (_x_, _y_) in ƒ.
 > That is,
->   { _y_ ∈ Y | (_x_, _y_) ∈ _f_ for some x ∈ X }
+>   { _y_ ∈ Y | (_x_, _y_) ∈ ƒ for some x ∈ X }
 
 More or less, the set of all the _y_ values that actually occur.
 
 ### One-to-one
-> A function _f_ is one-to-one (or injective) if and only if for each _y_ in the codomain there is only one (i.e. one or none at all) ordered pair (_x_, _y_) in _f_.
+> A function ƒ is one-to-one (or injective) if and only if for each _y_ in the codomain there is only one (i.e. one or none at all) ordered pair (_x_, _y_) in ƒ.
 
-i.e., _f_ is one-to-one means that if _f_(_x_<sub>1</sub>) = _f_(_x_<sub>2</sub>), then _x_<sub>1</sub> = _x_<sub>2</sub>.
+i.e., ƒ is one-to-one means that if ƒ(_x_<sub>1</sub>) = ƒ(_x_<sub>2</sub>), then _x_<sub>1</sub> = _x_<sub>2</sub>.
 
-- recall from Calculus that increasing functions (_f_′(x) > 0) are one-to-one and that the horizontal line test can be used
+- recall from Calculus that increasing functions (ƒ′(x) > 0) are one-to-one and that the horizontal line test can be used
 
 ### Onto
-> A function _f_ : X → Y is onto (or surjective) if and only if for every element y ∈ Y there is an element _x_ ∈ X with _y_ = _f_(x).
+> A function ƒ : X → Y is onto (or surjective) if and only if for every element y ∈ Y there is an element _x_ ∈ X with _y_ = ƒ(x).
 
 i.e., __a function is onto if its range equals its codomain__.
 
@@ -215,19 +215,100 @@ i.e., __a function is onto if its range equals its codomain__.
 > A function is a bijection if it is both one-to-one and onto.
 
 ### Composition of functions
-> Let _g_ : X → Y and _f_ : Y → Z. Then the composition of _f_ and _g_, _f_ ∘ _g_, is the function from X to Z defined by (_f_ ∘ _g_)(_x_) = _f_(_g_(_x_)).
+> Let _g_ : X → Y and ƒ : Y → Z. Then the composition of ƒ and _g_, ƒ ∘ _g_, is the function from X to Z defined by (ƒ ∘ _g_)(_x_) = ƒ(_g_(_x_)).
 
 - for proofs involving composition you will possibly need to “take f (or g) of both sides”
 
 ### Inverse functions
-> Let _f_ : X → Y. If _f_ is a bijection, then there is a function _g_ : Y → X which, given any y ∈ Y, _g_(_y_) is the element _x_ ∈ X such that _y_ = _f_(x).
-> i.e., _g_(_y_) = _x_ and _y_ = _f_(_x_)
+> Let ƒ : X → Y. If ƒ is a bijection, then there is a function _g_ : Y → X which, given any y ∈ Y, _g_(_y_) is the element _x_ ∈ X such that _y_ = ƒ(x).
+> i.e., _g_(_y_) = _x_ and _y_ = ƒ(_x_)
 
-- _g_ is called the inverse function of _f_, written as _f_<sup>-1</sup>
+- _g_ is called the inverse function of ƒ, written as ƒ<sup>–1</sup>
 
 ### Composition of a function and its inverse
-If _f_ “does something” to a variable, then _f_<sup>-1</sup> “undoes” it.
+If ƒ “does something” to a variable, then ƒ<sup>-1</sup> “undoes” it.
 
-- _f_<sup>-1</sup> ∘ _f_ is the function _i_—called the identity function. It does nothing.
+- ƒ<sup>-1</sup> ∘ ƒ is the function _i_—called the identity function. It does nothing.
 
 ### Applying a function to many elements
+> Let ƒ be a function from X to Y. If A ⊆ X, then ƒ(A) = { ƒ(_x_) | _x_ ∈ A}
+> If B ⊆ Y, then ƒ<sup>–1</sup>(B) = { _x_ ∈ X | ƒ(_x_) ∈ B}, i.e. the set of all _x_ that produce elements of B.
+
+This is kind of hard to understand. Consider an example.
+
+> Let ƒ : ℝ → ℝ, ƒ(_x_) = _x_<sup>2</sup>
+>
+> If A = { _x_ ∈ ℝ | 2 < _x_ < 3 } then
+>    
+> ƒ(A) = { ƒ(_x_) | _x_ ∈ A }
+>
+>   (Note: ƒ(_x_) = <sup>2</sup>, _y_ = <sup>2</sup>)
+>
+> ∴ ƒ(A) = { _x_<sup>2</sup> | 2 < _x_ < 3}
+> 
+> &nbsp; = { _y_ ∈ ℝ | 4 < _y_ < 9 }
+
+And the inverse,
+
+> If B = { _y_ ∈ ℝ | 1 ≤ y < 16 } then
+> 
+> ƒ<sup>–1</sup>(B) = { _x_ ∈ X | ƒ(_x_) ∈ B}
+> 
+> and so
+> 
+> ƒ<sup>–1</sup>(B) = { _x_ ∈ ℝ | 1 ≤ _x_<sup>2</sup> < 16}
+> 
+> &nbsp; = { _x_ ∈ ℝ | –4 < _x_ ≤ –1 } ∪ { _x_ ∈ ℝ | 1 ≤ _x_ < 4 }
+
+## Sequences and summations
+
+__Note__: For these sections, I write ∑(_a_, _b_) ƒ(_x_) for a sum from _a_ to _b_, because writing it out properly is almost impossible. The best approximation is ∑<sup>_b_</sup><sub>_a_</sub>, which doesn't look great.
+
+### Sequence
+> A sequence is a function with domain a subset of ℤ.
+
+- more or less a list
+- order and repetition important
+- finite sequence is called a _string_
+
+### Basic sums
+Memorise these:
+
+> ∑(j = 0, n) a×r<sup>j</sup>) = a(r<sup>n + 1</sup> – 1) ÷ (r – 1)
+> 
+> ∑(j = 1, n) 1 = 1 + 1 + … + 1 [n times] = n
+> 
+> ∑(j = 0, n) j = (1/2) × n(n + 1)
+> 
+> ∑(j = 1, n) j<sup>2</sup> = (1/6) × n × (n + 1) × (2n + 1)
+> 
+> _Note_: for these last two, j = 0 and j = 1 give the same result.
+
+Also note,
+
+> 25 × ∑(k = 1, 12) 1 = 25 × 12 __not__ 25 × 1
+
+
+### Addition of sums
+Without adding excessive notation, the following are true
+
+> ∑ (a + b) = ∑ a + ∑ b
+> 
+> ∑ (a – b) = ∑ a – ∑ b
+
+### Multiplication by a constant
+
+> ∑ c × a<sub>k</sub> = c × (∑ a<sub>k</sub>)
+
+i.e., we can pull out a constant factor
+
+### Shifting the index of summation
+- too confusing and awkward to write in HTML; see your course notes or textbook
+
+### Telescoping sums
+- write out sums in full so that you can identify which of the terms cancel and then you can easily add the rest
+- i.e. manually expand then see what you can get rid of
+- watch out for negatives
+- try to make the expression being summed the same in the two sequences
+
+__∏ means product__
