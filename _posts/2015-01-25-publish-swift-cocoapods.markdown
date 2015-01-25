@@ -12,3 +12,5 @@ Here’s how I got it working:
 2. `sudo gem install cocoapods --pre
 
 Simple, right? Turns out the first step is really important; I had five different versions of Cocoapods installed, and it wasn’t using the latest one.
+
+[ls]: http://github.com/matthewpalmer/Locksmith
