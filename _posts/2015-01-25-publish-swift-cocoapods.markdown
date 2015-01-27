@@ -4,7 +4,7 @@ layout: post
 category: ios
 ---
 
-In the past few hours I’ve been battling to get [Locksmith, my Swift keychain library][ls], set up as a Cocoapod. No matter what I tried I was hitting “unknown option character `X' in: -Xlinker” and `pod lib lint errors`.
+In the past few hours I’ve been battling to get [Locksmith, my Swift keychain library][ls], set up as a Cocoapod. No matter what I tried I was hitting “unknown option character 'X' in: -Xlinker” and `pod lib lint errors`.
 
 Here’s how I got it working:
 
