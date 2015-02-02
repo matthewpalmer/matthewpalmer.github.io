@@ -10,16 +10,16 @@ Augustus asked me a question on Twitter.
 
 Here's how to open a webpage by remapping a keyboard shortcut on Mac OS X.
 
-1. Download and install [FastScripts][fs].
-2. Save the following in Script Editor to `/Users/<username>/Library/Scripts`, changing the URL as required.
+1.    Download and install [FastScripts][fs].
+2.    Save the following in Script Editor to `/Users/<username>/Library/Scripts`, changing the URL as required.
 
-```
-set website to "http://google.com"
-do shell script "open " & website
-```
+          set website to "http://google.com"
+          do shell script "open " & website
+      
 
-3. Click on the FastScripts icon in your menu bar, go into the ‘FastScripts’ item, and then click ‘Preferences’.
-4. Click the ‘Script Shortcuts’ tab, and double click the script you just saved. FastScripts will record the next keyboard shortcut you enter.
-5. Now you should be able to load a page in your web browser by using that keyboard shortcut.
+3.    Click on the FastScripts icon in your menu bar, go into the ‘FastScripts’ item, and then click ‘Preferences’.
+4.    Click the ‘Script Shortcuts’ tab, and double click the script you just saved. 
+      FastScripts will record the next keyboard shortcut you enter.
+5.    Now you should be able to load a page in your web browser by using that keyboard shortcut.
 
 [fs]: http://www.red-sweater.com/fastscripts/
