@@ -6,9 +6,10 @@ category: mac
 
 Like a lot of people, I write in [Markdown][md], which has great reference-style links.
 
-        This is [some text][st] that I am writing.
-        
-        [st]: http://sometext.com
+    This is [some text][st] that I am writing.
+
+    [st]: http://sometext.com
+
 
 I do my writing in Sublime Text 2, and I use these links all the time, but I never like to interrupt what I’m writing by searching for URLs. Instead, after I’ve finished writing, I then go through grab out the reference links to be researched.
 
@@ -42,28 +43,33 @@ With this goal, and with the [documentation][stdocs] here’s how to create a si
 6.    Switch back to your `Markdown Links.py` file, and replace its
       contents with the following. Save the file.
       
-          import sublime, sublime_plugin, re
 
-          class MarkdownLinksCommand(sublime_plugin.TextCommand):
-            def run(self, edit):
-              # Extracts reference-style links from Markdown text
-              # The matching links are inserted at the cursor location
-              content = self.view.substr(sublime.Region(0, self.view.size() - 1))
-              # * a string in square brackets
-              # * an optional space
-              # * word characters in square brackets (captured)        
-              matches = re.findall(r"\[[^\]]*\] ?(\[\w+\])", content)
-              currentPosition = self.view.sel()[0].begin()
-              self.view.insert(edit, currentPosition, ":\n".join(matches) + ":")
-      
-      A quick run through (skip if you like):
-      
-      1. `import` the necessary modules—the two sublime modules for access to the API and `re` for regular expressions.
-      2. `MarkdownLinksCommand` is the name of the class. Note that this name has to correspond to `markdown_links` (under the key `command`) in the file `Default.sublime-commands`. Strip `Command`, convert camel-case to underscores, and make everything lowercase to get from the class name to the command.
-      3. `self.view.substr` with this region gets the contents of the currently active document, from the first character to the last.
-      4. Extract the matches from the contents.
-      5. Insert the matches, inserting colons and new lines, at the current cursor location.
-7. Now you should be able to run your command. Open up a Markdown file with some reference links, hit Command + Shift + P, and search for ‘Extract Markdown Reference Links’.
+{% highlight python %}
+import sublime, sublime_plugin, re
+
+class MarkdownLinksCommand(sublime_plugin.TextCommand):
+  def run(self, edit):
+    # Extracts reference-style links from Markdown text
+    # The matching links are inserted at the cursor location
+    content = self.view.substr(sublime.Region(0, self.view.size() - 1))
+    # * a string in square brackets
+    # * an optional space
+    # * word characters in square brackets (captured)        
+    matches = re.findall(r"\[[^\]]*\] ?(\[\w+\])", content)
+    currentPosition = self.view.sel()[0].begin()
+    self.view.insert(edit, currentPosition, ":\n".join(matches) + ":")
+{% endhighlight %}
+
+
+  A quick run through of the code (skip if you like):
+  
+  1. `import` the necessary modules—the two sublime modules for access to the API and `re` for regular expressions.
+  2. `MarkdownLinksCommand` is the name of the class. Note that this name has to correspond to `markdown_links` (under the key `command`) in the file `Default.sublime-commands`. Strip `Command`, convert camel-case to underscores, and make everything lowercase to get from the class name to the command.
+  3. `self.view.substr` with this region gets the contents of the currently active document, from the first character to the last.
+  4. Extract the matches from the contents.
+  5. Insert the matches, inserting colons and new lines, at the current cursor location.
+
+Now you should be able to run your command. Open up a Markdown file with some reference links, hit Command + Shift + P, and search for ‘Extract Markdown Reference Links’.
 
 ![search][search]
 
