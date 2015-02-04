@@ -14,11 +14,12 @@ $codeBlue: gainsboro + 25;
 
 @mixin fixBreak() {
   // Fix word breaks
-   -ms-word-break: break-all;
-       word-break: break-all;
+  
+   // -ms-word-break: break-all;
+       // word-break: break-all;
 
        // Non standard for webkit
-       word-break: break-word;
+       // word-break: break-word;
 /*
   -webkit-hyphens: auto;
      -moz-hyphens: auto;
@@ -100,6 +101,8 @@ header {
     padding-right: 10px;
     background-color: $codeBlue;
     border-radius: 3px;
+    font-size: 11px;
+    overflow-x:scroll;
   }
 
   & a {
