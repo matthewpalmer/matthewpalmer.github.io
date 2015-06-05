@@ -1,5 +1,5 @@
 ---
-title: "How to Remove Icons and Text from iOS Folders"
+title: "How to Remove Icons and Text from iOS Folder Previews"
 layout: post
 category: ios
 ---
