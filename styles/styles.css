@@ -429,9 +429,9 @@ em {
   padding-left: 25%;
   width: 50%;
   padding-right: 25%;
-  padding-top: 6%;
+  /*padding-top: 6%;*/
   padding-bottom: 8%;
-  background-color: #f8bed4;
+  background-color: #f8f8f8;
 }
 .shotsarea > ul {
   margin-left: 3%;
@@ -546,7 +546,7 @@ em {
 }
 /* SNIPS */
 .dribbblesnip > em {
-  color: #ea4c89;
+  color: rgba(59, 134, 134, 0.67);
 }
 .tweetsnip > em {
   color: #0f4166;

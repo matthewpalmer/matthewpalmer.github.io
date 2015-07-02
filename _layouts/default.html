@@ -32,8 +32,8 @@ title: Home
 
       <!-- Analytics.js -->
       <script type="text/javascript">
-        var analytics=analytics||[];analytics.load=function(e){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src=("https:"===document.location.protocol?"https://":"http://")+"d2dq2ahtl5zl1z.cloudfront.net/analytics.js/v1/"+e+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n);var r=function(e){return function(){analytics.push([e].concat(Array.prototype.slice.call(arguments,0)))}},i=["identify","track","trackLink","trackForm","trackClick","trackSubmit","pageview","ab","alias","ready"];for(var s=0;s<i.length;s++)analytics[i[s]]=r(i[s])};
-        analytics.load("n0ri1eg7hp");
+        // var analytics=analytics||[];analytics.load=function(e){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src=("https:"===document.location.protocol?"https://":"http://")+"d2dq2ahtl5zl1z.cloudfront.net/analytics.js/v1/"+e+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n);var r=function(e){return function(){analytics.push([e].concat(Array.prototype.slice.call(arguments,0)))}},i=["identify","track","trackLink","trackForm","trackClick","trackSubmit","pageview","ab","alias","ready"];for(var s=0;s<i.length;s++)analytics[i[s]]=r(i[s])};
+        // analytics.load("n0ri1eg7hp");
       </script>
 
       <script type="text/javascript">
@@ -73,20 +73,49 @@ title: Home
       </div>
 
       <!-- Portfolio -->
-      <div class = "portfolioarea">
+<!--       <div class = "portfolioarea">
         <ul class="items wrap">
           <span class = "recentarticles portfoliosnip">LATEST <em><a>PROJECTS</em></a></span>
-          <!-- <a title = "Combust social network" class="postsLinks" href="https://combustapp.com"><li>Combust</li></a> -->
           <a title = "Weekling weekly budgeting" class="postsLinks" href="https://itunes.apple.com/app/weekling-weekly-budget/id949338154?mt=8"><li>Weekling – easy weekly budgeting</li></a>
           <a title = "Locksmith swift keychain library" class="postsLinks" href="https://github.com/matthewpalmer/Locksmith"><li>Locksmith</li></a>
           <a title = "Secon Stop for iPhone and iPad" class="postsLinks" href="https://itunes.apple.com/us/app/second-stop/id669856150?mt=8"><li>Second Stop</li></a>
         </ul>
-      </div>
+      </div> -->
 
       <!-- Dribbble shots -->
       <div class = "shotsarea">
-      <span class = "recentarticles dribbblesnip">LATEST <em><a href="http://dribbble.com/mp">SHOTS</em></a></span>
+      <span class = "recentarticles dribbblesnip">LATEST <em><a href="http://dribbble.com/mp">PROJECTS</em></a></span>
         <ul class="feed">
+          <li>
+            <a href='http://matthewpalmer.net/blog/2015/03/01/the-end-for-combust/'>
+              <img src='/img/combust.png' alt = 'Combust'>
+            </a>
+          </li>
+          <li>
+            <a href='https://itunes.apple.com/us/app/weekling-free-weekly-budget/id949338154?mt=8'>
+              <img src='/img/weekling.png' alt = 'Weekling'>
+            </a>
+          </li>
+          <li>
+            <a href='https://itunes.apple.com/au/app/second-stop/id669856150?mt=8'>
+              <img src='/img/secondstop.png' alt = 'Second Stop'>
+            </a>
+          </li>
+          <li>
+            <a href='http://github.com/matthewpalmer/Locksmith'>
+              <img src='/img/locksmith.png' alt = 'Locksmith'>
+            </a>
+          </li>
+          <li>
+            <a href='http://github.com/matthewpalmer/Playdown'>
+              <img src='/img/playdown.png' alt = 'Playdown'>
+            </a>
+          </li>
+          <li>
+            <a href='http://threadspodcast.com'>
+              <img src='/img/threads.png' alt = 'Threads Fashion Podcast'>
+            </a>
+          </li>
         </ul>
       </div>
       <div id="shotsByPlayerId">
@@ -100,17 +129,17 @@ title: Home
       </div>
       <script>
         // Load dribbble shots
-        $.jribbble.getShotsByPlayerId('mp', function (playerShots) {
-          var html = [];
-          $.each(playerShots.shots, function (i, shot) {
-            html.push('<li>');
-            html.push('<a href="' + shot.url + '">');
-            html.push('<img src="' + shot.image_teaser_url + '" ');
-            html.push('alt="' + shot.title + '"></a></li>');
-          });
+        // $.jribbble.getShotsByPlayerId('mp', function (playerShots) {
+        //   var html = [];
+        //   $.each(playerShots.shots, function (i, shot) {
+        //     html.push('<li>');
+        //     html.push('<a href="' + shot.url + '">');
+        //     html.push('<img src="' + shot.image_teaser_url + '" ');
+        //     html.push('alt="' + shot.title + '"></a></li>');
+        //   });
 
-          $('.shotsarea > ul.feed').html(html.join(''));
-        }, {page: 1, per_page: 9});
+        //   $('.shotsarea > ul.feed').html(html.join(''));
+        // }, {page: 1, per_page: 9});
       </script>
 
     <!-- Displayed on Mobile sites -->
