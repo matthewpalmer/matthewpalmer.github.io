@@ -38,4 +38,6 @@ struct ConformsWithOptional {
 }
 {% endhighlight %}
 
+One thing to note is that you can’t do `optional: String` in `ConformsWithOptional` and expect it to override the original `optional: String?` in other protocol extensions. You have to match the type exactly: `optional: String?`. That caught me out for a while.
+
 In general, it’s probably better to break up your protocols so that users can pick and choose the things they want to implement, but this is a quick and useful trick that I haven’t seen written up anywhere else.
