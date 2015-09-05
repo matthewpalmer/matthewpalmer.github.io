@@ -41,3 +41,15 @@ Before I switched off the servers, I shared a few of my thoughts on Combust. But
 <br/>
 
 Thank you to everyone who used Combust.
+
+<br/>
+
+**05/09/105**: Just for the archives, putting a few other resources here.
+
+Looking back at it now, I have a couple of thoughts. 1) The design is totally incoherent. 2) What the hell does this product even do? 3) The music on the video could not be any less suitable. Hindsight.
+
+[Combust icon](/img/combust-icon.png)
+
+[Combust screenshot](/img/combust-screenshot.png)
+
+[Combust demo video](/img/combust-video.mp4)
