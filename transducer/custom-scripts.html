@@ -83,12 +83,10 @@
     subtitle: \"$episodeDescription\"
     ---"
 
-    # Get a slug for the post
-    read -p "Slug > " SLUG
     YMD=`date '+%Y-%m-%d'`
 
     # Write metadata to the file for the post
-    echo "$yaml" > ${postsDirectory}/$YMD-$SLUG.markdown
+    echo "$yaml" > ${postsDirectory}/$YMD.markdown
   </pre>
 
   <div class='footer'>
