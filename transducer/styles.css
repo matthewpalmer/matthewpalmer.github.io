@@ -29,7 +29,7 @@ h1 {
   margin-right: 10px;
 }
 
-.download p {
+.download p, .small-link {
   text-align: center;
   font-size: 12px;
   color: gray;

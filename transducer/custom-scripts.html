@@ -1,0 +1,102 @@
+<html>
+<head>
+  <title>Custom script help and documentation.</title>
+  <link rel="stylesheet" href="styles.css" media="screen" type="text/css">
+</head>
+<body>
+  <div class='header'>
+    <img width='75' height='75' class='app-icon' src='icon.png' />
+    <h1>Transducer</h1>
+  </div>
+
+  <h2>Custom scripts help and documentation</h2>
+  <p>Transducer provides a way for advanced users to run their own custom scripts after uploading a podcast episode. These scripts can be treated as though they are run from the Terminal directly, which means you can use your preferred scripting language.</p>
+
+  <p>Custom scripts are currently <strong>experimental</strong>. If you use custom scripts and have a suggestion for how they can be better, please <a href="mailto:matt@matthewpalmer.net">email me</a>. Also, if you have any trouble coming up with the right script to solve your problem, feel free to <a href="mailto:matt@matthewpalmer.net">email me</a> as well&mdash;I&rsquo;d love to help you out.</p>
+
+  <h3>Please note</h3>
+
+  <ul>
+    <li>
+      When entering the &ldquo;Script path&rdquo; in Transducer, the <strong>path must be absolute</strong> (i.e. it must be something like <code>/Users/matthewpalmer/scripts/...</code> and not <code>./scripts/...</code>).
+    </li>
+    <li>
+      Ensure that the script at the provided path is <strong>executable</strong> (run <code>chmod&nbsp;+x&nbsp;/Users/matthewpalmer/scripts/script.sh</code> to make a file executable).
+    </li>
+    <li>
+        Because the script will be run directly, it needs to start with a shebang (<code>#!</code>). For example, when running a Shell script the file should start with <code>#!/bin/sh</code> or for a Perl script <code>#!/usr/bin/perl</code>.
+    </li>
+  </ul>
+  
+  <h3>Arguments</h3>
+  <p>Transducer executes scripts using the absolute path provided, and passes the following fields to the script as command line arguments in the order listed below.</p>
+  <ol>
+    <li>Podcast name</li>
+    <li>Artist</li>
+    <li>Episode title</li>
+    <li>Episode description</li>
+    <li>Episode duration (hh:mm:ss)</li>
+    <li>Episode length (bytes)</li>
+    <li>Path to local file (absolute)</li>
+    <li>Hosted file URL. This value depends on the host you selected:
+      <ul>
+        <li>SoundCloud&mdash;this URL points to the uploaded file&rsquo;s SoundCloud page, something like &ldquo;https://soundcloud.com/thetalkshow/142a&rdquo;</li>
+        <li>Libsyn&mdash;this URL points to the uploaded file directly, something like &ldquo;http://traffic.libsyn.com/atpfm/atp115.mp3&rdquo;</li>
+      </ul>
+    </li>
+  </ol>
+
+  <p>As an example, if I enter <code>/Users/matthewpalmer/scripts/wordpress.sh</code> as the script for an episode uploaded to Libsyn, Transducer executes the equivalent to the following Terminal command:
+    <pre>
+    $ /Users/matthewpalmer/scripts/wordpress.sh "My Podcast Name" "Matthew Palmer"\
+      "#17: Episode title" "The episode description" "01:12:45" "43214632"\ 
+      "/Users/matthewpalmer/podcasts/episode-17.mp3"\ 
+      "http://traffic.libsyn.com/matthewpalmer/episode-17.mp3"
+    </pre>
+  </p>
+
+  <h3>Example</h3>
+  <p>Here&rsquo;s an example of a Shell script I wrote to create a new Jekyll post for an episode of my podcast.</p>
+
+  <pre>
+    #!/bin/sh
+    # This script creates a new Jekyll post for a podcast episode uploaded to Libsyn.
+
+    # Episode info from Transducer
+    # Transducer passes each of these as command line arguments to your script
+    episodeTitle=$3
+    episodeDescription=$4
+    episodeDuration=$5
+    episodeLength=$6
+    fileURL=$8
+
+    # Where Jekyll stores its post files
+    postsDirectory="/Users/matthewpalmer/Desktop/"
+
+    # Metadata for the post
+    yaml="---
+    layout: episode
+    title: \"$episodeTitle\"
+    duration: \"$episodeDuration\"
+    length: \"$episodeLength\"
+    link: $fileURL
+    subtitle: \"$episodeDescription\"
+    ---"
+
+    # Get a slug for the post
+    read -p "Slug > " SLUG
+    YMD=`date '+%Y-%m-%d'`
+
+    # Write metadata to the file for the post
+    echo "$yaml" > ${postsDirectory}/$YMD-$SLUG.markdown
+  </pre>
+
+  <div class='footer'>
+    <ul>
+      <li><a href='index.html'>Home</a></li>
+      <li><a href='support.html'>Support</a></li>
+      <li>Matthew Palmer, &#x1F1E6;&#x1F1FA;</li>
+    </ul>
+  </div>
+</body>
+</html>
