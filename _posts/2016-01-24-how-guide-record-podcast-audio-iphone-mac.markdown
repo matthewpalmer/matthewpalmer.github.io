@@ -24,6 +24,11 @@ I'll review each bit of podcasting equipment individually below, but here's wher
 - [Pyle-Pro PDMIC58—$15 on Amazon][pyle], a cheap dynamic microphone
 - Recording with Voice Memos on iPhone, QuickTime on Mac (free!)
 
+A quick note: this probably isn't the cheapest overall way to record your podcast, but this is the best way that I've found to be able to record from *both* iPhone and Mac without having two sets of gear, and where each piece of equipment is upgradeable later on. You might be better served by [an iPhone-specific microphone][zoom] (which I nearly ended up buying) and a USB mic for your computer. If you have a setup that other people might like, [let me know on Twitter][twitter] and I'll add them to this post.
+
+<br/>
+<br/>
+
 > I make [Transducer, a Mac app for posting your podcast to Libsyn or SoundCloud][transducer]. If this guide helps you, please consider giving it a download—there's a 20-day free trial, and it's only $5 after that.
 
 <br/>
@@ -109,3 +114,5 @@ With the [iRig Pro for $135 on Amazon][irig] and the [Pyle-Pro PDMIC58 for $15 o
 [transducer]: http://matthewpalmer.net/transducer/
 [threads]: http://threadspodcast.com/2015/11/wake-by-bryce-thomas-book/
 [threads2]: http://threadspodcast.com/2015/10/rm-williams-podcast/
+[zoom]: http://www.amazon.com/gp/product/B00MZCEY9O/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B00MZCEY9O&linkCode=as2&tag=mattpalm-20&linkId=2J4BGGVMS5SUPWUR
+[twitter]: http://twitter.com/_matthewpalmer
