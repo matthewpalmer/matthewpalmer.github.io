@@ -1,0 +1,59 @@
+body {
+  font-family: system, -apple-system, ".SFNSDisplay-Regular", "Helvetica Neue", "Lucida Grande";
+  width: 600px;
+  margin: 0 auto;
+  line-height: 1.7;
+  color: #333333;
+}
+
+.header {
+  width: 335px;
+  margin: 0 auto;
+
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.download {
+  width: 600px;
+  text-align: center;
+}
+
+h1 {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 2.6em;
+  letter-spacing: 7px;
+  color: #FC6D39;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.app-icon {
+  border-radius: 16px;
+  vertical-align: middle;
+  margin-right: 20px;
+}
+
+.screenshots {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.screenshot {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.screenshot img {
+  width: 250px;
+}
+
+.sidenote {
+  color: #9F9F9F;
+  margin-top: 50px;
+}
+
+.sidenote a {
+  color: #9F9F9F;
+}
