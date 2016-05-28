@@ -1,0 +1,26 @@
+body {
+  background-color: #fdfdfd;
+    font-family: system, -apple-system, ".SFNSDisplay-Regular", "Helvetica Neue", "Lucida Grande";
+  line-height: 1.7;
+  color: #4F4937;
+  letter-spacing: 0.5px;
+}
+
+.container {
+  width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.screenshot {
+  width: 480px;
+}
+
+.app-store {
+  margin-top: 20px;
+}
+
+li {
+  list-style-type: none;
+}
