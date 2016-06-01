@@ -1,20 +1,52 @@
+@font-face {
+    font-family: 'poetsen_oneregular';
+    src: url('poetsenone-regular-webfont.woff2') format('woff2'),
+         url('poetsenone-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 body {
-  background-color: #fdfdfd;
-    font-family: system, -apple-system, ".SFNSDisplay-Regular", "Helvetica Neue", "Lucida Grande";
+  background-color: #FCD450;
+  font-family: 'poetsen_oneregular';
   line-height: 1.7;
-  color: #4F4937;
+  color: #F07B11;
   letter-spacing: 0.5px;
+}
+
+a {
+  color:inherit;
+}
+
+a:visited {
+  color:inherit;
 }
 
 .container {
   width: 600px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin: 0 auto;
   text-align: center;
   margin-top: 50px;
+  border-radius: 20px;
+  background-color: #FFF4C7;
 }
 
 .screenshot {
   width: 480px;
+  border-radius: 10px;
+}
+
+.icon {
+  width: 120px;
+  border-radius: 20px;
+  display: inline-block;
+  text-align: center;
+  margin-top: 50px;
 }
 
 .app-store {
@@ -23,4 +55,10 @@ body {
 
 li {
   list-style-type: none;
+}
+
+.homepage-p {
+  width: 400px;
+  margin-left: 100px;
+  margin-top: 50px;
 }
