@@ -1,0 +1,45 @@
+html {
+  background: rgba(234,119,87,0.45);
+  background: -moz-linear-gradient(bottom, rgba(234,119,87,0.45) 0%, rgba(251,221,160,0.49) 7%, rgba(255,255,255,0.55) 18%, RGBA(255, 253, 255, 1) 100%);
+  background: -webkit-gradient(left bottom, left top, color-stop(0%, rgba(234,119,87,0.45)), color-stop(7%, rgba(251,221,160,0.49)), color-stop(18%, rgba(255,255,255,0.55)), color-stop(100%, RGBA(255, 253, 255, 1)));
+  background: -webkit-linear-gradient(bottom, rgba(234,119,87,0.45) 0%, rgba(251,221,160,0.49) 7%, rgba(255,255,255,0.55) 18%, RGBA(255, 253, 255, 1) 100%);
+  background: -o-linear-gradient(bottom, rgba(234,119,87,0.45) 0%, rgba(251,221,160,0.49) 7%, rgba(255,255,255,0.55) 18%, RGBA(255, 253, 255, 1) 100%);
+  background: -ms-linear-gradient(bottom, rgba(234,119,87,0.45) 0%, rgba(251,221,160,0.49) 7%, rgba(255,255,255,0.55) 18%, RGBA(255, 253, 255, 1) 100%);
+  background: linear-gradient(to top, rgba(234,119,87,0.45) 0%, rgba(251,221,160,0.49) 7%, rgba(255,255,255,0.55) 18%, RGBA(255, 253, 255, 1) 100%);
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 2;
+  font-weight: 300;
+  letter-spacing: 0.7px;
+}
+
+.container {
+  margin-top: 80px;
+  text-align: center;
+  width: 100%;
+}
+
+.screenshot {
+  display: inline-block;
+  margin-left: 140px;
+}
+
+.download {
+  color: #ffffff;
+  font-size: 0.9em;
+  font-weight: 400;
+  background-color: #7DCB4F;
+  border: 1px solid #70B747;
+  display: inline-block;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-decoration: none;
+  border-radius: 10px;
+  vertical-align: top;
+  margin-top: 12px;
+  margin-left: 15px;
+}
