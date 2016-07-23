@@ -23,7 +23,7 @@ body {
 
 .screenshot {
   display: inline-block;
-  margin-left: 140px;
+  margin-left: 70px;
 }
 
 .text-content {
@@ -42,6 +42,12 @@ body {
 
 .footer a {
   color: gray;
+}
+
+.tagline {
+  color: #4E5862;
+  font-size: 0.9em;
+  font-weight: 300;
 }
 
 h1 {
