@@ -37,7 +37,7 @@ body {
 .footer {
   font-size: 0.7em;
   color: gray;
-  margin-left: 65px;
+  margin-left: -20px;
 }
 
 .footer a {
@@ -84,4 +84,8 @@ code {
   vertical-align: top;
   margin-top: 12px;
   margin-left: 15px;
+}
+
+.icon {
+  margin-left: -40px;
 }
