@@ -31,21 +31,6 @@
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(dmt, s);
     })();
   </script>
-
-  <script>
-  /**
-  * Function that tracks a click on an outbound link in Analytics.
-  * This function takes a valid URL string as an argument, and uses that URL string
-  * as the event label. Setting the transport method to 'beacon' lets the hit be sent
-  * using 'navigator.sendBeacon' in browser that support it.
-  */
-  var trackOutboundLink = function(url) {
-     ga('send', 'event', 'outbound', 'click', url, {
-       'transport': 'beacon',
-       'hitCallback': function(){document.location = url;}
-     });
-  }
-  </script>
 </head>
 <body>
   <div class="container">
@@ -54,7 +39,7 @@
 
     <p class="tagline">Slack-style emoji everywhere on your Mac.</p>
     <img width="64" class="icon" src="icon.png" />
-    <a class="download" onclick="trackOutboundLink('https://dl.devmate.com/net.matthewpalmer.Rocket/Rocket.dmg'); return false;" href="https://dl.devmate.com/net.matthewpalmer.Rocket/Rocket.dmg">Download Rocket for OS X</a>
+    <a class="download" href="https://dl.devmate.com/net.matthewpalmer.Rocket/Rocket.dmg">Download Rocket for OS X</a>
     <br/>
     <div class="footer">
       <a class="small-link">v1.1</a> &mdash; <a class="small-link" href="help.html">Help</a> &amp; <a class="small-link" href="privacy.html">Privacy</a>
