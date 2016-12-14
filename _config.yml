@@ -24,5 +24,3 @@ url: http://www.matthewpalmer.net
 
 # Continue compiling even if there are errors. Keep it true, unless troubleshooting.
 permalink: /blog/:year/:month/:day/:title/index.html
-markdown: redcarpet
-highlighter: pygments
