@@ -1,0 +1,44 @@
+body {
+	background: #f7f7f7;
+	font-family: 'Verdana', sans-serif;
+	line-height: 1.5;
+	color: #5F5F5F;
+	padding-top: 36px;
+}
+
+.container {
+	width: 520px;
+	margin: 0 auto;
+	padding: 16px;
+}
+
+h1 {
+	font-size: 11pt;
+	font-weight: 800;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	text-align: center;
+	margin-top: 48px;
+	
+}
+
+img {
+	border-radius: 2px;
+}
+
+p {
+	font-size: 8pt;
+	text-align: center;
+}
+
+a {
+	color: #5F5F5F;
+}
+
+a:visited {
+	color: #5F5F5F;
+}
+
+.footer {
+	margin-top: 96px;
+}
