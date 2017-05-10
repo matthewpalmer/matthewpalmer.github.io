@@ -29,6 +29,7 @@ img {}
 	height: 270px;
 	width: 472px;
 	overflow-x: hidden;
+	overflow-y: hidden;
 	border-radius: 2px;
 
 	-webkit-box-shadow: 0 4px 2px -2px rgba(95,95,95,0.25);
