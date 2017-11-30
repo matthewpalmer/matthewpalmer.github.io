@@ -53,3 +53,26 @@ a:visited {
 .footer {
 	margin-top: 96px;
 }
+
+
+.download-ab-dec {
+  color: #ffffff;
+  font-size: 1.1em;
+  font-weight: 400;
+  background-color: #7DCB4F;
+  border: 1px solid #70B747;
+  display: inline-block;
+  padding-top: 10px;
+  padding-bottom: 8px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-decoration: none;
+  border-radius: 10px;
+  vertical-align: top;
+  margin-top: 12px;
+  margin-left: 15px;
+}
+
+.download-ab-dec:hover {
+	background-color: hsla(98, 54%, 60%, 1);
+}
