@@ -1,5 +1,5 @@
 ---
-title: "Emoji Bullet List ⚡ Behind the Scenes"
+title: Emoji Bullet List ⚡ Behind the Scenes
 layout: post
 category: web
 ---
@@ -20,7 +20,9 @@ Painful to write, though. Like, [I know emoji better than most](http://matthewpa
 
 I built [Emoji Bullet List](https://emojibulletlist.com/?ref=mpblog), to make creating emoji dot point lists really easy. Just copy in your list, hit the big "Emojify" button, quickly choose from the suggested emoji if the first suggestion doesn't fit your needs, and hit "Copy" to get an emojified list back. Too easy!
 
-This idea originated as a nice-to-have feature for Rocket, but I realised I could use Rocket's emoji keyword/phrase dataset to build this into a web app. More people can access it, it's a bit easier to use, and hopefully a few more people will find Rocket because of it. I couldn't figure out a good way to monetise it, so it’s completely free 🤷‍♂️.
+This idea originated as a nice-to-have feature for Rocket, but I realised I could use Rocket's emoji keyword/phrase dataset to build this into a web app. More people can access it, it's a bit easier to use, and hopefully a few more people will find Rocket because of it. 
+
+I couldn't figure out a good way to monetise it, so it’s completely free 🤷‍♂️.
 
 ### Technical Notes
 
@@ -122,5 +124,3 @@ And I simply `npm run sync` to update the app. Don't do it at scale, but it's su
 
 
 **If there's anything you'd like me to write more about, [let me know](http://twitter.com/_matthewpalmer).**
-
-
