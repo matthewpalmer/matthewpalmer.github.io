@@ -361,6 +361,7 @@ em {
 .postlist > ul li {
   background-color: #f1f1f1;
   color: rgba(0, 0, 0, 0.5);
+  padding-right: 48px;
 }
 .container a:hover {
   opacity: 0.9;
@@ -830,4 +831,19 @@ box-shadow: 0px 28px 52px 2px rgba(0,0,0,0.4);
   position: relative;
 
 
+}
+
+
+@media (max-width: 960px) {
+  .postlist {
+    padding-left: 5%;
+    width: 90%;
+    max-width: inherit;
+  }
+
+  .shotsarea {
+    padding-left: 5%;
+    width: 90%;
+    padding-right: 5%;
+  }
 }
