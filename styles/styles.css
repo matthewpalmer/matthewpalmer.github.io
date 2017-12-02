@@ -864,6 +864,13 @@ box-shadow: 0px 28px 52px 2px rgba(0,0,0,0.4);
 
 
 @media (max-width: 960px) {
+
+  .bigbox {
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
   .postlist {
     padding-left: 5%;
     width: 90%;
