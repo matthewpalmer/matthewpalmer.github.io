@@ -55,14 +55,13 @@ header {
   margin-bottom: 48px;
   background-color: #77C4D3;
   color: white;
-  display: flex;
   align-items: center; }
   .header-bar a {
     color: rgba(255, 255, 255, 0.99);
     font-size: 18px;
     margin: 16px;
     font-weight: 400;
-    letter-spacing: 0.5px; }
+    display: inline-block; }
   .header-bar a:first-child {
     font-weight: 800; }
   .header-bar a:hover {
@@ -72,7 +71,7 @@ header {
 .mainCol {
   max-width: 480px;
   margin: 0 auto;
-  padding: 0 0 0 0;
+  padding: 0 16px;
   margin-bottom: 10%;
   font-size: 0.95em; }
   .mainCol h1 {

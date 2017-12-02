@@ -111,7 +111,7 @@ header {
     font-size: 18px;
     margin: 16px;
     font-weight: 400;
-    letter-spacing: 0.5px;
+    display: inline-block;
   }
 
   a:first-child {
@@ -125,14 +125,13 @@ header {
 
   background-color: $blue;
   color: white;
-  display: flex;
   align-items: center;
 }
 
 .mainCol {
   max-width: $maxWidth;
   margin: 0 auto;
-  padding: 0 0 0 0;
+  padding: 0 16px;
   margin-bottom: 10%;
   font-size: 0.95em;
   // @include fixBreak();
