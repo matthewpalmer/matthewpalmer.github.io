@@ -2,6 +2,8 @@
 title: "Vanilla: Hide menu bar icons on your Mac for free"
 layout: post
 category: mac
+rank: top
+excerpt: I released Vanilla, an app that hides Mac menu bar icons, and wrote this behind-the-scenes article about its development and launch.
 ---
 
 I recently released [Vanilla](http://matthewpalmer.net/vanilla/), a free app that lets you hide menu bar icons on your Mac.

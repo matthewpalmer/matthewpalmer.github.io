@@ -2,6 +2,8 @@
 layout: post
 title: "Example Code for Using Swift to Save and Query iOS Keychain"
 category: ios
+rank: top
+excerpt: The origin story for Locksmith, my iOS Keychain library with over 2,400 stars on Github.
 ---
 
 I wrote a couple of small utility functions for using the iOS Keychain with Swift. This has two very basic functions: to save a string to the Keychain, and to load that string back later. I'll update this post if I need to update this utility service to handle deletion, updating, and so on.

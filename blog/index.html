@@ -1,30 +1,51 @@
 ---
 layout: blogindex
-title: Blog
+title: Matthew Palmer – Articles
 ---
 
 <!-- Show last 5 posts here -->
-{% for post in site.posts limit: 10 %}
-  {% if post.layout contains 'post' %}
-  <li>
-    <article>
-      {% if post.link %}
-          <h1><a href="{{ post.link }}" class="linkedItem">{{ post.title }}</a></h1>
-          <time class="linkIndicator" datetime="{{ post.date }}"><a href="{{ post.url }}">λ –
-             {{ post.date | date: '%B %e, %Y' }}
+<ol class="best-of">
+  <h2>Top Articles in {{ site.time | date: '%Y' }}</h2>
+  {% for post in site.posts %}
+    {% if post.rank contains 'top' %}
+      <li>
+        <h3><a href="{{ post.url }}" class="longItem">{{ post.title }}</a></h3>
+        <blockquote>
+          {% if post.excerpt %}
+            {{ post.excerpt }}
+          {% else %}
+            {{ post.content | strip_html | truncatewords: 50 }}
+          {% endif %}
+        </blockquote>
+      </li>
+    {% endif %}
+  {% endfor %}
+</ol>
 
-          </a></time>
-        {% else %}
-          <h1><a href="{{ post.url }}" class="longItem">{{ post.title }}</a></h1>
-          <time datetime="{{ post.date }}"><a href="{{ post.url }}">
-             {{ post.date | date: '%B %e, %Y' }}
-            </a>
-          </time>
-        {% endif %}
+<ol class="recent-articles">
+  {% for post in site.posts limit: 10 %}
+    {% if post.layout contains 'post' %}
+    <li>
+      <article>
+        {% if post.link %}
+            <h1><a href="{{ post.link }}" class="linkedItem">{{ post.title }}</a></h1>
+            <time class="linkIndicator" datetime="{{ post.date }}"><a href="{{ post.url }}">λ –
+               {{ post.date | date: '%B %e, %Y' }}
 
-        {{ post.content }}
-    </article>
-  </li>
-  {% endif %}
-{% endfor %}
-<small><a href="/archive.html">Visit the archive for more posts.</a></small>
+            </a></time>
+          {% else %}
+            <h1><a href="{{ post.url }}" class="longItem">{{ post.title }}</a></h1>
+            <time datetime="{{ post.date }}"><a href="{{ post.url }}">
+               {{ post.date | date: '%B %e, %Y' }}
+              </a>
+            </time>
+          {% endif %}
+
+          {{ post.content }}
+      </article>
+    </li>
+    {% endif %}
+  {% endfor %}
+
+  <small><a href="/archive.html">Visit the archive for more posts.</a></small>
+</ol>

@@ -2,6 +2,8 @@
 layout: post
 title: "How to Add a Launch Image for the iPhone 6 (Plus)"
 category: ios
+rank: top
+excerpt: A quick guide on how to add a launch image in Xcode for the iPhone 6, 7, and 8.
 ---
 
 Use the following steps to enable the new high resolution displays for iPhone 6 (and Plus). To get it to break out of the adaptive mode, you need to force it to use a high resolution Launch Image.

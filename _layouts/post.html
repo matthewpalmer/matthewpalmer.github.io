@@ -15,7 +15,8 @@ layout: post
     <link rel='stylesheet' href='/styles/blog/css/syntax.css' />
   </head>
   <body>
-    <header><a href="/"><h1>Matthew Palmer</h1></a></header>
+    {% include header_bar.html %}
+    
     <div class='mainCol'>
         {% if page.link %}
                   <h1><a href="{{ page.link }}" class="linkedItem">{{ page.title }}</a></h1>

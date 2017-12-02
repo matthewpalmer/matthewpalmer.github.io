@@ -2,8 +2,8 @@
 layout: post
 title: Remapping Keyboard Keys on Mac OS X Mavericks
 category: mac
-
-excerpt: How to remap any of your keyboard keys to any combination of keys on Mac OS X Mavericks. Initially, I wanted to remap the `Caps Lock` key to `Command+R`.
+rank: top
+excerpt: How to remap any of your keyboard keys to any combination of keys on Mac OS X Mavericks. I got hooked after remapping Caps Lock to Command+R.
 ---
 
 *This is an __updated__ version of [my original guide](http://matthewpalmer.net/blog/2013/01/23/remap-keys-os-x-mountain-lion/) on how to remap keyboard keys on OS X.*
@@ -44,8 +44,7 @@ Not exactly perfect, right? There's a very limited selection of keys you can rem
 20. Look through [this page](http://pqrs.org/macosx/keyremap4macbook/xml-basic.html.en) for more comprehensive documentation of what you can achieve.
 21. Keep defining new remaps until you've got exactly what you want.
 
-So, eventually, we worked out a way to remap any key we want to another key or combination of keys. It works really well, and it's probably good for RSI or something. At the very least, our laziness has been satiated. If I've done something wrong or you have questions, feel free to [contact me on Twitter](http://www.twitter.com/p_almer).
-
+So, eventually, we worked out a way to remap any key we want to another key or combination of keys. It works really well, and it's probably good for RSI or something. At the very least, we've satisfied our laziness.
 
 For anyone interested, here is my full `private.xml` file:
 <script src="https://gist.github.com/4601687.js"></script>
@@ -53,5 +52,4 @@ For anyone interested, here is my full `private.xml` file:
 For more information on the full power of the `private.xml` file, check out [the reference manual](https://pqrs.org/osx/karabiner/xml.html.en) (thanks to [@jnlevitan](https://twitter.com/jnlevitan) for the tip).
 
 I'd love to hear your favourite key remappings, feel free to [share them with me on Twitter](http://twitter.com/_matthewpalmer).
-
 
