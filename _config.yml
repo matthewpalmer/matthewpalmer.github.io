@@ -29,3 +29,6 @@ collections:
   they_use_that:
     output: true
     permalink: /they-use-that/:title
+
+plugins:
+  - jekyll-sitemap
