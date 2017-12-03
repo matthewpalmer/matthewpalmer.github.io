@@ -1,0 +1,126 @@
+---
+layout: they_use_that_base
+breadcrumb: true
+---
+
+<div class="profile_container">
+  <div class="profile_details">
+    <div class="profile_block large">
+      <a href="{{ page.url }}" title="{{ page.name }}">
+        <img src="{{ page.image.url }}" alt="{{ page.name }}" />
+      </a>
+
+      <div class="info_container">
+        <a href="{{ page.url }}" title=" {{ page.name }}">
+          {{ page.name }}
+        </a>
+
+        <p>{{ page.bio }}</p>
+
+        <ul class="links">
+          {% for link in page.links %}
+            <li>
+              <a href="{{ link.url }}">{{ link.text }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+
+    <p>
+      {% for category in page.categories %}
+        {% for item in site.they_use_that %}
+          {% if item.layout contains 'they_use_that_category' %}
+            {% if item.slug contains category %}
+              <a href="{{ item.url }}" class="rounded-button">{{ item.name }}</a>
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
+    </p>
+  </div>
+
+  <div class="cover_photo">
+    <img src="{{ page.cover_photo.url }}" alt="{{ page.name }}’s cover photo" />
+  </div>
+
+  <div class="commentary">
+    <h2>{{ page.name }}’s Setup</h2>
+    {{ content }}
+  </div>
+
+  <div class="tool_list_header">
+    <h2>What does {{ page.name }} use?</h2>
+  </div>
+
+  <div class="tool_list_container">
+    <ul class="tool_list">
+      {% for tool in page.tools %}
+        <li class="{{ tool.size }}">
+          <div class="profile_thing_block">
+            <div class="thing_block_container">
+              <div class="thing_block_stack">
+                <a href="{{ tool.external_url }}" title="{{ tool.name }}">
+                  <img src="{{ tool.image.url }}" alt="{{ tool.name }}" />
+                  <div class="info_container">
+                    {{ tool.name }}
+                  </div> 
+                </a>
+              </div>
+            </div>
+
+            <div class="tool_description">
+              <div class="tool_title_bar">
+                <a href="{{ tool.external_url }}" title="{{ tool.name }}">
+                  <strong>{{ tool.name }}</strong>
+                </a>
+                {% if tool.description_source %}
+                  <a class="citation" href="{{ tool.description_source }}">Source</a>
+                {% endif %}
+              </div>
+              
+              <p class="description">
+                {{ tool.description }}
+              </p>
+            </div>
+          </div>
+        </li>
+      {% endfor %}
+      
+      <li class="verify_profile">
+        Are you {{ page.name }}? <a href="mailto:theyusethat@matthewpalmer.net?subject=Verify {{page.name}} on They Use That">Email me</a> to verify your profile and receive affiliate revenue.
+      </li>
+
+      <li class="sources">
+        <div class="top_sources">
+          <h6>Sources</h6>
+          <div class="top_sources_list">
+            {% for source in page.sources %}
+              <a href="{{ source.url }}" class="rounded-button {{ source.class }}">{{ source.text }}</a>
+            {% endfor %}
+          </div>
+        </div>
+      </li>
+
+      <div class="related_profiles">
+        <h3>Related Profiles</h3>
+        <ul class="people-list-stack">
+          {% for profile in page.recommended_profiles %}
+            <li>
+              <div class="profile_block stack">
+                <a href="{% link _they_use_that/matthew-palmer.markdown %}" title="{{ profile.name }}">
+                  <img src="{{ profile.image.url }}" alt="{{ profile.name }}" />
+                </a>
+                <div class="info_container">
+                  <a href="{% link _they_use_that/matthew-palmer.markdown %}" title=" {{ profile.name }}">
+                    {{ profile.name }}
+                  </a>
+                </div>
+              </div>
+            </li>
+          {% endfor %}
+        </ul>
+      </ul>
+    </ul>
+  </div>
+</div>

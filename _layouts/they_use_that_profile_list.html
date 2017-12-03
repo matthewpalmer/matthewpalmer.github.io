@@ -1,0 +1,17 @@
+---
+layout: they_use_that_base
+---
+
+<h1>Top Profiles</h1>
+
+<div class="profile-list">
+  {% for profile in site.they_use_that %}
+    {% if profile.layout contains 'they_use_that_profile' %}
+      {% include they_use_that_profile_list_item.html profile=profile %}
+    {% endif %}
+  {% endfor %}
+</div>
+
+<h1>All Categories</h1>
+
+{% include they_use_that_all_categories.html %}

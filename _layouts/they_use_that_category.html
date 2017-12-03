@@ -1,0 +1,20 @@
+---
+layout: they_use_that_base
+breadcrumb: true
+---
+
+<h1>What Tools Do {{ page.name }} Use?</h1>
+
+<div class="profile-list">
+  {% for profile in site.they_use_that %}
+    {% if profile.layout contains 'they_use_that_profile' %}
+      {% if profile.categories contains page.slug %}
+        {% include they_use_that_profile_list_item.html profile=profile %}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+</div>
+
+<h1>All Categories</h1>
+
+{% include they_use_that_all_categories.html %}

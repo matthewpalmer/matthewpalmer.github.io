@@ -1,0 +1,7 @@
+{% for item in site.they_use_that %}
+  {% if item.layout contains 'they_use_that_category' %}
+    <a href="{{ item.url }}" class="rounded-button">
+      {{ item.title }}
+    </a>
+  {% endif %}
+{% endfor %}

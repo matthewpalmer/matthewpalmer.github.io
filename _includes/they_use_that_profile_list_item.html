@@ -1,0 +1,23 @@
+<div class="profile_details list">
+  <div class="profile_block large">
+    <a href="{{ profile.url }}" title="{{ profile.name }}">
+      <img src="{{ profile.image.url }}" alt="{{ profile.name }}" />
+    </a>
+
+    <div class="info_container">
+      <a href="{{ profile.url }}" title=" {{ profile.name }}">
+        {{ profile.name }}
+      </a>
+
+      <p>{{ profile.bio }}</p>
+    </div>
+  </div>
+  
+  <p>{{ profile.content }}</p>
+  
+  <p>
+    {% for category in page.categories %}
+      <a class="rounded-button" href="{{ category.url }}">{{ category.name }}</a>
+    {% endfor %}
+  </p>
+</div>
