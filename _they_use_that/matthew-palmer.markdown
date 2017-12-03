@@ -113,22 +113,22 @@ sources:
 
 
 recommended_profiles:
+  - name: Lara Hogan
+    url: "/they-use-that/lara-hogan-setup-engineering-gear"
+    image: 
+      url: "https://trello-attachments.s3.amazonaws.com/59efe2c0b5cbe7547a121145/59efe3a6dfb5ff8b72105d3f/268bbba61960d3d2fa0c0429f3aca90d/pOMAg5VX.jpg"
+  - name: Marco Arment
+    url: "/they-use-that/marco-arment-podcast-editor-gear"
+    image: 
+      url: "https://trello-attachments.s3.amazonaws.com/59efe2c0b5cbe7547a121145/59efe352b503f6f8cc894c5e/6b3a4efe5b947994a0f2fc1dc58d28db/Marco_Arment.jpg"
   - name: Matthew Palmer
     url: "/they-use-that/testing-custom-matthew-palmer"
     image: 
       url: "https://pbs.twimg.com/profile_images/935981548481937408/h_jhRlQQ_400x400.jpg"
-  - name: Matthew Palmer
-    url: "/they-use-that/testing-custom-matthew-palmer"
+  - name: Sam Soffes
+    url: "/they-use-that/sam-soffes-ios-apps-podcast-gear"
     image: 
-      url: "https://pbs.twimg.com/profile_images/935981548481937408/h_jhRlQQ_400x400.jpg"
-  - name: Matthew Palmer
-    url: "/they-use-that/testing-custom-matthew-palmer"
-    image: 
-      url: "https://pbs.twimg.com/profile_images/935981548481937408/h_jhRlQQ_400x400.jpg"
-  - name: Matthew Palmer
-    url: "/they-use-that/testing-custom-matthew-palmer"
-    image: 
-      url: "https://pbs.twimg.com/profile_images/935981548481937408/h_jhRlQQ_400x400.jpg"
+      url: "https://trello-attachments.s3.amazonaws.com/59efe2c0b5cbe7547a121145/59efe34e158d07e395a7bd97/b33a4cd723b183651ef24d5bb8b56924/profile-1470092596104-7f351d8667f3.png"
 
 ---
 
