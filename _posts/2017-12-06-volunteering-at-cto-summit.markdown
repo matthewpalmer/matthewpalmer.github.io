@@ -6,7 +6,7 @@ category: dev
 
 At [CTO Summit][cto-summit], CTOs, VPs, and engineering managers shared the behind-the-scenes of their companies' engineering teams with 150 attendees. They talked through surviving rapid-growth engineering and orchestrating teams at scale. They also needed volunteers to help run the conference, which is how I got in.
 
-When I graduated high school, I plainly looked forward to seeing what was outside the tiny Australian town I grew up in. The idea that a few years later I’d be in the Times Square NASDAQ building was, and is, ludicrous. That’s one of those places that exists in movies—I always felt there was like a 79% chance it was fictional.
+When I graduated high school, I plainly looked forward to seeing what was outside the tiny Australian town I grew up in. The idea that a few years later I’d be in the Times Square Nasdaq building was, and is, ludicrous. That’s one of those places that exists in movies—I always felt there was like a 79% chance it was fictional.
 
 <br />
 
