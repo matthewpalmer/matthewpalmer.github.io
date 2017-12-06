@@ -28,10 +28,18 @@ layout: post
                   </a></time>
                 {% else %}
                   <h1><a href="{{ page.url }}" class="longItem">{{ page.title }}</a></h1>
-                  <time datetime="{{ page.date }}"><a href="{{ page.url }}">
-                     {{ page.date | date: '%B %e, %Y' }}
+                  <div class="byline">
+                    <a href="/">
+                      <img class="avatar-small" src="https://i.imgur.com/T6oE1OE.jpg" />
                     </a>
-                  </time>
+                    <div class="byline-right">
+                      <span class="avatar-name"><a href="/">Matthew Palmer</a></span>
+                      <time datetime="{{ page.date }}"><a href="{{ page.url }}">
+                         {{ page.date | date: '%B %e, %Y' }}
+                        </a>
+                      </time>
+                    </div>
+                  </div>
                 {% endif %}
 
                 {{ content }}

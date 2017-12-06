@@ -18,7 +18,7 @@ Bulleted lists that use emoji
 
 Painful to write, though. Like, [I know emoji better than most](http://matthewpalmer.net/rocket), and I struggle to quickly pick out the right emoji to go with each line.
 
-I built [Emoji Bullet List](https://emojibulletlist.com/?ref=mpblog), to make creating emoji dot point lists really easy. Just copy in your list, hit the big "Emojify" button, quickly choose from the suggested emoji if the first suggestion doesn't fit your needs, and hit "Copy" to get an emojified list back. Too easy!
+I built [Emoji Bullet List](https://emojibulletlist.com/?ref=mpblog) to make creating emoji dot point lists really easy. Just copy in your list, hit the big "Emojify" button, quickly choose from the suggested emoji if the first suggestion doesn't fit your needs, and hit "Copy" to get an emojified list back. Too easy!
 
 This idea originated as a nice-to-have feature for Rocket, but I realised I could use Rocket's emoji keyword/phrase dataset to build this into a web app. More people can access it, it's a bit easier to use, and hopefully a few more people will find Rocket because of it. 
 

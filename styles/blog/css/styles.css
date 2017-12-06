@@ -3,8 +3,8 @@ html, body {
   padding: 0; }
 
 body {
-  font-family: "Open Sans", sans-serif;
-  font-size: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 15px;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   color: #21201D;
@@ -77,8 +77,7 @@ header {
   .mainCol h1 {
     font-weight: 400;
     font-size: 1.5em;
-    text-align: center;
-    margin-bottom: 5%; }
+    text-align: center; }
   .mainCol blockquote {
     border-left: 5px solid #77C4D3;
     padding-left: 3%;
@@ -100,23 +99,39 @@ header {
   .mainCol a {
     color: #77C4D3; }
   .mainCol a:hover {
-    color: #4592a1;
-    border-bottom: 1px solid #4592a1; }
+    color: #4592a1; }
   .mainCol .longItem {
     color: #21201D; }
-  .mainCol time {
-    margin-top: -3%;
-    margin-bottom: 1%;
-    display: block;
+  .mainCol .byline {
     color: #bebebe;
-    text-align: center; }
-    .mainCol time a {
+    width: 330px;
+    margin-left: auto;
+    position: relative; }
+    .mainCol .byline .avatar-small {
+      border-radius: 50%;
+      border: 1px solid gainsboro;
+      height: 32px;
+      display: inline-block;
+      vertical-align: middle; }
+    .mainCol .byline .byline-right {
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 8px; }
+    .mainCol .byline time, .mainCol .byline .avatar-name {
+      display: block; }
+    .mainCol .byline time {
+      font-size: 0.8em; }
+    .mainCol .byline a {
       color: #bebebe; }
+      .mainCol .byline a:hover {
+        color: #77C4D3;
+        text-decoration: none;
+        border-bottom: none; }
   .mainCol p {
     margin-top: 5%;
     margin-bottom: 5%; }
     .mainCol p a {
-      border-bottom: 1px solid #77C4D3; }
+      text-decoration: underline; }
   .mainCol time {
     color: #bebebe; }
   .mainCol img {

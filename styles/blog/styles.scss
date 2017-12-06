@@ -1,7 +1,7 @@
 $maxWidth: 480px;
 $headerFont: 'Avenir Next', 'Avenir', 'Helvetica', serif;
 
-$sansFont: 'Open Sans', sans-serif;
+$sansFont: -apple-system, BlinkMacSystemFont, sans-serif;
 $serifFont: $sansFont;
 
 $black: #21201D;
@@ -33,7 +33,7 @@ html, body {
 
 body {
   font-family: $serifFont;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
 
@@ -141,7 +141,6 @@ header {
     font-weight: 400;
     font-size: 1.5em;
     text-align: center;
-    margin-bottom: 5%;
 
     // text-transform: uppercase;
   }
@@ -179,26 +178,51 @@ header {
 
   & a:hover {
       color: $blue - 50;
-      border-bottom: 1px solid $blue - 50;
+      // border-bottom: 1px solid $blue - 50;
     }
 
   & .longItem {
     color: $black;
   }
 
-  & time {
-    margin-top: -3%;
-    margin-bottom: 1%;
-    display: block;
+  .byline {
     color: $gray;
+    width: 330px;
+    margin-left: auto;
+    position: relative;
 
-    text-align: center;
+    .avatar-small {
+      border-radius: 50%;
+      border: 1px solid gainsboro;
+      height: 32px;
+      display: inline-block;
+      vertical-align: middle;
+    }
 
-    & a {
-      color: $gray;
+    .byline-right {
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 8px;
 
     }
 
+    time, .avatar-name {
+      display: block;
+    }
+
+    time {
+      font-size: 0.8em;
+    }
+
+    a {
+      color: $gray;
+
+      &:hover {
+        color: $blue;
+        text-decoration: none;
+        border-bottom: none;
+      }
+    }
   }
 
   & p {
@@ -207,7 +231,8 @@ header {
     // text-align: justify;
 
     & a {
-      border-bottom: 1px solid $blue;
+      text-decoration: underline;
+      // border-bottom: 1px solid $blue;
     }
   }
 
