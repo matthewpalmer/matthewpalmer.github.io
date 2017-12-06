@@ -18,7 +18,7 @@ When I graduated high school, I plainly looked forward to seeing what was outsid
 
 Turns out it’s real, and you need a lanyard and a nametag to be there. That’s where I come in: for the morning, I had to greet and register some of the most influential people in tech. Cool.
 
-My mate at registration was a Ghanian expat with an undergraduate in geospatial systems. As you’d expect, our chit-chat turned into a diagram-and-equation complete overview of GPS (between attendees’ arrival, of course). I laughed at the lengths the government have to go to secure GPS signals from timestamp tampering, which would totally ruin your phone’s positioning and orientation calculations.
+My mate at registration was a Ghanian expat with an undergraduate in geospatial systems. As you’d expect, our chit-chat turned into a diagram-and-equation complete overview of GPS (between attendees’ arrival, of course). I laughed at the lengths the government have to go to secure GPS signals from timestamp tampering, which would totally ruin your phone’s positioning system.
 
 <br />
 
