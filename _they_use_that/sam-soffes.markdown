@@ -6,8 +6,6 @@ name: Sam Soffes
 
 bio: I’m a software engineer living in San Francisco.
 
-meta_description: What text editor and podcasting microphone does Sam Soffes use?
-
 image:
   url: https://trello-attachments.s3.amazonaws.com/59efe2c0b5cbe7547a121145/59efe34e158d07e395a7bd97/b33a4cd723b183651ef24d5bb8b56924/profile-1470092596104-7f351d8667f3.png
 

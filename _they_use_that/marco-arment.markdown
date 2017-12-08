@@ -5,7 +5,6 @@ slug: marco-arment-podcast-editor-gear
 name: Marco Arment
 bio: Programmer, writer, podcaster, geek, and coffee enthusiast.
 categories: developers podcasters
-meta_description: What text editor, microphone, and camera does Marco Arment use?
 
 image:
   url: https://trello-attachments.s3.amazonaws.com/59efe2c0b5cbe7547a121145/59efe352b503f6f8cc894c5e/6b3a4efe5b947994a0f2fc1dc58d28db/Marco_Arment.jpg

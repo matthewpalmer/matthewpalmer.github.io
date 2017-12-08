@@ -5,7 +5,6 @@ slug: lara-hogan-setup-engineering-gear
 name: Lara Hogan
 bio: I'm a VP of Engineering and author.
 categories: developers mac-users
-meta_description: 
 
 image:
   url: https://trello-attachments.s3.amazonaws.com/59efe2c0b5cbe7547a121145/59efe3a6dfb5ff8b72105d3f/268bbba61960d3d2fa0c0429f3aca90d/pOMAg5VX.jpg

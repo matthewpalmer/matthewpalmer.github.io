@@ -3,10 +3,7 @@ layout: they_use_that_profile
 slug: max-stoiber-styled-components-hardware-software
 
 name: Max Stoiber
-
 bio: JavaScript, Node.js, and React developer. Coffee lover.
-
-meta_description: What text editor, laptop, and espresso machine does Max Stoiber use?
 
 image:
   url: https://trello-attachments.s3.amazonaws.com/59efe2c0b5cbe7547a121145/59efe34ddd02b2f84fc998e4/3cdaeccbf77da3bb3077be9fb1a2d662/6frGyDyA_400x400.jpg
