@@ -6,7 +6,7 @@ category: mac
 
 I tried to install VirtualBox on macOS High Sierra, but I got an error about kernel drivers, system extensions, and kernel modules not being installed. The VirtualBox installer fails with “The installation failed” where it “encountered an error that caused the installation to fail.” 
 
-Go to System Preferences > Security & Privacy. Click the ‘Allow’ button at the bottom. More detailed instructions are below.
+Go to System Preferences > Security & Privacy. Click the ‘Allow’ button at the bottom. Re-run the installer. More detailed instructions are below.
 
 ![VirtualBox on macOS failed to install][failed]
 
