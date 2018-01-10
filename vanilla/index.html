@@ -16,7 +16,6 @@
 
   </script>
 
-  <!-- DevMate Traffic Tracking script -->
   <script type="text/javascript">
     /* DO NOT MODIFY */
     var _dmq = _dmq || [];
@@ -42,10 +41,69 @@
     <h1>Vanilla</h1>
     <p class="tagline">Hide menu bar icons on your Mac.</p>
     <p><a class="download-ab-dec" href="https://vanilla.wolves.fm/programs/599dafaf412c390192308564/download">Download Vanilla for free</a>.</p>
-    <br/>
-    <div class="footer">
-      <p>Made by <a class="small-link" href="http://matthewpalmer.net">Matthew Palmer</a>&nbsp;&nbsp;—&nbsp;&nbsp;<a href="/vanilla/help.html">Help</a></p>
+  </div>
+
+  <div class='side-by-side'>
+    <div class='basic'>
+      <h3>Vanilla Free</h3>
+      <ul>
+        <li>Hide icons on your Mac’s menu bar</li>
+        <li>Compatible with light and dark menu bars</li>
+        <li>Free, and Vanilla will never nag you!</li>
+      </ul>
+    </div>
+
+    <div class='pro'>
+      <h3>Vanilla Pro</h3>
+      <p>Vanilla will never nag you to upgrade, but if you’d like, you can add extra features by unlocking the Pro version.</p>
+      <ul>
+        <li>Completely hide menu bar icons</li>
+        <li>Automatically hide icons again after five seconds</li>
+        <li>Start Vanilla automatically when you log in</li>
+        <li>Toggle icons with a keyboard shortcut<br/><em>(Seriously, I use this with Command-Shift-< like forty times a day. Get Pro just for this.)</em></li>
+      </ul>
+      <div class='upgrade-prompt'>
+        <a class='download-ab-dec' href='https://sites.fastspring.com/transducer/product/vanilla-app-license'>Go Pro for $3.99</a><br/><br/>
+        <small>I have a no-questions-asked refund policy as well.</small>
+      </div>
     </div>
   </div>
+
+  <div id='amazing-desktops'>
+    <p>Here are some beautiful, minimalist setups using Vanilla…
+      <br/>
+      <a href="https://twitter.com/_matthewpalmer">Send me yours!</a>
+      <br/>
+    </p>
+    <div class='big'>
+      <img id='img-preview' src='/vanilla/1-lowres.jpg' />
+    </div>
+
+    <div class='list'>
+      <img class='list-thumb' src='/vanilla/1-lowres-thumb.png' />
+      <img class='list-thumb' src='/vanilla/0-lowres-thumb.png' />
+      <img class='list-thumb' src='/vanilla/2-lowres-thumb.png' />
+      <img class='list-thumb' src='/vanilla/3-lowres-thumb.png' />
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>Made by <a class="small-link" href="http://matthewpalmer.net">Matthew Palmer</a>&nbsp;&nbsp;—&nbsp;&nbsp;<a href="/vanilla/help.html">Help</a></p>
+  </div>
+
+  <script type="text/javascript">
+    var thumbnails = document.getElementsByClassName('list-thumb');
+    var bigPreview = document.getElementById('img-preview');
+
+    for (var i = 0; i < thumbnails.length; i++) {
+      thumbnails[i].addEventListener('click', clickedThumbnail);
+    }
+
+    function clickedThumbnail(e) {
+      var src = e.target.getAttribute('src');
+      src = src.replace('-thumb.png', '.jpg');
+      bigPreview.setAttribute('src', src);
+    }
+  </script>
 </body>
 </html>

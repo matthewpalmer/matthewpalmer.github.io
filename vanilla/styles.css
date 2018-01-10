@@ -13,13 +13,12 @@ body {
 }
 
 h1 {
-	font-size: 9pt;
-	font-weight: 800;
-	text-transform: uppercase;
-	letter-spacing: 3px;
+	font-size: 18pt;
+	font-weight: 600;
+	letter-spacing: 1px;
 	text-align: center;
 	margin-top: 48px;
-	
+	margin-bottom: 0;
 }
 
 img {}
@@ -75,4 +74,110 @@ a:visited {
 
 .download-ab-dec:hover {
 	background-color: hsla(98, 54%, 60%, 1);
+}
+
+.download-ab-dec:visited {
+	color: #ffffff;
+}
+
+.side-by-side {
+	width: 520px;
+	margin: 96px auto;
+	display: flex;
+	// border: 1px solid gainsboro;
+	border-radius: 4px;
+	font-size: 8pt;
+}
+
+.side-by-side div {
+	
+}
+
+.side-by-side .basic {
+	width: 35%;
+	// border-right: 1px solid gainsboro;
+	padding: 16px;
+	padding-top: 36px;
+}
+
+.side-by-side .basic li {
+	margin-bottom: 16px;
+}
+
+.side-by-side .pro {
+	margin-left: 32px; 
+}
+
+.side-by-side .pro ul {
+	padding-left: 32px;
+}
+
+.side-by-side .pro p {
+	text-align: left;
+    padding-left: 16px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    padding-right: 16px;
+}
+
+.side-by-side .pro li {
+	margin-bottom: 16px;
+}
+
+.side-by-side .pro .upgrade-prompt {
+	text-align: center;
+	margin-top: 16px;
+	margin-bottom: 32px;
+}
+
+.side-by-side .pro h3 {
+	font-size: 14pt;
+	color: black;
+	border-bottom: 4px solid gainsboro;
+	margin: 0;
+	padding: 32px 8px 8px 16px;
+}
+
+.side-by-side ul {
+	padding-left: 16px;
+}
+
+#amazing-desktops {
+	width: 100%;
+	max-width: 720px;
+	margin: 96px auto;
+}
+
+#amazing-desktops p {
+	margin-bottom: 32px;
+}
+
+#amazing-desktops #img-preview {
+	max-width: 720px;
+	margin: 0 auto;
+}
+
+#amazing-desktops .list {
+	height: 106px;
+	max-width: 720px;
+	margin-top: 16px;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+#amazing-desktops .list img {
+	flex-shrink: 1;
+	min-width: 0;
+	object-fit: contain;
+	object-position: 0 0;
+	height: 106px;
+}
+
+#amazing-desktops .list img:not(:first-child) {
+	margin-left: 8px;
+}
+
+#amazing-desktops .list img:hover {
+	cursor: pointer;
+	opacity: 0.9;
 }
