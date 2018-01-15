@@ -58,6 +58,6 @@ Side note: here's how to share files between a Ubuntu virtual machine and macOS 
 
 * Restart your VM again.
 
-* Run `sudo usermod -g vboxsf USERNAME` where `USERNAME` is your guest OS username. This will let your user access the shared folder.
+* Run `sudo usermod -aG vboxsf USERNAME` where `USERNAME` is your guest OS username. This will let your user access the shared folder.
 
 * Your folder will be at `/media/sf_FOLDER_NAME`, so `cd /media/sf_FOLDER_NAME`
