@@ -1,0 +1,164 @@
+body {
+  font-family: 'Inconsolata', monospace;
+  line-height: 1.5;
+  background-color: #fffefe;
+  color: #282222;
+  margin-bottom: 72px;
+}
+
+.text-wide {
+  max-width: 400px; 
+  margin: 0 auto;
+  padding: 8px;
+}
+
+.image-wide {
+  margin: 64px auto;
+  padding: 4px;
+  max-width: 960px;
+}
+
+.image-wide img:nth-child(1) {
+  width: 100%;
+  display: block;
+}
+
+.image-wide img:nth-child(2) {
+  width: 45%;
+}
+
+.image-wide img:nth-child(3) {
+  width: 45%;
+}
+
+.image-wide-text {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+  img {
+    width: 100%;
+  }
+}
+
+.waratah {
+  font-family: 'Verdana', sans-serif;
+  text-align: center;
+}
+
+.waratah .image-wide-text {
+  background-color: #5bd6b6;
+  color: #fffefe;
+  padding-top: 128px;
+  padding-bottom: 96px;
+  padding-left: 24px;
+  text-align: left;  
+  margin-bottom: -36px;
+}
+
+.waratah .benefit-list {
+  margin-top: -34px;
+}
+
+.waratah h1 {
+
+}
+
+.waratah p {
+
+}
+
+.waratah ul {
+  list-style-type: square;
+}
+
+.waratah li {
+  margin-bottom: 16px;
+}
+
+.coverage {
+  margin-top: 196px;
+  font-family: 'Open Sans', sans-serif;
+  padding: 0;
+  margin-bottom: 96px;
+}
+
+.coverage .cover {
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+}
+
+.coverage .cover img {
+  display: block;
+  position: absolute;
+  bottom: -96px;
+}
+
+.coverage .cover-text {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  top: 0;
+  color: white;
+}
+
+.coverage .cover-text h1 {
+  margin-top: 128px;
+  letter-spacing: 2px;
+  font-size: 72px;
+  margin-bottom: 0;
+}
+
+.coverage .cover-text p {
+
+}
+
+@media (max-width: 780px) {
+  .coverage .cover img {
+    top: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+.coverage .image-callout {
+  text-align: center;
+  margin-top: 72px;
+}
+
+.live-demo {
+  text-align: center;
+  display: block;
+  margin: 48px auto 0 auto;
+  width: 120px;
+  padding: 8px;
+  text-decoration: none;
+  border-radius: 4px;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+}
+
+.live-demo:hover {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.waratah .live-demo {
+  background-color: white;
+  color: #43a088;
+}
+
+.waratah .live-demo:hover {
+  color: #317564;
+}
+
+.coverage .live-demo {
+  background-color: #6F4E37;
+  color: white;
+}
+
+.coverage .live-demo:hover {
+}
