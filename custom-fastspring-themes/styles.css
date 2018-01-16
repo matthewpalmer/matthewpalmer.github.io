@@ -156,9 +156,13 @@ body {
 }
 
 .coverage .live-demo {
-  background-color: #6F4E37;
+  background-color: #7DCB4F;
   color: white;
+  box-shadow: none;
+
 }
 
 .coverage .live-demo:hover {
+  background-color: #8ad062;
+  box-shadow: none;
 }
