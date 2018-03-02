@@ -2,7 +2,6 @@
 layout: post
 title: "Example Code for Using Swift to Save and Query iOS Keychain"
 category: ios
-rank: top
 excerpt: The origin story for Locksmith, my iOS Keychain library with over 2,400 stars on Github.
 ---
 

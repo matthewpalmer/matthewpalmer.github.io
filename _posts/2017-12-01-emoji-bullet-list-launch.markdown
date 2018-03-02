@@ -1,7 +1,9 @@
 ---
 title: Emoji Bullet List ⚡ Behind the Scenes
 layout: post
+rank: top
 category: web
+excerpt: I released Emoji Bullet List, a fun web app that emojifies your bullet point lists. It went a bit viral on ProductHunt and Twitter.
 ---
 
 Have you ever seen tweets like these?
