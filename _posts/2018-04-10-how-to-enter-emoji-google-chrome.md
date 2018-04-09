@@ -25,7 +25,7 @@ Here are the steps to type emoji in Google Chrome.
 
 And, in glorious animated gif form, here’s the guide to use emoji in Google Chrome.
 
-![emoji-chrome-guide](https://media.giphy.com/media/9rvaTl63uin7uSGbou/giphy.gif)
+![emoji-chrome-guide](/img/emoji-chrome-tutorial.gif)
 
 It’s April 2018 right now, so my best guess is that this feature will be available in the normal version of Google Chrome in the next month or so. Unicode is planning to [create some new emoji in early June 2018](http://www.unicode.org/reports/tr51/tr51-13.html), so I’d say Chrome will have it by that point at the very latest. It’s likely to be much sooner, so I’ll update this post once it’s available for everyone.
 
