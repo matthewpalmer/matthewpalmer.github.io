@@ -77,7 +77,8 @@ You can apply each of the following tweaks with the Terminal.
 
 Here’s my super minimal Desktop setup, with hidden Desktop icons, a tidy Dock, hidden menu bar icons, and a menu bar that blends in with the background.
 
-<!-- TODO: Tweet embed for minimal desktop video -->
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">💅 You can have a really clean, super-minimal Mac desktop environment. Hide Desktop icons, insert Dock separators, match the menu bar to the background, hide menu bar icons. <a href="https://t.co/ucQp2X3cdY">pic.twitter.com/ucQp2X3cdY</a></p>&mdash; Matthew Palmer (@_matthewpalmer) <a href="https://twitter.com/_matthewpalmer/status/985993955153080321?ref_src=twsrc%5Etfw">April 16, 2018</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+
 
 <br />
 
@@ -204,7 +205,8 @@ When you take a screenshot with **Command-Shift-4** then **Space** it includes t
 
 The Mac can do dozens of small variations on screenshots so your documents look professional and high-quality. Figuring out exactly how to do that is hard because your options are hidden behind keyboard shortcuts.
 
-<!-- TODO: Tweet embed for screenshots video -->
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">📸 Take waaay better screenshots. You can capture the window with a nice shadow, copy straight to clipboard, grow the screenshot region symmetrically, grow the screenshot region on one axis, and move the entire region! <a href="https://t.co/ScCVsfats4">pic.twitter.com/ScCVsfats4</a></p>&mdash; Matthew Palmer (@_matthewpalmer) <a href="https://twitter.com/_matthewpalmer/status/985993957971705857?ref_src=twsrc%5Etfw">April 16, 2018</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+
 
 ### Take a screenshot of just the window
 
