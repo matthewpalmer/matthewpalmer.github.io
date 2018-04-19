@@ -1,0 +1,112 @@
+<html>
+<head>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js"></script>
+    <script src="/greppy/format-xml.js"></script>
+
+    <style>
+    </style>
+</head>
+<body>
+    <div id="editor-container">
+        <textarea id="editor-box" cols="100" rows="10"></textarea>
+    </div>
+
+    <div id="process-container">
+        <input type="checkbox" name="markdownReferenceLink" value="Extract Markdown Reference Link"> Extract Markdown Reference Link<br>
+        <input type="checkbox" name="markdownTableOfContents" value="Markdown Table of Contents"> Markdown Table of Contents<br>
+        <input type="checkbox" name="prettifyJson" value="Prettify JSON"> Prettify JSON<br/>
+        <input type="checkbox" name="prettifyXml" value="Prettify XML"> Prettify XML<br/>
+    </div>
+
+    <button id="process">Go Greppy</button>
+
+    <br />
+    <br />
+    <hr />
+    <br />
+    <br />
+
+    <div id="results-container">
+        <textarea id="results-box" cols="100" rows="10"></textarea>
+    </div>
+
+    <button id="copy">Copy</button>
+
+    <script>
+    
+    var commands = {};
+
+    commands.markdownReferenceLink = function(input) {
+        // pbpaste | egrep -o '\]\[[a-zA-Z0-9\-]+\]' | sed -E 's/]//' | pbcopy
+        var matches = input.match(/\]\[([a-zA-Z0-9\-]+)\]/gi);
+        try { matches.shift(); } catch (err) {}
+
+        matches = matches.map(function(match) {
+            match = match.replace(/[\[\]]/g, '');
+            return '[' + match + ']: ';
+        });
+
+        console.log(matches);
+
+        input += '\n' + matches.join('\n');
+        return input + '\n';
+    };
+
+    commands.markdownTableOfContents = function(input) {
+        return input;
+    };
+
+    commands.prettifyJson = function(input) {
+        var obj; 
+        
+        try {
+            obj = JSON.parse(input);
+        } catch (err) {
+            alert('Invalid json');
+        }
+
+        var str = JSON.stringify(obj, null, 2);
+        return str;
+    };
+
+    commands.prettifyXml = function(input) {
+        var format = require('xml-formatter');
+        var formattedXml = format(input);
+        return formattedXml;
+    };
+
+    function goGreppy() {
+        $('#process-container input[type="checkbox"]:checked')
+            .each(function(index, item) {
+                var input = $('#editor-box').val();
+                var cmd = commands[item.name];
+                var output = cmd(input);
+                $('#editor-box').val(output);
+            });
+        
+        $('#results-box').val($('#editor-box').val());
+    }
+
+    var clipboard = new Clipboard('#copy', {
+	    text: function() {
+            debugger;
+	        var output = '';
+
+            output = $('#results-box').val()
+
+	        $('#copy').text('Copied!');
+
+	        setTimeout(function() {
+	        	$('#copy').text('Copy');
+	        }, 1500)
+
+	        return output;
+	    }
+	});
+
+    $('#process').click(goGreppy);
+    
+    </script>
+</body>
+</html>
