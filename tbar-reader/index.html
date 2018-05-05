@@ -100,17 +100,32 @@
             width: 320px;
         }
     </style>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-35071535-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-35071535-2');
+    </script>
+
 </head>
 <body>
     <div class="description">
         <h1>TBAR Reader</h1>
-        <p>TBAR Reader lets you view raw TBAR records for the ATO’s Super Reforms in an easier format.</p>
+        <p>
+            TBAR Reader lets you view raw TBAR records for the ATO’s Super Reforms in a human-readable format.
+            <br/>
+            <small><a href="/">Home</a></small>
+        </p>
     </div>
 
     <div class="app">
         <div class="raw-section">
             <h2>Raw file</h2>
-            <p>Paste in your raw TBAR file to display.</p>
+            <p>Paste in your raw TBAR file…</p>
             <textarea id="raw-tbar-record"></textarea>
 
             <div class="button-list">
