@@ -1,0 +1,147 @@
+@font-face {
+  font-family: 'League Spartan';
+  src:  url('LeagueSpartan-Bold.otf') format('otf');
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('Raleway-Bold.ttf') format('ttf');
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  border-top: 12px solid #4875D5;
+  padding-top: 72px;
+}
+
+body {
+  font-family: 'Raleway';
+  padding: 0;
+  margin: 0;
+  color: #222;
+  line-height: 1.5;
+}
+
+h1, h2 {
+  font-family: 'League Spartan';
+  letter-spacing: 1px;
+}
+
+.highlight {
+  font-style: normal;
+  background-color: #F6DA6D;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.hero {
+  display: flex;
+  max-width: 720px;
+  margin: 0 auto;
+  align-items: center;
+  margin-top: 72px;
+}
+
+.hero .left {
+  
+}
+
+.hero h1 {
+  color: #4875D5;
+  margin-top: 8px;
+
+}
+
+.hero h2 {
+  margin-bottom: 0;
+  font-size: 18px;
+  color: #F6DA6D;
+}
+
+.hero .right {
+  width: 260px;
+}
+
+.hero img {
+  width: 100%;
+  border-radius: 4px;
+  -webkit-box-shadow: 2px 2px 12px 0px rgba(0,0,0,0.5);
+  -moz-box-shadow: 2px 2px 12px 0px rgba(0,0,0,0.5);
+  box-shadow: 2px 2px 12px 0px rgba(0,0,0,0.5);
+}
+
+.button {
+  color: #4875D5;
+  background-color: white;
+  border-radius: 4px;
+  display: block;
+  text-decoration: none;
+  padding: 12px;
+  width: 128px;
+  -webkit-box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.2);
+  -moz-box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.2);
+  box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.2);
+  margin-top: 36px;
+  margin-bottom: 72px;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.95);
+  -webkit-box-shadow: 2px 2px 8px 0px rgba(0,0,0,0.2);
+  -moz-box-shadow: 2px 2px 8px 0px rgba(0,0,0,0.2);
+  box-shadow: 2px 2px 8px 0px rgba(0,0,0,0.2);
+}
+
+.signup {
+  margin-top: 168px;
+  background-color: #4875D5;
+  color: white;
+}
+
+.signup .inner {
+  max-width: 420px;
+  margin: 0 auto;
+  padding: 48px;
+}
+
+.description {
+  max-width: 720px;
+  margin: 0 auto;
+  margin-top: 128px;
+}
+
+.description h1 {
+  color: #4875D5;
+}
+
+.description p {
+  max-width: 520px;
+}
+
+.detail {
+  max-width: 720px;
+  margin: 0 auto;
+  margin-top: 128px;
+}
+
+.detail h2 {
+  margin-top: 48px;
+}
+
+.detail p {
+  max-width: 580px;
+}
+
+.detail a {
+  color: #4875D5;
+}
+
+.detail a:visited {
+  color: #4875D5;
+}
+
+.detail {
+  margin-bottom: 168px;
+}
