@@ -266,3 +266,8 @@ h1, h2 {
   -moz-box-shadow: 0px 1px 2px 0px gainsboro;
   box-shadow: 0px 1px 2px 0px gainsboro;
 }
+
+.sections a.feature {
+  border: 1px solid #4875d5;
+  color: #4875d5;
+}
