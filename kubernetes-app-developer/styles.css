@@ -133,6 +133,14 @@ h1, h2 {
   max-width: 520px;
 }
 
+.description a {
+  color: #4875d5;
+}
+
+.description a:visited {
+  color: #4875d5;
+}
+
 .detail {
   max-width: 720px;
   margin: 0 auto;
@@ -332,4 +340,8 @@ h1, h2 {
 
 .article-container ul.longlist li, .article-container ol.longlist li {
   margin-bottom: 24px;
+}
+
+.article-container h2 {
+  margin-top: 72px;
 }
