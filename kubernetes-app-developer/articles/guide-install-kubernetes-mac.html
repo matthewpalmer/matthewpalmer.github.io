@@ -1,0 +1,93 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Golden Guide to Certified Kubernetes Application Development</title>
+  <meta name="description" content="A focused guide to Kubernetes for application developers. Built around the CKAD exam curriculum. Great for developers learning independently. Must-have for developers getting certified." />
+  <link rel="stylesheet" href="../styles.css" media="screen" type="text/css">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-35071535-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-35071535-2');
+  </script>
+</head>
+<body>
+  <div class="article-container">
+    <h1>How to Install Kubernetes on Mac</h1>
+
+    <p>This is a step-by-step guide to installing and running Kubernetes on your Mac so that you can develop applications locally. </p>
+
+    <blockquote>
+      <p>This is an excerpt from my book, <a href="../">Golden Guide to Certified Kubernetes Application Development</a>. If you’re a web application developer who wants to become a Kubernetes expert very quickly, check out the book.</p>
+    </blockquote>
+
+    <p>You will be guided through running and accessing a Kubernetes cluster on your local machine using the following tools:</p>
+
+    <ul>
+    <li>Homebrew</li>
+    <li>Docker for Mac</li>
+    <li>Minikube </li>
+    <li>virtualbox</li>
+    <li>kubectl</li>
+    </ul>
+
+    <h2>Installation Guide</h2>
+
+    <p>The only pre-requisite for this guide is that you have <a href="https://brew.sh">Homebrew</a> installed. Homebrew is a package manager for the Mac. You’ll also need <a href="https://caskroom.github.io">Homebrew Cask</a>, which you can install after Homebrew by running <code>brew tap caskroom/cask</code> in your Terminal.</p>
+
+    <ol class="longlist">
+    <li><p>Install <a href="https://docs.docker.com/docker-for-mac/install/">Docker for Mac</a>. Docker is used to create, manage, and run our containers. It lets us construct containers that will run in Kubernetes Pods.</p></li>
+    <li><p>Install <a href="https://www.virtualbox.org">VirtualBox for Mac</a> using Homebrew. Run <code>brew cask install virtualbox</code> in your Terminal. VirtualBox lets you run virtual machines on your Mac (like running Windows inside macOS, except for a Kubernetes cluster.)</p>
+
+    <p><strong>Skip to step three</strong> if everything has worked to this point.</p>
+
+    <aside>
+
+    <p>In my case, I already had the non-Homebrew VirtualBox app installed which caused issues when trying to start minikube.</p>
+
+    <p>If you already have VirtualBox installed, start the installation as before with <code>brew cask install virtualbox</code>. You will get a warning that confirms this saying <code>Warning: Cask 'virtualbox' is already installed.</code>. Once this is confirmed, you can reinstall VirtualBox with Homebrew by running <code>brew cask reinstall virtualbox</code>. </p>
+
+    <p>If you happen to have VirtualBox already running when you do this, you could see an error saying <code>Failed to unload org.virtualbox.kext.VBoxDrv - (libkern/kext) kext is in use or retained (cannot unload).</code></p>
+
+    <p>This is because the kernel extensions that VirtualBox uses were in use when the uninstall occurred. If you scroll up in the output of that command, beneath <code>Warning! Found the following active VirtualBox processes:</code> you’ll see a list of the processes that need to be killed.</p>
+
+    <p>Kill each of these in turn by running <code>kill first_column_number</code> (<code>first_column_number</code> is the process identifier for that process).</p>
+
+    <p>Now re-run <code>brew cask reinstall virtualbox</code> and it should succeed.</p>
+    </aside>
+    </li>
+
+    <li><p>Install <a href="https://kubernetes.io/docs/tasks/tools/install-kubectl/"><code>kubectl</code></a> for Mac. This is the command-line interface that lets you interact with Kuberentes. Run <code>brew install kubectl</code> in your Terminal.</p></li>
+    <li><p>Install <a href="https://kubernetes.io/docs/getting-started-guides/minikube/">Minikube</a> via the <a href="https://github.com/kubernetes/minikube/releases">Installation > OSX instructions from the latest release</a>. At the time of writing, this meant running the following command in Terminal…
+    </p>
+      <pre><code>curl -Lo minikube https://storage.googleapis.com/minikube/releases/v0.27.0/minikube-darwin-amd64 &amp;&amp;\
+      chmod +x minikube &amp;&amp;\
+      sudo mv minikube /usr/local/bin/</code></pre>
+    <p>Minikube will run a Kubernetes cluster with a single node.</p>
+    </li>
+    <li><p>Everything should work! Start your Minikube cluster with <code>minikube start</code>. Then run <code>kubectl api-versions</code>. If you see a list of versions, everything’s working! <code>minikube start</code> might take a few minutes.</p></li>
+
+    <aside>
+    <p>At this point, I got an error saying <code>Error starting host: Error getting state for host: machine does not exist.</code> because I had previously tried to run Minikube. You can fix this by running <code>open ~/.minikube/</code> to open Minikube’s data files, and then deleting and deleting the <code>machines</code> directory. Then run <code>minikube start</code> again.</p>
+    </aside>
+
+    </ol>
+
+    <p><img src="./minikube-mac.png" alt="Running Minikube on Mac using VirtualBox" title="" /></p>
+
+    <h2>Come Together</h2>
+
+    <p>You’ve installed all these tools and everything looks like it’s working. A quick explanation of how the components relate is needed.</p>
+
+    <ul class="longlist">
+    <li>VirtualBox is a generic tool for running virtual machines. You can use it to run Ubuntu, Windows, etc. inside your macOS operating system host.</li>
+    <li>Minikube is a Kubernetes-specific package that runs a Kubernetes cluster on your machine. That cluster has a single node and has some unique features that make it more suitable for local development. Minikube tells VirtualBox to run. Minikube can use other virtualization tools—not just VirtualBox—however these require extra configuration.</li>
+    <li><code>kubectl</code> is the command line application that lets you interact with your Minikube Kubernetes cluster. It sends request to the Kubernetes API server running on the cluser to manage your Kubernetes environment. <code>kubectl</code> is like any other application that runs on your Mac—it just makes HTTP requests to the Kubernetes API on the cluster.</li>
+    </ul>
+  </div>
+</body>
+</html>
