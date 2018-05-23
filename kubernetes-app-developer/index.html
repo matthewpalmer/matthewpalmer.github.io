@@ -27,7 +27,7 @@
         <a href="#description">Details</a>
         <a href="#contents">Contents</a>
         <a href="#purchase">Packages</a>
-        <a class="feature" href="./chapter-3-sample.pdf">Sample</a>
+        <a id="sample-chapter" target="_blank" class="feature" href="./chapter-3-sample.pdf">Sample</a>
       </div>
     </div>
 
@@ -123,7 +123,7 @@
           <li>Challenge exercises to help you prepare for the exam</li>
         </ul>
         <div class="button-container">
-          <a href="coming-soon.html?certified" class="button price">Purchase for $129</a>
+          <a id="certified-purchase" target="_blank" href="coming-soon.html?certified" class="button price">Purchase for $129</a>
         </div>
       </div>
 
@@ -139,7 +139,7 @@
             <li>Practice exercises to apply your knowledge</li>
           </ul>
           <div class="button-container">
-            <a href="coming-soon.html?independent_learner" class="button price">Purchase for $39</a>
+            <a id="independent-purchase" target="_blank" href="coming-soon.html?independent" class="button price">Purchase for $39</a>
           </div>
         </div>
 
@@ -203,5 +203,31 @@
       </a>
     </div>
   </div>
+
+  <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
+
+  <script>
+  function sendEvent(label) {
+    ga('send', {
+      hitType: 'event',
+      eventCategory: 'Button',
+      eventAction: 'click',
+      eventLabel: label
+    });
+  }
+
+  document.getElementById('sample-chapter').onclick = function(e) {
+    console.log('Download sample chapter');
+    sendEvent('sample_download');
+  };
+
+  document.getElementById('independent-purchase').onclick = function() {
+    sendEvent('independent');
+  };
+
+  document.getElementById('certified-purchase').onclick = function() {
+    sendEvent('certified');
+  }
+  </script>
 </body>
 </html>
