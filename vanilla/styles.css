@@ -1,8 +1,8 @@
 body {
-	background: #f7f7f7;
-	font-family: 'Verdana', sans-serif;
+	background: #fefefe;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 	line-height: 1.5;
-	color: #5F5F5F;
+	color: #010101;
 	padding-top: 36px;
 }
 
@@ -13,12 +13,13 @@ body {
 }
 
 h1 {
-	font-size: 18pt;
-	font-weight: 600;
-	letter-spacing: 1px;
+	font-size: 32pt;
+	font-weight: 800;
+	letter-spacing: 0px;
 	text-align: center;
 	margin-top: 48px;
 	margin-bottom: 0;
+  color: black;
 }
 
 img {}
@@ -37,7 +38,7 @@ img {}
 }
 
 p {
-	font-size: 8pt;
+	font-size: 9pt;
 	text-align: center;
 }
 
@@ -81,12 +82,16 @@ a:visited {
 }
 
 .side-by-side {
-	width: 520px;
+	max-width: 380px;
 	margin: 96px auto;
 	display: flex;
-	// border: 1px solid gainsboro;
-	border-radius: 4px;
+	background: #f6f6f6;
+	border-radius: 8px;
 	font-size: 8pt;
+  padding: 48px;
+  -webkit-box-shadow: 0 4px 2px -2px rgba(95,95,95,0.1);
+  -moz-box-shadow: 0 4px 2px -2px rgba(95,95,95,0.1);
+  box-shadow: 0 4px 2px -2px rgba(95,95,95,0.1);
 }
 
 .side-by-side div {
@@ -95,7 +100,6 @@ a:visited {
 
 .side-by-side .basic {
 	width: 35%;
-	// border-right: 1px solid gainsboro;
 	padding: 16px;
 	padding-top: 36px;
 }
@@ -105,7 +109,6 @@ a:visited {
 }
 
 .side-by-side .pro {
-	margin-left: 32px; 
 }
 
 .side-by-side .pro ul {
@@ -114,10 +117,8 @@ a:visited {
 
 .side-by-side .pro p {
 	text-align: left;
-    padding-left: 16px;
     margin-top: 16px;
     margin-bottom: 16px;
-    padding-right: 16px;
 }
 
 .side-by-side .pro li {
@@ -131,9 +132,10 @@ a:visited {
 }
 
 .side-by-side .pro h3 {
-	font-size: 14pt;
+	font-size: 26pt;
+  font-weight: 800;
+  text-align: center;
 	color: black;
-	border-bottom: 4px solid gainsboro;
 	margin: 0;
 	padding: 32px 8px 8px 16px;
 }
@@ -180,4 +182,37 @@ a:visited {
 #amazing-desktops .list img:hover {
 	cursor: pointer;
 	opacity: 0.9;
+}
+
+.testimonials {
+  max-width: 500px;
+  margin: 108px auto;
+}
+
+.testimonial {
+  margin-bottom: 64px;
+}
+
+.testimonial:nth-child(1) {
+  max-width: 390px;
+  font-size: 15pt;
+}
+
+.testimonial:nth-child(2) {
+  text-align: right;
+}
+
+.testimonial:nth-child(3) {
+  max-width: 380px;
+  font-size: 13pt;
+}
+
+.testimonial .source {
+  text-align: right;
+  font-size: 9pt;
+}
+
+
+.testimonial:nth-child(3) .source {
+  text-align: left;
 }
