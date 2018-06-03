@@ -303,6 +303,18 @@ h1, h2 {
   color: #4875d5;
 }
 
+.article-container h1 code {
+  font-size: 28pt;
+}
+
+.article-container h2 code {
+  font-size: 20pt;
+}
+
+.article-container h1 code, .article-container h2 code {
+  background-color: white;
+}
+
 .article-container a {
   color: #4875d5;
 }
@@ -344,4 +356,22 @@ h1, h2 {
 
 .article-container h2 {
   margin-top: 72px;
+}
+
+#kubernetes-apiversion-table {
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+}
+
+#kubernetes-apiversion-table thead {
+  border-bottom: 4px solid #e3e3e3;
+}
+
+#kubernetes-apiversion-table td, #kubernetes-apiversion-table th {
+  padding: 16px 12px;
+}
+
+#kubernetes-apiversion-table tbody tr:nth-child(odd){
+  background-color: #f1f1f1;
 }
