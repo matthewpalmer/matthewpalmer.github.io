@@ -1,0 +1,185 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>CKAD Exam Guide - Kubernetes Golden Guide</title>
+  <link rel="stylesheet" href="../styles.css" media="screen" type="text/css">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-35071535-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-35071535-2');
+  </script>
+</head>
+<body>
+  <div class="article-container">
+    <h1>CKAD Exam Guide</h1>
+
+<p>I recently completed the Certified Kubernetes Application Developer exam
+and received certification. 
+Here is my personal guide to the exam—it’s an overview of what I studied,
+what surprised me, and what needs the most practice.</p>
+
+<p>Please note that I can’t give out specific details because you have to sign
+confidentiality agreements with the CNCF before taking the exam. I’ll do my
+best to share my experience in a suitable way.</p>
+
+<p>Also, feel free to email me at matt@matthewpalmer.net with any questions you have.
+And especially email me if you take the exam and this guide does or does not help!
+I want to collect some data on whether this guide is useful, and how I can improve it.</p>
+
+<p><em>Last updated 23 June, 2018. <a href="https://twitter.com/_matthewpalmer">Contact me</a> to report inaccuracies.</em></p>
+
+<br />
+
+<blockquote>
+    <p>This is an excerpt from my book, <a href="../">Golden Guide to Kubernetes Application Development</a>. It’s a complete Kubernetes guide that’s purpose-built for developers taking the CKAD exam.</p>
+  </blockquote>
+
+<h2>Background</h2>
+
+<p>The CKAD exam is a two hour practical exam that tests your knowledge, skill, and
+ability as a developer using Kubernetes. The exam is oriented towards testing this ability. Questions focus on using, debugging, monitoring, 
+and accessing Kubernetes.</p>
+
+<h2>Exam style</h2>
+
+<p>The test involves interacting with a live Kubernetes cluster via the command line.
+This occurs in a web-based command-line environment where you
+need to execute <code>kubectl</code> commands, operate a Unix shell, and edit YAML files.</p>
+
+<p>As you’d expect, the exam follows the syllabus and curriculum closely. There are
+roughly twenty topics in the curriculum, and roughly that many questions in the exam.
+The exam covers almost every topic in the syllabus—make sure you’re familiar with everything when preparing.</p>
+
+<p>The questions are all practical—you will need to create Kubernetes objects, consume
+existing objects, debug existing (but failing) objects, and query the cluster.</p>
+
+<h2>Assumed skills</h2>
+
+<p>First of all, you will need to be comfortable navigating a Unix command line environment.
+The entire test takes place in a web application that simulates a Unix command line.
+You will need to be able to navigate a Unix shell, know a command-line text editor, and
+use Unix programs to complete questions.</p>
+
+<p>One large annoyance for me was that I don’t usually edit my YAML files in Vim.
+This was a problem when I wanted to bulk-indent fifteen lines but couldn’t 
+remember how to do it. I had to type <em>space-space</em> fifteen times—a huge time-sink
+for very little value. Make sure you’re fast at navigating Unix and editing YAML 
+in a terminal text editor.</p>
+
+<p>You will need to be able to create Kubernetes objects through <em>both</em> YAML and via <code>kubectl</code> commands!</p>
+
+<h2>Content</h2>
+
+<p>There were no content-related surprises to my exam—what’s in the curriculum is what
+gets tested. If something seems like something that an administrator would set up on a cluster
+(for example, a resource quota), it’s more likely that you’ll need to consume or use
+that resource, rather than needing to know how to create it yourself. Remember that this is
+an exam for application developers.</p>
+
+<p>I think there are three priority tiers of content to learn for the exam.
+The first tier requires deep understanding and experience, and will be tested multiple times. The second tier you need to understand and use, but it is likely to appear
+fewer times. The third tier are simpler concepts that you are likely to simply use or consume, 
+and they only appear once in the exam.</p>
+
+<p>Prioritise your learning according to these tiers.</p>
+
+<ol>
+<li>Debugging Kubernetes, Pods, Deployments, Jobs, Services, editing YAML, Volumes and PVCs, namespaces, labels</li>
+<li>Liveness and readiness, logging, monitoring, multi-container pods, rolling updates and rollbacks</li>
+<li>Service Accounts, resource quotas, security contexts</li>
+</ol>
+
+<h2>Sample questions</h2>
+
+<p>I can’t give out any specific questions, but to give you a sense of what the questions
+are <em>like</em>, here are a couple of sample questions. I have more sample questions
+(with complete solutions!) in the upgraded package of my <a href="../">Golden Guide to Kubernetes
+Application Development</a> book.</p>
+
+<p>Note that these sample questions are easier than what’s in the exam, but they 
+give you a hint of the <em>style</em> of the questions.</p>
+
+<p><strong>Sample question 1</strong></p>
+
+<p>Create a deployment of version 1.7.1 of the <code>nginx</code> image. This deployment should have five pods
+running the nginx image. Create the deployment in the <code>question-four</code> namespace. Save the YAML
+configuration to create this deployment in a file called <code>deploy.yaml</code>.</p>
+
+<p><strong>Sample question 2</strong></p>
+
+<p>A pod called <code>question-five-pod</code> is failing to run in our Kubernetes cluster in the <code>question-five</code> namespace. Query the Kubernetes cluster to determine why the pod isn’t starting, and 
+save any relevant events to a file called <code>query-results.txt</code>. Then, fix the pod’s configuration
+so that it starts correctly.</p>
+
+<h2>Other advice</h2>
+
+<p><strong>Know how to quickly navigate the web and CLI documentation available to you</strong></p>
+
+<p>You have full access to kubernetes.io and <code>kubectl</code> in the exam environment. Make the most of it!</p>
+
+<p>Make sure you can navigate, search, and find examples on kubernetes.io. Most questions require
+knowledge or configuration that’s contained on kubernetes.io—knowing the layout and location of
+documentation might need is a huge advantage.</p>
+
+<p>While navigating the docs is important, the faster (and my preferred) way is to use <code>kubectl</code>’s
+inbuilt documentation to quickly find information you need.</p>
+
+<p>For figuring out which YAML field to use, <code>kubectl explain &lt;object&gt;.&lt;subobject&gt;</code> and <code>kubectl explain &lt;object&gt;.&lt;subobject&gt; --recursive</code> are my most-used commands. They’ll print out types and attributes you need to set on a resource.</p>
+
+<p><strong>Know how to do both YAML and <code>kubectl</code> commands</strong></p>
+
+<p>The exam will require you to interchangeably use YAML or direct <code>kubectl</code> commands—make sure
+you are comfortable with both. I have two tips to help with this.</p>
+
+<p><code>kubectl get $resource --export=true -o yaml</code> will get you the configuration for an existing
+object in YAML format. This is great for debugging why something might not be working. It’s
+also really useful if it’s faster (or you are more comfortable) creating a resource via
+a <code>kubectl</code> command.</p>
+
+<p>For example, I used something like <code>kubectl run mydeployment --image=nginx --port=8080 --replicas=5</code> 
+to create a deployment quickly, and then did <code>kubectl get deployment mydeployment --export=true -o yaml</code>
+to get the YAML for that deployment. This helps me avoid remembering all the details of writing a
+deployment YAML.</p>
+
+<p><strong>Most things need to happen in a specific namespace</strong></p>
+
+<p>Each question will probably specify which namespace the resource lives in or is to be created in.
+Namespaces were something I wasn’t particularly familiar with when I took the exam,
+so I kind of had to wing it. Make sure you’re comfortable using and understanding namespaces,
+and can specify them through the command line (the <code>--namespace</code> argument) 
+and through YAML (the metadata.namespace` field).</p>
+
+<p><strong>Be able to move quickly</strong></p>
+
+<p>I found the exam fairly tight time-wise. You’ll need to work quickly in a Kubernetes cluster from 
+a terminal environment. Also, be prepared to skip questions if they have a low weighting—sometimes
+it’s not worth spending ten minute on a two mark question.</p>
+
+<p><strong>The exam environment is not friendly</strong></p>
+
+<p>First of all, the person running your exam will be strict. Even though it’s all done remotely,
+you’ll have to remove labels from drink bottles, remove everything from your desk (including, in my 
+case, desk lamps and plants), and show the proctor the entire room through your webcam. Taking
+the exam in a public setting (like a library, which I almost did) is not really viable unfortunately.</p>
+
+<p>The terminal environment you have to use is pretty terrible. It can be quite laggy and doesn’t
+have the autocompletion functionality you might be used to. Try to find the best internet connection
+you can to take the exam—a laggy environment is <em>so</em> disruptive.</p>
+
+<p><strong>You have a free retake</strong></p>
+
+<p>Don’t worry if you fail the exam—you get a free retake! The next time you’ll better understand what’s
+coming in the exam, and you’ll be able to manage your time better. If you do fail your first attempt,
+please email me and let me know which things tripped you up or what would have helped to know.
+I really want to improve this guide for everyone.</p>
+  </div>
+</body>
+</html>
+
+
+
