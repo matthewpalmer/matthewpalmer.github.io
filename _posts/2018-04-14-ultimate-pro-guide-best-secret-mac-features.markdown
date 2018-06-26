@@ -188,7 +188,7 @@ To stop your Mac from sleeping while you do a presentation or watch something, r
 
 1. `caffeinate`
 
-[Caffeine](http://lightheadsw.com/caffeine/) is a great app to do this as well.
+[Caffeine](http://lightheadsw.com/caffeine/) and [Lungo](https://itunes.apple.com/us/app/lungo/id1263070803?mt=12) are great apps that do this as well. (Thanks @chrismessina!)
 
 <br />
 
