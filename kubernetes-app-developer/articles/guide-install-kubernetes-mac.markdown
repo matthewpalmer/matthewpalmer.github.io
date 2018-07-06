@@ -1,6 +1,6 @@
 This is a step-by-step guide to installing and running Kubernetes on your Mac so that you can develop applications locally. 
 
-> This is an excerpt from my book, [Golden Guide to Certified Kubernetes Application Development](../). If you’re a web application developer who wants to become a Kubernetes expert very quickly, check out the book.
+> This is an excerpt from my book, [Golden Guide to Kubernetes Application Development](../). If you’re a web application developer who wants to become a Kubernetes expert very quickly, check out the book.
 
 You will be guided through running and accessing a Kubernetes cluster on your local machine using the following tools:
 
