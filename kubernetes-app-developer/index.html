@@ -2,18 +2,18 @@
 <head>
   <meta charset="utf-8">
   <title>Golden Guide to Kubernetes Application Development</title>
-  <meta name="description" content="A focused book on Kubernetes for application developers. Built around the CKAD exam curriculum. Great for developers learning independently. Must-have for developers getting certified." />
+  <meta name="description" content="A book for app developers learning Kubernetes. Built around the CKAD exam curriculum. Great for developers learning independently. Must-have for developers getting certified." />
   <link rel="stylesheet" href="styles.css" media="screen" type="text/css">
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-35071535-2"></script>
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-35071535-2"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
 
     gtag('config', 'UA-35071535-2');
-  </script>
+  </script> -->
 
 </head>
 <body>
@@ -24,15 +24,13 @@
       <p>The perfect book for web application developers learning Kubernetes.</p>
 
       <div class="sections">
-        <a href="#description">Details</a>
-        <a href="#contents">Contents</a>
-        <a href="#purchase">Packages</a>
-        <a id="sample-chapter" target="_blank" class="feature" href="./book-sample.pdf">Sample</a>
+        <a id="sample-chapter" target="_blank" href="./book-sample.pdf">Download Sample</a>
+        <a href="#purchase" class="feature">Purchase</a>
       </div>
     </div>
 
     <div class="right">
-      <img class="cover" src="ckad-guide.png" />
+      <img class="cover" src="ckad-guide-new.png" />
     </div>
   </div>
 
@@ -75,7 +73,6 @@
 
     <div class="table-of-contents">
       <ul>
-        <li>Your Path to Glory</li>
         <li>Exam Advice</li>
         <li>Kubernetes Key Concepts</li>
         <li>Kubernetes Primitives</li>
@@ -93,46 +90,11 @@
         <li>State Persistence</li>
       </ul>
     </div>
-
-    <h1 id="contents">Free Guides!</h1>
-    <p>In the process of writing this book, I’ve shared some free guides as abridged excerpts from the book.</p>
-    <ul>
-      <li><a href="articles/guide-install-kubernetes-mac.html">How to Install Kubernetes on Mac</a></li>
-      <li><a href="articles/kubernetes-apiversion-definition-guide.html">Which Kubernetes apiVersion Should I Use?</a></li>      
-      <li><a href="articles/multi-container-pod-design-patterns.html">Multi-Container Pod Design Patterns in Kubernetes</a></li>
-      <li><a href="articles/ckad-exam-guide.html">CKAD Exam Guide</a></li>
-    </ul>
   </div>
 
   <div class="purchase" id="purchase">
     <div class="options">
-      <div class="option certified">
-        <h3>Getting Certified</h3>
-        <p>You’re on the fast-track to CNCF CKAD certification. You need the premium package in order to learn and apply Kubernetes in a practical way.</p>
-        <p>You will receive the complete book in PDF format.</p>
-        <ul>
-          <li>Become an expert in deploying and maintaining your production application environment using Kubernetes</li>
-          <li>Clear and thorough explanation of Kubernetes</li>
-          <li>Sample code and examples useful to app developers</li>
-          <li>Practice exercises to apply your knowledge</li>
-        </ul>
-        <p><strong>Plus, you gain access to the book’s private GitHub repository.</strong></p>
-        <ul>
-          <li>Ask the author questions</li>
-          <li>Get help debugging your code</li>
-          <li>Collaborate with other certified developers in a private forum</li>
-          <li>Access full source code, solutions to exercises, and high res diagrams</li>
-          <li>Download sample CKAD certification exams to practice</li>
-          <li>Challenge exercises to help you prepare for the exam</li>
-        </ul>
-        <div class="button-container">
-          <script src="https://gumroad.com/js/gumroad.js"></script>
-          <a id="certified-purchase" class="button price" href="https://gum.co/bXPsE" target="_blank" data-gumroad-single-product="true">Purchase for $119</a>
-          <!-- <a id="certified-purchase" target="_blank" href="coming-soon.html?certified" class="button price">Purchase for $119</a> -->
-        </div>
-      </div>
-
-      <div class="left-col">
+      <div>
         <div class="option independent">
           <h3>Independent Learner</h3>
           <p>You’re an independent learner who wants to understand Kubernetes.</p>
@@ -141,7 +103,6 @@
             <li>Become an expert in deploying and maintaining your production application environment using Kubernetes</li>
             <li>Clear and thorough explanation of Kubernetes</li>
             <li>Sample code and examples useful to app developers</li>
-            <li>Practice exercises to apply your knowledge</li>
           </ul>
           <div class="button-container">
               <script src="https://gumroad.com/js/gumroad.js"></script>
@@ -149,14 +110,46 @@
               <!-- <a  target="_blank" href="coming-soon.html?independent" >Purchase for $39</a> -->
           </div>
         </div>
-
+  
         <div class="notes">
           <p><small>* All <em>Golden Guides</em> come with a no-questions-asked refund policy.</small></p>
           <p><small>* Many readers use their employer’s personal education budget to purchase this book. If you need it, we can help convince your manager.</small></p>
           <p><small>* Want to train your whole team in Kubernetes? Contact us for bulk purchase discounts.</small></p>
         </div>
       </div>
+
+        <div class="option certified">
+            <div class="certified-header-container">
+              <h3><span class="star">★</span> Getting Certified</h3>
+            </div>
+            
+            <p>You’re on the fast-track to CNCF CKAD certification.</p>
+            <p>The upgraded package contains…</p>
+            <ul>
+              <li>The complete book in PDF format.</li>
+              <li>A thirty question practice exam tailored to the CKAD curriculum</li>
+              <li>Complete solutions to the practice exam</li>
+              <li>Complete source code of examples and high res diagrams</li>
+              <li>An exclusive community of developers getting CKAD certified</li>
+            </ul>
+            <div class="button-container">
+              <script src="https://gumroad.com/js/gumroad.js"></script>
+              <a id="certified-purchase" class="button price" href="https://gum.co/bXPsE" target="_blank" data-gumroad-single-product="true">Purchase for $119</a>
+              <!-- <a id="certified-purchase" target="_blank" href="coming-soon.html?certified" class="button price">Purchase for $119</a> -->
+            </div>
+        </div>
     </div>
+  </div>
+
+  <div class="articles">
+    <h1 id="articles">Articles</h1>
+    <p>To give you a small taste of the book, we’ve published a few articles on Kubernetes.</p>
+    <ul>
+      <li><a href="articles/guide-install-kubernetes-mac.html">How to Install Kubernetes on Mac</a></li>
+      <li><a href="articles/kubernetes-apiversion-definition-guide.html">Which Kubernetes apiVersion Should I Use?</a></li>      
+      <li><a href="articles/multi-container-pod-design-patterns.html">Multi-Container Pod Design Patterns in Kubernetes</a></li>
+      <li><a href="articles/ckad-exam-guide.html">CKAD Exam Guide</a></li>
+    </ul>
   </div>
 
   <div class="detail">

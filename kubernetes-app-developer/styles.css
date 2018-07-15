@@ -141,6 +141,12 @@ h1, h2 {
   color: #4875d5;
 }
 
+.articles {
+  max-width: 720px;
+  margin: 0 auto;
+  margin-top: 96px;
+}
+
 .detail {
   max-width: 720px;
   margin: 0 auto;
@@ -196,8 +202,18 @@ h1, h2 {
   box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.1);
 }
 
-.certified {
+.independent {
   margin-right: 72px;
+}
+
+.certified {
+  position: relative;
+}
+
+.certified .star {
+  color: #F6DA6D;
+  display: inline-block;
+  margin-right: 6px;
 }
 
 .purchase .notes {
