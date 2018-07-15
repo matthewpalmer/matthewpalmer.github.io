@@ -391,3 +391,17 @@ h1, h2 {
 #kubernetes-apiversion-table tbody tr:nth-child(odd){
   background-color: #f1f1f1;
 }
+
+.photo {
+  top: 36px;
+  left: -72px;
+  position: absolute;
+}
+
+.author img {
+  border-radius: 25px;
+  border: 1px solid white;
+  float: left;
+  margin-right: 12px;
+}
+
