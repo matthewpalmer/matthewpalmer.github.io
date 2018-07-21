@@ -405,3 +405,41 @@ h1, h2 {
   margin-right: 12px;
 }
 
+
+/* Sidebar article layout */
+
+body.sidebar {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+body.sidebar .article-container {
+  width: 600px;
+  float: left;
+  margin: 0 auto;
+}
+
+body.sidebar .sidebar-container {
+  width: 280px;
+  margin-left: 640px;
+  padding: 32px 24px 16px 24px;
+  border-radius: 4px;
+  background-color: #f6f6f6;
+  color: #606060;
+  font-size: 0.9em;
+}
+
+body.sidebar .clear {
+  clear: both;
+}
+
+body.sidebar .sidebar-container a.sidebar-cover {
+  display: block;
+  text-align: center;
+  color: #4875d5;
+  text-decoration: none;
+}
+
+body.sidebar .sidebar-container a img {
+  width: 120px;
+}

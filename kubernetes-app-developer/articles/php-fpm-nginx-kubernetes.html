@@ -1,0 +1,145 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>PHP-FPM, Nginx, Kubernetes, and Docker - Golden Guide</title>
+  <link rel="stylesheet" href="../styles.css" media="screen" type="text/css">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-35071535-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-35071535-2');
+  </script> -->
+</head>
+<body class="sidebar">
+    <div class="article-container">
+        <h1>PHP-FPM, Nginx, Kubernetes, and Docker</h1>
+
+        <p>
+            This is a guide to running Nginx and PHP-FPM on Kubernetes.
+            You’ll get an overview of each component in the environment,
+            plus complete source code for running an application using
+            PHP-FPM and Nginx on Kubernetes.
+        </p>
+
+        <h2>Overview</h2>
+        <h3>PHP-FPM</h3>
+        <p>
+            PHP is a scripting language used for web development. 
+            CGI scripts are a way to run a script on the server when
+            that server receives a HTTP request. Fast-CGI
+            is an improvement on CGI which is—yep—faster.
+        </p>
+
+        <p>
+            PHP-FPM is an implementation of Fast-CGI for PHP with
+            improved capabilities around process management, 
+            logging, and high traffic situations.
+        </p>
+
+        <h3>Nginx</h3>
+        <p>
+            Nginx is a web server and reverse proxy that’s widely
+            used for high traffic applications. When run in combination
+            with PHP-FPM, Nginx is configured to send requests for .php
+            routes to PHP-FPM to serve the page. 
+        </p>
+
+        <h3>Kubernetes and Docker</h3>
+        <p>
+            Kubernetes and Docker run our Nginx and PHP-FPM processes
+            in a Kubernetes cluster. We’ll create a Docker image
+            that includes our application code, and configure a pod
+            to run containers from that image in Kubernetes.
+        </p>
+
+        <h3>Together</h3>
+        <p>
+            In combination, Nginx serves web pages, passing requests for
+            .php files to PHP-FPM. PHP-FPM takes the request from Nginx,
+            handles dynamic processing of PHP, and gives the result back.
+            Docker packages up our application, and Kubernetes makes sure
+            it’s running.
+        </p>
+
+        <h2>Solution</h2>
+        <p>
+            PHP-FPM and Nginx need to have access to the same files on the
+            filesystem. In Kubernetes, this means they need to be running
+            on the same pod, and we’ll use a volume to share files
+            between the two containers.
+        </p>
+
+        <img src="php-fpm-diagram.png" />
+
+        <h2>Code</h2>
+        <h3>Step 1: the PHP app</h3>
+        <p>
+            Create your PHP application. In this article, we’ll use a simple
+            hello world example. Create this file and call it <code>hello.php</code>.
+
+            <script src="https://gist.github.com/matthewpalmer/d088a8e9a9a6c9076034db1bba9864b2.js"></script>
+        </p>
+
+        <h3>Step 2: the Dockerfile</h3>
+        <p>
+            Now create a Dockerfile based off the FPM variant of PHP, which is
+            php:7.2-fpm for us. Copy your PHP source code into a directory in
+            that Docker image.
+
+            <script src="https://gist.github.com/matthewpalmer/bc5b2fb2119432911a412af29cb5a839.js"></script>
+        </p>
+
+        <h3>Step 3: the ConfigMap</h3>
+        <p>Let’s get into Kubernetes-land. 
+            
+        <p>We’re going to have two containers running in the pod. 
+            One runs PHP-FPM to handle dynamic PHP processing,
+            and the other runs nginx to act as a web server. Both
+            containers read from a shared volume.
+            
+        <p>We need to set up our configuration settings for the 
+            nginx container we’ll create.
+
+        <p>Here, we tell nginx to send any request for a *.php file to our PHP-FPM
+            application via localhost:9000.
+
+            <script src="https://gist.github.com/matthewpalmer/c9c423d9409ef30e09e0eac07716387d.js"></script>
+        </p>
+
+        <h3>Step 4: the Pod</h3>
+        <p>Finally, we can create the Kubernetes pod that runs our
+            application container and the nginx web server sidecar.
+        
+        <p>Be sure to read through the comments in the gist.</p>
+
+            <script src="https://gist.github.com/matthewpalmer/741dc7a4c418318f85f2fa8da7de2ea1.js"></script>
+        </p>
+    </div>
+
+    <div class="sidebar-container">
+        <a class="sidebar-cover" href="/kubernetes-app-developer/">
+            <img src="./stylized-cover-small.png" />
+            <h2>There’s a book?</h2>
+        </a>
+        
+        <p>Of course there’s a book.
+        <p>There’s always a book.
+        <p>
+            I wrote <a href="/kubernetes-app-developer/">the perfect guide</a> for backend 
+            developers to learn Kubernetes.
+        </p>
+        <p>
+            Great for people teaching themselves Kubernetes, perfect
+            for developers getting their CKAD certification.
+        </p>
+    </div>
+    <div class="clear"></div>
+</body>
+</html>
+
+
+
