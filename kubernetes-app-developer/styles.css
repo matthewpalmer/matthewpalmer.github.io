@@ -443,3 +443,53 @@ body.sidebar .sidebar-container a.sidebar-cover {
 body.sidebar .sidebar-container a img {
   width: 120px;
 }
+
+.unlock-more {
+  text-align: center;
+  padding: 48px;
+  font-size: 14pt;
+  border: 4px solid #F6DA6D;
+  border-radius: 8px;
+  margin-bottom: 48px;
+  background: #f6f6f6;
+  color: #606060;
+
+  -webkit-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.1);
+  -moz-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.1);
+  box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.1);
+}
+
+.unlock-more .star {
+  color: #F6DA6D;
+  display: inline-block;
+  margin-bottom: 12px;
+}
+
+.unlock-more a {
+  text-decoration: none;
+}
+
+.unlock-button {
+  background-color: #F6DA6D;
+  border-radius: 8px;
+  color: rgb(135, 115, 18);
+  font-weight: 800;
+  letter-spacing: 1px;
+  width: 160px;
+  margin: 36px auto 0 auto;
+  padding: 12px;
+  text-decoration: none;
+
+  -webkit-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.1);
+  -moz-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.1);
+  box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.1);
+}
+
+.unlock-button:hover {
+  cursor: pointer;
+  background: #f7df7e;
+  -webkit-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.2);
+}
+
