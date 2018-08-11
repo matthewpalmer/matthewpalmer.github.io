@@ -366,6 +366,10 @@ h1, h2 {
   font-size: 10pt;
 }
 
+.article-container ol li {
+  margin-bottom: 18px;
+}
+
 .article-container ul.longlist li, .article-container ol.longlist li {
   margin-bottom: 24px;
 }
