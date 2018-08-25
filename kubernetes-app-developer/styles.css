@@ -29,6 +29,7 @@ body {
   color: #222;
   line-height: 1.5;
   padding: 1em;
+  font-size: 15px;
 }
 
 h1, h2 {
@@ -55,9 +56,14 @@ h1, h2 {
   margin-right: 48px;
 }
 
+.hero .left p {
+  max-width: 360px;
+}
+
 .hero h1 {
   color: #4875D5;
   margin-top: 8px;
+  max-width: 480px;
 
 }
 
@@ -71,12 +77,15 @@ h1, h2 {
   width: 320px;
 }
 
-.hero img {
-  width: 100%;
+img.cover {
   border-radius: 4px;
   -webkit-box-shadow: 2px 2px 12px 0px rgba(0,0,0,0.5);
   -moz-box-shadow: 2px 2px 12px 0px rgba(0,0,0,0.5);
   box-shadow: 2px 2px 12px 0px rgba(0,0,0,0.5);
+}
+
+.hero img {
+  width: 100%;
 }
 
 .author {
@@ -86,7 +95,7 @@ h1, h2 {
 }
 
 .author .inner {
-  max-width: 560px;
+  max-width: 720px;
   margin: 0 auto;
   padding: 48px;
 }
@@ -119,18 +128,16 @@ h1, h2 {
 }
 
 .description {
-  max-width: 720px;
   margin: 0 auto;
-  margin-top: 196px;
+  margin-top: 240px;
 }
 
-.description h1 {
-  color: #4875D5;
-  margin-top: 96px;
+.description h2 {
 }
 
 .description p {
-  max-width: 520px;
+  max-width: 400px;
+  margin-bottom: 24px;
 }
 
 .description a {
@@ -139,6 +146,30 @@ h1, h2 {
 
 .description a:visited {
   color: #4875d5;
+}
+
+.description .columns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 960px;
+  margin: 0 auto;
+}
+
+.description .left {
+  width: 420px;
+}
+
+.description .right {
+  width: 520px;
+}
+
+.description .right img {
+  width: 100%;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 0 4px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0 0 4px rgba(0,0,0,0.2);
+  box-shadow: 0 0 4px rgba(0,0,0,0.2);
 }
 
 .articles {
@@ -178,7 +209,7 @@ h1, h2 {
 }
 
 .purchase {
-  margin-top: 168px;
+  margin-top: 96px;
 }
 
 .purchase .options {
@@ -195,8 +226,7 @@ h1, h2 {
 .purchase .options .option {
   border: 1px solid gainsboro;
   border-radius: 4px;
-  padding: 48px;
-  max-width: 320px;
+  padding: 0 48px 48px 0;
   -webkit-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.1);
   -moz-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.1);
   box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.1);
@@ -216,10 +246,11 @@ h1, h2 {
   margin-right: 6px;
 }
 
-.purchase .notes {
+.notes {
   max-width: 360px;
-  margin-top: 48px;
+  margin-top: 96px;
   color: gray;
+  margin-bottom: 96px;
 }
 
 .purchase .button.price {
@@ -227,13 +258,16 @@ h1, h2 {
   padding: 16px 32px;
   background-color: #4875D5;
   color: white;
+  margin-top: 24px;
+  margin-left: 24px;
+  letter-spacing: 1px;
 
   border-radius: 4px;
   display: inline-block;
   text-decoration: none;
-  -webkit-box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.2);
-  -moz-box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.2);
-  box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.2);
+  -webkit-box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.1);
+  -moz-box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.1);
+  box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.1);
 }
 
 .purchase .button.price:visited {
@@ -409,6 +443,17 @@ h1, h2 {
   margin-right: 12px;
 }
 
+.author a {
+  color: white;
+}
+
+.author a:visited {
+  color: white;
+}
+
+.author p {
+  margin-bottom: 36px;
+}
 
 /* Sidebar article layout */
 
@@ -497,3 +542,125 @@ body.sidebar .sidebar-container a img {
   box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.2);
 }
 
+.purchase .package {
+  padding: 48px 24px;
+  display: flex;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.purchase .package .left {
+  width: 320px;
+  padding: 0 48px 0 96px;
+  box-sizing: border-box;
+}
+
+.purchase .package .right {
+  padding-left: 24px;
+}
+
+.purchase .package .left img {
+  width: 100%;
+}
+
+.package ul {
+  max-width: 420px;
+}
+
+.package ul li {
+  margin-bottom: 8px;
+}
+
+
+.premium-container {
+  background: #f4f5f6;
+}
+
+.package.premium {
+  margin-top: 48px;
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
+.package.premium .left {
+  padding: 0;
+}
+
+.package.premium img.cover {
+  display: inline-block;
+  width: 40%;
+}
+
+
+.reviews {
+  width: 480px;
+  margin: 96px auto;
+}
+
+.reviews .review {
+  padding: 24px;
+  border: 1px solid gainsboro;
+  border-radius: 4px;
+  background: #fcfcfc;
+  margin-top: 24px;
+}
+
+.reviews img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+.reviews span {
+  margin-left: 6px;
+  vertical-align: middle;
+  font-weight: 800;
+}
+
+.reviews .rating {
+  color: #F2C95E;
+  letter-spacing: 4px;
+  font-size: 18px;
+  margin-top: 16px;
+}
+
+.more-articles-container {
+  background: #fcfcfc;
+  margin-top: 196px;
+}
+
+.more-articles {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 48px;
+}
+
+.more-articles ul {
+  margin-top: 32px;
+}
+
+.more-articles li {
+  list-style-type: none;
+  /*display: inline-block;*/
+}
+
+.more-articles a {
+  display: inline-block;
+  color: inherit;
+  text-decoration: none;
+  padding: 12px 24px;
+  margin: 6px;
+
+  border: 1px solid gainsboro;
+  border-radius: 4px;
+  background: #f1f2f3;
+}
+
+.more-articles a:hover {
+  background: #fafbfc;
+}
+
+.more-articles a:visited {
+  color: inherit;
+}
