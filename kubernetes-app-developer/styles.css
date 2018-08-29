@@ -332,10 +332,39 @@ img.cover {
 
 
 /* Articles */
+.article-nav {
+}
+
+.article-nav a {
+  color: #4875d5;
+  text-decoration: none;
+  display: inline-block;
+  margin: 16px;
+}
+
+.article-nav a:first-child {
+  margin-left: 0;
+}
+
+.article-nav a:hover {
+  text-decoration: underline;
+}
+
+.article-nav a:visited {
+  color: #4875d5;
+}
+
 .article-container {
-  max-width: 600px;
+  max-width: 520px;
   margin: 0 auto;
   margin-bottom: 96px;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.2px;
+}
+
+.article-container p {
+  margin-bottom: 36px;
 }
 
 .article-container img {
