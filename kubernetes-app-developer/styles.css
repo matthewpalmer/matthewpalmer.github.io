@@ -364,7 +364,7 @@ img.cover {
 }
 
 .article-container p {
-  margin-bottom: 36px;
+  margin-bottom: 24px;
 }
 
 .article-container img {
@@ -516,6 +516,14 @@ body.sidebar .sidebar-container a.sidebar-cover {
   text-align: center;
   color: #4875d5;
   text-decoration: none;
+}
+
+body.sidebar .sidebar-container a {
+  color: #4875d5;
+}
+
+body.sidebar .sidebar-container a:visited {
+  color: #4875d5;
 }
 
 body.sidebar .sidebar-container a img {
