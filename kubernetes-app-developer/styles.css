@@ -129,7 +129,7 @@ img.cover {
 
 .description {
   margin: 0 auto;
-  margin-top: 240px;
+  margin-top: 128px;
 }
 
 .description h2 {
@@ -704,7 +704,40 @@ body.sidebar .sidebar-container a img {
   color: inherit;
 }
 
+.pullquotes {
+  box-sizing: border-box;
+  max-width: 560px;
+  margin: 128px auto 0 auto;
+  padding: 16px;
+}
 
+.pullquotes .quote-item:not(:last-child) {
+  margin-bottom: 96px;
+}
+
+.pullquotes .company {
+  /*display: inline-block;*/
+  /*margin-left: 2px;*/
+  /*color: gray;*/
+}
+
+.pullquotes .quote {
+  font-size: 18px;
+  font-family: 'League Spartan', sans-serif;
+  letter-spacing: 1px;
+}
+
+.pullquotes .quote-item:nth-child(2) {
+  text-align: right;
+}
+
+.pullquotes .quote-item:nth-child(3) {
+  text-align: center;
+}
+
+.pullquotes .quote-item:nth-child(2) .quote {
+  font-size: 24px;
+}
 
 @media only screen and (max-width: 780px) {
   .hero {
