@@ -25,6 +25,7 @@
         <ul class="table-of-contents">
           <li><a href="#extend-license">fixing Rocket activation issues by extending your license</a></li>
           <li><a href="#request-refund">requesting a refund</a></li>
+          <li><a href="#browser-control">Rocket, Safari, and Chrome – browser control</a></li>
           <li><a href="#trigger-keys">setting up trigger keys</a></li>
           <li><a href="#visual-studio-code">disabling Rocket for Visual Studio Code (VSCode)</a></li>
           <li><a href="#intellij-idea">disabling Rocket for IntelliJ IDEA</a></li>
@@ -39,7 +40,35 @@
 
       <h2 id="request-refund">Requesting a refund</h2>
       <p>If you want to request a refund for Rocket, you can do so via <a href="https://goo.gl/forms/d5bl3ExYz2AkIFSO2">this form</a>.</p>
-      
+
+      <h2 id="browser-control">Rocket, Safari, and Chrome – browser control</h2>
+      <p>
+        Rocket has a neat feature where it can be disabled on websites that already have an emoji
+        picker. Some websites that have this are Trello, Github, and Slack. To implement this feature,
+        Rocket queries the active web browser to find out what the current website is. It does so
+        through AppleScript.
+      </p>
+      <p>
+        <br />
+        <strong>What’s new in Mojave?</strong><br />
+        Starting from macOS Mojave, Rocket lets you control whether you want Rocket to have this
+        level of access to your web browsers. In general, Rocket will keep working either way,
+        it just won’t be able to disable itself on certain websites.
+      </p>
+      <p>
+        <br />
+        <strong>What does Rocket do with AppleScript and AppleEvent access?</strong><br />
+        Rocket queries the browser’s web page URL. That’s it. It’s used purely to implement this feature. 
+        We don’t collect, store, or transmit any other data.
+      </p>
+      <p>
+        <br />
+        <strong>Why do you need Finder access?</strong><br />
+        Rocket needs control over the Finder to figure out 
+        which browsers you have installed and which one of them is active. It doesn’t
+        use its Finder access for anything else. (To be honest, we wish Rocket didn’t need access to the Finder, but it’s a technical limitation.)
+      </p>
+
       <h2 id="trigger-keys">Trigger keys</h2>
       <p>Trigger keys, followed by the start of an emoji name, are used to activate Rocket. For example “:wave” uses the trigger key ":". Rocket expects trigger keys to be a single punctuation mark. I’ve found that “:”, “(”, and “+” work best.</p>
 
