@@ -1,0 +1,146 @@
+body {
+  background: #fefefe;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  line-height: 1.5;
+  color: #010101;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: 0 auto;
+  padding-top: 72px;
+  padding-bottom: 96px;
+}
+
+.demo {
+  border-radius: 2px;
+  -webkit-box-shadow: 0 4px 6px rgba(95,95,95,0.5);
+  -moz-box-shadow: 0 4px 6px rgba(95,95,95,0.5);
+  box-shadow: 0 4px 6px rgba(95,95,95,0.5);
+  width: 96%;
+  max-width: 512px;
+  margin: 2%;
+}
+
+.hero {
+  max-width: 520px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.title-bar {
+  max-width: 520px;
+  margin: 64px auto 0 auto;
+  text-align: center;
+}
+
+h1 {
+  font-size: 52pt;
+  font-weight: 800;
+  letter-spacing: -0.75px;
+  display: inline-block;
+  line-height: 64px;
+  margin: 0 0 0 16px;
+  vertical-align: top;
+}
+
+
+.tagline {
+  max-width: 520px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.download-bar {
+
+  max-width: 520px;
+  margin: 36px auto;
+  text-align: center;
+}
+
+.download:hover {
+  opacity: 0.85;
+}
+
+.wide-bar {
+  height: 32px;
+  opacity: 0.25;
+  background: #C2C7CB;
+}
+
+.wide-bar.blue {
+  background: #0088D5;
+}
+
+.wide-bar.yellow {
+  background: #FFDF5C;
+}
+
+.benefit {
+  margin-top: 128px;
+  margin-bottom: 196px;
+}
+
+.benefit h2 {
+  text-align: center;
+}
+
+.topline {
+  font-size: 48pt;
+  line-height: 48pt;
+}
+
+.bottomline {
+}
+
+.benefit .detail {
+  max-width: 420px;
+  margin: 64px auto;
+  font-size: 10pt;
+  text-align: center;
+}
+
+.benefit .examples {
+  max-width: 420px;
+  margin: 64px auto;
+}
+
+.benefit .example {
+}
+
+.benefit .example:nth-child(1) {
+  font-weight: 600;
+  font-size: 16pt;
+  margin-left: 48px;
+}
+
+.benefit .example:nth-child(2) {
+  text-align: right;
+  font-size: 26pt;
+  color: #0088D5;
+}
+
+.benefit .example:nth-child(3) {
+  font-weight: 800;
+  color: #F99548;
+}
+
+.benefit .example:nth-child(4) {
+  text-align: center;
+  font-size: 24pt;
+  color: silver;
+}
+
+.footer {
+  max-width: 520px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 10pt;
+  color: gray;
+  padding: 64px;
+}
+
+.footer a {
+  color: inherit;
+}
