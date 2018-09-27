@@ -21,6 +21,8 @@ body {
   width: 96%;
   max-width: 512px;
   margin: 2%;
+  background: #f1f2f3;
+  object-fit: cover;
 }
 
 .hero {
@@ -80,6 +82,7 @@ h1 {
 .benefit {
   margin-top: 128px;
   margin-bottom: 196px;
+  padding: 8px;
 }
 
 .benefit h2 {
