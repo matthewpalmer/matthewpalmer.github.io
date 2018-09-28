@@ -1,12 +1,12 @@
 ---
-title: "How to Install VirtualBox on macOS High Sierra"
+title: "How to Install VirtualBox on macOS Mojave and High Sierra"
 layout: post
 rank: top
 category: mac
 excerpt: A quick guide on a couple of tricks you need to get VirtualBox installed on a Mac. Includes a bonus tip on sharing folders between the VM and your host OS.
 ---
 
-I tried to install VirtualBox on macOS High Sierra, but I got an error about kernel drivers, system extensions, and kernel modules not being installed. The VirtualBox installer fails with “The installation failed” where it “encountered an error that caused the installation to fail.” 
+I tried to install VirtualBox on macOS High Sierra, but I got an error about kernel drivers, system extensions, and kernel modules not being installed. The VirtualBox installer fails with “The installation failed” where it “encountered an error that caused the installation to fail.”  This guide also works for macOS Mojave.
 
 Go to System Preferences > Security & Privacy. Click the ‘Allow’ button at the bottom. Re-run the installer. More detailed instructions are below.
 
