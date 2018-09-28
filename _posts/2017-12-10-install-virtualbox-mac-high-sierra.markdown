@@ -6,7 +6,9 @@ category: mac
 excerpt: A quick guide on a couple of tricks you need to get VirtualBox installed on a Mac. Includes a bonus tip on sharing folders between the VM and your host OS.
 ---
 
-I tried to install VirtualBox on macOS High Sierra, but I got an error about kernel drivers, system extensions, and kernel modules not being installed. The VirtualBox installer fails with “The installation failed” where it “encountered an error that caused the installation to fail.”  This guide also works for macOS Mojave.
+I tried to install VirtualBox on macOS High Sierra, but I got an error about kernel drivers, system extensions, and kernel modules not being installed. The VirtualBox installer fails with “The installation failed” where it “encountered an error that caused the installation to fail.” 
+
+This guide has been updated for macOS Mojave as well.
 
 Go to System Preferences > Security & Privacy. Click the ‘Allow’ button at the bottom. Re-run the installer. More detailed instructions are below.
 
@@ -38,7 +40,7 @@ Go to System Preferences > Security & Privacy. Click the ‘Allow’ button at t
 
 ## How to add a shared folder for Ubuntu on a macOS High Sierra Host?
 
-Side note: here's how to share files between a Ubuntu virtual machine and macOS High Sierra on VirtualBox.
+Here's how to share files between a Ubuntu virtual machine and macOS High Sierra on VirtualBox.
 
 * Download, set up your VM. See above.
 
