@@ -802,3 +802,48 @@ body.sidebar .sidebar-container a img {
     text-align: left;
   }
 }
+
+.training.hero {
+  display: block;
+}
+
+.training.hero img.cover {
+  display: inline-block;
+  height: 260px;
+  margin-right: 16px;
+  width: auto;
+  margin-bottom: 48px;
+}
+
+.training .training-text {
+  width: auto;
+  margin-top: 32px;
+  margin-bottom: 168px;
+}
+
+.training .training-text h1 {
+  max-width: 600px;
+}
+
+.training .training-text p {
+  max-width: 520px;
+}
+
+.guarantee {
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+.guarantee-copy {
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+.guarantee-copy ul {
+  margin-top: 64px;
+  margin-bottom: 64px;
+}
+.guarantee-copy ul li {
+  list-style-type: none;
+  margin-bottom: 36px;
+}
