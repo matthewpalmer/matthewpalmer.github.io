@@ -75,6 +75,71 @@ h1, h2 {
 
 .hero .right {
   width: 320px;
+  position: relative;
+}
+
+#ribbon {
+  padding: 0.75em 1em 0.5em;
+  margin: 0;
+  margin-top: -50px;
+  width: 252px;
+  box-sizing: border-box;
+  position:relative;
+  color: #393013;
+  text-align: center;
+  font-size: 9pt;
+  font-weight: bold;
+  font-family: 'League Spartan', sans-serif; 
+  letter-spacing: 0px;
+  text-shadow: 0px -1px 0px rgba(255,255,255,0.3);
+  box-shadow: inset 0px 1px 0px rgba(255,255,255,.3),
+  inset 0px 0px 20px rgba(0,0,0,0.1),
+        0px 1px 1px rgba(0,0,0,0.4);
+  background: -webkit-linear-gradient(top,#fdfe5d, #fee035);
+  display: inline-block;
+}
+  
+#ribbon:before, #ribbon:after {
+  content: "";
+  width:.2em;
+  bottom:-.5em;
+  position:absolute;
+  display:block;
+  border: .9em solid #fee035;
+  box-shadow:0px 1px 0px rgba(0,0,0,0.4);
+  z-index:-2;
+}
+  
+#ribbon:before {
+  left:-1.35em;
+  border-right-width: .75em;
+  border-left-color:transparent;
+}
+  
+#ribbon:after {
+  right:-1.35em;
+  border-left-width: .75em;
+  border-right-color:transparent;
+}
+  
+#content:before, #content:after {
+  content:"";
+  bottom:-.5em;
+  position:absolute;
+  display:block;
+  border-style:solid;
+  border-color: #0675b3 transparent transparent transparent;
+  z-index:-1;
+}
+  
+#content:before {
+  left: 0;
+  border-width: .5em 0 0 .5em;
+}
+  
+#content:after {
+  right: 0;
+  border-width: .5em .5em 0 0;
 }
 
 img.cover {
@@ -262,13 +327,16 @@ img.cover {
   margin-top: 24px;
   margin-left: 24px;
   letter-spacing: 1px;
-
+  text-shadow: 0px -1px 0px rgba(0,0,0,0.3);
+  border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   display: inline-block;
   text-decoration: none;
   -webkit-box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.1);
   -moz-box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.1);
   box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.1);
+
+  transition: all 0.1s ease-in-out;
 }
 
 .purchase .button.price:visited {
@@ -281,6 +349,7 @@ img.cover {
   -webkit-box-shadow: 2px 2px 8px 0px rgba(0,0,0,0.2);
   -moz-box-shadow: 2px 2px 8px 0px rgba(0,0,0,0.2);
   box-shadow: 2px 2px 8px 0px rgba(0,0,0,0.2);
+  transform: scale(1.025);
 }
 
 .purchase .button-container {
@@ -301,7 +370,7 @@ img.cover {
 }
 
 .sections {
-  margin-top: 24px;
+  margin-top: 48px;
 }
 
 .sections a {
@@ -315,7 +384,7 @@ img.cover {
   text-transform: uppercase;
   font-size: 10px;
   letter-spacing: 2px;
-  margin-bottom: 16px;
+  margin-bottom: 8px;
 }
 
 .sections a:hover {
@@ -326,11 +395,62 @@ img.cover {
   box-shadow: 0px 1px 2px 0px gainsboro;
 }
 
-.sections a.feature {
-  border: 1px solid #4875d5;
-  color: #4875d5;
+.sections a.big-cta {
+  letter-spacing: 0px;
+  color: white;
+  padding: 8px 16px;
+
+  text-align: center;
+  font-size: 11pt;
+  font-weight: bold;
+  /*font-family: 'League Spartan', sans-serif;*/
+  text-transform: none;
+  letter-spacing: 0.5px;
+  -webkit-box-shadow: 0px 1px 2px 0px gainsboro;
+  -moz-box-shadow: 0px 1px 2px 0px gainsboro;
+  box-shadow: 0px 1px 2px 0px gainsboro;
+
+  transition: all 0.1s ease-in-out;
+
+  text-shadow: 0px -1px 0px rgba(0,0,0,0.2);
 }
 
+.sections a.big-cta:hover {
+  transform: scale(1.025);
+}
+
+.big-cta .price {
+  display: inline-block;
+  margin-left: 16px;
+  border-left: 1px solid rgba(0, 0, 0, 0.25);
+  padding-left: 16px;
+}
+
+.sections a.big-cta.ebook-cta {
+  color: white;
+  background: #4875D5;
+  border: 1px solid #3a5fad;
+
+}
+
+.sections a.big-cta.course-cta {
+  background: #44CA47;
+  border: 1px solid #329834;
+  color: white;
+}
+
+.sections .sales {
+  margin-top: 64px;
+  text-align: center;
+  padding: 16px;
+  box-sizing: border-box;
+  font-style: italic;
+  font-weight: bold;
+  padding: 24px;
+  border-radius: 4px;
+  background: #fcfcfc;
+  margin-top: 24px;
+}
 
 /* Articles */
 .article-nav {
@@ -750,6 +870,11 @@ body.sidebar .sidebar-container a img {
     margin-bottom: 48px;
   }
 
+  .hero #ribbon {
+    width: 170px;
+    margin-top: -90px;
+  }
+
   .description .columns {
     flex-wrap: wrap;
     width: 100%;
@@ -847,3 +972,5 @@ body.sidebar .sidebar-container a img {
   list-style-type: none;
   margin-bottom: 36px;
 }
+
+
