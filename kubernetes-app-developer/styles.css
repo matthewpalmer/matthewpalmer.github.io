@@ -78,6 +78,49 @@ h1, h2 {
   position: relative;
 }
 
+.pullquotes .reviews-cta {
+  display: block;
+  color: gray;
+  text-transform: none;
+  border: none;
+  letter-spacing: 0;
+  font-size: 9pt;
+  margin-bottom: 16px;
+  transition: all 0.1s ease;
+  text-decoration: none;
+  margin: 24px auto 72px auto;
+  text-align: center;
+  width: 200px;
+}
+
+.pullquotes .reviews-cta:hover {
+  background: white;
+  box-shadow: none;
+  /*transform: scale(1.025);*/
+  /*color: blue;*/
+}
+
+.pullquotes .reviews-cta .reviews-text {
+  /*text-decoration: underline;*/
+  /*margin-left: 8px;*/
+  display: inline-block;
+  vertical-align: middle;
+  letter-spacing: 0.5px;
+  
+}
+
+.pullquotes .reviews-cta:hover .reviews-text {
+  text-decoration: underline;
+}
+
+.pullquotes .reviews-cta .stars {
+  color: #F2C95E;
+  letter-spacing: 10px;
+  font-size: 24pt;
+  display: inline-block;
+  vertical-align: middle;
+}
+
 #ribbon {
   padding: 0.75em 1em 0.5em;
   margin: 0;
