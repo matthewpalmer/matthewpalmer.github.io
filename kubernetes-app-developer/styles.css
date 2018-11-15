@@ -341,6 +341,18 @@ img.cover {
   box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.1);
 }
 
+.purchase .purchase-guarantee {
+  max-width: 420px;
+  margin: 64px auto;
+  font-size: 9pt;
+  padding: 48px;
+  border: 1px solid gray;
+  border-radius: 8px;
+  border: 1px solid gainsboro;
+  border-radius: 4px;
+  background: #fcfcfc;
+}
+
 .independent {
   margin-right: 72px;
 }
