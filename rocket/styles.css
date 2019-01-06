@@ -73,7 +73,7 @@ code {
   color: #ffffff;
   font-size: 0.9em;
   font-weight: 400;
-  background-color: #7DCB4F;
+  background-color: #7DCB4F !important;
   border: 1px solid #70B747;
   display: inline-block;
   padding-top: 6px;
@@ -272,4 +272,26 @@ code {
 
 .help .table-of-contents a:hover, .help .table-of-contents a:focus {
   text-decoration: underline;
+}
+
+.refer-friend {
+  max-width: 600px;
+  margin: 0 auto 64px auto;
+  border-top: 16px solid gainsboro;
+  padding: 64px 16px;
+  text-align: left;
+  line-height: 1.8;
+  font-size: 0.8em;
+  font-weight: normal;
+  letter-spacing: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.refer-friend h1 {
+  color: #222;
+}
+
+.refer-friend form {
+  margin-top: 48px;
 }
