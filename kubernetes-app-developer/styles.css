@@ -317,6 +317,24 @@ img.cover {
   display: flex;
 }
 
+.refer-friend-page form {
+  margin: 48px 0;
+}
+
+.refer-friend {
+  font-size: 9pt;
+  margin-top: 24px;
+  margin-left: 36px;
+}
+
+.refer-friend a {
+  color: gray;
+}
+
+.refer-friend a:visited {
+  color: gray;
+}
+
 .purchase {
   margin-top: 96px;
 }
