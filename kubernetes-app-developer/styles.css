@@ -719,6 +719,39 @@ body.sidebar .sidebar-container a:visited {
   color: #4875d5;
 }
 
+body.sidebar .sidebar-container a.sidebar-cta {
+    letter-spacing: 0px;
+  color: white;
+  padding: 8px 16px;
+
+  text-align: center;
+  font-size: 11pt;
+  font-weight: bold;
+  /*font-family: 'League Spartan', sans-serif;*/
+  text-transform: none;
+  letter-spacing: 0.5px;
+  -webkit-box-shadow: 0px 1px 2px 0px gainsboro;
+  -moz-box-shadow: 0px 1px 2px 0px gainsboro;
+  box-shadow: 0px 1px 2px 0px gainsboro;
+
+  transition: all 0.1s ease-in-out;
+
+  text-shadow: 0px -1px 0px rgba(0,0,0,0.2);
+
+    color: white;
+  background: #4875D5;
+  border: 1px solid #3a5fad;
+  text-align: center;
+  border-radius: 8px;
+  display: block;
+  margin: 32px auto 16px auto;
+  text-decoration: none;
+}
+
+body.sidebar .sidebar-container a.sidebar-cta:visited {
+  color: white;
+}
+
 body.sidebar .sidebar-container a img {
   width: 120px;
 }
