@@ -1046,4 +1046,246 @@ body.sidebar .sidebar-container a img {
   margin-bottom: 36px;
 }
 
+.tech-landing .gumroad-follow-form-embed input {
+  color: black;
+}
 
+.tech-landing .gumroad-follow-form-embed button {
+  font-family: 'Raleway', sans-serif;
+  padding: 0;
+  margin: 0;
+  color: #222;
+  line-height: 1.5;
+  padding: 1em;
+  font-size: 15px;
+}
+
+.tech-landing .lead-logo {
+  max-width: 200px;
+}
+
+.tech-landing .sections .gumroad-follow-form-embed button {
+  letter-spacing: 0px;
+  color: white;
+  padding: 8px 16px;
+
+  text-align: center;
+  font-size: 11pt;
+  font-weight: bold;
+  /*font-family: 'League Spartan', sans-serif;*/
+  text-transform: none;
+  letter-spacing: 0.5px;
+  -webkit-box-shadow: 0px 1px 2px 0px gainsboro;
+  -moz-box-shadow: 0px 1px 2px 0px gainsboro;
+  box-shadow: 0px 1px 2px 0px gainsboro;
+
+  transition: all 0.1s ease-in-out;
+
+  text-shadow: 0px -1px 0px rgba(0,0,0,0.2);
+  color: white;
+  background: #4875D5;
+  border: 1px solid #3a5fad;
+}
+
+.tech-landing .tech-landing-hero {
+  max-width: 960px;
+  padding: 8px;
+  margin: 32px auto;
+}
+
+.tech-landing .logos-container {
+  margin: 108px auto 96px auto;
+  max-width: 720px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.tech-landing .logos-container div {
+  min-width: 64px;
+  max-width: 128px;
+  flex: 1;
+}
+
+.tech-landing .logos-container div {
+  margin: 36px;
+}
+
+.tech-landing .logos-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.tech-landing .logos-container .reviews-cta {
+  color: gray;
+  font-size: 11px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.tech-landing .logos-container .reviews-cta:hover {
+  text-decoration: underline;
+}
+
+.tech-landing h1 {
+  font-size: 32pt;
+  color: #4875D5;
+  text-align: center;
+}
+
+.tech-landing .tech-landing-hero p {
+  color: gray;
+}
+
+.tech-landing .tech-landing-hero h2 {
+  font-weight: normal;
+}
+
+.tech-landing .tech-landing-hero .sections {
+  max-width: 400px;
+  margin: 24px 0;
+}
+
+.tech-landing .tech-side-by-side {
+  display: flex;
+  max-width: 720px;
+  margin: 48px auto;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tech-landing .tech-side-by-side img {
+  width: 170px;
+}
+
+.tech-landing .tech-side-by-side .left {
+  margin-right: 48px;
+}
+
+.tech-landing .tech-side-by-side .right {
+  text-align: right;
+}
+
+.tech-landing #ribbon {
+  width: 171px;
+}
+
+.tech-landing .purchased-by {
+  max-width: 720px;
+  padding: 8px;
+  margin: 48px auto;
+}
+
+.tech-landing .purchased-by h3 {
+  font-weight: normal;
+  font-size: 12pt;
+  text-align: center;
+  color: gray;
+  margin-bottom: 32px;
+}
+
+.tech-landing .purchased-by .purchased-by-quote {
+  display: flex;
+  align-items: center;
+}
+
+.purchased-by-quote {
+  margin: 96px 0;
+}
+
+.purchased-by-quote img {
+  width: 120px;
+  margin-right: 32px;
+}
+
+.purchased-by-quote .quote-text {
+  font-size: 18px;
+  font-family: 'League Spartan', sans-serif;
+  letter-spacing: 1px;
+}
+
+.purchased-by-quote.reverse img {
+  margin-right: 0;
+  margin-left: 32px;
+}
+
+.tech-purchase {
+  text-align: center;
+  margin-top: 64px;
+  padding: 8px;
+}
+
+.tech-other-info {
+  color: gray;
+  line-height: 1.7;
+  text-align: center;
+  max-width: 480px;
+  margin: 72px auto;
+}
+
+.tech-other-info a {
+  color: black;
+  font-size: 18px;
+  font-family: 'League Spartan', sans-serif;
+  letter-spacing: 1px;
+  display: block;
+  margin-bottom: 32px;
+}
+
+.tech-other-info a:visited {
+  color: black;
+}
+
+.tech-landing .stars {
+  color: #F2C95E;
+  letter-spacing: 10px;
+  font-size: 24pt;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+@media only screen and (max-width: 780px) {
+  .tech-side-by-side {
+    flex-wrap: wrap-reverse;
+  }
+
+  .tech-landing .tech-side-by-side .left {
+    margin: auto;
+    text-align: center;
+  }
+
+  .tech-landing .tech-landing-hero .sections {
+    margin: 24px auto;
+  }
+
+  .tech-side-by-side .right {
+    margin: auto;
+  }
+
+  .tech-side-by-side img {
+    margin-bottom: 48px;
+  }
+
+  .tech-landing #ribbon {
+    display: none;
+  }
+
+  .tech-landing .purchased-by .purchased-by-quote {
+    flex-direction: column;
+  }
+
+  .tech-landing .purchased-by .purchased-by-quote.reverse {
+    flex-direction: column-reverse;
+  }
+
+  .tech-landing .purchased-by .purchased-by-quote img {
+    margin-right: 0;
+    margin: 16px;
+  }
+
+  .tech-landing .purchased-by .purchased-by-quote.reverse img {
+    margin-left: 0;
+  }
+}
