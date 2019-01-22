@@ -147,3 +147,15 @@ h1 {
 .footer a {
   color: inherit;
 }
+
+.privacy-policy {
+  padding: 16px;
+  max-width: 560px;
+  margin: 64px auto;
+}
+
+.privacy-policy h1 {
+  text-align: left;
+  margin: 32px 0;
+  font-size: 24pt;
+}
