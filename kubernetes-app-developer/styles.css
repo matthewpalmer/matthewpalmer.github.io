@@ -20,6 +20,7 @@ html {
   padding: 0;
   border-top: 12px solid #4875D5;
   padding-top: 72px;
+
 }
 
 body {
@@ -56,8 +57,12 @@ h1, h2 {
   margin-right: 48px;
 }
 
-.hero .left p {
+.hero .left h2 {
   max-width: 360px;
+  font-size: 15px;
+  letter-spacing: 0;
+  font-weight: normal;
+  font-family: 'Raleway', sans-serif;
 }
 
 .hero h1 {
@@ -67,15 +72,9 @@ h1, h2 {
 
 }
 
-.hero h2 {
-  margin-bottom: 0;
-  font-size: 18px;
-  color: #F6DA6D;
-}
-
 .hero .right {
   width: 320px;
-  position: relative;
+  /*position: relative;*/
 }
 
 .pullquotes .reviews-cta {
@@ -243,6 +242,15 @@ img.cover {
 .description h2 {
 }
 
+.description h3 {
+  margin-top: 32px;
+}
+
+.description .right p {
+  text-align: center;
+  font-style: italic;
+}
+
 .description p {
   max-width: 400px;
   margin-bottom: 24px;
@@ -324,7 +332,7 @@ img.cover {
 .refer-friend {
   font-size: 9pt;
   margin-top: 24px;
-  margin-left: 36px;
+  text-align: center;
 }
 
 .refer-friend a {
@@ -967,18 +975,49 @@ body.sidebar .sidebar-container a img {
 
 @media only screen and (max-width: 780px) {
   .hero {
-    flex-wrap: wrap-reverse;
+    align-items: center;
+    flex-direction: column-reverse;
+    padding: 8px;
   }
 
-  .hero img {
-    height: 240px;
+  .hero .left {
+    margin-right: 0;
+  }
+
+  .hero .right {
+    width: auto;
+    text-align: center;
+  }
+
+  .hero h1 {
+    max-width: inherit;
+    text-align: center;
+  }
+
+  .hero .left h2 {
+    max-width: inherit;
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .hero .right img {
+    height: 320px;
     width: auto;
     margin-bottom: 48px;
+    display: block;
   }
 
   .hero #ribbon {
-    width: 170px;
+    width: 227px;
     margin-top: -90px;
+  }
+
+  .hero .sections {
+    text-align: center;
+  }
+
+  .hero .sections .big-cta {
+    padding: 12px 20px;
   }
 
   .description .columns {
@@ -1277,6 +1316,140 @@ body.sidebar .sidebar-container a img {
   font-size: 24pt;
   display: inline-block;
   vertical-align: middle;
+}
+
+.lead {
+  
+}
+
+.lead .description-lead {
+  max-width: 960px;
+  margin: 32px auto;
+  text-align: center;
+}
+
+.lead .description-lead p {
+  max-width: 440px;
+  font-size: 16px;
+  margin: 30px auto;
+  text-align: left;
+}
+
+.lead h2 {
+  max-width: 560px;
+  margin: 196px auto 48px auto;
+  text-align: center;
+  font-size: 32px;
+}
+
+.lead .side-by-side p {
+  line-height: 1.7;
+  margin-top: 24px;
+}
+
+.lead .side-by-side {
+  display: flex;
+  flex-wrap: wrap; 
+  max-width: 1280px;
+  margin: 128px auto 64px auto;
+  justify-content: space-around;
+  padding: 32px;
+}
+
+.lead .side-by-side .left, .lead .side-by-side .right {
+  flex: 1;
+  box-sizing: border-box;
+  max-width: 440px;
+}
+
+.lead h3 {
+  margin-top: 96px;
+  margin-bottom: 48px;
+  font-size: 24px;
+  text-align: center;
+  font-family: 'League Spartan', sans-serif;
+  letter-spacing: 1px;
+}
+
+.lead .cover-container {
+  display: flex;
+  justify-content: center;
+  height: 240px;
+}
+
+.lead .cover-container img {
+  margin: auto;
+  max-width: 200px;
+  min-width: 0;
+  width: 40%;
+  flex: 1;
+}
+
+.lead ul {
+  margin-top: 36px;
+  color: gray;
+  font-size: 13px;
+}
+
+.lead .button.price {
+  font-family: 'League Spartan', sans-serif;
+  padding: 16px 32px;
+  background-color: #4875D5;
+  color: white;
+  margin: 48px auto 24px auto;
+  letter-spacing: 1px;
+  text-shadow: 0px -1px 0px rgba(0,0,0,0.3);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  display: block;
+  text-decoration: none;
+  -webkit-box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.1);
+  -moz-box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.1);
+  box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.1);
+
+  transition: all 0.1s ease-in-out;
+
+  text-align: center;
+  max-width: 240px;
+}
+
+.lead .button.price:visited {
+  color: white;
+}
+
+.lead .button.price:hover {
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.95);
+  -webkit-box-shadow: 2px 2px 8px 0px rgba(0,0,0,0.2);
+  -moz-box-shadow: 2px 2px 8px 0px rgba(0,0,0,0.2);
+  box-shadow: 2px 2px 8px 0px rgba(0,0,0,0.2);
+  transform: scale(1.025);
+}
+
+.lead .right .button.price {
+  background-color: #44CA47;
+}
+
+.purchase-guarantee {
+  max-width: 480px;
+  padding: 16px;
+  margin: 96px auto 128px auto;
+  text-align: center;
+  font-size: 22px;
+  line-height: 2;
+}
+
+
+@media only screen and (max-width: 780px) {
+  .lead .side-by-side {
+    flex-direction: column;
+    align-items: center;
+    padding: 8px;
+  }
+
+  .lead .side-by-side .left, .lead .side-by-side .right {
+    margin-bottom: 96px;
+  }
 }
 
 @media only screen and (max-width: 780px) {
