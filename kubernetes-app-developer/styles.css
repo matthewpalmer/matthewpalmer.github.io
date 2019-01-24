@@ -66,7 +66,7 @@ h1, h2 {
 
 .hero {
   display: flex;
-  max-width: 720px;
+  max-width: 860px;
   margin: 0 auto;
   align-items: center;
   margin-top: 72px;
@@ -80,22 +80,23 @@ h1, h2 {
 }
 
 .hero .left h2 {
-  max-width: 360px;
+  max-width: 420px;
   font-size: 15px;
   letter-spacing: 0;
   font-weight: normal;
   font-family: 'Raleway', sans-serif;
+  line-height: 1.7;
 }
 
 .hero h1 {
   color: #4875D5;
   margin-top: 8px;
   max-width: 480px;
-
+  font-size: 28pt;
 }
 
 .hero .right {
-  width: 320px;
+  width: 268px;
   /*position: relative;*/
 }
 
