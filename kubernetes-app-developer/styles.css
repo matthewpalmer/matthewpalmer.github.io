@@ -45,6 +45,25 @@ h1, h2 {
   padding-right: 2px;
 }
 
+.get-chapter {
+  color: gray;
+  border: none;
+  font-weight: normal;
+  margin-top: 24px;
+  font-size: 10pt;
+}
+
+.get-chapter a {
+  color: #4875D5;
+  font-weight: bold;
+  text-decoration: none;
+  border-bottom: 1px solid #4875D5;
+}
+
+.get-chapter a:visited {
+  color: #4875D5;
+}
+
 .hero {
   display: flex;
   max-width: 720px;
@@ -55,6 +74,9 @@ h1, h2 {
 
 .hero .left {
   margin-right: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .hero .left h2 {
@@ -1118,11 +1140,35 @@ body.sidebar .sidebar-container a img {
   margin-bottom: 36px;
 }
 
-.tech-landing .gumroad-follow-form-embed input {
+.email-container {
+  max-width: 500px;
+  padding: 64px;
+  margin: 128px auto 96px auto;
+  background: #f1f1f1;
+  border-radius: 8px;
+}
+
+.email-container .gumroad-follow-form-embed {
+  margin-top: 36px;
+}
+
+@media only screen and (max-width: 780px) {
+  .hero .left {
+    align-items: center;
+  }
+
+  .email-container {
+    padding: 36px 16px;
+    max-width: none;
+    border-radius: 0;
+  }
+}
+
+.tech-landing .gumroad-follow-form-embed input, .email-container .gumroad-follow-form-embed input {
   color: black;
 }
 
-.tech-landing .gumroad-follow-form-embed button {
+.tech-landing .gumroad-follow-form-embed button, .email-container .gumroad-follow-form-embed button {
   font-family: 'Raleway', sans-serif;
   padding: 0;
   margin: 0;
@@ -1136,7 +1182,7 @@ body.sidebar .sidebar-container a img {
   max-width: 200px;
 }
 
-.tech-landing .sections .gumroad-follow-form-embed button {
+.tech-landing .sections .gumroad-follow-form-embed button, .email-container .gumroad-follow-form-embed button {
   letter-spacing: 0px;
   color: white;
   padding: 8px 16px;
