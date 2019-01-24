@@ -1141,15 +1141,18 @@ body.sidebar .sidebar-container a img {
 }
 
 .email-container {
-  max-width: 500px;
+  max-width: 600px;
   padding: 64px;
   margin: 128px auto 96px auto;
   background: #f1f1f1;
   border-radius: 8px;
+  box-sizing: border-box;
 }
 
 .email-container .gumroad-follow-form-embed {
   margin-top: 36px;
+  box-sizing: border-box;
+  margin-right: 16px;
 }
 
 @media only screen and (max-width: 780px) {
