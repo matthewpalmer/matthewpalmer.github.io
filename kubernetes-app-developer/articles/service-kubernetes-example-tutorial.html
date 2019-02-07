@@ -1,0 +1,95 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Service - Kubernetes Guide with Examples</title>
+  <link rel="stylesheet" href="../styles.css" media="screen" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-35071535-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-35071535-2');
+  </script>
+</head>
+<body class="sidebar">
+  <nav class="article-nav">
+      <a href="/kubernetes-app-developer/">🏡 Home</a>
+      <a href="/kubernetes-app-developer/#purchase">📖 Download eBook</a>
+      <a href="/kubernetes-app-developer/#purchase">🎓 CKAD Certification Course</a>
+  </nav>
+
+  <div class="article-container">
+    <h1>Service - Kubernetes Guide with Examples</h1>
+
+    <h2>What is a Service in Kubernetes?</h2>
+
+    <p>A Service enables network access to a set of Pods in Kubernetes.</p>
+
+    <p>Services select Pods based on their labels. When a network request is made to the service, it selects all Pods in the cluster matching the service's selector, chooses one of them, and forwards the network request to it.</p>
+
+    <p><br /></p>
+
+    <p><img src="./service-route.gif" title="How Networking Works for Kubernetes Service" /></p>
+
+    <h2>Kubernetes Service vs Deployment</h2>
+
+    <p>What's the difference between a Service and a Deployment in Kubernetes?</p>
+
+    <p>A deployment is responsible for keeping a set of pods running. </p>
+
+    <p>A service is responsible for enabling network access to a set of pods. </p>
+
+    <p>We could use a deployment without a service to keep a set of identical pods running in the Kubernetes cluster. The deployment could be scaled up and down and pods could be replicated. Each pod could be accessed individually via direct network requests (rather than abstracting them behind a service), but keeping track of this for a lot of pods is difficult.</p>
+
+    <p>We could also use a service without a deployment. We'd need to create each pod individually (rather than "all-at-once" like a deployment). Then our service could route network requests to those pods via selecting them based on their labels.</p>
+
+    <p>Services and Deployments are different, but they work together nicely.</p>
+
+    <h2>Kubernetes Service NodePort Example YAML</h2>
+
+    <p>This example YAML creates a Service that is available to external network requests. We’ve specified the NodePort value so that the service is allocated to that port on each Node in the cluster.</p>
+
+    <p><img src="./service-annotated.png" title="Example Diagram of Kubernetes Service" /></p>
+
+    <p>And here's some example YAML code that shows you how to use a NodePort service in Kubernetes.</p>
+
+    <script src="https://gist.github.com/matthewpalmer/9ae9d4793b4270847b4379f9ff8438f8.js"></script>
+
+    <p><br /><br /></p>
+
+    <h2>What does ClusterIP, NodePort, and LoadBalancer mean?</h2>
+
+    <p>The <code>type</code> property in the Service's spec determines how the service is exposed to the network. It changes where a Service is able to be accessed from. The possible <code>type</code>s are ClusterIP, NodePort, and LoadBalancer</p>
+
+    <ul>
+    <li><code>ClusterIP</code> – The default value. The service is only accessible from within the Kubernetes cluster – you can’t make requests to your Pods from outside the cluster!</li>
+    <li><code>NodePort</code> – This makes the service accessible on a static port on each Node in the cluster. This means that the service can handle requests that originate from outside the cluster.</li>
+    <li><code>LoadBalancer</code> – The service becomes accessible externally through a cloud provider's load balancer functionality. GCP, AWS, Azure, and OpenStack offer this functionality. The cloud provider will create a load balancer, which then automatically routes requests to your Kubernetes Service</li>
+    </ul>
+
+    <h2>Need More Details?</h2>
+
+    <p>You can find a more detailed explanation of Services, a complete guided tutorial, more diagrams and reference information in <a href="/kubernetes-app-developer/">my Kubernetes book</a>. If you’ve found this article helpful, you’re gonna love the book.</p>
+
+  </div>
+  <div class="sidebar-container">
+      <a class="sidebar-cover" href="/kubernetes-app-developer/">
+          <img class="cover" src="../ckad-guide-new.png" />
+          <h2>Learn Kube Faster.<br/>Get the #1 guide.</h2>
+      </a>
+      
+      <p>
+          This is an excerpt from my book on Kubernetes for backend developers.
+      </p>
+      <p>
+          Great for software engineers learning Kubernetes. Perfect
+          for developers getting their CKAD certification.
+      </p>
+      <a class="sidebar-cta" href="/kubernetes-app-developer/">Get Free Chapter</a>
+  </div>
+  <div class="clear"></div>
+</body>
+</html>
