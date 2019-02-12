@@ -1490,6 +1490,60 @@ body.sidebar .sidebar-container a img {
 }
 
 
+.quiz-container {
+  max-width: 860px;
+  padding: 64px;
+  margin: 128px auto 96px auto;
+  box-sizing: border-box;
+}
+
+.quiz-content {
+  display: flex;
+  align-items: center;
+}
+
+.quiz-left {
+  margin-right: 32px;
+}
+
+.quiz-content .quiz-new {
+  display: inline-block;
+  padding: 8px 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.2px;
+  background-color: #f1f1f1;
+  color: gray;
+  font-weight: bold;
+  font-size: 12px;
+  text-align: right;
+  float: right;
+}
+
+.quiz-content a {
+  display: inline-block;
+  padding: 8px 16px;
+  letter-spacing: 0.2px;
+  background-color: #44CA47;
+  color: white;
+  border-radius: 4px;
+  font-weight: bold;
+  background: #44CA47;
+  border: 1px solid #329834;
+  color: white;
+  font-size: 15px;
+  text-decoration: none;
+  margin-top: 12px;
+  letter-spacing: 1px;
+}
+
+.quiz-content a:hover {
+  transform: scale(1.025);
+}
+
+.quiz-content a:visited {
+  color: white;
+}
+
 @media only screen and (max-width: 780px) {
   .lead .side-by-side {
     flex-direction: column;
