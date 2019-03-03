@@ -12,7 +12,7 @@ countdown clock, or a productivity time tracker.
 Whenever I’m working, I’ve got a timer running. It’s my #1 tip for staying
 focused and getting a lot done in a short amount of time.
 
-This is my round up of the best five **free** timer apps for your Mac.
+This is my round up of the best four **free** timer apps for your Mac.
 
 ## 1. Horo
 
