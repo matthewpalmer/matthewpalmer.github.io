@@ -1,18 +1,20 @@
 ---
-title: "2016 Macbook Pro Battery Pack – Anker PowerCore 20100"
+title: "Anker Battery Pack for Macbook Pro Review – Anker PowerCore 20100"
 layout: post
 category: mac
 rank: top
 excerpt: While travelling around Australia and the US, I needed a good way to give my Touch Bar MacBook Pro and iPhone 5 a bit of extra charge.
 ---
 
+**Last Updated: March 2019** Added new images and more thoughts after 18 months of usage.
+
 I'm travelling around for a while, and I've been on the hunt for a good way to give my 13-inch 2016 MacBook Pro (Touch Bar edition) a bit of extra charge. There's information scattered around the internet on what works and what doesn't, and I wanted to collect it here so that you don't have to do as much research as I did.
 
 The short story: the [Anker PowerCore+ 20100 with USB-C](http://amzn.to/2tB9pBg) is the best way to charge a 2016 MacBook Pro using an external battery pack.
 
-![Anker PowerCore pack for Macbook Pro](/img/anker-powercore-macbook-pro.png)
+![Anker PowerCore pack for Macbook Pro](/img/macbook-pro-anker-highres.jpg)
 
-<small style="display:block;text-align:center;color:gray;font-weight:100;font-size:10px;font-family:Helvetica;margin-top:2%;">The Anker PowerCore+ 20100 with USB-C. Source: [Anker](https://www.anker.com/products/A1371012)</small>
+<small style="display:block;text-align:center;color:gray;font-weight:100;font-size:10px;font-family:Helvetica;margin-top:2%;">The Anker PowerCore+ 20100 with USB-C.</small>
 
 **My Observations after Several Months of Use**
 
@@ -31,6 +33,8 @@ I've used the Anker for about four months now while travelling around the US. It
 * It holds about a MacBook Pro's worth of battery charge when full. This is at least six full iPhone 5 charges (I actually ended up needing to charge my phone way more often than my laptop when I was travelling, so this was super handy)
 
 Overall, I **highly recommend** the [Anker power brick](http://amzn.to/2tB9pBg). It's reassuring to know you always have a power source when you need it. The Anker does the job it's meant to, holds enough power, is well built, and has saved me more than a handful of times.
+
+![Anker Power Brick with open Macbook](/img/macbook-pro-anker-open-keyboard.jpg)
 
 
 **Here's the other stuff I figured out**
