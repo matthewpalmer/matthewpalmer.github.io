@@ -45,6 +45,18 @@ body {
   color: gray;
 }
 
+.home-page-callout.footer {
+  background: rgba(60, 70, 79, 0.2);
+  color: rgba(60, 70, 79, 1);
+  padding: 24px 0;
+  max-width: 420px;
+  margin: 64px auto;
+}
+
+.home-page-callout.footer a {
+  color: inherit;
+}
+
 .tagline {
   color: #4E5862;
   font-size: 0.9em;
@@ -294,4 +306,134 @@ code {
 
 .refer-friend form {
   margin-top: 48px;
+}
+
+
+
+
+
+.blind-container {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  line-height: 1.5;
+  color: #010101;
+  font-weight: 400;
+  letter-spacing: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.blind-container .blind-hero {
+  display: flex;
+  align-items: center;
+  max-width: 660px;
+  margin: 96px auto 0 auto;
+  
+}
+
+.blind-container img {
+  text-align: center;
+}
+
+.blind-container h1 {
+  color: #010101;
+  font-size: 56pt;
+  margin-left: 16px;
+  position: relative;
+}
+
+.blind-container .small-caps {
+  font-size: 10pt;
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: 600;
+
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.blind-container .big-subtitle {
+  max-width: 600px;
+  text-align: center;
+  margin: 16px auto;
+  padding: 16px;
+}
+
+.blind-container h1 span {
+  position: absolute;
+  display: inline-block;
+  right: 0;
+  bottom: -16px;
+  border: 1px solid #bfbebe;
+  padding: 4px 8px;
+  border-radius: 2px;
+  background: gainsboro;
+}
+
+.blind-container h1 span.small-caps {
+  font-size: 8pt;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.blind-container h2 {
+  font-size: 32pt;
+  text-align: left;
+  color: #010101;
+  line-height: 1;
+}
+
+.blind-text-content {
+  max-width: 460px;
+  padding: 32px;
+  text-align: left;
+}
+
+.blind-container .download {
+  padding: 16px 32px;
+  margin-bottom: 48px;
+}
+
+.listen-link {
+  max-width: 180px;
+  text-align: center;
+  text-decoration: none;
+  margin: 36px auto;
+  display: block;
+  padding: 16px 24px;
+
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+  background: gainsboro;
+  color: rgba(0, 0, 0, 0.7);
+  border: 1px solid #9c9c9c;
+  border-radius: 2px;
+}
+
+.beloved {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 10pt;
+  margin: 64px 24px;
+}
+
+.blind-container .two-up {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 64px;
+}
+
+.blind-container .two-up .left, .blind-container .two-up .right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  
+} 
+
+.blind-container .two-up .left {
+  border-right: 16px solid gainsboro;
+  padding: 32px 64px 32px 32px;
+}
+
+.blind-container .two-up .right {
+  padding: 8px;
 }
