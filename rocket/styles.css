@@ -392,21 +392,24 @@ code {
   margin-bottom: 48px;
 }
 
-.listen-link {
+.blind-container .small-caps.listen-link {
+  color: white;
+}
+
+.blind-container .listen-link {
   max-width: 180px;
   text-align: center;
   text-decoration: none;
-  margin: 36px auto;
+  margin: 36px auto 96px auto;
   display: block;
   padding: 16px 24px;
 
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 600;
-  background: gainsboro;
-  color: rgba(0, 0, 0, 0.7);
-  border: 1px solid #9c9c9c;
-  border-radius: 2px;
+  background: #0072F8;
+  color: white;
+  border-radius: 40px;
 }
 
 .beloved {
@@ -436,4 +439,30 @@ code {
 
 .blind-container .two-up .right {
   padding: 8px;
+}
+
+.blind-container .lead-text {
+  text-align: center;
+  font-size: 14pt;
+  color: #7F7F7F;
+}
+
+.blind-container .lead-text:nth-child(2) {
+  margin-bottom: 36px;
+}
+
+.blind-container .testimonials {
+  max-width: 600px;
+  margin: 128px auto;
+}
+
+.blind-container .testimonials .quote {
+  margin: 32px 32px 64px 32px;
+}
+
+.blind-container .testimonials .quote:nth-child(2) {
+  text-align: right;
+}
+
+.blind-container .testimonials .author {
 }
