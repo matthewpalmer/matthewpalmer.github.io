@@ -104,8 +104,9 @@ h1 {
 }
 
 .big-headers img {
-  max-height: 50vh;
-  max-width: 100%;
+  width: 100%;
+  max-width: 560px;
+  height: auto;
   margin: 0 auto 48px auto;
 }
 
