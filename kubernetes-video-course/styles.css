@@ -255,10 +255,6 @@ h1 {
   background: #f1f1f1;
 }
 
-.author .x-up {
-  flex-wrap: wrap;
-}
-
 .author .author-text {
   padding: 16px;
 }
@@ -500,7 +496,14 @@ h1 {
 
 @media only screen and (max-width: 780px) {
   .author {
-    flex-direction: column;
     padding: 8px;
+  }
+
+  .author .x-up {
+    flex-direction: column; 
+  }
+
+  .navigation {
+    flex-direction: column; 
   }
 }
