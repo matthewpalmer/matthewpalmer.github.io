@@ -73,6 +73,7 @@ a, a:visited {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  flex-wrap: wrap;
 }
 
 .navigation a {
@@ -103,7 +104,7 @@ h1 {
 }
 
 .big-headers img {
-  height: 50vh;
+  max-height: 50vh;
   max-width: 100%;
   margin: 0 auto 48px auto;
 }
@@ -251,6 +252,10 @@ h1 {
   padding: 48px;
   box-sizing: border-box;
   background: #f1f1f1;
+}
+
+.author .x-up {
+  flex-wrap: wrap;
 }
 
 .author .author-text {
@@ -490,4 +495,11 @@ h1 {
     font-family: 'Raleway', sans-serif;
     padding: 0;
     margin: 0;
+}
+
+@media only screen and (max-width: 780px) {
+  .author {
+    flex-direction: column;
+    padding: 8px;
+  }
 }
