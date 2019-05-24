@@ -21,6 +21,7 @@ html, body {
 }
 
 html {
+  scroll-behavior: smooth;
   border-top: 12px solid #4875D5;
 }
 
@@ -32,16 +33,22 @@ body {
   font-size: 15px;
 }
 
-h2 {
+h1 {
   font-family: 'League Spartan', sans-serif;
-  letter-spacing: 1px;
+  font-size: 40pt;
+  text-align: center;
+  padding: 0;
+  margin: 0;
 }
 
 h2 {
-  font-size: 24pt;
+  font-size: 18pt;
   text-align: center;
   margin: 0;
   padding: 0;
+  font-weight: normal;
+  max-width: 720px;
+  margin: 16px auto;
 }
 
 a, a:visited {
@@ -51,6 +58,7 @@ a, a:visited {
 .x-up {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .x-up .item {
@@ -90,24 +98,16 @@ a, a:visited {
   border-radius: 8px;
 }
 
-h1 {
-  font-size: 20pt;
-  font-weight: normal;
-  text-align: center;
-  padding: 0;
-  /*margin: 0;*/
-}
-
 .big-headers {
   margin-top: 24px;
   text-align: center;
 }
 
 .big-headers img {
-  width: 100%;
-  max-width: 560px;
-  height: auto;
-  margin: 0 auto 48px auto;
+  object-fit: contain;
+  max-width: 100%;
+  height: 50vh;
+  margin: 0 auto 0 auto;
 }
 
 .big-headers .big-lead {
@@ -172,14 +172,46 @@ h1 {
   font-size: 14pt;
 }
 
-.new {
-  /*display: inline-block;
-  padding: 8px 16px;
-  text-transform: uppercase;
-  letter-spacing: 0.2px;
-  background-color: #f1f1f1;
-  color: gray;
-  font-weight: bold;*/
+.other-courses {
+  max-width: 760px;
+  padding: 16px;
+  margin: 96px auto;
+  text-align: center;
+  color: #797d98;
+}
+
+.other-courses .x-up {
+  margin-top: 48px;
+}
+
+.other-courses .big-number {
+}
+
+.other-courses .big-number img {
+  width: 64px;
+  margin-bottom: 16px;
+}
+
+.other-courses .big-number span {
+  display: block;
+
+}
+
+.other-courses .big-number span.big {
+  font-size: 26pt;
+  font-weight: bold;
+  color: #222;
+}
+
+.other-courses .icons-container .icon-set {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.other-courses .icons-container .icon-set .logo {
+  margin: 0 8px;
+  width: 64px;
 }
 
 .testimonial {
@@ -505,5 +537,24 @@ h1 {
 
   .navigation {
     flex-direction: column; 
+  }
+
+  .big-headers {
+    overflow: hidden;
+  }
+
+  h1 {
+    font-size: 28pt;
+  }
+
+  h2 {
+    font-size: 14pt;
+  }
+
+  .big-headers img {
+    max-width: unset;
+    width: 100%;
+    height: auto;
+    margin: 48px -16px;
   }
 }
