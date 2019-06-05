@@ -97,12 +97,13 @@
 
             This question will require you to create a pod that runs the
             image <code>kubegoldenguide/question-thirteen</code>. This image is in the main
-            Docker repository at hub.docker.com.
-            <br/><br/>
-            This image is a web server that has a health endpoint served at '/health'
-            that returns a 200 status code response when the application is healthy.
-            The application typically takes sixty seconds to start.
-            Create a pod called question-four-pod to run this application, making sure
+            Docker repository at hub.docker.com.<br/><br/>
+
+            This image is a web server that has a health endpoint served at '/health'.
+            The web server listens on port 8000. (It runs Python’s SimpleHTTPServer.)
+            It returns a 200 status code response when the application is healthy.
+            The application typically takes sixty seconds to start.<br/><br/>
+            Create a pod called question-13-pod to run this application, making sure
             to define liveness and readiness probes that use this health endpoint.
         </p>
 
