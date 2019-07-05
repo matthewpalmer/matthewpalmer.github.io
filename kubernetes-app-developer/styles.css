@@ -1602,8 +1602,8 @@ body.sidebar .sidebar-container a img {
 .what-people-say img {
   width: 100%;
   border-radius: 8px;
-  margin: 16px;
-  padding: 16px;
+  margin-top: 24px;
+  margin-bottom: 24px;
     -webkit-box-shadow: 2px 2px 12px 0px rgba(0,0,0,0.3);
   -moz-box-shadow: 2px 2px 12px 0px rgba(0,0,0,0.3);
   box-shadow: 2px 2px 12px 0px rgba(0,0,0,0.3);
