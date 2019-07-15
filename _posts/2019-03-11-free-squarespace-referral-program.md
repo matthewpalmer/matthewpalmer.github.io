@@ -6,7 +6,7 @@ category: web
 
 This guide is going to teach you how to set up a free affiliate referral program (like "refer a friend and get $20 off your next order") for your Squarespace store.
 
-![Successful Squarespace referral program][img-6]
+![Successful Squarespace referral program][img-0]
 
 ## Why set up a referral program for Squarespace?
 
@@ -41,11 +41,15 @@ Head over to [the Peach’s site][peach] and click ‘Get Started’, then fill 
 
 ### 2. Create a new Squarespace referral program
 
-On the next page, click ‘Get Started’ to start creating your program for Squarespace.
+After you sign up, the site will take you through to the form where you create your referral program.
 
 ![Squarespace referrals][img-2]
 
-After that, enter your store’s name and the URL of your store.
+Start by entering your store’s name, your website’s URL, and your Squarespace dashboard URL.
+
+If you use a Cover Page as your home page, you’ll need to set a different URL as your website URL. 
+
+Switch the toggle on if you’re using Squarespace Commerce Advanced.
 
 ### 3. Configure your program with a few options
 
@@ -53,49 +57,65 @@ In the next step, tweak your referral program so that it fits how you want to re
 
 For me, I’ve found that keeping it simple is best for my customers to understand.
 
-I usually set my referral programs up like "Reward customers who refer a friend with a $10 discount on their next order of $20 or more."
+I usually set my referral programs up like "Reward customers who refer a friend with a $20 discount on their next order of $30 or more."
 
 ![Customize your program][img-3]
 
-Setting it up this way is smart because it guarantees you two orders (one from the friend and one from the original customer), but also it doesn't over-complicate things for their friend who is just discovering your store. This makes the offer much easier to share.
+The other popular option for stores that want to grow more quickly isn’t available on the free plan.
 
-I always check the checkbox for One Reward Per Person as well.
+It’s called "Two-sided referrals." It lets you do offers like “Send a friend $5 off and get a $5 reward after their first order.”
+
+I don’t think any of the other referral program platforms can do this with Squarespace, so it’s worthwhile upgrading to one of Peach’s premium plans if you want this.
+
+
 
 ### 4. Add the Peach’s account to your Squarespace store
 
-On the next screen, you’ll have some details for the Peach’s account you need to add to your Squarespace store.
+Once you’ve set your rewards, click “Create.”
 
-Peach’s uses this account to plugin in their referral widget (after they customize it to your design) and to automatically generate discount codes for customers who earn rewards.
+Then you’ll need to plug the referral program into your Squarespace store so that discount codes and referred sales get sync‘d up.
 
-Open up Squarespace in a new tab/window in your browser. Go to your Squarespace dashboard and click on your website.
+It’s pretty easy – the site guides you through it. Although you might need to **wait up to a minute** for the spinners to get the “completed” tick.
 
-In the left-hand sidebar, choose Settings, then choose Permissions.
+(If you get stuck at this point – Peach’s email support address is **support@peachs.co**)
 
-![Add Peach's Administrator][img-4]
+![Connect Squarespace referrals][img-4]
 
-After that, select Invite Contributor and enter in the account details from the Peach’s set up process. You need to enter in the name, the email address, and select the Administrator checkbox.
 
-![Fill in your details][img-5]
+### 5. Customize your program
 
-### 5. Finalize your program details on Peach’s
+Once you’ve connected your account, you can customize your website pop-up and customer emails.
 
-Head back to the Peach’s set up screen, and click Submit.
+Click “Customize” in the sidebar to go to the customization section.
 
-You’ve created your first referral program!
+This is handy because it makes the referral experience more ‘seamless’ with the rest of your store – so people use and trust it more.
+
+![Customize Squarespace referral program][img-5]
+
+You can add a new banner image, tweak the verbiage, and even set custom CSS for your pop-up.
+
+### 6. Launch your program
+
+You’ve created your referral program, and now you’re ready to launch.
+
+Head to the “Launch” tab in the sidebar, and then click “Go Live.”
+
+Peach’s will run some checks to make sure everything’s connected properly, and then your program is live!
+
+Note: **Order Confirmation Emails** – if you’re using the Order Confirmation Emails integration (which is
+a great feature, it plugs right into your existing post-order Squarespace emails) – it will prompt you
+to add the widget to your emails. Simply copy-and-paste that code at the end of your order confirmation email
+when you get prompted.
 
 ![Successful Squarespace referral program][img-6]
 
-In the background Peach’s has set up a referral program for you – now they just review it, tailor the design to your store, and embed it in the site. Luckily, the Peach’s people do all this for you. 
-
-I found it took about 6 hours of waiting and then they sent through some mockups of what my referral widget would look like. I asked them to change the image on the form, but other than that it was pretty spot-on for my site. 
-
-They tweaked the design and added their widget, and then an hour later I had a refer-a-friend program running on Squarespace.
-
+If you get stuck at any point, Peach’s support email is **support@peachs.co**.
 
 [peach]: https://peachs.co
-[img-1]: /img/squarespace/peach-get-started.png
-[img-2]: /img/squarespace/create-new-program.png
-[img-3]: /img/squarespace/customize-referral-program.png
-[img-4]: /img/squarespace/invite-squarespace-contributor.png
-[img-5]: /img/squarespace/enter-administrator-details.png
-[img-6]: /img/squarespace/set-up-squarespace-referral.png
+[img-0]: /img/squarespace/set-up-squarespace-referral.png
+[img-1]: /img/squarespace/p2-get-started.png
+[img-2]: /img/squarespace/p2-basic-details.png
+[img-3]: /img/squarespace/p2-config.png
+[img-4]: /img/squarespace/p2-connect.png
+[img-5]: /img/squarespace/p2-customize.png
+[img-6]: /img/squarespace/p2-launch.png
