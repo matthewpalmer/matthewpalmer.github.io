@@ -45,6 +45,15 @@ h1, h2 {
   padding-right: 2px;
 }
 
+.table-of-contents-link {
+  text-align: center;
+  font-size: 10pt;
+}
+
+.table-of-contents-link a {
+    color: #4875D5;
+  }
+
 .get-chapter {
   color: gray;
   border: none;
