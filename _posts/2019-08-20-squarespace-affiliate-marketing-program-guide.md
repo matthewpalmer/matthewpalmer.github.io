@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to Set Up a Affiliate Marketing Program on Squarespace
+title: How to Set Up an Affiliate Marketing Program on Squarespace
 category: web
 ---
 
