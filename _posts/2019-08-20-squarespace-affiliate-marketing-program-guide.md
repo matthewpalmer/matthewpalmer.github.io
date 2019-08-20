@@ -97,6 +97,6 @@ Follow our guide and you’ll have your affiliate program up and running in ten 
 [difference]: /img/squarespace/affiliate-program/difference.png
 [sign-up]: /img/squarespace/affiliate-program/sign-up.png
 [navigation]: /img/squarespace/affiliate-program/navigation.png
-[code-settings-correct]: /img/squarespace/affiliate-program/code-injection.png
+[code-settings-correct]: /img/squarespace/affiliate-program/code-settings.png
 [testing-preview]: /img/squarespace/affiliate-program/test-code.png
 [affiliate-sales-test]: /img/squarespace/affiliate-program/test-order.png
