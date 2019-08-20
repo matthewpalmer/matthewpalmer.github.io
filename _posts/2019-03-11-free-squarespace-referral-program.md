@@ -6,7 +6,7 @@ category: web
 
 This guide is going to teach you how to set up a free referral program (like "refer a friend and get $20 off your next order") for your Squarespace store.
 
-If you’re looking for a guide to setting up a Squarespace affiliate program, [check out my tutorial here](/blog/2019/08/20/squarespace-affiliate-marketing-program-guide/index.html).
+If you’re looking to set up an **Affiliate Program** on Squarespace, [check out my tutorial here](/blog/2019/08/20/squarespace-affiliate-marketing-program-guide/index.html).
 
 (What’s the difference between a referral program and an affiliate program? A referral program lets regular customers share your store with their friends to earn rewards. An affiliate program lets influential people earn commissions from sharing your store with their large audience.)
 
