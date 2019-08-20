@@ -4,12 +4,12 @@ title: How to Set Up a Affiliate Marketing Program on Squarespace
 category: web
 ---
 
-![Affiliate program hero header image][affiliate-header]
-
 In this guide, we’re going to set up a complete Squarespace affiliate marketing
 program using **[Tapfiliate][tapfiliate-link]**.
 
 This tutorial takes about **ten minutes** – after that, you’ll have your affiliate program up and running.
+
+![Affiliate program hero header image][affiliate-header]
 
 ## What is an affiliate marketing program?
 
