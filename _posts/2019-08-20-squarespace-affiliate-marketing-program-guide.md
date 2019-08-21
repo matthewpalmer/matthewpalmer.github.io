@@ -91,12 +91,12 @@ Follow our guide and you’ll have your affiliate program up and running in ten 
 
 
 [tapfiliate-link]: https://tapfiliate.com/?ref=matthewpalmer3
-[affiliate-header]: /img/squarespace/affiliate-program/header.png
-[why]: /img/squarespace/affiliate-program/why.png
-[affiliate-example]: /img/squarespace/affiliate-program/example.png
-[difference]: /img/squarespace/affiliate-program/difference.png
-[sign-up]: /img/squarespace/affiliate-program/sign-up.png
-[navigation]: /img/squarespace/affiliate-program/navigation.png
-[code-settings-correct]: /img/squarespace/affiliate-program/code-settings.png
-[testing-preview]: /img/squarespace/affiliate-program/test-code.png
-[affiliate-sales-test]: /img/squarespace/affiliate-program/test-order.png
+[affiliate-header]: /img/squarespace/marketing/header.png
+[why]: /img/squarespace/marketing/why.png
+[affiliate-example]: /img/squarespace/marketing/example.png
+[difference]: /img/squarespace/marketing/difference.png
+[sign-up]: /img/squarespace/marketing/sign-up.png
+[navigation]: /img/squarespace/marketing/navigation.png
+[code-settings-correct]: /img/squarespace/marketing/code-settings.png
+[testing-preview]: /img/squarespace/marketing/test-code.png
+[affiliate-sales-test]: /img/squarespace/marketing/test-order.png
