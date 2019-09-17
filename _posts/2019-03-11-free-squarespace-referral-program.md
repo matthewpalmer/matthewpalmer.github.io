@@ -1,10 +1,10 @@
 ---
 layout: post
-title: How to Set Up a Squarespace Referral Program for Free
+title: How to Set Up a Squarespace Referral Program
 category: web
 ---
 
-This guide is going to teach you how to set up a free referral program (like "refer a friend and get $20 off your next order") for your Squarespace store.
+This guide is going to teach you how to set up a referral program (like "refer a friend and get $20 off your next order") for your Squarespace store.
 
 If you’re looking to set up an **Affiliate Program** on Squarespace, [check out my tutorial here](/blog/2019/08/20/squarespace-affiliate-marketing-program-guide/index.html).
 
@@ -33,7 +33,7 @@ Okay – on to the guide.
 
 ## How to set up a referral program on Squarespace
 
-We’re going to use a free [Peach’s Squarespace referral program][peach] to set this up. Peach’s is a platform that plugs right in to your Squarespace site and adds refer-a-friend functionality.
+We’re going to use a [Peach’s Squarespace referral program][peach] to set this up. Peach’s is a platform that plugs right in to your Squarespace site and adds refer-a-friend functionality.
 
 This whole thing takes you about 10 minutes, and after that you’ll have a working refer-a-friend program.
 
@@ -65,7 +65,7 @@ I usually set my referral programs up like "Reward customers who refer a friend 
 
 ![Customize your program][img-3]
 
-The other popular option for stores that want to grow more quickly isn’t available on the free plan.
+The other popular option for stores that want to grow more quickly is used by companies like Uber and American Express.
 
 It’s called "Two-sided referrals." It lets you do offers like “Send a friend $5 off and get a $5 reward after their first order.”
 
