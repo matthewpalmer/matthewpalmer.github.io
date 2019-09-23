@@ -254,3 +254,32 @@ a:visited {
 .refer-friend form {
   margin-top: 48px;
 }
+
+.screen-recording-help {
+  max-width: 600px;
+  font-size: 12pt;
+  margin: 32px auto;
+  padding: 8px;
+  text-align: left;
+  background-color: white;
+}
+
+.screen-recording-help h1 {
+  font-size: 24pt;
+  text-align: left;
+  margin-bottom: 42px;
+}
+
+.screen-recording-help p {
+  font-size: 12pt;
+  text-align: left;
+  line-height: 1.7;
+}
+
+.screen-recording-help img {
+      max-width: 100%;
+    max-height: 320px;
+    width: auto;
+    display: block;
+    margin: 4px auto;
+}
