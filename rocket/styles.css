@@ -46,11 +46,12 @@ body {
 }
 
 .home-page-callout.footer {
-  background: rgba(60, 70, 79, 0.2);
-  color: rgba(60, 70, 79, 1);
+  background: #f1f1f1;
+  color: #333;
   padding: 24px 0;
   max-width: 420px;
   margin: 64px auto;
+  border-radius: 8px;
 }
 
 .home-page-callout.footer a {
