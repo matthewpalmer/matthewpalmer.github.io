@@ -71,6 +71,32 @@ h1 {
   opacity: 0.85;
 }
 
+.get-pro {
+  text-align: center;
+  margin-top: 48px;
+}
+
+.get-pro a {
+  display: inline-block;
+  border-bottom: 2px solid gainsboro;
+  color: gray;
+  text-decoration: none;
+  padding: 8px 8px 1px 8px;
+  font-size: 11pt; 
+  transition: all 0.2s ease;
+}
+
+.get-pro a:visited {
+  color: gray;
+}
+
+.get-pro a:hover {
+  border-color: gray;
+  color: #4a4949;
+}
+
+
+
 .wide-bar {
   height: 32px;
   opacity: 0.25;
@@ -345,11 +371,10 @@ h1 {
 
 .pro-purchase-link {
   text-decoration: none;
-  background: rgb(27,58,230);
-  background: -webkit-linear-gradient(277deg, rgba(27,58,230,1) 0%, rgba(13,140,242,1) 64%, rgba(29,170,247,1) 100%);
-  background: -o-linear-gradient(277deg, rgba(27,58,230,1) 0%, rgba(13,140,242,1) 64%, rgba(29,170,247,1) 100%);
-  background: linear-gradient(7deg, rgba(27,58,230,1) 0%, rgba(13,140,242,1) 64%, rgba(29,170,247,1) 100%);
-  color: rgba(255, 255, 255, 0.97);
+  background: -webkit-linear-gradient(277deg, rgb(6, 12, 47) 0%, rgb(4, 34, 58) 64%, rgb(10, 61, 88) 100%);
+  background: -o-linear-gradient(277deg, rgb(6, 12, 47) 0%, rgb(4, 34, 58) 64%, rgb(10, 61, 88) 100%);
+  background: linear-gradient(7deg, rgb(6, 12, 47) 0%, rgb(4, 34, 58) 64%, rgb(10, 61, 88) 100%);
+  color: white;
   display: inline-block;
   border-radius: 8px; 
   -webkit-box-shadow: 0 1px 2px rgba(95,95,95,0.8);
@@ -357,12 +382,12 @@ h1 {
   box-shadow: 0 1px 2px rgba(95,95,95,0.8);
   padding: 12px 32px;
   letter-spacing: 0.5px;
-  border-top: 1px solid #a4d7f5;
-  border-bottom: 1px solid #0e2ab5;
+  border-top: 1px solid #527f9e;
+  border-bottom: 1px solid #030821;
 }
 
 .pro-purchase-link:visited {
-  color: rgba(255, 255, 255, 0.97);
+  color: white;
 }
 
 .pro-purchase-link:hover {
