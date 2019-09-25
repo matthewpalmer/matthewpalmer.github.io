@@ -54,6 +54,12 @@ h1 {
   text-align: center;
 }
 
+.pro-tagline {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
 .download-bar {
 
   max-width: 520px;
@@ -271,5 +277,130 @@ h1 {
   100% {
     box-shadow: 0 5px 10px 0px rgba(0,0,0,0.6);
     transform: translatey(0px);
+  }
+}
+
+
+
+
+
+.pro-icons {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 64px auto;
+}
+
+.pro-icons img {
+  box-sizing: border-box;
+  width: 33%;
+  padding: 8px 32px;
+}
+
+.pro-benefits {
+  max-width: 760px;
+  margin: 64px auto;
+  padding: 8px;
+}
+
+.pro-benefit {
+  margin-bottom: 96px;
+}
+
+.pro-benefit .primary {
+  
+}
+
+.pro-benefit .accent {
+  
+}
+
+.pro-benefit .accent img {
+  display: block;
+  margin: 4px auto;
+  max-width: 100%;
+  border: 4px solid white;
+  border-radius: 8px;
+}
+
+.pro-benefit-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pro-benefit-header h2 {
+  font-size: 32pt;
+}
+
+.pro-benefit-header img {
+  width: 72px;
+  margin-right: 16px;
+}
+
+.pro-benefit p {
+  max-width: 460px;
+  margin: 24px auto;
+}
+
+.pro-purchase-link {
+  text-decoration: none;
+  background: rgb(27,58,230);
+  background: -webkit-linear-gradient(277deg, rgba(27,58,230,1) 0%, rgba(13,140,242,1) 64%, rgba(29,170,247,1) 100%);
+  background: -o-linear-gradient(277deg, rgba(27,58,230,1) 0%, rgba(13,140,242,1) 64%, rgba(29,170,247,1) 100%);
+  background: linear-gradient(7deg, rgba(27,58,230,1) 0%, rgba(13,140,242,1) 64%, rgba(29,170,247,1) 100%);
+  color: rgba(255, 255, 255, 0.97);
+  display: inline-block;
+  border-radius: 8px; 
+  -webkit-box-shadow: 0 1px 2px rgba(95,95,95,0.8);
+  -moz-box-shadow: 0 1px 2px rgba(95,95,95,0.8);
+  box-shadow: 0 1px 2px rgba(95,95,95,0.8);
+  padding: 12px 32px;
+  letter-spacing: 0.5px;
+  border-top: 1px solid #a4d7f5;
+  border-bottom: 1px solid #0e2ab5;
+}
+
+.pro-purchase-link:visited {
+  color: rgba(255, 255, 255, 0.97);
+}
+
+.pro-purchase-link:hover {
+  transform: scale(1.025);
+}
+
+.pro-purchase-link:active {
+  -webkit-box-shadow: 0 1px 2px rgba(95,95,95,0.2);
+  -moz-box-shadow: 0 1px 2px rgba(95,95,95,0.2);
+  box-shadow: 0 1px 2px rgba(95,95,95,0.2);
+}
+
+.purchase-images {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  
+}
+
+.purchase-benefit {
+  border-top: 1px solid gainsboro;
+  margin-top: 128px;
+  padding-top: 96px;
+}
+
+.purchase-benefit h2 {
+  text-align: center;
+}
+
+.purchase-images img {
+  width: 50%;
+  box-sizing: border-box;
+  border: 4px solid white;
+  border-radius: 8px;
+}
+
+@media only screen and (max-width: 780px) {
+  .purchase-images img {
+    width: 100%;
   }
 }
