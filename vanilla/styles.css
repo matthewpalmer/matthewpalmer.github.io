@@ -283,3 +283,21 @@ a:visited {
     display: block;
     margin: 4px auto;
 }
+
+.screen-recording-help .notification {
+  border: 2px solid #0590ff;
+  padding: 16px 20px;
+  border-radius: 4px;
+  margin-bottom: 48px;
+  text-align: center;
+  background-color: #cfeaff;
+}
+
+.screen-recording-help .notification p {
+  line-height: 2.2;
+}
+
+.screen-recording-help .notification p a {
+  color: black;
+  font-weight: bold;
+}
