@@ -5,7 +5,7 @@ category: web
 ---
 
 In this guide, we’re going to set up a complete Squarespace affiliate marketing
-program using **[Tapfiliate][tapfiliate-link]**.
+program using **[Peach’s][peachs-link]**.
 
 This tutorial takes about **ten minutes** – after that, you’ll have your affiliate program up and running.
 
@@ -64,39 +64,38 @@ This often looks like “Send a friend $10 off, and you’ll get $10 off your ne
 
 These are much more natural, small-scale interactions between regular people. Anyone can sign up for the referral program – they don’t need to be able to reach a large audience… they just send a message to their friends.
 
-If you’re looking for a guide to setting up a Squarespace referral program, [check out Peach’s](https://peachs.co).
-
+If you’re looking for a guide to setting up a Squarespace referral program, [Peach’s has a different plugin for that](https://peachs.co).
+<br/><br/>
 
 ## How to set up an affiliate program on Squarespace?
 
-To set up our affiliate program, we’ll use [Tapfiliate][tapfiliate-link] – an easy way to set up an affiliate program across a wide range of stores, including Squarespace.
+To set up our affiliate program, we’ll use [Peach’s][peachs-link] – an easy way to set up an affiliate program sepcifically for Squarespace.
 
 Follow our guide and you’ll have your affiliate program up and running in ten minutes, and you’ll be able to invite influential affiliates to help grow your store.
 
 
-1.  Visit the [Tapfiliate home page][tapfiliate-link] and sign up for an account
-    ![Sign up][sign-up]
-2.  When you get to the screen listing the many e-commerce platforms they integrate with, choose **Squarespace**
-3.  To integrate with Squarespace, copy the code from each step on the Tapfiliate dashboard to the corresponding field in your Squarespace dashboard.
-4.  Your Code Injection settings for Squarespace are under **Settings > Advanced > Code Injection** (see the screenshot below)
-    ![Squarespace Code Injection][navigation]
-5.  Once you’ve added the code from Tapfiliate, your Code Injection settings should look like the screenshot below. **Note**: You might need to save the “Order Confirmation” field twice – there’s a bug in Squarespace that sometimes prevents it saving correctly
-    ![Tapfiliate correct Squarespace settings][code-settings-correct]
-6.  After you’ve saved, you can use Tapfiliate’s testing feature to check if everything is correct. Click their button, and you should see a big banner at the bottom like in the screenshot below.
-    ![Squarespace marketing program preview][testing-preview]
-7.  Then place a test order in your store – either by switching your Squarespace store to Test Mode, using a 100% off coupon, or placing an order and immediately refunding (any of these options will work)
-8.  Once that’s done, your Tapfiliate testing panel will show a check next to “Tapfiliate conversion code detected”
-    ![Affiliate sales integration][affiliate-sales-test]
-9.  Once that’s done you’re good to go! Your affiliate program is up and running, and you can start inviting affiliates
+1.  Visit the [Peach’s affiliate programs page][peachs-link] and sign up for an account<br/><br/>
+    <br/><br/>![Sign up][sign-up]
+2.  On the “Create Program” screen, enter the details for your campaign name, your website’s URL, and your Squarespace store URL. <br/><br/>Everything should be straightforward, and you can set a default commission of no commission, a percentage amount, or a fixed amount per order. You’ll also be able to customize this on a per-affiliate basis later.<br/><br/>![Create affiliate program][create-program]<br/><br/>
+4.  Follow the first three steps on the Peach’s dashboard to connect your program to your store.<br/><br/>The setup guide on the site links you to the relevant parts of your Squarespace admin settings, and you can copy and paste values from there.
+    <br/><br/>![Squarespace Connection setup][connection]<br/><br/>
+5.  With the last two steps, you’ll verify that your affiliate program is connected to your store and that your affiliate’s referred orders are getting tracked correctly.<br/><br/>
+6.  After you’ve finished those steps, all your checkboxes will turn green, and you can click the button to make your program live. 
+<br/><br/>![Squarespace marketing program preview][testing-preview]<br/><br/>
+You can tweak the dashboard styles (what your affiliates see) and templates (affiliate emails and notifications) for your program before you go live.<br/><br/>
+    ![Squarespace affiliate program customization][customization]<br/><br/>
+7.  Click the button to make your affiliate program live. You’re done!<br/><br/>![Live affiliate program on Squarespace][testing-live]
 
 
-[tapfiliate-link]: https://tapfiliate.com/?ref=matthewpalmer3
+[peachs-link]: https://peachs.co/squarespace-affiliate-program
 [affiliate-header]: /img/squarespace/marketing/header.png
 [why]: /img/squarespace/marketing/why.png
 [affiliate-example]: /img/squarespace/marketing/example.png
 [difference]: /img/squarespace/marketing/difference.png
 [sign-up]: /img/squarespace/marketing/sign-up.png
-[navigation]: /img/squarespace/marketing/navigation.png
-[code-settings-correct]: /img/squarespace/marketing/code-settings.png
-[testing-preview]: /img/squarespace/marketing/test-code.png
+[testing-preview]: /img/squarespace/marketing/testing-preview.png
 [affiliate-sales-test]: /img/squarespace/marketing/test-order.png
+[testing-live]: /img/squarespace/marketing/testing-live.png
+[create-program]: /img/squarespace/marketing/create-program.png
+[connection]: /img/squarespace/marketing/connection.png
+[customization]: /img/squarespace/marketing/customization.png
