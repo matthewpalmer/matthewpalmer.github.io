@@ -1618,6 +1618,62 @@ body.sidebar .sidebar-container a img {
   box-shadow: 2px 2px 12px 0px rgba(0,0,0,0.3);
 }
 
+.book-image-reviews {
+  max-width: 480px;
+  margin: 36px auto;
+}
+
+.book-image-reviews img {
+  width: 100%;
+  height: unset;
+  border-radius: 8px;
+  margin-bottom: 24px;
+  -webkit-box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.1);
+  -moz-box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.1);
+  box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.1);
+}
+
+.lead .side-by-side.book-side-by-side {
+  background: #f6f6f6;
+  padding: 64px 32px;
+}
+
+.lead .book-side-by-side .left {
+  display: flex;
+  max-width: 760px;
+}
+
+.lead .book-side-by-side .left .cover-container {
+  margin-right: 64px;
+  height: unset;
+}
+
+.lead .book-side-by-side .cover-container img {
+  max-width: 240px;
+}
+
+.book-side-by-side .left .cover-right {
+  max-width: 620px;
+}
+
+.book-side-by-side .left .cover-right h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: left;
+}
+
+.lead .side-by-side.book-side-by-side p.table-of-contents-link {
+  text-align: left;
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 12px;
+}
+
+.lead .book-side-by-side .button.price {
+  margin: 24px 8px;
+  display: inline-block;
+}
+
 @media only screen and (max-width: 780px) {
   .lead .side-by-side {
     flex-direction: column;
@@ -1627,6 +1683,25 @@ body.sidebar .sidebar-container a img {
 
   .lead .side-by-side .left, .lead .side-by-side .right {
     margin-bottom: 96px;
+  }
+
+  .lead .book-side-by-side .left {
+    flex-direction: column;
+  }
+
+  .lead .book-side-by-side .left .cover-container {
+    margin-right: unset;
+    margin-bottom: 64px;
+  }
+
+  .lead .book-side-by-side .button.price {
+    margin: 24px auto;
+    display: block;
+  }
+
+  .lead .side-by-side.book-side-by-side p.table-of-contents-link {
+    text-align: center;
+    display: block;
   }
 }
 
