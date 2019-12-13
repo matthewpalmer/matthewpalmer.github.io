@@ -1153,6 +1153,20 @@ body.sidebar .sidebar-container a img {
   body.sidebar .article-nav {
     margin: 0 auto;
     max-width: 520px;
+    margin-bottom: 64px;
+  }
+
+  body.sidebar .article-nav .k8-article-column {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  body.sidebar .article-nav a {
+     margin: unset; 
+    padding: 8px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    width: 50%;
   }
 
   body.sidebar .article-container {
