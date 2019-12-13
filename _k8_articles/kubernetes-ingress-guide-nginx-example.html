@@ -1,0 +1,139 @@
+---
+layout: k8_article
+title: Kubernetes Ingress with Nginx Example - Kubernetes Book
+sidebar: k8_sidebar_book.html
+---
+
+<h1>Kubernetes Ingress with Nginx Example</h1>
+
+<h2>What is an Ingress?</h2>
+
+<p>In Kubernetes, an Ingress is an object that allows access to your Kubernetes services
+from outside the Kubernetes cluster. You configure access by creating a collection
+of rules that define which inbound connections reach which services.</p>
+
+<p>This lets you consolidate your routing rules into a single resource. For example,
+you might want to send requests to <code>example.com/api/v1/</code> to an <code>api-v1</code> service, 
+and requests to <code>example.com/api/v2/</code> to the <code>api-v2</code> service. With an Ingress,
+you can easily set this up without creating a bunch of LoadBalancers or exposing
+each service on the Node.</p>
+
+<p>Which leads us to the next point…</p>
+
+<h2>Kubernetes Ingress vs LoadBalancer vs NodePort</h2>
+
+<p>These options all do the same thing. They let you expose a service to external
+network requests. They let you send a request from outside the Kubernetes 
+cluster to a service inside the cluster.</p>
+
+<h3>NodePort</h3>
+
+<p><img src="nodeport.png" alt="nodeport in kubernetes" title="" /></p>
+
+<p><code>NodePort</code> is a configuration setting you declare in a service’s YAML. Set 
+the service spec’s <code>type</code> to <code>NodePort</code>. Then, Kubernetes will allocate a 
+specific port on each Node to that service, and any request to your cluster
+on that port gets forwarded to the service.</p>
+
+<p>This is cool and easy, it’s just not super robust. You don’t know what port
+your service is going to be allocated, and the port might get re-allocated
+at some point.</p>
+
+<h3>LoadBalancer</h3>
+
+<p><img src="loadbalancer.png" alt="loadbalancer in kubernetes" title="" /></p>
+
+<p>You can set a service to be of type <code>LoadBalancer</code> the same way you’d set <code>NodePort</code>—
+specify the <code>type</code> property in the service’s YAML. There needs to be some external
+load balancer functionality in the cluster, typically implemented by a cloud 
+provider.</p>
+
+<p>This is typically heavily dependent on the cloud provider—GKE creates a Network
+Load Balancer with an IP address that you can use to access your service.</p>
+
+<p>Every time you want to expose a service to the outside world, you have to create
+a new LoadBalancer and get an IP address.</p>
+
+<h3>Ingress</h3>
+
+<p><img src="ingress.png" alt="ingress in kubernetes" title="" /></p>
+
+<p><code>NodePort</code> and <code>LoadBalancer</code> let you expose a service by specifying that 
+value in the service’s <code>type</code>. Ingress, on the other hand, is a completely
+independent resource to your service. You declare, create and destroy it
+separately to your services. </p>
+
+<p>This makes it decoupled and isolated from the services you want to expose. 
+It also helps you to consolidate routing rules into one place.</p>
+
+<p>The one downside is that you need to configure an Ingress Controller for your
+cluster. But that’s pretty easy—in this example, we’ll use the Nginx Ingress
+Controller.</p>
+
+<h2>How to Use Nginx Ingress Controller</h2>
+
+<p>Assuming you have <a href="https://matthewpalmer.net/kubernetes-app-developer/articles/guide-install-kubernetes-mac.html">Kubernetes and Minikube (or Docker for Mac) installed</a>,
+follow these steps to set up the Nginx Ingress Controller on your local Minikube cluster.</p>
+
+<h3>Installation Guide</h3>
+
+<ol>
+<li><p>Start by creating the “mandatory” resources for Nginx Ingress in your cluster.</p>
+
+<pre><code>kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/master/deploy/mandatory.yaml</code></pre></li>
+<li><p>Then, enable the ingress add-on for Minikube.</p>
+
+<pre><code>minikube addons enable ingress</code></pre></li>
+<li><p>Or, if you’re using Docker for Mac to run Kubernetes instead of Minikube.</p>
+
+<pre><code>kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/master/deploy/provider/cloud-generic.yaml</code></pre></li>
+<li><p>Check that it’s all set up correctly.</p>
+
+<pre><code>kubectl get pods --all-namespaces -l app=ingress-nginx</code></pre></li>
+</ol>
+
+<p>This has set up the Nginx Ingress Controller. Now, we can create Ingress
+resources in our Kubernetes cluster and route external requests to our services. 
+Let’s do that.</p>
+
+<h3>Creating a Kubernetes Ingress</h3>
+
+<p>First, let’s create two services to demonstrate how the Ingress routes our request. 
+We’ll run two web applications that output a slightly different response.</p>
+
+<script src="https://gist.github.com/matthewpalmer/d1147ed1066e9219e8c346f4e0dd0488.js"></script>
+
+<script src="https://gist.github.com/matthewpalmer/d70ca836c7d7c5da37660923915d9526.js"></script>
+
+<p>Create the resources</p>
+
+<pre><code>$ kubectl apply -f apple.yaml
+$ kubectl apply -f banana.yaml</code></pre>
+
+<p>Now, declare an Ingress to route requests to <code>/apple</code> to the first service,
+and requests to <code>/banana</code> to second service. Check out the Ingress’ <code>rules</code>
+field that declares how requests are passed along.</p>
+
+<script src="https://gist.github.com/matthewpalmer/9721cf9b3b719bd8ae3af00648cbb484.js"></script>
+
+<p>Create the Ingress in the cluster</p>
+
+<pre><code>kubectl create -f ingress.yaml</code></pre>
+
+<p>Perfect! Let’s check that it’s working. If you’re using Minikube, you might need
+to replace <code>localhost</code> with <code>192.168.99.100</code>.</p>
+
+<pre><code>$ curl -kL http://localhost/apple
+apple
+
+$ curl -kL http://localhost/banana
+banana
+
+$ curl -kL http://localhost/notfound
+default backend - 404</code></pre>
+
+<h2>Summary</h2>
+
+<p>A Kubernetes Ingress is a robust way to expose your services outside the cluster.
+It lets you consolidate your routing rules to a single resource, and gives you
+powerful options for configuring these rules.</p>

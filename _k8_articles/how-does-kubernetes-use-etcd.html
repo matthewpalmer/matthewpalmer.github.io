@@ -1,0 +1,75 @@
+---
+layout: k8_article
+title: How Does Kubernetes Use etcd? - Kubernetes Book
+sidebar: k8_sidebar_book.html
+---
+
+
+<h1>How Does Kubernetes Use etcd?</h1>
+
+<p>Kubernetes uses etcd to store all its data – its configuration data,
+its state, and its metadata. Kubernetes is a distributed system,
+so it needs a distributed data store like etcd. etcd lets any of the nodes
+in the Kubernetes cluster read and write data.</p>
+
+<blockquote>I’ve also expanded on this article in <a href="http://qr.ae/TUGAh4">this Quora answer</a>.</blockquote>
+
+<h2>What is Kubernetes <em>really</em>?</h2>
+
+<p>Kubernetes is a set of processes running on several machines.</p>
+
+<p>(Actual, literal computer processes, not business-speak <em>processes</em>.)</p>
+
+<p>One of these machines is the <em>master</em> and the rest are the <em>worker</em> nodes.</p>
+
+<p><img src="etcd-diagram.png" alt="Diagram of Kubernetes cluster" /></p>
+
+<p>These processes have a range of responsibilities, including</p>
+
+<ul>
+<li>handling API requests from kubectl</li>
+<li>scheduling pods to run on worker nodes</li>
+<li>runninng a pod on the worker node</li>
+<li>monitoring and networking</li>
+</ul>
+
+<p>Like most of the code you’ve ever written… <strong>Kubernetes needs to store data somewhere</strong>.</p>
+
+<p>That’s what <strong>etcd</strong> is for!</p>
+
+<h2>What is etcd?</h2>
+
+<p>Now, we know that Kubernetes is distributed – it runs on several machines
+at the same time.</p>
+
+<p>So, it needs a distributed database. One that runs on several machines at the same time. One that makes it easy to store data
+across a cluster and watch for changes to that data.</p>
+
+<p><strong>Kubernetes uses etcd as its database.</strong></p>
+
+<p>The only nuance is that etcd is a distributed database – because Kubernetes is a distributed system.</p>
+
+<p>etcd manages a lot of the tricky problems in running a distributed database – like
+race conditions and networking – and saves Kubernetes from worrying about it.</p>
+
+<h2>How does Kubernetes use etcd?</h2>
+
+<p>Kubernetes uses etcd as a key-value database store. It stores the 
+configuration of the Kubernetes cluster in etcd. </p>
+
+<p>It also stores the <em>actual</em> state of the system and the <em>desired</em> state of the system
+in etcd. </p>
+
+<p>It then uses etcd’s <em>watch</em> functionality to monitor changes to either of these two things. If they diverge,
+Kubernetes makes changes to reconcile the actual state and the desired state.</p>
+
+<p><strong>A Kubernetes cluster stores all its data in etcd.</strong></p>
+
+<p>Anything you might read from a <code>kubectl get xyz</code> command is stored in etcd.</p>
+
+<p>Any change you make via <code>kubectl create</code> will cause an entry in etcd to be updated.</p>
+
+<p>Any node crashing or process dying causes values in etcd to be changed.</p>
+
+<p>The set of processes that make up Kubernetes use etcd to store data and
+notify each other of changes.</p>

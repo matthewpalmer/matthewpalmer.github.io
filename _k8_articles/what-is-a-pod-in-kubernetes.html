@@ -1,0 +1,19 @@
+---
+layout: k8_article
+title: What is a Pod in Kubernetes? - Kubernetes Book
+sidebar: k8_sidebar_book.html
+---
+
+<h1>What is a Pod in Kubernetes?</h1>
+
+<p>A pod is a group of one or more containers. A container is an enclosed, self-contained execution process, much like a process in an operating system. Kubernetes uses pods to run your code and images in the cluster.</p>
+
+<p>Kubernetes works with Pods, rather than containers, so that containers in the same pod can be guaranteed to run on the same machine. Containers in the same pod share their networking infrastructure, storage resources, and lifecycle.</p>
+
+<img src="./pod-animation-kubernetes.gif" alt="Animated diagram of Kubernetes pod" title="Kubernetes Pod Diagram" />
+
+<h2>Why are Pods useful in Kubernetes?</h2>
+
+<p>Pods are useful because containers in the same pod share their lifecycle and storage resources. This lets you communicate between containers via the file system or over the network. It allows for <a href="./multi-container-pod-design-patterns.html">multi-container pod design patterns</a> like the Sidecar, Adapter, and Ambassador patterns.</p>
+
+<p>These patterns let you separate your system’s concerns so that you can keep your application code free from log collecting, metrics, and external proxy services.</p>

@@ -13,19 +13,23 @@ layout: k8_article
 </head>
 <body class="sidebar">
   <nav class="article-nav">
+    <div class="k8-article-column">
       <a href="/kubernetes-app-developer/">🏡 Home</a>
-      <a href="/kubernetes-app-developer/kubernetes-book.html">📖 Kubernetes Book</a>
+      <a href="/kubernetes-app-developer/articles/">📙 Articles</a>
+      <a href="/kubernetes-app-developer/kubernetes-book.html">📚 Kubernetes Book</a>
       <a href="/kubernetes-app-developer/">🎓 CKAD Certification Course</a>
+    </div>
   </nav>
 
-  <div class="article-container">
-    {{ content }}
+  <div class="k8-article-column">
+    <div class="article-container">
+      {{ content }}
+    </div>
+
+    {% include {{ page.sidebar }} %}
+
+    <div class="clear"></div>
   </div>
-
-
-  {% include {{ page.sidebar }} %}
-
-  <div class="clear"></div>
 
   {% include k8_article_footer.html %}
 </body>

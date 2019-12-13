@@ -1,0 +1,112 @@
+---
+layout: k8_article
+title: Ultimate Guide to ConfigMaps in Kubernetes - Kubernetes Book
+sidebar: k8_sidebar_book.html
+---
+
+<h1>Ultimate Guide to ConfigMaps in Kubernetes</h1>
+
+<p>How do you manage your application's configuration? For a Python or Node.js application, where do you store configuration? How do you set connection strings, analytics keys, and service URLs?</p>
+
+<p>If you're using Kubernetes, the answer is ConfigMaps.</p>
+
+<p>With this guide, tutorial, and examples, you’ll learn how to use ConfigMaps in Kubernetes. We’ll teach you how to create ConfigMaps. Then, you'll learn how to mount them in volumes and use them as environment variables.</p>
+
+
+<h2>What is a ConfigMap in Kubernetes?</h2>
+
+<p>A ConfigMap is a dictionary of configuration settings. This dictionary consists of key-value pairs of strings. Kubernetes provides these values to your containers. Like with other dictionaries (maps, hashes, ...) the key lets you get and set the configuration value.</p>
+
+
+<h2>Why would you use a ConfigMap in Kubernetes?</h2>
+
+<p>Use a ConfigMap to keep your application code separate from your configuration.
+
+<p>It is an important part of creating a Twelve-Factor Application. 
+
+<p>This lets you change easily configuration depending on the environment (development, production, testing) and to dynamically change configuration at runtime.
+
+
+<h2>What is a ConfigMap used for?</h2>
+
+<p>A ConfigMap stores configuration settings for your code. Store connection strings, public credentials, hostnames, and URLs in your ConfigMap.</p>
+
+<h2>How does a ConfigMap work?</h2>
+
+<p>Here's a quick animation I made showing how a ConfigMap works in Kubernetes.</p>
+
+<p>First, you have multiple ConfigMaps, one for each environment.</p>
+<p>Second, a ConfigMap is created and added to the Kubernetes cluster.</p>
+<p>Third, containers in the Pod reference the ConfigMap and use its values.</p>
+
+<img src="./configmap-diagram.gif" alt="Kubernetes ConfigMap example diagram" title="ConfigMap animation for Kubernetes" />
+
+
+<h2>How to create a ConfigMap in YAML? How to mount a ConfigMap as a Volume?</h2>
+
+<p>Defining the ConfigMap in YAML and mounting it as a Volume is the easiest way to use ConfigMaps.</p>
+
+<p>The official documentation waaay overcomplicates this.</p>
+
+<p>Here's the method I use. It's simpler and easier for when you're starting to learn about ConfigMaps.</p>
+
+<p>My favourite way is to define the ConfigMap dictionary in a YAML file.</p>
+
+<p>This lets you create that ConfigMap like any other Kubernetes resources using `kubectl apply -f $file.yaml`. After that, you mount the ConfigMap as a Volume in your Pod's YAML specification.</p>
+
+<h3>1. Define the ConfigMap in a YAML file.</h3>
+
+<p>Create a YAML file setting the key-value pairs for your ConfigMap.</p>
+
+<script src="https://gist.github.com/matthewpalmer/33016359f49c88acc12e86eda232f14a.js"></script>
+
+<h3>2. Create the ConfigMap in your Kubernetes cluster</h3>
+
+<p>Create the ConfigMap using the command <code>kubectl apply -f config-map.yaml</code>
+
+<h3>3. Mount the ConfigMap through a Volume</h3>
+
+<p>Each property name in this ConfigMap becomes a new file in the mounted directory (`/etc/config`) after you mount it.
+
+<script src="https://gist.github.com/matthewpalmer/01ea5d5f82032e5f78b3612bf155ebd5.js"></script>
+
+<p>Attach to the created Pod using `kubectl exec -it pod-using-configmap sh`. Then run `ls /etc/config` and you can see each key from the ConfigMap added as a file in the directory. Use `cat` to look at the contents of each file and you’ll see the values from the ConfigMap.
+
+<p>You can then read the configuration settings using Python/Node.js/PHP from this file.
+
+
+<h2>How to use a ConfigMap with Environment Variables and `envFrom`?</h2>
+
+<p>You can consume a ConfigMap via environment variables in a running container using the `envFrom` property.</p>
+
+<h3>1. Create the ConfigMap</h3>
+
+<p>Create the ConfigMap using the example from the previous section.</p>
+
+<h3>2. Add the `envFrom` property to your Pod's YAML</h3>
+
+<p>Set the `envFrom` key in each container to an object containing the list of ConfigMaps you want to include.</p>
+
+<script src="https://gist.github.com/matthewpalmer/c9649e7769e3e7e5e3790f5b3a4e6908.js"></script>
+
+<p>Attach to the created Pod using `kubectl exec -it pod-env-var sh`. Then run `env` and see that each key from the ConfigMap is now available as an environment variable.</p>
+
+
+<h2>What are the other ways to create and use ConfigMaps?</h2>
+
+<p>There are three other ways to create ConfigMaps using the `kubectl create configmap` command. I prefer the methods used above, but here are your options.</p>
+
+<ol>
+    <li>Use the contents of an entire directory with <code>kubectl create configmap my-config --from-file=./my/dir/path/</code></li>
+    <li>Use the contents of a file or specific set of files with <code>kubectl create configmap my-config --from-file=./my/file.txt</code></li>
+    <li>Use literal key-value pairs defined on the command line with <code>kubectl create configmap my-config --from-literal=key1=value1 --from-literal=key2=value2</code></li>
+</ol>
+
+<p>You can get more information about this command using <code>kubectl create configmap --help</code>.
+
+<p>In the guide above, we covered both of the main ways to consume and use ConfigMaps – by mounting them into a file or injecting them as environment variables.
+
+
+<h2>What questions do you have?</h2>
+
+<p>Send me any questions you have via Twitter on @_matthewpalmer or through email at matt@matthewpalmer.net and I'll give you answers.

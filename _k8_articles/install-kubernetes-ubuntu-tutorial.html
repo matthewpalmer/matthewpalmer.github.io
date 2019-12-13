@@ -1,0 +1,64 @@
+---
+layout: k8_article
+title: 4 Steps to Install Kubernetes on Ubuntu 16.04 and 18.04 - Kubernetes Book
+sidebar: k8_sidebar_book.html
+---
+
+<h1>4 Steps to Install Kubernetes on Ubuntu 16.04 and 18.04</h1>
+
+<p>This is the fastest tutorial to install and run Kubernetes on Ubuntu. </p>
+
+<p>With this guide you’ll be running Kubernetes on your Ubuntu machine. It’s the fastest set up for local development.</p>
+
+<p>We’ll use Minikube, kubectl, and VirtualBox.</p>
+
+<p>It works flawlessly for Ubuntu 16.04 (Xenial Xerus) and Ubuntu 18.04 (Bionic Beaver).</p>
+
+<p>We used a <a href="https://m.do.co/c/4998dd11748e">DigitalOean virtual machine</a>
+to run Kubernetes. But it’ll work great for every Ubuntu installation.</p>
+
+
+<h2>1. Update Ubuntu dependencies</h2>
+<p>Update your system’s dependencies to get ready for the Kubernetes installation.</p>
+<pre><code>$ sudo apt-get update
+$ sudo apt-get install -y apt-transport-https</code></pre>
+
+<p><img src="./ubuntu/dependencies.png" alt="Install dependencies for Kubernetes on Ubuntu" /></p></li>
+<h2>2. Install VirtualBox on Ubuntu</h2>
+<p>Install VirtualBox to run virtual machines on your system.</p>
+<pre><code>$ sudo apt-get install -y virtualbox virtualbox-ext-pack</code></pre>
+
+<p><img src="./ubuntu/virtualbox.png" alt="Run VirtualBox on Ubuntu" /></p></li>
+<h2>3. Install kubectl</h2>
+<p>Install kubectl, which you use to interact with the Kubernetes cluster.</p>
+<pre><code>$ curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
+$ sudo touch /etc/apt/sources.list.d/kubernetes.list 
+$ echo "deb http://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee -a /etc/apt/sources.list.d/kubernetes.list
+$ sudo apt-get update
+$ sudo apt-get install -y kubectl</code></pre>
+
+<p><img src="./ubuntu/kubectl.png" alt="Installing kubectl on Ubuntu" /></p></li>
+<h2>4. Install minikube</h2>
+<p>Download and install minikube, which runs a single node Kubernetes cluster on your machine.</p>
+<pre><code>$ curl -Lo minikube https://storage.googleapis.com/minikube/releases/v0.28.2/minikube-linux-amd64
+$ chmod +x minikube &amp;&amp; sudo mv minikube /usr/local/bin/</code></pre>
+
+<p><img src="./ubuntu/kubectl.png" alt="Adding minikube" /></p></li>
+
+
+<h2>We’re Done!</h2>
+
+<p>Now start up Minikube and use kubectl to find what version of Kubernetes you’re running on Ubuntu.</p>
+
+<pre><code>$ minikube start
+$ kubectl api-versions</code></pre>
+
+<p><img src="./ubuntu/versions.png" alt="Check Kubernetes versions for Ubuntu" /></p>
+
+<h2>What did we just install?</h2>
+
+<ul class="longlist">
+<li>VirtualBox runs virtual machines.</li>
+<li>Minikube is a Kubernetes-specific package that runs a local development Kubernetes cluster on VirtualBox.</li>
+<li><code>kubectl</code> is the command line tool that lets you interact with your Minikube Kubernetes cluster.</li>
+</ul>

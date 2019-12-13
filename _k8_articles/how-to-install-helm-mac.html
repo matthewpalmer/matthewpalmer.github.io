@@ -1,0 +1,66 @@
+---
+layout: k8_article
+title: How to Install Helm on Mac - Kubernetes Book
+sidebar: k8_sidebar_book.html
+---
+
+<h1>How to Install Helm for Kubernetes on Mac</h1>
+
+<p>Here are the steps you need to install and initialize Helm to be used on a Mac running macOS Mojave or High Sierra.</p>
+
+<p><img src="helm-mac-guide.png" alt="Tutorial for Helm on Mac" /></p>
+
+<h2>1. Install and start Minikube</h2>
+
+<p>Install Minikube on your Mac using <a href="guide-install-kubernetes-mac.html">our guide</a>. </p>
+
+<p>You can use a different Kubernetes cluster if preferred – anything should work.</p>
+
+<p><img src="minikube-mac.png" alt="Install Minikube on Mac" /></p>
+
+<h2>2. Install Homebrew</h2>
+
+<p>Check that you’ve got Homebrew installed by running <code>brew --version</code>. If you get a Homebrew version number back, you’re good to go.</p>
+
+<p>If you don’t have Homebrew, run this in your Terminal</p>
+
+<p><code> /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+</code></p>
+
+<h2>3. Install Helm with Homebrew</h2>
+
+<p>Run the following Homebrew command to install Helm on your local macOS operating system.</p>
+
+<p><code>
+brew install kubernetes-helm
+</code></p>
+
+<h2>4. Initialize Helm</h2>
+
+<p>The last step is to initialize the Helm command-line tool and install the Helm server (Tiller) onto your Kubernetes cluster (Minikube, in our case).</p>
+
+<p>Run <code>helm init</code> and you’ll see something like the following.</p>
+
+<p><pre><code> $ helm init
+Creating /Users/matthewpalmer/.helm
+Creating /Users/matthewpalmer/.helm/repository
+Creating /Users/matthewpalmer/.helm/repository/cache
+Creating /Users/matthewpalmer/.helm/repository/local
+Creating /Users/matthewpalmer/.helm/plugins
+Creating /Users/matthewpalmer/.helm/starters
+Creating /Users/matthewpalmer/.helm/cache/archive
+Creating /Users/matthewpalmer/.helm/repository/repositories.yaml
+Adding stable repo with URL: https://kubernetes-charts.storage.googleapis.com
+Adding local repo with URL: http://127.0.0.1:8879/charts
+$HELM_HOME has been configured at /Users/matthewpalmer/.helm.
+
+Tiller (the Helm server-side component) has been installed into your Kubernetes Cluster.
+
+Please note: by default, Tiller is deployed with an insecure 'allow unauthenticated users' policy.
+To prevent this, run `helm init` with the --tiller-tls-verify flag.
+For more information on securing your installation see: https://docs.helm.sh/using_helm/#securing-your-helm-installation
+Happy Helming!</code></pre></p>
+
+<p>Done! You’ve successfully installed Helm on your Mac.</p>
+
+<p>You can now use Helm to easily package and deploy your Kubernetes applications. You’ll get simple rollbacks and great release management.

@@ -1,0 +1,13 @@
+---
+layout: k8_article
+title: Articles – Kubernetes Book
+sidebar: k8_sidebar_book.html
+---
+
+<div class="articles-index">
+  <h1>Articles – Kubernetes Book</h1>
+  <p>To help give you a small taste of the book, we’ve published <a href="/kubernetes-app-developer/articles">some great articles</a> on Kubernetes…</p>
+  {% for article in site.k8_articles %}
+    <a href="{{ article.url }}"><h3>{{ article.title | replace: " - Kubernetes Book", "" }}</h3></a>
+  {% endfor %}
+</div>

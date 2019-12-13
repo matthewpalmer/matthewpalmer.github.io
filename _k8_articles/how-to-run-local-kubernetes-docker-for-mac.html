@@ -1,0 +1,79 @@
+---
+layout: k8_article
+title: How to run Kubernetes using Docker for Mac - Kubernetes Book
+sidebar: k8_sidebar_book.html
+---
+
+
+<h1>How to run Kubernetes using Docker for Mac</h1>
+
+<p>The Docker team announced support for running Kubernetes using the Docker
+for Mac application. For a while, it was only available on unstable Edge
+releases of the Mac application.</p>
+
+<p><strong>Docker for Mac’s Kubernetes cluster is now available in the stable release channel! 🎉</strong></p>
+
+<p>This makes running Kubernetes for local development so
+much easier. You no longer need to install and run a separate cluster using
+something like Minikube. (Though, if you need to, <a href="/kubernetes-app-developer/articles/guide-install-kubernetes-mac.html">I have a guide on installing
+Minikube on your Mac</a>.)</p>
+
+<p>It's available on Docker Community Edition version <code>18.06.0-ce-mac70 2018-07-25</code> or later.</p>
+
+<h2>Setting up kubectl with Docker for Mac Kubernetes</h2>
+
+<p>Setting up kubectl to use Docker for Mac is simple.</p>
+
+<ol>
+<li><p>If you don't already have kubectl installed, the easiest way is with Homebrew.</p>
+
+<p><code>
+brew install kubernetes-cli
+</code></p></li>
+<li>Install the most recent version of Docker for Mac, one that includes the Kubernetes
+cluster functionality.</li>
+<li>Click the Docker menu bar icon > Preferences, then click the Kubernetes tab. Click the checkbox
+to enable Kubernetes and switch the default orchestrator to Kubernetes. Docker might take a few
+minutes to install more components here.
+<img src="docker-mac-preferences.png" alt="docker for mac preferences for Kubernetes" /></li>
+<li>Docker for Mac will start the Kubernetes cluster. Once it’s running,
+click the Docker menu bar icon again and expand the Kubernetes menu item. Then under Context, select
+<code>docker-for-desktop</code>. This will switch kubectl to the <code>docker-for-desktop</code> context.<br/><br/>
+<img src="docker-mac-context.png" alt="Enable kubectl docker for mac" /></li>
+<li>Run <code>kubectl config current-context</code> in a Terminal window. It should output <code>docker-for-desktop</code>
+if kubectl’s context has updated.</li>
+<li>If you’re curious, you can also see the configuration settings that kubectl uses 
+to connect to Docker for Mac’s Kubernetes cluster. Run <code>kubectl config view</code> to output
+all your available kubectl contexts. (I have a chapter in <a href="/kubernetes-app-developer/">my book</a> that explains kubectl config in detail)</li>
+</ol>
+
+<script src="https://gist.github.com/matthewpalmer/e5a8e39a0f596eae8851f40dab100438.js"></script>
+
+<h2>Running your first Kubernetes pod with Docker for Mac</h2>
+
+<p>Once you’ve set up kubectl to use Docker for Mac’s Kubernetes cluster,
+you can run your first pod!</p>
+
+<p>Create a file called <code>pod.yaml</code> containing the following YAML configuration.</p>
+
+<script src="https://gist.github.com/matthewpalmer/d33f7bad8e228ad037fc2eda1d58a99c.js"></script>
+
+<p>Now run the pod, and then check its status as it gets run on Docker for Mac’s single node cluster</p>
+
+<p>
+    <pre>
+$ kubectl create -f pod.yaml
+pod "example-pod" created
+
+$ kubectl get pods
+NAME          READY     STATUS    RESTARTS   AGE
+example-pod   1/1       Running   0          2m
+    </pre>
+</p>
+
+<h2>Does this replace Minikube?</h2>
+
+<p>I’d expect Minikube to stick around for a while—it’s a much more stable and mature
+implementation of a single-node Kubernetes cluster that you can run locally
+on your Mac. But Docker for Mac is a great, simple way to run a simple cluster 
+on your local machine. Plus, the Docker menu bar icon gives you a new, fast way to switch kubectl contexts.</p>

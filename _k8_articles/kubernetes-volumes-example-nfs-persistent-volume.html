@@ -1,0 +1,147 @@
+---
+layout: k8_article
+title: Kubernetes Volumes Guide – Examples for NFS and Persistent Volume - Kubernetes Book
+sidebar: k8_sidebar_book.html
+---
+
+<h1>Kubernetes Volumes Guide</h1>
+
+<p>This is a guide that covers:</p>
+
+<ul>
+<li>How to set up and use volumes in Kubernetes</li>
+<li>What are persistent volumes, and how to use them</li>
+<li>How to use an NFS volume</li>
+<li>Shared data and volumes between pods</li>
+</ul>
+
+<h2>Filesystem vs Volume vs Persistent Volume</h2>
+
+<p>In Kubernetes, each container can read and write to its own, isolated filesystem.</p>
+
+<p>But, data on that filesystem will be destroyed when the container is restarted.</p>
+
+<p>To solve this, Kubernetes has <strong>volumes</strong>. Volumes let your
+pod write to a filesystem that exists as long as the pod exists.</p>
+
+<p>Volumes also let you share data between containers in the same pod.</p>
+
+<p>But, data in that volume will be destroyed when the pod is restarted.</p>
+
+<p>To solve <em>this</em>, Kubernetes has <strong>persistent volumes</strong>. Persistent volumes
+are long-term storage in your Kubernetes cluster. </p>
+
+<p>Persistent volumes exist beyond containers, pods, and nodes. </p>
+
+<p>A pod uses a persistent volume claim to 
+to get read and write access to the persistent volume.</p>
+
+<table id="kubernetes-apiversion-table">
+  <tr>
+    <th>Type of storage</th>
+    <th>How long does it last?</th>
+  </tr>
+  <tr>
+    <td>Container filesystem</td>
+    <td>Container lifetime</td>
+  </tr>
+  <tr>
+    <td>Volume</td>
+    <td>Pod lifetime</td>
+  </tr>
+  <tr>
+    <td>Persistent volume</td>
+    <td>Cluster lifetime</td>
+  </tr>
+</table>
+<br />
+
+<h3>Example YAML for using a volume</h3>
+
+<p>There are two steps for using a volume. </p>
+
+<p>First, the pod defines the volume. </p>
+
+<p>Second, the container uses <code>volumeMounts</code> to add that 
+volume at a specific path (<code>mountPath</code>) in its filesystem.</p>
+
+<p><img src="volume-mount-diagram.png" alt="Pod volume mount diagram" title="" /></p>
+
+<p>Then, the container reads and write to the volume just like a normal directory.</p>
+
+<script src="https://gist.github.com/matthewpalmer/bd10ea5360bdf3d735109a68050afeaa.js"></script>
+
+<h2>NFS</h2>
+
+<p>One of the most useful types of volumes in Kubernetes is <code>nfs</code>. </p>
+
+<p>NFS stands for Network File System – it's a shared filesystem that can be
+accessed over the network.</p>
+
+<p>The NFS must already exist – Kubernetes doesn't run the NFS, pods in 
+just access it.</p>
+
+<p>An NFS is useful for two reasons. </p>
+
+<p>One, what's already stored in the NFS <strong>is not</strong> deleted 
+when a pod is destroyed. Data is persistent.</p>
+
+<p>Two, an NFS can be accessed from multiple pods at the same time. An NFS
+can be used to share data between pods!</p>
+
+<p>This is really useful for running applications that need a filesystem
+that’s shared between multiple application servers. You can use an 
+NFS to run Wordpress on Kubernetes!</p>
+
+<h2>Kubernetes NFS volume example</h2>
+
+<p>This tutorial and sample YAML gives you a simple example of
+how to use an NFS volume in Kubernetes.</p>
+
+<h3>1. Create and run the NFS server</h3>
+
+<p>For this short guide, we’ll use an existing NFS server image
+and run it in Kubernetes. In practice, you might use a GCP 
+data store or some Firebase storage as your NFS.</p>
+
+<p>We’ll use <a href="https://hub.docker.com/r/cpuguy83/nfs-server/">the cpuguy83/nfs-server image</a>,
+run it in a Kubernetes pod, and expose that pod via a service.</p>
+
+<script src="https://gist.github.com/matthewpalmer/0f213028473546b14fd75b7ebf801115.js"></script>
+
+<p>Create the resources with <code>kubectl apply -f nfs-server.yaml</code>.</p>
+
+<p>(Side note. This might not work for Docker for Mac users. I got an error saying “Not starting NFS kernel daemon: no support in current kernel.” You should be able to use Minikube instead.)</p>
+
+<h3>2. Use the NFS volume in the pod</h3>
+
+<p>This is the important part. </p>
+
+<p>Here, we add the NFS volume to the pod. Set its <code>server</code> and <code>path</code>
+values to point to the NFS server.</p>
+
+<p>Then, mount the NFS volume in the container. In our example, we write
+the date to the file in the network filesystem every five seconds.</p>
+
+<p>(You’ll need to change the IP address in the YAML to the IP address
+  of the service we set up earlier. Theoretically you should be able 
+  to use Kubernetes’ internal DNS resolution, but I couldn’t get that
+to work.)</p>
+
+<script src="https://gist.github.com/matthewpalmer/60118e00e559692eb93a2ccf2be5e32a.js"></script>
+
+<p>Create the pod with <code>kubectl apply -f pod.yaml</code>.</p>
+
+<h3>3. Check that it works</h3>
+
+<p>Now, check that the NFS volume works.</p>
+
+<script src="https://gist.github.com/matthewpalmer/3bfecedbbe75addf062813557bd07c70.js"></script>
+
+<h2>Sharing data between pods</h2>
+
+<p>You can use the NFS volume from the example above to share data between
+pods in your cluster.</p>
+
+<p>Just add the volume to each pod, and add a volume mount to use the 
+NFS volume from each container.</p>

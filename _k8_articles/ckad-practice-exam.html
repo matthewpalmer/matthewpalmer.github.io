@@ -1,0 +1,117 @@
+---
+layout: k8_article
+title: Practice Exam - Certified Kubernetes Application Developer (CKAD) Course
+sidebar: k8_sidebar_ckad.html
+---
+
+<h1>Practice Exam for Certified Kubernetes Application Developer (CKAD) Certification</h1>
+
+<p>
+    This post gives you five free practice questions for the CNCF 
+    Certified Kubernetes Application Developer (CKAD) exam. These are 
+    excerpted from the upgraded package of <a href="/kubernetes-app-developer/">my book for
+    web application developers</a> getting their Kubernetes certification. 
+    While not actual questions from the exam, these questions are of a similar 
+    style and content to questions from the real exam.
+</p>
+
+<p>The <a href="/kubernetes-app-developer/">upgraded package of my book</a>
+    contains a realistic three hour, thirty question practice exam
+    with complete solutions. If you’re preparing to get your CKAD
+    certification, I <em>highly</em> recommend purchasing this.
+    (Many readers’ employers will cover the purchase cost.)</p>
+
+<p>
+    This premium exam contains more realistic, 
+    more challenging questions and solutions that will test your ability
+to work in an existing Kubernetes cluster under time constraints.</p>
+
+<h2>Question 1</h2>
+<p>
+    Create a namespace called ggckad-s0 in your cluster.<br/>
+    Run the following pods in this namespace.<br/>
+    
+    <ol>
+        <li>A pod called pod-a with a single container running the 
+       <code>kubegoldenguide/simple-http-server</code> image</li>
+        <li>A pod called pod-b that has one container running the
+       <code>kubegoldenguide/alpine-spin:1.0.0</code> image, and one container 
+       running <code>nginx:1.7.9</code></li>
+   </ol>
+
+    Write down the output of <code>kubectl get pods</code> for the ggckad-s0 namespace.
+</p>
+
+<h2>Question 2</h2>
+<p>All operations in this question should be performed in
+the ggckad-s2 namespace.<br/>
+
+Create a ConfigMap called app-config that contains the following
+two entries:
+
+<ul>
+    <li>'connection_string' set to 'localhost:4096'</li>
+    <li>'external_url' set to 'google.com'</li>
+</ul>
+
+Run a pod called question-two-pod with a single container running
+the <code>kubegoldenguide/alpine-spin:1.0.0</code> image, and expose these 
+configuration settings as environment variables inside the container.
+</p>
+
+<h2>Question 3</h2>
+<p>
+    All operations in this question should be performed in
+    the ggckad-s2 namespace.
+
+    Create a pod that has two containers. Both containers should
+    run the <code>kubegoldenguide/alpine-spin:1.0.0</code> image. 
+    The first container should run as user ID 1000, and the second 
+    container with user ID 2000.
+
+    Both containers should use file system group ID 3000.
+</p>
+
+<h2>Question 4</h2>
+<p>
+    All operations in this question should be performed in
+    the ggckad-s4 namespace.
+
+    This question will require you to create a pod that runs the
+    image <code>kubegoldenguide/question-thirteen</code>. This image is in the main
+    Docker repository at hub.docker.com.<br/><br/>
+
+    This image is a web server that has a health endpoint served at '/health'.
+    The web server listens on port 8000. (It runs Python’s SimpleHTTPServer.)
+    It returns a 200 status code response when the application is healthy.
+    The application typically takes sixty seconds to start.<br/><br/>
+    Create a pod called question-13-pod to run this application, making sure
+    to define liveness and readiness probes that use this health endpoint.
+</p>
+
+<h2>Question 5</h2>
+<p>
+    All operations in this question should be performed in
+    the ggckad-s5 namespace.
+
+    Create a file called question-5.yaml that declares a deployment
+    in the ggckad-s5 namespace, with six replicas running the 
+    <code>nginx:1.7.9</code> image.<br /><br />
+    Each pod should have the label <code>app=revproxy</code>.
+    The deployment should have the label <code>client=user</code>.
+    Configure the deployment so that when the deployment is updated,
+    the existing pods are killed off before new pods are created to
+    replace them.
+</p>
+
+<br /><br />
+<div class="unlock-more">
+    <span class="star">★ ★ ★</span><br/>
+    Get the premium course to receive all 30 
+    CKAD practice exam questions plus complete solutions!
+    <a href="/kubernetes-app-developer/index.html#purchase"><div class="unlock-button">
+        Get Course
+    </div></a>
+</div>
+
+

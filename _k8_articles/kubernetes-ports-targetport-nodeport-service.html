@@ -1,0 +1,52 @@
+---
+layout: k8_article
+title: Port, TargetPort, and NodePort - Kubernetes Book
+sidebar: k8_sidebar_book.html
+---
+
+<h1>Port, TargetPort, and NodePort in Kubernetes</h1>
+<p>
+    There are several different port declaration fields in Kubernetes. 
+    This is a quick overview of each type, and what each means in your Kubernetes YAML.
+</p>
+
+<h2>Pod <code>port</code> list</h2>
+<p>
+    This array, defined in <code>pod.spec.containers[].ports</code>, provides
+    a list of ports that get exposed by the container. You don’t really need
+    to specify this list—even if it’s empty, as long as your containers are
+    listening on the port, they’ll still be available for network access. 
+    This just provides some extra information to Kubernetes.
+</p>
+
+<h2>Service <code>ports</code> list</h2>
+<p>
+    The service’s <code>service.spec.ports</code> list configures
+    which requests to a service port get forwarded to which ports on its pods.
+    A successful request can be made from outside the cluster to the node’s IP address and 
+    service’s <code>nodePort</code>, forwarded to the service’s <code>port</code>,
+    and received on the <code>targetPort</code> by the pod.
+</p>
+
+<script src="https://gist.github.com/matthewpalmer/9d9180c4980befe6b06babe98577eab9.js"></script>
+
+<h3><code>nodePort</code></h3>
+<p>
+    This setting makes the service visible <em>outside</em> the Kubernetes cluster
+    by the node’s IP address and the port number declared in this property. The
+    service also has to be of type NodePort (if this field isn’t specified,
+    Kubernetes will allocate a node port automatically).
+</p>
+
+<h3><code>port</code></h3>
+<p>
+    Expose the <em>service</em> on the specified port internally within the cluster. 
+    That is, the service becomes visible on this port, and will send requests made 
+    to this port to the pods selected by the service.
+</p>
+
+<h3><code>targetPort</code></h3>
+<p>
+    This is the port on the <em>pod</em> that the request gets sent to. Your application
+    needs to be listening for network requests on this port for the service to work.
+</p>
