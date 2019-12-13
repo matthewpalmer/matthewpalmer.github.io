@@ -1748,3 +1748,44 @@ body.sidebar .sidebar-container a img {
     margin-left: 0;
   }
 }
+
+
+
+
+
+
+.k8-article-footer {
+  padding: 16px;
+  margin-top: 100px;
+  background-color: #4875D5;
+  color: white;
+  display: flex;
+}
+
+.k8-article-footer a, .k8-article-footer a:visited {
+  color: white;
+}
+
+.k8-article-footer .author-details {
+  flex: 2;
+  margin: 16px;
+}
+
+.k8-article-footer .author-details img {
+  border-radius: 50%;
+  border: 1px solid white;
+  float: left;
+  margin-right: 12px;
+
+}
+
+.k8-article-footer .contact-details {
+  flex: 1;
+  margin: 16px;
+}
+
+@media only screen and (max-width: 780px) {
+  .k8-article-footer {
+    flex-direction: column;
+  }
+}

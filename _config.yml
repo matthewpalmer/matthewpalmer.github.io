@@ -29,6 +29,9 @@ collections:
   they_use_that:
     output: true
     permalink: /they-use-that/:title
+  k8_articles:
+    output: true
+    permalink: /kubernetes-app-developer/articles/:title.html 
 
 plugins:
   - jekyll-sitemap

@@ -1,0 +1,56 @@
+---
+layout: k8_article
+title: ConfigMap – Kubernetes Example with YAML
+sidebar: k8_sidebar_book.html
+---
+
+<h1>ConfigMap – Kubernetes Example with YAML</h1>
+
+<p>A ConfigMap stores configuration settings that your Kubernetes Pods consume.</p>
+<p>In this tutorial, we’ll explain ConfigMaps and give you the complete example YAML
+  to create and use a ConfigMap.</p>
+<p>You can find more detail in our <a href="./ultimate-configmap-guide-kubernetes.html">Ultimate ConfigMap Guide</a>.
+
+<h2>How does a ConfigMap work?</h2>
+
+<p>A ConfigMap is a dictionary of key-value pairs that store configuration settings for your applications.</p>
+
+<p>First, create a ConfigMap in your cluster by tweaking our sample YAML to your needs.</p>
+<p>Second, consume to ConfigMap in your Pods and use its values.</p>
+
+<img src="./configmap-diagram.gif" title="Kubernetes ConfigMap Example Diagram" />
+
+<h2>Example YAML Code</h2>
+
+<p>The simplest way to create a ConfigMap is to store a bunch of key-value
+  strings in a ConfigMap YAML file and inject them as environment variables
+  into your Pods.</p>
+
+<p>After that, you can reference the environment variables in your applications using whatever methods
+is necessary for your programming language.</p> 
+
+<h3>Creating a ConfigMap</h3>
+
+<p>This YAML creates a ConfigMap with the value <code>database</code> set to <code>mongodb</code>, and
+  <code>database_uri</code>, and <code>keys</code> set to the values in the YAML example code.</p>
+
+<p>Then, create the ConfigMap in the cluster using <code>kubectl apply -f config-map.yaml</code>.</p>
+
+<script src="https://gist.github.com/matthewpalmer/33016359f49c88acc12e86eda232f14a.js"></script>
+<br /><br />
+<h3>Using a ConfigMap in Environment Variables</h3>
+
+<p>The key to adding your ConfigMap as environment variables to your pods is the <code>envFrom</code>
+property in your Pod’s YAML.</p>
+
+<p>Set <code>envFrom</code> to a reference to the ConfigMap you’ve created.</p>
+
+<script src="https://gist.github.com/matthewpalmer/c9649e7769e3e7e5e3790f5b3a4e6908.js"></script>
+<br />
+<p>After you’ve created the Pod, you’ll be able to access these environment variables.</p>
+
+<img src="./configmap-env-var.png" />
+
+<br /><br />
+
+<p>Want example YAML for every Kubernetes object? Check out <a href="/kubernetes-app-developer/">the book</a>.</p>

@@ -1,0 +1,32 @@
+---
+layout: k8_article
+---
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>{{ page.title }}</title>
+  <link rel="stylesheet" href="/kubernetes-app-developer/styles.css" media="screen" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    {% include analytics.html %}
+</head>
+<body class="sidebar">
+  <nav class="article-nav">
+      <a href="/kubernetes-app-developer/">🏡 Home</a>
+      <a href="/kubernetes-app-developer/kubernetes-book.html">📖 Kubernetes Book</a>
+      <a href="/kubernetes-app-developer/">🎓 CKAD Certification Course</a>
+  </nav>
+
+  <div class="article-container">
+    {{ content }}
+  </div>
+
+
+  {% include {{ page.sidebar }} %}
+
+  <div class="clear"></div>
+
+  {% include k8_article_footer.html %}
+</body>
+</html>
