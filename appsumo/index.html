@@ -17,6 +17,7 @@ title: Rocket and Vanilla AppSumo Promotion
 
     <p>Your code to unlock Pro for both apps is <span class="pro-unlock-code">Loading...</span></p>
     <p>Follow the unlock instructions for <a href='#rocket'>Rocket</a> or <a href="#vanilla">Vanilla</a>.</p>
+    <p>(Psst – <a href="http://eepurl.com/bd50ZT">join my email list</a> for <em>very</em> raunchy macOS tips<br/>and access to my newest secret projects.)</p>
   </div>
 
   <div class="unlock-apps">
@@ -55,7 +56,7 @@ title: Rocket and Vanilla AppSumo Promotion
     var items = document.getElementsByClassName('pro-unlock-code');
     var code = getUrlParameter('code');
 
-    if (!code) code = 'Error';
+    if (!code) code = 'Loading…';
 
     for (var i = 0; i < items.length; i++) {
       var el = items[i];
