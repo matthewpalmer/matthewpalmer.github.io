@@ -183,4 +183,34 @@ header {
   #archive td.categories {
     text-align: center; }
 
+.appsumo-promotion {
+  margin-top: 96px; }
+  .appsumo-promotion .appsumo-header {
+    border-bottom: 1px solid #eaeaea;
+    padding-bottom: 32px; }
+    .appsumo-promotion .appsumo-header img {
+      height: 40px; }
+    .appsumo-promotion .appsumo-header h1 {
+      font-size: 32pt;
+      font-weight: 800; }
+    .appsumo-promotion .appsumo-header p {
+      text-align: center;
+      font-size: 16pt; }
+  .appsumo-promotion .download-links {
+    margin-top: 64px;
+    font-size: 13pt;
+    margin-bottom: 64px;
+    text-align: center; }
+  .appsumo-promotion .pro-unlock-code {
+    font-weight: 600;
+    margin: 0 5px;
+    padding: 5px 10px;
+    background: #d9f5f2;
+    border-radius: 4px;
+    border: 2px solid #009688;
+    display: inline-block;
+    letter-spacing: 0.5px;
+    word-break: none;
+    color: #03695f; }
+
 /*# sourceMappingURL=styles.css.map */

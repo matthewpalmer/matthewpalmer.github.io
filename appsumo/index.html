@@ -1,0 +1,66 @@
+---
+layout: blogindex
+title: Rocket and Vanilla AppSumo Promotion
+---
+
+<div class="appsumo-promotion">
+  <div class="appsumo-header">
+    <img src="/img/appsumo/as-appsumo-logo-footer.svg" />
+    <h1>Welcome, Sumo-lings!</h1>
+    <p>Unlock your freebie upgrade to Rocket Pro and Vanilla Pro right here.</p>
+  </div>
+
+  <div class="download-links">
+    <p>Download <a href="https://matthewpalmer.net/rocket/">Rocket</a> and <a href="https://matthewpalmer.net/vanilla/">Vanilla</a> to your Mac.</p>
+    <p>Open the .dmg and drag the app into your Applications folder.</p>
+    <p>Start the app, and follow the setup tutorials.</p>
+
+    <p>Your code to unlock Pro for both apps is <span class="pro-unlock-code">Loading...</span></p>
+    <p>Follow the unlock instructions for <a href='#rocket'>Rocket</a> or <a href="#vanilla">Vanilla</a>.</p>
+  </div>
+
+  <div class="unlock-apps">
+    <h2 id="rocket">Rocket Pro</h2>
+
+    <img src="/img/appsumo/rocket-1.png" />
+    <p>To activate Rocket Pro, click the Rocket icon in your menu bar, then choose "Browse & Search."</p>
+    <img src="/img/appsumo/rocket-2.png" />
+    <p>Click "Upgrade," then "Enter Activation Number". Paste in your AppSumo activation code <span class="pro-unlock-code">Loading...</span>.</p>
+    <img src="/img/appsumo/rocket-3.png" />
+    <p>To download the gifs and memes pack that comes with Rocket Pro, visit <a href="https://db879acd-macrelease.s3.us-east-2.amazonaws.com/rocket-gifs.zip">this link</a>.</p>
+    <img src="/img/appsumo/rocket-4.png" />
+
+    <h2 id="vanilla">Vanilla Pro</h2>
+    <img src="/img/appsumo/vanilla-1.png" />
+    <p>To activate Vanilla Pro, click the dot icon in your menu bar, then choose "Preferences."</p>
+    <img src="/img/appsumo/vanilla-2.png" />
+    <p>Click "Unlock Pro Version," then "Enter Activation Number". Paste in your AppSumo activation code <span class="pro-unlock-code">Loading...</span>.</p>
+    <img src="/img/appsumo/vanilla-3.png" />
+    <img src="/img/appsumo/vanilla-4.png" />
+  </div>
+
+  <div class="other-info">
+    <h2>Contact</h2>
+    <p>You can contact me at matt@matthewpalmer.net.</p>
+  </div>
+
+  <script type="text/javascript">
+    function getUrlParameter(name) {
+        name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+        var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+        var results = regex.exec(location.search);
+        return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+    };
+
+    var items = document.getElementsByClassName('pro-unlock-code');
+    var code = getUrlParameter('code');
+
+    if (!code) code = 'Error';
+
+    for (var i = 0; i < items.length; i++) {
+      var el = items[i];
+
+      el.innerText = code;
+    }
+  </script>
+</div>
