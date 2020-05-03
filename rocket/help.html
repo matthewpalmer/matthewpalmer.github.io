@@ -23,18 +23,36 @@
         This page will help you with:
 
         <ul class="table-of-contents">
+          <li><a href="#rocket-stopped-working">Rocket stopped working or Rocket doesn’t get triggered</a></li>
           <li><a href="#extend-license">fixing Rocket activation issues by extending your license</a></li>
           <li><a href="#request-refund">requesting a refund</a></li>
           <li><a href="#browser-control">Rocket, Safari, and Chrome – browser control</a></li>
           <li><a href="#trigger-keys">setting up trigger keys</a></li>
           <li><a href="#visual-studio-code">disabling Rocket for Visual Studio Code (VSCode)</a></li>
           <li><a href="#intellij-idea">disabling Rocket for IntelliJ IDEA</a></li>
-          <li><a href="#rocket-stopped-working">fixing the scenario where Rocket appears to stop being triggered</a></li>
           <li><a href="#add-custom-gifs">adding custom gifs</a></li>
           <li><a href="#licensing-issues">licensing issues</a></li>
           <li><a href="#contact-details">my contact details</a></li>
         </ul>
       </p>
+      <h2 id="rocket-stopped-working">Rocket stopped working</h2>
+      <p>
+        Occasionally, macOS will stop delivering messages to Rocket so it can’t be triggered. This means that when you type “:thu” Rocket won’t appear. Sometimes this is fixed automatically by the OS, but you can take the following steps to fix it manually.
+        
+        <ol>
+          <li>Quit Rocket via the 🚀 menu bar icon.</li>
+          <li>Open System Preferences and select Security &amp; Privacy.</li>
+          <li>Select Privacy in the tab bar and Accessibility in the left hand pane.</li>
+          <li>Click the lock in the bottom left corner, confirm your authentication.</li>
+          <li>In the list in the right hand pane, locate and select Rocket, then delete it by clicking the ‘–’ icon.</li>
+          <li>Close System Preferences.</li>
+          <li><strong>Reboot your Mac</strong></li>
+          <li>Open Rocket, it will prompt you to complete the setup tutorial which will re-enable Accessibility access.</li>
+        </ol>
+
+        After this, Rocket should be back to normal.
+      </p>
+
       <h2 id="extend-license">Extend your Rocket license</h2>
       <p>By default, Rocket licenses can be activated on two Macs. However, you can extend this for an additional two Macs free of charge. Fill out <a href="https://goo.gl/forms/18tVGuErNFSmFg7O2">this form</a> to request an additional license, and email me if you need more than that 😄</p>
 
@@ -83,23 +101,6 @@
 
       <h2 id="intellij-idea">Disabling Rocket for IntelliJ IDEA</h2>
       <p>In Rocket’s preferences, select IntelliJ IDEA via the disabled apps list app picker. This will add ‘idea’ to the list. Double-click the ‘idea’ entry and change it to ‘IntelliJ IDEA’. Rocket will be disabled in IntelliJ IDEA.</p>
-
-      <h2 id="rocket-stopped-working">Rocket stopped working</h2>
-      <p>
-        Occasionally, macOS will stop delivering messages to Rocket so that it can be triggered. This means that when you type “:thu” Rocket won’t appear. Sometimes this is fixed automatically by the OS, but you can take the following steps to fix it manually.
-        
-        <ol>
-          <li>Quit Rocket via the 🚀 menu bar icon.</li>
-          <li>Open System Preferences and select Security &amp; Privacy.</li>
-          <li>Select Privacy in the tab bar and Accessibility in the left hand pane.</li>
-          <li>Click the lock in the bottom left corner, confirm your authentication.</li>
-          <li>In the list in the right hand pane, locate and select Rocket, then delete it by clicking the ‘–’ icon.</li>
-          <li>Close System Preferences.</li>
-          <li>Open Rocket, it will prompt you to complete the setup tutorial which will re-enable Accessibility access.</li>
-        </ol>
-
-        After this, Rocket should be back to normal.
-      </p>
       
       <h2 id="add-custom-gifs">Adding custom gifs</h2>
       <p>Custom gifs and images can be added to Rocket once it has been licensed.</p>
