@@ -24,6 +24,7 @@
 
         <ul class="table-of-contents">
           <li><a href="#rocket-stopped-working">Rocket stopped working or Rocket doesn’t get triggered</a></li>
+          <li><a href="#custom-categories">everything is in the “Custom” category</a></li>
           <li><a href="#extend-license">fixing Rocket activation issues by extending your license</a></li>
           <li><a href="#request-refund">requesting a refund</a></li>
           <li><a href="#browser-control">Rocket, Safari, and Chrome – browser control</a></li>
@@ -51,6 +52,21 @@
         </ol>
 
         After this, Rocket should be back to normal.
+      </p>
+
+      <h2 id="custom-categories">Everything is in the “Custom” category</h2>
+      <p>
+        For a couple of versions of Rocket, there was a bug where emoji would be imported into the incorrect category in the Browse &amp; Search window. Here’s how you can fix it. (Unfortunately your Rocket database will be deleted in this process, so you have to re-add any custom emoji or snippets.)
+        
+        <ol>
+          <li>Quit Rocket via the 🚀 menu bar icon.</li>
+          <li>Open Finder, press ⌘⇧G (Command-Shift-G)</li>
+          <li>Enter “~/Library/Application Support/Rocket/” and hit Go</li>
+          <li>Delete the database file by right-clicking the “rocket.db” file and click “Move to Trash”</li>
+          <li>Open Rocket again</li>
+        </ol>
+
+        After this, emoji should appear in the correct categories.
       </p>
 
       <h2 id="extend-license">Extend your Rocket license</h2>
