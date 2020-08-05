@@ -46,12 +46,13 @@ body {
 }
 
 .home-page-callout.footer {
-  background: #f1f1f1;
   color: #333;
   padding: 24px 0;
   max-width: 420px;
-  margin: 64px auto;
+  margin: 64px auto 128px auto;
   border-radius: 8px;
+  font-size: 12pt;
+  letter-spacing: 0;
 }
 
 .home-page-callout.footer a {
@@ -264,6 +265,14 @@ code {
   color: rgba(255, 255, 255, 0.9);
   margin-left: 48px;
   margin-top: 24px;
+}
+
+.right-details a {
+  color: inherit;
+}
+
+.right-details a:visited {
+  color: inherit;
 }
 
 .help {
