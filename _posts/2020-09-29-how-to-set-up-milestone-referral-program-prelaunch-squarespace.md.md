@@ -142,6 +142,8 @@ Head to the website, and click “Get Started,” and then create your account.
 
 For the value under “Website URL” on the “Create Program” form, enter the URL of the landing page you just set up. (In Squarespace, this is under the “Slug” field in your page’s setting, or you can just view your page in a new Incognito window and copy and paste that URL.)
 
+![Peach’s website URL](/img/prelaunch-milestone-referral/peachs-website-url.png)
+
 This URL will host your sign up form, your referrer’s stats widgets, and provide easy widgets for referrers to share your site on social media.
 
 ### Add your milestones
@@ -149,6 +151,8 @@ This URL will host your sign up form, your referrer’s stats widgets, and provi
 After you’ve created your program, you’ll be in your Peach’s dashboard.
 
 Click the “Milestones” tab in the left sidebar to configure your widgets.
+
+![Peach’s milestones dashboard](/img/prelaunch-milestone-referral/peachs-milestone-dashboard.png)
 
 Let’s add milestones for our referral reward tiers – 1 friend, 5 friends, and 25 friends.
 
