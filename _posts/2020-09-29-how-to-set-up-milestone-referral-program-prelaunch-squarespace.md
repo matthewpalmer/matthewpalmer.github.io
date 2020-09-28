@@ -133,7 +133,7 @@ Leave this as “Hello world” for now. Once we’ve created our referral progr
 
 We’ve got our landing page and the spot where we want our referral program widget to appear. We need to connect up our widgets.
 
-We’re going to use Peach’s milestone referral programs for this.
+We’re going to use [Peach’s milestone referral programs][peachs-link] for this.
 
 ### Create your program
 Head to the website, and click “Get Started,” and then create your account.
