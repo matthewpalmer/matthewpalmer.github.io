@@ -163,7 +163,13 @@ With the milestones set up, now we can plug our widgets into the space on our la
 
 Click on the “Connect” tab in the left sidebar. You’ll be shown the three steps to set up your program.
 
-For step 1, copy the code from the Peach’s dashboard to your clipboard. In Squarespace, paste it into the Code block. You’ll need to untick “Display Source.” Save your page in Squarespace.
+Under step 1, copy the code from the Peach’s dashboard to your clipboard. 
+
+![Peach’s copy code](/img/prelaunch-milestone-referral/peachs-copy-code.png)
+
+In Squarespace, paste it into the Code block. You’ll need to untick “Display Source.” Save your page in Squarespace.
+
+![Peach’s copy code](/img/prelaunch-milestone-referral/peachs-code-to-squarespace.png)
 
 Then click “Test” on the step in Peach’s. If everything is plugged in correctly, and your website URL is correct, this step will succeed.
 
