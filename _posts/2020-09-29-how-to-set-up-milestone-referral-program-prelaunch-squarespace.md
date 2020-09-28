@@ -98,8 +98,6 @@ We’ll use the “Poster” image layout so that the caption appears over our i
 
 ![Poster image layout option](/img/prelaunch-milestone-referral/poster-image-layout.png)
 
-![Milestone program images on landing page](/img/prelaunch-milestone-referral/unordered-images.png)
-
 Once you’ve added the images, drag the second image to the right of the first image. This will create a new column. 
 
 ![How to create a column in Squarespace](/img/prelaunch-milestone-referral/make-column.png)
