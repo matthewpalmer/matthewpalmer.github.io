@@ -154,6 +154,8 @@ Click the “Milestones” tab in the left sidebar to configure your widgets.
 
 Let’s add milestones for our referral reward tiers – 1 friend, 5 friends, and 25 friends.
 
+![Peach’s milestone reward configuration](/img/prelaunch-milestone-referral/peachs-reward-milestones.png)
+
 Click “Save” when you’ve added your milestones.
 
 ### Connect your widgets
