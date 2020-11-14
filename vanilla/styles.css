@@ -302,3 +302,11 @@ a:visited {
   color: black;
   font-weight: bold;
 }
+
+.help-container div h1 {
+  text-align: left;
+}
+.help-container div p {
+  text-align: left;
+  font-size: 11pt;
+}
