@@ -1,0 +1,177 @@
+<html>
+	<head>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+		<title>Live Crypto Perpetual Futures Funding Rates for Multiple Exchanges – Matthew Palmer</title>
+		<script src="//cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
+		<script src="https://cdn.datatables.net/1.10.24/js/dataTables.foundation.min.js"></script>
+		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation.min.css"></link>
+		<link rel="stylesheet" href="//cdn.datatables.net/1.10.24/css/dataTables.foundation.min.css"></link>
+
+		<style>
+			body {
+				min-width: 860px;
+			}
+			.page-header {
+				border-top: 20px solid #77c4d3;
+				padding-top: 36px;
+				margin-bottom: 48px;
+			}
+
+			.page-header h1 {
+				font-size: 24pt;
+				font-weight: bold;
+				margin-bottom: 32px;
+			}
+
+			.page-header h1 {
+				text-align: center;
+			}
+
+			.page-header p {
+				margin: 8px 16px;
+				font-size: 11pt;
+			}
+
+			.header-2up {
+				display: flex;
+			}
+
+			.header-2up > div {
+				padding: 8px;
+				max-width: 550px;
+			}
+
+			.header-2up .right {
+				background-color: #defaff;
+				border: 2px solid #77c4d3;
+				border-radius: 4px;
+				margin: auto;
+			}
+
+			.header-2up .right ul li {
+				margin: 8px 4px;
+				list-style: none;
+			}
+
+			.header-2up .right ul li a, .header-2up .right ul li a:visited {
+				display: inline-block;
+				width: 100px;
+				box-sizing: border-box;
+				color: white;
+				padding: 4px 16px 6px 16px;
+				text-decoration: none;
+				background-color: #0888a0;
+				border-radius: 4px;
+				transition: all 0.2s ease;
+				font-weight: bold;
+				letter-spacing: 1px;
+				margin-right: 8px;
+				font-size: 11pt;
+			}
+
+			.header-2up .right ul li a:hover {
+				transform: scale(1.025);
+			}
+			
+			.table-container {
+				margin: 16px;
+			}
+
+			.explainer {
+				max-width: 520px;
+				margin: 36px 16px;
+			}
+
+			.explainer h2 {
+				font-size: 20pt;
+				font-weight: bold;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="page-header">
+			<h1>Perpetual Futures Funding Rates across Crypto Exchanges</h1>
+			<div class="header-2up">
+				<div class="left">
+					<p>
+						The funding rates across crypto exchanges of different perpetual futures.
+					</p>
+					<p>
+						Rates are shown as <strong>daily rates</strong>, but each exchange does funding payment on their own cycle (usually every hour or every eight hours).
+					</p>
+					<p>Our data updates every minute. Refresh your page to see changes.</p>
+					<hr />
+					<p><strong>Donate</strong> to keep this page running for free:</p>
+					<p>Bitcoin: 1Gj1Q57VMf6JhTaG8WKZrtCkiwa7svpXkK</p>
+					<p>Ethereum: 0xf350a9be9cb4f5e473bfc79649731332ca070f03</p>
+				</div>
+				<div class="right">
+					<p>If you’re doing arbitrage or basis trades, it's important to factor the exchange's trading fees into the funding rate…
+					<p>You need to <strong>sign up to each exchange</strong> via these referral links to get <strong>discounted trading fees</strong>:</p>
+					<ul>
+						<li><a href="https://www.binance.com/en/register?ref=N5EV3DR5">Binance</a> (10% off your fees)</li>
+						<li><a href="https://ftx.com/#a=25734044">FTX</a> (5% off your fees)</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="table-container">
+			<table id="funding-rate-table" class="display">
+				<thead>
+					<tr>
+						<th>Symbol</th>
+						<th>Binance</th>
+						<th>FTX</th>
+						<th>Bitmex</th>
+						<th>Highest Rate</th>
+						<th>Highest Exchange</th>
+						<th>Lowest Rate</th>
+						<th>Lowest Exchange</th>
+					</tr>
+				</thead>
+				<tfoot>
+					<tr>
+						<th>Symbol</th>
+						<th>Binance</th>
+						<th>FTX</th>
+						<th>Bitmex</th>
+						<th>Highest Rate</th>
+						<th>Highest Exchange</th>
+						<th>Lowest Rate</th>
+						<th>Lowest Exchange</th>
+					</tr>
+				</tfoot>
+			</table>
+		</div>
+
+		<div class="explainer">
+			<h2>What are funding rates in crypto perpetual futures?</h2>
+			<p>Funding rates are payments made periodically between participants in a perpetual futures market.
+			<p>Since perpetual futures never expire, the spot price and the perpetual contract price can diverge.
+			<p>Funding rates help to keep these prices in sync.</p>
+			<p>If the funding rate is positive, longs will pay shorts the funding amount.
+			<p>If the funding rate is negative, shorts will pay longs the funding amount.
+
+			<h2>How do I use this table?</h2>
+			<p>This table helps you identify the exchange and perpetual future that is currently paying the highest or lowest funding rate.
+			<p>This allows you to perform low-risk basis trades and collect funding payments reliably.
+
+			<h2>Disclaimer</h2>
+			<p>DISCLAIMER: This site is not affiliated with any of the exchanges. This information is not trading advice. We do our best, but this data could be unreliable. Check the funding rates with the exchange directly.</p>
+		</div>
+
+		<script>
+			$(document).ready( function () {
+    			$('#funding-rate-table').DataTable({
+					ajax: 'http://store.matthewpalmer.net:3100/api/v1/funding-rates',
+					"order": [[ 4, "desc" ]],
+					pageLength: 25,
+					columnDefs: [{
+						targets: [ 1,2,3,4,6 ],
+						render: $.fn.dataTable.render.number(',', '.', 5)
+						}]
+				});
+			});
+		</script>
+	</body>
+</html>
