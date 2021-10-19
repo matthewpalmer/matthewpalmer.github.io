@@ -19,10 +19,10 @@
 <body>
   <div class="container screen-recording-help">
     <img width="601" src="images/permission-header.png" />
-    <h1>Vanilla – Screen Recording Permission on macOS Catalina</h1>
+    <h1>Vanilla – Accessibility and Screen Recording Permission on macOS 11+</h1>
 
     <div class="notification">
-      <p>
+      <p><strong>macOS 11 and 12+ (Big Sur and Monterey)</strong><br />
       If you are stuck on Vanilla’s permission screen, <a href="#stuck">follow these instructions</a> to re-enable the permission and restart Vanilla.
       </p>
     </div>
@@ -66,29 +66,25 @@
     <br/>
     <br/>
 
-    <h2 id="stuck">“I’m stuck at the screen where Vanilla talks about setting the Screen Recording permissions and the ‘Continue’ button isn’t working”</h2>
+    <h2 id="stuck">“I’m stuck at the screen where Vanilla talks about setting up Accessibility or Screen Recording permissions and the ‘Next’ button isn’t working”</h2>
 
     <img width="596" src="images/permission-1-stuck.png" />
 
     <p><strong>First, get the latest Vanilla update.</strong></p>
-    <p>We released a fix that solves this issue in 99% of cases. Download the latest version from Vanilla's homepage <a href="/vanilla/">here</a>. If you are on Vanilla 1.2.2 or above and still experiencing this issue, proceed as below.</p>
+    <p>Download the latest version from Vanilla's homepage <a href="/vanilla/">here</a>. If you are on the latest version and still experiencing this issue, proceed as below.</p>
 
-    <br/>
-    <br/>
-  
-    <p>Vanilla has gotten into an unexpected state. It may have lost access to Screen Recording or the permission may have changed
-    while Vanilla was starting up. We’ll fix this by resetting the permission and restarting Vanilla.</p>
+    <p>Vanilla may have lost its permission for Accessibility or Screen Recording, or there are conflicting entries in the permissions settings. We’ll fix this by completely removing both permissions and adding them manually.</p>
 
-    <p>1. Quit Vanilla by clicking one of the dots in the menu bar, right-clicking the Dock icon, or through Activity Monitor. (If you can’t find how to quit Vanilla, that’s fine as well, you can proceed as below.)</p>
-    <p>2. Open System Preferences, click the Security and Privacy icon and choose ‘Screen Recording’ in the sidebar.</p>
+    <p>1. Quit Vanilla by clicking one of the dots in the menu bar, right-clicking the Dock icon, or through Activity Monitor.</p>
+    <p>2. Open System Preferences, click the Security and Privacy icon and choose ‘Accessibility’ in the sidebar.</p>
+    <p>3. Click the lock to unlock the Accessibility settings.</p>
+    <p>4. Click the entry to highlight Vanilla, then click the – button to delete the Vanilla entry.</p>
+    <p>5. Click the + button to add a new entry, navigate to the Applications folder where the Vanilla app is located, and choose Vanilla.</p>
+    <p>6. <strong>Repeat this process for the Screen Recording permission</strong>. Click the Screen Recording section in the left sidebar, remove Vanilla’s permission, and re-add it.</p>
 
-    <img width="780" src="images/permission-4.png" />
+    <img width="596" src="images/accessibility-permission-anno.png" />
 
-    <p>3. Un-tick and re-tick the checkbox next to Vanilla. You may need to click the lock in the bottom left to allow editing. If macOS prompts you to quit Vanilla then do so.</p>
-    
-    <img width="780" src="images/permission-3.png" />
-
-    <p>4. Open Vanilla again</p>
+    <p>7. Open Vanilla again.</p>
 
     <p>Still having trouble? Email me at matt@matthewpalmer.net</p>
 
