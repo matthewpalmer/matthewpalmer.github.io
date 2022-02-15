@@ -58,6 +58,7 @@ body {
     font-weight: 800;
     font-size: 48pt;
     letter-spacing: -1px;
+    line-height: 1;
 }
 
 
@@ -328,6 +329,14 @@ p {
 
 
 @media (max-width: 860px) {
+    .header h1 {
+        font-size: 36pt;
+    }
+
+    .header img {
+        width: 70px;
+    }
+
     .notifications-container {
         justify-content: center;
     }
