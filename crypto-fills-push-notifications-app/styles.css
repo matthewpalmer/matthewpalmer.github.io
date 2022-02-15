@@ -299,20 +299,20 @@ p {
 
 .guides-list ul li {
     list-style-type: none;
-    font-size: 16pt;
-    font-weight: bold;
+    font-size: 12pt;
+    font-weight: 600;
+    margin-bottom: 24px;
+    text-align: right;
 }
 
 .guides-list ul li img {
     height: 40px;
-    display: inline-block;
-    margin-left: 4px;
-    vertical-align: middle;
-    transition: all 0.2s ease;
+    display: block;
+    margin: auto 0 auto auto;
 }
 
-.guides-list ul li img:hover {
-    transform: scale(1.01);
+.guides-list ul li img.ftx-badge {
+    height: 34px;
 }
 
 .footer {
