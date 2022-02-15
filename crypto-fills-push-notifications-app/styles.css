@@ -116,6 +116,10 @@ a, a:visited {
     color: #24A69A;
 }
 
+.icon-symbol {
+    margin-bottom: 10px;
+}
+
 .fast-alerts-container {
     background: white;
     border-radius: 16px;
@@ -130,7 +134,7 @@ a, a:visited {
 }
 
 .fast-alerts-container h3 img {
-    margin: auto;
+    margin: auto auto 10px auto;
 }
 
 .fast-alerts-container p {
