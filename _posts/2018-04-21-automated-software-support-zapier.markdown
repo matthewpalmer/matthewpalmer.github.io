@@ -106,6 +106,6 @@ Solo and small businesses can increase the limits of their production with autom
 
 <br />
 
-Need help or advice automating your business? Want more detail on how to set up Zapier? Email me at matt@matthewpalmer.net or get in touch [on Twitter][twitter]. I’d love to help.
+Need help or advice automating your business? Want more detail on how to set up Zapier? Email me at hello@matthewpalmer.net or get in touch [on Twitter][twitter]. I’d love to help.
 
 [twitter]: https://twitter.com/_matthewpalmer
