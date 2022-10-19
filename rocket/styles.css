@@ -277,6 +277,8 @@ code {
 
 .help {
   color: #4E5862;
+  letter-spacing: 0.1px;
+  line-height: 1.7;
 }
 
 .help h2 {
@@ -475,4 +477,26 @@ code {
 }
 
 .blind-container .testimonials .author {
+}
+
+.rocket-snippet-table-header {
+  margin-bottom: 0;
+  margin-top: 40px;
+}
+
+.rocket-snippet-table-header + p {
+  margin-top: 0;
+}
+
+.rocket-snippet-table thead {
+  font-size: 14px;
+  color:  gray;
+}
+
+.rocket-snippet-table tr > td:first-child {
+  width: 180px;
+}
+
+.rocket-snippet-table code {
+  letter-spacing: 0;
 }

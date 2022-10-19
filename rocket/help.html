@@ -24,6 +24,7 @@
 
         <ul class="table-of-contents">
           <li><a href="#rocket-stopped-working">Rocket stopped working or Rocket doesn’t get triggered</a></li>
+          <li><a href="#snippet-variables">Snippet variables in Rocket Pro</a></li>
           <li><a href="#custom-categories">everything is in the “Custom” category</a></li>
           <li><a href="#extend-license">fixing Rocket activation issues by extending your license</a></li>
           <li><a href="#request-refund">requesting a refund</a></li>
@@ -53,6 +54,96 @@
 
         After this, Rocket should be back to normal.
       </p>
+
+      <p>
+        Still not working? The causes are often quite varied depending on your system, your OS, and what apps are running.
+        Here's a list of things that you can try that have worked for other people.
+
+<ul>
+<li>Make sure there aren't any other apps running that will try to use secure input or interrupt regular keyboard events, e.g. Keybase, Lastpass, Bitwarden
+<li>Make sure Rocket's trigger key is what you expect & you have the correct "double key" trigger setting for what you expect
+<li>Make sure you are using a standard keyboard layout and the trigger key matches with your keyboard layout
+<li>People have run an SMC and NVRAM reset and that has fixed their issue
+<li>People have fixed the problem by removing extraneous apps from their macOS accessibility settings
+<li>Make sure you aren't trying to use Rocket in a VM (e.g. via Parallels or VirtualBox)
+<li>Make sure SIP is enabled if that has been disabled previously
+<li>While testing these changes, make sure you're using Rocket in a "standard" macOS app, e.g. TextEdit and without any external displays/only a single monitor setup
+<li>Deleting my trigger key, changing it to something else, and then resetting it to the original
+</ul>
+
+      </p>
+
+      <h2 id="snippet-variables">What variables can I use in my snippets in Rocket Pro?</h2>
+      <p>You can use variables to insert the current date and time in your snippets in Rocket Pro.</p>
+      <p>Use <code>{{ variable_name }}</code> in your snippet content, and this variable will be replaced with the correct date/time content when the snippet expansion occurs. Note: the spaces between the braces and the variable name are required.</p>
+
+      <p class="rocket-snippet-table-header"><strong>Date/time variables that match your locale</strong></p>
+      <p>These variables will expand in the date or time format that matches your system’s locale settings, not necessarily the format shown in the table.</p>
+
+      <table class="rocket-snippet-table">
+        <thead>
+          <td>Variable Name</td>
+          <td>Example value</td>
+        </thead>
+        <tr>
+          <td><code><pre>{{ date_short }}</pre></code></td>
+          <td>19/10/2022</td>
+        </tr>
+        <tr>
+          <td><code><pre>{{ date_medium }}</pre></code></td>
+          <td>19 Oct 2022</td>
+        </tr>
+        <tr>
+          <td><code><pre>{{ date_long }}</pre></code></td>
+          <td>19 October 2022</td>
+        </tr>
+        <tr>
+          <td><code><pre>{{ date_full }}</pre></code></td>
+          <td>Wednesday, 19 October 2022</td>
+        </tr>
+        <tr>
+          <td><code><pre>{{ time_short }}</pre></code></td>
+          <td>2:12 pm</td>
+        </tr>
+        <tr>
+          <td><code><pre>{{ time_medium }}</pre></code></td>
+          <td>2:12:34 pm</td>
+        </tr>
+        <tr>
+          <td><code><pre>{{ time_long }}</pre></code></td>
+          <td>2:12:34 pm AEDT</td>
+        </tr>
+        <tr>
+          <td><code><pre>{{ time_full }}</pre></code></td>
+          <td>2:12:34 pm Australian Eastern Daylight Time</td>
+        </tr>
+      </table>
+
+      <p class="rocket-snippet-table-header"><strong>Fixed-format date/time variables</strong></p>
+      <p>These variables will always expand to the same format, regardless of locale.</p>
+
+      <table class="rocket-snippet-table">
+        <thead>
+          <td>Variable Name</td>
+          <td>Example value</td>
+        </thead>
+        <tr>
+          <td><code><pre>{{ date_time_iso }}</pre></code></td>
+          <td>2022-10-19T14:12:34+1100</td>
+        </tr>
+        <tr>
+          <td><code><pre>{{ best_date }}</pre></code></td>
+          <td>2022-10-19</td>
+        </tr>
+        <tr>
+          <td><code><pre>{{ best_time }}</pre></code></td>
+          <td>14-12-34</td>
+        </tr>
+        <tr>
+          <td><code><pre>{{ time_24h }}</pre></code></td>
+          <td>14:12:34</td>
+        </tr>
+      </table>
 
       <h2 id="custom-categories">Everything is in the “Custom” category</h2>
       <p>
