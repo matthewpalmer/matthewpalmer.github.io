@@ -25,16 +25,16 @@
         <ul class="table-of-contents">
           <li><a href="#rocket-stopped-working">Rocket stopped working or Rocket doesn’t get triggered</a></li>
           <li><a href="#snippet-variables">Snippet variables in Rocket Pro</a></li>
-          <li><a href="#custom-categories">everything is in the “Custom” category</a></li>
-          <li><a href="#extend-license">fixing Rocket activation issues by extending your license</a></li>
-          <li><a href="#request-refund">requesting a refund</a></li>
+          <li><a href="#custom-categories">Everything is in the “Custom” category</a></li>
+          <li><a href="#extend-license">Fixing Rocket activation issues by extending your license</a></li>
+          <li><a href="#request-refund">Requesting a refund</a></li>
           <li><a href="#browser-control">Rocket, Safari, and Chrome – browser control</a></li>
-          <li><a href="#trigger-keys">setting up trigger keys</a></li>
-          <li><a href="#visual-studio-code">disabling Rocket for Visual Studio Code (VSCode)</a></li>
-          <li><a href="#intellij-idea">disabling Rocket for IntelliJ IDEA</a></li>
-          <li><a href="#add-custom-gifs">adding custom gifs</a></li>
-          <li><a href="#licensing-issues">licensing issues</a></li>
-          <li><a href="#contact-details">my contact details</a></li>
+          <li><a href="#trigger-keys">Setting up trigger keys</a></li>
+          <li><a href="#visual-studio-code">Disabling Rocket for Visual Studio Code (VSCode)</a></li>
+          <li><a href="#intellij-idea">Disabling Rocket for IntelliJ IDEA</a></li>
+          <li><a href="#add-custom-gifs">Adding custom gifs</a></li>
+          <li><a href="#licensing-issues">Licensing issues</a></li>
+          <li><a href="#contact-details">My contact details</a></li>
         </ul>
       </p>
       <h2 id="rocket-stopped-working">Rocket stopped working</h2>
@@ -75,7 +75,13 @@
 
       <h2 id="snippet-variables">What variables can I use in my snippets in Rocket Pro?</h2>
       <p>You can use variables to insert the current date and time in your snippets in Rocket Pro.</p>
-      <p>Use <code>{{ variable_name }}</code> in your snippet content, and this variable will be replaced with the correct date/time content when the snippet expansion occurs. Note: the spaces between the braces and the variable name are required.</p>
+      <p>Add <code>{{ variable_name }}</code> to your snippet content, and this variable will be replaced with the correct date/time content when the snippet expansion occurs.</p>
+      <p>Notes:
+        <ul>
+          <li>The spaces between the braces and the variable name are required.
+          <li>You can add multiple variables, along with any other text or emoji, in your snippet content, e.g. you could have a snippet with content like <code>⭐ Today: {{ best_date }} at {{ time_short }}</code>
+        </ul>
+      </p>
 
       <p class="rocket-snippet-table-header"><strong>Date/time variables that match your locale</strong></p>
       <p>These variables will expand in the date or time format that matches your system’s locale settings, not necessarily the format shown in the table.</p>

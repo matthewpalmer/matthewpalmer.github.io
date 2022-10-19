@@ -493,8 +493,8 @@ code {
   color:  gray;
 }
 
-.rocket-snippet-table tr > td:first-child {
-  width: 180px;
+.rocket-snippet-table tr > td {
+  padding: 0 4px;
 }
 
 .rocket-snippet-table code {
