@@ -98,7 +98,7 @@ function makeSearchResult(resultHtml, isHighlighted) {
     var rightEl = document.createElement('div');
 
     var img = document.createElement('img');
-    img.src = './folder.fill.svg';
+    img.src = './folder-native.png';
 
     leftEl.appendChild(img);
 
