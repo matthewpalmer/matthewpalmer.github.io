@@ -1,0 +1,557 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>FastFolderFinder &ndash; Fast fuzzy search for folders on your Mac</title>
+    <meta name="description" content="FastFolderFinder is a Mac app that gives you a lightning-fast fuzzy search bar to quickly find and open folders on your Mac" />
+
+    <link rel="stylesheet" href="styles.css" media="screen" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+</head>
+
+<body>
+    <div class="container">
+        <div class="fun-separator">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+        <div class="header">
+            <div id="js-demo">
+                <div id="js-demo-background">
+                    <img src="./background.svg" />
+                </div>
+                <div id="js-demo-window-parent">
+                    <div id="js-demo-window-container">
+                        <div class="demo-search-box">
+                            <img src="./search.svg" />
+                            <div id="js-demo-textfield"></div>
+                            <img class="align-end" src="./gear.svg" />
+                        </div>
+                        <div id="js-demo-results"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <img class="demo-image" src="demo-screenshot-placeholder.png" height="340" /> -->
+
+            <h1>
+                <img class="app-icon" src="app-icon.png" />
+                <span>Fast</span><span>Folder</span><span>Finder</span>
+            </h1>
+            <h2>Lightning-fast fuzzy search for folders on your Mac</h2>
+            <div class="download-container">
+                <a class="download-button" href="https://macrelease.matthewpalmer.net/FastFolderFinder.dmg">
+                    <img src="arrow.down.circle.svg" />
+                    Download&nbsp;<span>FastFolderFinder</span>
+                </a>
+                <a class="purchase-link" href="https://store.matthewpalmer.net/fastfolderfinder">
+                    Buy Now
+                </a>
+            </div>
+        </div>
+
+        <div class="fun-separator big-margin">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+        <div class="features-section">
+            <div class="feature">
+                <div class="feature-left">
+                    <img class="feature-icon" src="cube.transparent.svg" />
+                </div>
+                <div class="feature-right">
+                    <span class="feature-heading">Simple &amp; Easy Launchbar</span>
+                    <span class="feature-text">
+                        Fast, focused, and easy. Exactly what you need.
+                    </span>
+                </div>
+            </div>
+            <div class="feature">
+                <div class="feature-left">
+                    <img class="feature-icon" src="sparkle.magnifyingglass.svg" />
+                </div>
+                <div class="feature-right">
+                    <span class="feature-heading">Find Your Folders. Fast.</span>
+                    <span class="feature-text">
+                        Fuzzy search across all your folders
+                    </span>
+                </div>
+            </div>
+            <div class="feature">
+                <div class="feature-left">
+                    <img class="feature-icon" src="keyboard.svg" />
+                </div>
+                <div class="feature-right">
+                    <span class="feature-heading">Command-Shift-<i>Whatever</i></span>
+                    <span class="feature-text">
+                        Open FastFolderFinder with a keyboard shortcut
+                    </span>
+                </div>
+            </div>
+            <div class="feature">
+                <div class="feature-left">
+                    <img class="feature-icon" src="text.and.command.macwindow.svg" />
+                </div>
+                <div class="feature-right">
+                    <span class="feature-heading">Open Folders in Apps</span>
+                    <span class="feature-text">
+                        Launch folders right into Visual Studio, Sublime Text, etc.
+                    </span>
+                </div>
+            </div>
+            <div class="feature">
+                <div class="feature-left">
+                    <img class="feature-icon" src="mail.stack.svg" />
+                </div>
+                <div class="feature-right">
+                    <span class="feature-heading">Custom Shortcuts</span>
+                    <span class="feature-text">
+                        Open in Finder, copy path, run shell scripts, and more
+                    </span>
+                </div>
+            </div>
+            <div class="feature">
+                <div class="feature-left">
+                    <img class="feature-icon" src="waveform.circle.svg" />
+                </div>
+                <div class="feature-right">
+                    <span class="feature-heading">Productivity Power-Up</span>
+                    <span class="feature-text">
+                        Get where you need. Skip the trawling.
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="fun-separator big-margin">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+        <div class="big-text-section">
+            <div class="big-text">
+                Fuzzy Search<br/><span class="smaller">then open your folders in…</span>
+            </div>
+            <img src="./open-in-skinny.jpg" />
+            <div class="big-text-apps-list">
+                <span><img src="./arrow.right.circle.fill.svg" />Finder</span>
+                <span><img src="./arrow.right.circle.fill.svg" />Visual Studio Code</span>
+                <span><img src="./arrow.right.circle.fill.svg" />Sublime Text</span>
+                <span><img src="./arrow.right.circle.fill.svg" />Xcode</span>
+                <span><img src="./arrow.right.circle.fill.svg" />Terminal</span>
+                <span><img src="./plus.circle.fill.svg" />And Many More!</span>
+            </div>
+        </div>
+
+        <div class="fun-separator big-margin">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+        <div class="shortcut-actions-section">
+            <div class="big-text">
+                Custom Actions<br />
+                <span class="smaller">use shortcuts to trigger actions</span>
+            </div>
+
+            <div class="shortcut-actions-table">
+                <div class="shortcut-actions-row">
+                    <div class="left">
+                        <div class="shortcut-actions-shortcut">
+                            <img class="shortcut-icon" src="keyboard.svg" />
+                            Keyboard Shortcuts
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="shortcut-actions-values">
+                            <div class="sav-row no-border">
+                                Choose a custom keyboard shortcut so that you can highlight a result, hit your shortcut, and trigger the associated action.<br /><strong>Available keyboard shortcuts:</strong>
+                                <ul>
+                                    <li>Return</li>
+                                    <li>Command-Return</li>
+                                    <li>Option-Return</li>
+                                    <li>Shift-Return</li>
+                                    <li>Option-Shift-Return</li>
+                                    <li>Option-Command-Return</li>
+                                    <li>Shift-Command-Return</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="shortcut-actions-row">
+                    <div class="left">
+                        <div class="shortcut-actions-shortcut">
+                            <img class="shortcut-icon" src="macwindow.svg" />
+                            Open in Default App
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="shortcut-actions-values">
+                            <div class="sav-row">Opens the selected result in the default app</div>
+                            <div class="sav-row">Folders → open in Finder</div>
+                            <div class="sav-row no-border">Files → open in the default app for that file type</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="shortcut-actions-row">
+                    <div class="left">
+                        <div class="shortcut-actions-shortcut">
+                            <img class="shortcut-icon" src="filemenu.and.selection.svg" />
+                            Show in Finder
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="shortcut-actions-values">
+                            <div class="sav-row no-border">Opens the selected result in a Finder window</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="shortcut-actions-row">
+                    <div class="left">
+                        <div class="shortcut-actions-shortcut">
+                            <img class="shortcut-icon" src="arrow.up.circle.svg" />
+                            Show Parent in Finder
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="shortcut-actions-values">
+                            <div class="sav-row no-border">Opens the selected result’s parent folder in a Finder window</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="shortcut-actions-row">
+                    <div class="left">
+                        <div class="shortcut-actions-shortcut">
+                            <img class="shortcut-icon" src="doc.on.clipboard.svg" />
+                            Copy Path to Clipboard
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="shortcut-actions-values">
+                            <div class="sav-row no-border">Copy the path of the selected result to your clipboard</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="shortcut-actions-row">
+                    <div class="left">
+                        <div class="shortcut-actions-shortcut">
+                            <img class="shortcut-icon" src="arrow.up.forward.app.svg" />
+                            Open Application
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="shortcut-actions-values">
+                            <div class="sav-row no-border">Open the result in the specified app. <strong>Common apps people use</strong>:
+                            <ul>
+                                <li>Visual Studio Code</li>
+                                <li>Sublime Text</li>
+                                <li>Terminal</li>
+                                <li>Xcode</li>
+                                <li>iTerm</li>
+                                <li>Google Chrome</li>
+                            </ul>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="shortcut-actions-row">
+                    <div class="left">
+                        <div class="shortcut-actions-shortcut">
+                            <img class="shortcut-icon" src="terminal.fill.svg" />
+                            Execute Shell Command
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="shortcut-actions-values">
+                            <div class="sav-row no-border">Execute the given shell command, passing the selected path as the first argument</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="fun-separator big-margin">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+        <div class="my-apps-list-section">
+            <div class="my-apps-header">
+                Made by the developer of
+            </div>
+            <div class="my-apps-icons">
+                <a href="/rocket" class="my-app-item">
+                    <img src="rocket-icon.png" />
+                    <span>Rocket</span>
+                </a>
+                <a href="/vanilla" class="my-app-item">
+                    <img src="vanilla-icon.png" />
+                    <span>Vanilla</span>
+                </a>
+                <a href="/horo-free-timer-mac/" class="my-app-item">
+                    <img src="horo-icon.png" />
+                    <span>Horo</span>
+                </a>
+            </div>
+            <div class="my-apps-footer">
+                Previously featured on <strong>The Verge</strong>, <strong>Business Insider</strong>, and <strong>LifeHacker</strong>.
+            </div>
+        </div>
+
+        <div class="fun-separator big-margin">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+        <div id="faq" class="faq-header">
+            <h2>
+                <span>Frequently</span>
+                <span>Asked</span>
+                <span>Questions</span>
+            </h2>
+        </div>
+
+        <div class="faq-section">
+            <div class="faq-item">
+                <div class="faq-question-header">
+                    <a class="toggle" href="#">
+                        <h3 class="faq-question">What is FastFolderFinder?</h3>
+                        <img src="plus.circle.fill.svg" />
+                    </a>
+                </div>
+
+
+                <div class="faq-answer">
+                    <p>
+                        FastFolderFinder is a Mac app that gives you a lightning-fast fuzzy search bar to quickly find and open folders on your Mac.
+                        It helps you jump around your Mac’s filesystem faster, without taking your hands off the keyboard. 
+                        It’s way faster than having to click through your entire directory structure in Finder. 
+                    </p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question-header">
+                    <a class="toggle" href="#">
+                        <h3 class="faq-question">What does it do?</h3>
+                        <img src="plus.circle.fill.svg" />
+                    </a>
+                </div>
+                <div class="faq-answer">
+                    <p>
+                        Hit your FastFolderFinder keyboard shortcut (like ⇧-⌘-O, though you can customise it), and
+                        FastFolderFinder’s launchbar will appear. From there, search for the folder you 
+                        want to open. Hit Return to open your result in Finder – 
+                        or tweak FastFolderFinder to launch any app with a custom shortcut action!
+                    </p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question-header">
+                    <a class="toggle" href="#">
+                        <h3 class="faq-question">Why should I use it?</h3>
+                        <img src="plus.circle.fill.svg" />
+                    </a>
+                </div>
+                <div class="faq-answer">
+                    <p>
+                        FastFolderFinder makes it way faster to navigate your Mac’s folders. You don’t have to futz
+                        around clicking through Finder or use the unreliable Finder search behavior.
+                    </p>
+                    <p>
+                        Plus, you can set up custom shortcut actions within FastFolderFinder. Open folders
+                        straight from FastFolderFinder into your code editor, terminal, copy paths, or run bash scripts.
+                    </p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question-header">
+                    <a class="toggle" href="#">
+                        <h3 class="faq-question">How much does it cost?</h3>
+                        <img src="plus.circle.fill.svg" />
+                    </a>
+                </div>
+                <div class="faq-answer">
+                    <p>
+                        FastFolderFinder has a free trial that nags you to upgrade.<br />
+                        <a class="purchase-link" href="https://store.matthewpalmer.net/fastfolderfinder">Purchase FastFolderFinder here for $10</a>
+                    </p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question-header">
+                    <a class="toggle" href="#">
+                        <h3 class="faq-question">Why would I use this instead of Spotlight, Alfred, LaunchBar, or
+                            Quicksilver?
+                        </h3>
+                        <img src="plus.circle.fill.svg" />
+                    </a>
+                </div>
+                <div class="faq-answer">
+                    <p>
+                        <strong>Spotlight</strong> &mdash; I don’t know if it’s just me, but lately Spotlight a) has gotten really slow,
+                        and b) doesn’t have good file or folder search. FastFolderFinder is better for that.
+                    </p>
+                    <p>
+                        <strong>LaunchBar/Alfred/Quicksilver</strong> &mdash; These are great general purpose launcher
+                        apps with a tonne of functionality and tweakability. For me, it’s too much tweaking. I just want find my folders and launch apps quickly. So I built FastFolderFinder.
+                    </p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question-header">
+                    <a class="toggle" href="#">
+                        <h3 class="faq-question">What's a good default setup? What do you use?</h3>
+                        <img src="plus.circle.fill.svg" />
+                    </a>
+                </div>
+                <div class="faq-answer">
+                    <p>
+                        You can tweak FastFolderFinder to suit your Mac,
+                        but to get started I use and recommend the following preferences:
+                    </p>
+
+                    <p><strong>Keyboard Shortcut</strong> – Shift-Command-O (⇧-⌘-O) to launch FastFolderFinder search</p>
+                    
+                    <p>
+                        <strong>Folders > Search Locations</strong><br/>
+                        /Applications (to launch apps quickly)<br/>
+                        /Users/<i>your_username</i> (your home directory)
+                    </p>
+
+                    <p><strong>Shortcut Actions</strong><br/>
+                        Return – Open in Default App<br />
+                        Command-Return – Show Parent in Finder<br />
+                        Option-Return – Copy Path to Clipboard<br />
+                        Shift-Return – Open Application with Visual Studio Code<br />
+                        Option-Shift-Return – Open Application with Terminal<br />
+                    </p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question-header">
+                    <a class="toggle" href="#">
+                        <h3 class="faq-question">Can I include files in my search database?</h3>
+                        <img src="plus.circle.fill.svg" />
+                    </a>
+                </div>
+                <div class="faq-answer">
+                    <p>
+                        Yes! Though I’d recommend being selective about which files you include. I find
+                        that too many files makes the results junky and slower to navigate.
+                    </p>
+
+                    <p>To include files with a specific file extension, open Preferences > Folders > Search Locations > 
+                        Click the + button > Include Files with Extension > Enter the file extension you want to include. 
+                        Then click the button to rebuild your search index.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question-header">
+                    <a class="toggle" href="#">
+                        <h3 class="faq-question">Why are folders missing from my search after I updated my search
+                            locations?</h3>
+                        <img src="plus.circle.fill.svg" />
+                    </a>
+                </div>
+                <div class="faq-answer">
+                    <p>
+                        Make sure you rebuild your search index after changing your search locations. 
+                        Click the <strong>Rebuild Search Index</strong> button under Preferences > Folders > Rebuild Search Index.
+                    </p>
+                </div>
+            </div>
+            <div id="faq-privacy" class="faq-item">
+                <div class="faq-question-header">
+                    <a class="toggle" href="#">
+                        <h3 class="faq-question">What do I need to know about security and privacy?</h3>
+                        <img src="plus.circle.fill.svg" />
+                    </a>
+                </div>
+                <div class="faq-answer">
+                    <p>
+                        FastFolderFinder only searches for folders inside folders specified in your
+                        Search Locations. None of the structure of your filesystem or any metadata 
+                        are transmitted anywhere (unless you click Preferences > Advanced > Create dump of included file tree
+                        and send that to someone). FastFolderFinder doesn’t access the contents of any files.
+                    </p>
+                </div>
+            </div>
+            <div id="faq-contact" class="faq-item">
+                <div class="faq-question-header">
+                    <a class="toggle" href="#">
+                        <h3 class="faq-question">How do I contact you or send feedback?</h3>
+                        <img src="plus.circle.fill.svg" />
+                    </a>
+                </div>
+                <div class="faq-answer">
+                    <p>
+                        Send an email to <strong>hello@matthewpalmer.net</strong>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="fun-separator big-margin">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+        <div class="footer">
+            <span class="big">Made by <a href="/">Matthew Palmer</a></span><br />
+            <a href="#faq">Help</a> – <a href="#faq-privacy">Privacy</a>
+        </div>
+    </div>
+
+    <script>
+        var toggleLinks = document.querySelectorAll('a.toggle');
+
+        for (var i = 0; i < toggleLinks.length; i++) {
+            var link = toggleLinks[i];
+
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
+                var faqItem = e.currentTarget.parentElement.parentElement;
+                faqItem.classList.toggle('active');
+
+                var img = faqItem.querySelector('img');
+                if (faqItem.classList.contains('active')) {
+                    img.src = './xmark.circle.fill.svg'
+                } else {
+                    img.src = './plus.circle.fill.svg'
+                }
+            })
+        }
+
+        var hash = (window.location.hash || '').replace(/#/, '');
+        if (hash && hash.indexOf('faq-') !== -1) {
+            var element = document.getElementById(hash);
+            
+            if (element && element.classList.contains('faq-item')) {
+                element.classList.toggle('active');
+            }
+        }
+
+    </script>
+
+    <script type="text/javascript" src="./demo.js">
+    </script>
+</body>
+
+</html>
