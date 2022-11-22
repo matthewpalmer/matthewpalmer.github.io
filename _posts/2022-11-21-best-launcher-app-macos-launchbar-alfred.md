@@ -4,7 +4,7 @@ title: What is the best launcher app for macOS?
 category: mac
 ---
 
-**LaunchBar vs Alfred vs Quicksilver vs FastFolderFinder compared.**
+## LaunchBar vs Alfred vs Quicksilver vs FastFolderFinder compared
 
 Launcher apps help you do stuff on your Mac *really* quickly, without taking your hands off the keyboard.
 
