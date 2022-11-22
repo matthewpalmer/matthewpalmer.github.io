@@ -53,7 +53,7 @@ If you want something simple and easy, maybe try FastFolderFinder. Otherwise, us
 
 **Cons**
 
-- Doesn't support a lot of the extensive power-user functionality that other launcher apps have, like clipboard history, automations, plugins, music control, calculators
+- Doesn't support a lot of the extensive power-user functionality that other launcher apps have, like clipboard history, automations, plugins, music control, and calculators
 - Not customisable in terms of UI or themes, only light or dark mode
 - No support for plugins or extensibility (though you can trigger custom scripts)
 - Search indexing process isn't as smooth as the other apps
@@ -76,7 +76,7 @@ The only downside is that there are a lot of settings to tweak. There are like 1
 
 For some people, this is a good thing; for me, it’s a bit overwhelming.
 
-![Alfred settings panel showing 15 features](/img/launcher-apps-compared/alfred-settings-panel.jpeg)
+![Alfred settings panel showing 15 features](/img/launcher-apps-compared/alfred-settings-panel.jpg)
 
 **Pros**
 
