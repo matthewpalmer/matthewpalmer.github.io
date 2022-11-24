@@ -123,7 +123,7 @@ The only thing I didn’t like about it was that some of the “how it works” 
 
 **Cons**:
 - There are a lot of popups and prompts for permissions on first run, which can be a little overwhelming
-- I find the interaction a little clunky -- you hit the shortcut, type your search, wait for a result (the length of delay can be tweaked), then if you want to close out the launchbar you have to hit Esc twice
+- I find the interaction a little clunky -- you hit the shortcut, type your search, wait for a result (the length of delay can be tweaked), then if you want to close out the launchbar you have to hit Esc twice. Having to hit Esc twice is how Spotlight works, and I’ve always found that annoying.
 - Similarly, because of the font and the lack of an I-beam, the text input feels kind of strange
 - The default font doesn't match macOS very well and I couldn’t find a way to tweak it
 
