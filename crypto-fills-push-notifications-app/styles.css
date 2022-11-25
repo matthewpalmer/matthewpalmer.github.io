@@ -102,6 +102,13 @@ body {
     /* justify-content: space-between; */
 }
 
+.exchange-icons .images-container span {
+    font-size: 12px;
+    color: #809a9d;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
 .exchange-icons .images-container img {
     height: 22px;
 }
