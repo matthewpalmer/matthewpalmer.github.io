@@ -6,7 +6,7 @@ category: web
 
 Here’s my spreadsheet of Big Thief’s unreleased tracks. This was created in February 2023, i.e. the post-DNWMIBIY period.
 
-The list is stored in a public Google Sheet linked here:
+The track list, URLs, and performance details are stored in a public Google Sheet linked here:
 
 **[Matt’s Big Thief Unreleased Tracks Spreadsheet](https://docs.google.com/spreadsheets/d/1jaV_9uDMzld6-Jt2bjjNtyPbmizMhVNp1ZpfHlc5yus/edit#gid=0)**
 
