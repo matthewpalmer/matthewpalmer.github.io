@@ -74,6 +74,79 @@ a, a:visited {
     text-align: center;
 }
 
+.workouts-content {
+    max-width: 720px;
+    margin: 16px auto;
+}
+
+.install-instructions {
+    margin-top: 64px;
+    margin-bottom: 64px;
+}
+
+.workouts-content .hero-image {
+    max-width: 100%;
+    border-radius: 20px;
+}
+
+.workout-category-description {
+    font-size: 1.1em;
+    text-align: center;
+    margin: 32px auto 64px auto;
+}
+
+.workout-entry {
+    margin: 24px auto;
+    padding: 36px 0 24px 0;
+    border-top: 1px solid #eaeaea;
+}
+
+.workout-details {
+    border: 1px solid #eaeaea;
+    padding: 16px;
+    border-radius: 10px;
+}
+
+.workout-step-key {
+    width: 95px;
+    background-color: #eaeaea;
+    text-transform: uppercase;
+    border-radius: 4px;
+    padding: 4px 8px;
+    display: inline-block;
+    font-size: 10pt;
+    text-align: right;
+    margin-right: 8px;
+    font-weight: bold;
+}
+
+.workout-separator {
+    height: 1px;
+    background-color: #eaeaea;
+}
+
+.workout-cta-container {
+    margin-top: 32px;
+}
+
+a.workout-cta, a.workout-cta:visited {
+    background-color: #5756D5;
+    color: white;
+    text-decoration: none;
+    padding: 16px;
+    border-radius: 16px;
+    display: inline-block;
+    margin-bottom: 16px;
+}
+
+.workout-cta-instructions {
+    color: #777;
+    background-color: #eaeaea;
+    padding: 16px;
+    border-radius: 16px;
+    font-size: 0.9em;
+}
+
 @media (max-width: 860px) {
     .images-header img:not(:first-child) {
         display: none;

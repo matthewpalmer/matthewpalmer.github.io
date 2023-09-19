@@ -1,0 +1,17 @@
+<div class="workout-entry">
+    <h2>{{ workout_title }}</h2>
+    <p class="description">
+    {{ workout_description }}
+    </p>
+
+    <div class="workout-details">
+        <h3>Workout Details</h3>
+
+        {{ dyn_workout_details_list }}
+    </div>
+
+    <div class="workout-cta-container">
+        <a class="workout-cta" href="{{ workout_cta_link }}">Open Workout Builder for iPhone</a>
+        <p class="workout-cta-instructions">Open Workout Builder on your iPhone, create a new workout, enter the workout details, and tap the "Send to Watch" button to sync it to your Apple Watch.</p>
+    </div>
+</div>
