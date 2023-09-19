@@ -28,7 +28,7 @@ body {
 .images-header img {
     box-sizing: border-box;
     width: 18%;
-    border: 10px solid black;
+    border: 5px solid black;
     border-radius: 25px;
     /* margin: 10px; */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.35);
