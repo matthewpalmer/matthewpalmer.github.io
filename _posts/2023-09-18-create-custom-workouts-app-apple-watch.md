@@ -8,6 +8,8 @@ I’ve created a new app called Workout Builder that lets you easily create cust
 
 <a href="https://matthewpalmer.net/workout-builder-ios-apple-watch/">Download Workout Builder here</a> for free.
 
+It’s only available on iOS 17 and watchOS 10.
+
 It has great integration with the native iOS and watchOS Workouts capabilities, it’s free to download and create custom workouts, and it comes with a gallery of premium pre-built workouts in case you don’t want to build your own.
 
 ## How to create workouts that sync to your Apple Watch Workouts app
