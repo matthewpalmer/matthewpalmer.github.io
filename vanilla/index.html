@@ -34,15 +34,91 @@
 </head>
 <body>
   <div class="container">
-    <div class="crop">
-      <img width="480" height="360" class="screenshot" src="vanilla-square-gif.gif" />
+    <div class="menubar-demo">
+      <div class="device-container">
+        <div class="device-background">
+          <img src="./background-alt.svg" />
+        </div>
+
+        <div class="menubar">
+          <div class="leftmenu">
+            <div class="menubar-item system-item">
+              <img src="./apple.logo.svg" />
+            </div>
+            <div class="menubar-item system-text-item">
+              <strong>Finder</strong>
+            </div>
+          </div>
+  
+          <div class="rightmenu">
+            <div class="hidden-items-chevron-container">
+              <div class="menubar-item vanilla-item">
+                <img id="js-chevron" class="menubar-chevron" src="./chevron.left.svg" />
+              </div>
+  
+              <div id="js-hidden-icons" class="hidden-icons">
+                <div class="menubar-item icon-only-item">
+                  <img src="./calendar.svg" />
+                </div>
+                <div class="menubar-item icon-only-item">
+                  <img src="./person.circle.svg" />
+                </div>
+                <div class="menubar-item icon-only-item">
+                  <img src="./clock.arrow.circlepath.svg" />
+                </div>
+                <div class="menubar-item icon-only-item">
+                  <img src="./speaker.wave.3.fill.svg" />
+                </div>
+                <div class="menubar-item icon-only-item">
+                  <img src="./magnifyingglass.svg" />
+                </div>
+                <div class="menubar-item vanilla-dot-item">
+                  <img src="./circle.fill.svg" />
+                </div>
+              </div>
+            </div>
+
+            <div class="menubar-item icon-only-item">
+              <img src="./wifi.svg" />
+            </div>
+            <div class="menubar-item icon-with-text">
+              <span>75%</span>
+              <img src="./battery.75percent.svg" />
+            </div>
+            <div class="menubar-item text-item">
+              20 Sep 9:41
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script type="text/javascript">
+        var hiddenIcons = document.getElementById('js-hidden-icons');
+        var chevron = document.getElementById('js-chevron');
+
+        setInterval(function() {
+          chevron.classList.toggle('flash');
+
+          setTimeout(function() {
+            hiddenIcons.classList.toggle('show');
+            chevron.classList.toggle('left');
+            chevron.classList.toggle('flash');
+          }, 200);
+        }, 3000);
+      </script>
     </div>
+    <!-- <div class="crop">
+      <img width="480" height="360" class="screenshot" src="vanilla-square-gif.gif" />
+    </div> -->
     <br/>
     <h1>Vanilla</h1>
     <p class="tagline">Hide menu bar icons on your Mac.</p>
     <script src="https://peachs.co/embeds/peachs.min.js"></script>
-    <p><a data-gambit-id="5" class="download-ab-dec peachs-button" href="https://macrelease.matthewpalmer.net/Vanilla.dmg">Download Vanilla for free</a></p>
-    <p class="tagline">Having trouble with Vanilla?<br/><a href="./help.html">Read the FAQ</a></p>
+    <p><a class="download-ab-dec" href="https://macrelease.matthewpalmer.net/Vanilla.dmg"><img src="./arrow.down.circle.svg" /> Download <strong>Vanilla</strong></a></p>
+    <p class="download-vanilla-pro">
+      <a href="#vanilla-pro">Get Vanilla Pro</a>
+    </p>
+    <p class="faq-link">Having trouble with Vanilla? <a href="./help.html">Read the FAQ</a></p>
   </div>
 
   <div class="testimonials">
@@ -83,29 +159,65 @@
     </div>
   </div>
 
-  <div class='side-by-side'>
-    <!-- <div class='basic'>
-      <h3>Vanilla Free</h3>
-      <ul>
-        <li>Hide icons on your Mac’s menu bar</li>
-        <li>Compatible with light and dark menu bars</li>
-        <li>Free, and Vanilla will never nag you!</li>
-      </ul>
-    </div> -->
+  <div class='vanilla-pro-container'>
+    <div id="vanilla-pro" class='pro-content'>
+      <h2>Vanilla Pro</h2>
+      <p>Vanilla Pro gives power-users great extra features to fully customize the Mac menu bar.</p>
+      
 
-    <div class='pro'>
-      <h3>Vanilla Pro</h3>
-      <p>Vanilla will never nag you to upgrade, but if you’d like, you can unlock the Pro version to reach peak Mac minimalism.</p>
-      <ul>
-        <li>Perfect your menu bar by completely hiding icons</li>
-        <li>Hide any app icon from your Mac’s menu bar</li>
-        <li>Compatible with light and dark menu bars</li>
-        <li>Automatically hide icons again after five seconds</li>
-        <li>Start Vanilla automatically when you log in</li>
-        <li>Toggle icons with a keyboard shortcut<br/><em>(Seriously, I use this with Command-Shift-< like forty times a day. Get Pro just for this.)</em></li>
-      </ul>
+      <div class="pro-feature">
+        <div class="pro-feature-left">
+          <img src="./keyboard.fill.svg" />
+        </div>
+        <div class="pro-feature-right">
+          <p><strong>Keyboard Shortcuts</strong></p>
+          <p>Toggle icons with a keyboard shortcut<br/><em>(I use this with Command-Shift-&lt; like forty times a day. Pro is worth it just for this.)</em></p>
+        </div>
+      </div>
+
+      <div class="pro-feature">
+        <div class="pro-feature-left">
+          <img src="./wand.and.stars.svg" />
+        </div>
+        <div class="pro-feature-right">
+          <p><strong>Completely Remove Icons</strong></p>
+          <p>With Vanilla Pro, you get a “Completely Removed” icons section. Icons in this section will only be visible if you open Vanilla’s preferences window.</p>
+        </div>
+      </div>
+
+      <div class="pro-feature">
+        <div class="pro-feature-left">
+          <img src="./windshield.front.and.wiper.svg" />
+        </div>
+        <div class="pro-feature-right">
+          <p><strong>Auto-hide Icons</strong></p>
+          <p>Automatically hide icons five seconds after you toggle them in Vanilla</p>
+        </div>
+      </div>
+
+      <div class="pro-feature">
+        <div class="pro-feature-left">
+          <img src="./key.horizontal.svg" />
+        </div>
+        <div class="pro-feature-right">
+          <p><strong>Start at Log In</strong></p>
+          <p>Start Vanilla automatically when you log in to your Mac</p>
+        </div>
+      </div>
+
+      <div class="pro-feature">
+        <div class="pro-feature-left">
+          <img src="./macbook.gen2.svg" />
+        </div>
+        <div class="pro-feature-right">
+          <p><strong>Go Pro on All Your Macs</strong></p>
+          <p>Vanilla Pro is a one-time purchase. Enter your Vanilla Pro license activation code in the app to unlock the Pro features. You can use each license activation code up to 10 times so you can go Pro on all your Macs.</p>
+        </div>
+      </div>
+
       <div class='upgrade-prompt'>
-        <a class='download-ab-dec' href='https://store.matthewpalmer.net/vanilla-pro'>Go Pro for $10</a><br/><br/>
+        <a class='download-ab-dec' href='https://store.matthewpalmer.net/vanilla-pro'>Buy <strong>Vanilla Pro</strong> for $10</a><br/><br/>
+        <span class="">30-day money-back guarantee!</span>
       </div>
     </div>
   </div>
