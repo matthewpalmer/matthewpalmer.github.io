@@ -6,7 +6,7 @@ category: apple
 
 <div class="apple-event-power-rankings">
 
-iPhone events leak like a sieve. Since we already know what’s going to happen, my new favourite thing is playing *Whose Byline Is It Anyway?* with the rumour mill. 
+Since we already know what’s going to happen in the iPhone event each year, my new favourite thing is playing *Whose Byline Is It Anyway?* with the rumour mill. 
 
 Let’s do a journalist power ranking for the September 2023 Apple Event.
 
