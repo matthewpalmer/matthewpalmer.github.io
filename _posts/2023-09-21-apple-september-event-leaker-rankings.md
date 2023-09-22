@@ -4,8 +4,6 @@ title: Which Canaries Carked It? Apple Event Leaker Power Rankings (September 20
 category: apple
 ---
 
-<div class="apple-event-power-rankings">
-
 Since we already know what’s going to happen in the iPhone event each year, my new favourite thing is playing *Whose Byline Is It Anyway?* with the rumour mill. 
 
 Let’s do a journalist power ranking for the September 2023 Apple Event.
@@ -92,5 +90,3 @@ While I'm here, I have some other notes:
 * There's no 12-inch Apple Silicon MacBook
 * WorkoutKit has a weird API, and baffling limitations (you can create a 5x4 minute Badminton intervals workout, but you can't create a 5x4 minute swimming intervals workout)
 * Does anyone else feel like the September event's focus on Apple's environmental prowess was pre-empting the potential e-waste press for the USB-C migration? I mean, Apple is *actually* doing a bunch of good things, which I love. But they really emphasised it more than usual.
-
-</div>
