@@ -71,16 +71,4 @@ category: apple
 <p><br />
 <br />
 * The “Big Hack”, it turns out, was the publication we worked for all along.</p>
-<p><br />
-<br /></p>
-<h3 id="unimportant-personal-addenda">Unimportant Personal Addenda</h3>
-<p>While I&#39;m here, I have some other notes:</p>
-<ul>
-<li>watchOS continues to be terrible, and makes the Apple Watch Ultra basically useless for any activity or sport adjacent to Ultra-ness. I have so many ways I&#39;d like to improve watchOS</li>
-<li>No custom watch faces, and the Apple ones are bad</li>
-<li>The iOS Fitness app uses Bezos charts with no interactivity, making them basically useless for anything other than being nice looking</li>
-<li>There&#39;s no 12-inch Apple Silicon MacBook</li>
-<li>WorkoutKit has a weird API, and baffling limitations (you can create a 5x4 minute Badminton intervals workout, but you can&#39;t create a 5x4 minute swimming intervals workout)</li>
-<li>Does anyone else feel like the September event&#39;s focus on Apple&#39;s environmental prowess was pre-empting the potential e-waste press for the USB-C migration? I mean, Apple is <em>actually</em> doing a bunch of good things, which I love. But they really emphasised it more than usual.</li>
-</ul>
 </div>
