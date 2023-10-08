@@ -187,5 +187,5 @@ If you want, you can customize your program in the “Customize” tab in Peach�
 Everything’s done! You can click on the “Preview & Launch” tab to launch your program and make it live. You should see your referral widgets on your landing page, and everything will be working.
 
 
-[peachs-link]: https://peachs.co/subscriber-milestone-referral-program
+[peachs-link]: https://peachs.co/
 
