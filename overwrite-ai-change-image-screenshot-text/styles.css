@@ -1,0 +1,200 @@
+.dm-serif-text-regular {
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.dm-serif-text-regular-italic {
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+body {
+    background: #fefefe;
+    font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+    line-height: 1.5;
+    color: #0f135e;
+    margin: 0;
+    padding: 0;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+a, a:visited {
+    color: #5756D5;
+}
+
+.header {
+    height: 20px;
+    background: #5756D5;
+    margin-bottom: 96px;
+}
+
+.images-header {
+    max-width: 960px;
+    margin: 64px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+.overwrite-header .right img {
+    width: 100%;
+    max-width: 600px;
+    border: 2px solid gainsboro;
+    border-radius: 10px;
+}
+
+.overwrite-header {
+    display: flex;
+    align-items: center;
+}
+
+.overwrite-header .left {
+    text-align: left;
+    padding: 20px;
+    width: 60%;
+}
+
+.overwrite-header .right {
+    padding: 20px;
+}
+
+.overwrite-app-details .right img {
+    max-width: 600px;
+}
+
+h1 {
+    font-size: 48px;
+    line-height: 1.2;
+    margin: 0;
+}
+
+
+.tagline {
+    font-size: 24px;
+    line-height: 1.2;
+}
+
+
+@media (max-width: 860px) {
+    .overwrite-header {
+        flex-direction: column;
+    }
+
+    .overwrite-header .left {
+        padding: 20px;
+        width: 95%;
+    }
+}
+
+.overwrite-header .download-link {
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    background-color: #5756D5;
+    color: white;
+    border-radius: 20px;   
+    font-weight: bold;
+}
+
+.app-details {
+    max-width: 600px;
+    margin: 64px auto;
+    padding: 8px;
+}
+
+.footer {
+    max-width: 600px;
+    margin: 32px auto;
+    text-align: center;
+}
+
+.workouts-content {
+    max-width: 720px;
+    margin: 16px auto;
+}
+
+.install-instructions {
+    margin-top: 64px;
+    margin-bottom: 64px;
+}
+
+.workouts-content .hero-image {
+    max-width: 100%;
+    border-radius: 20px;
+}
+
+.workout-category-description {
+    font-size: 1.1em;
+    text-align: center;
+    margin: 32px auto 64px auto;
+}
+
+.workout-entry {
+    margin: 24px auto;
+    padding: 36px 0 24px 0;
+    border-top: 1px solid #eaeaea;
+}
+
+.workout-details {
+    border: 1px solid #eaeaea;
+    padding: 16px;
+    border-radius: 10px;
+}
+
+.workout-step-key {
+    width: 95px;
+    background-color: #eaeaea;
+    text-transform: uppercase;
+    border-radius: 4px;
+    padding: 4px 8px;
+    display: inline-block;
+    font-size: 10pt;
+    text-align: right;
+    margin-right: 8px;
+    font-weight: bold;
+}
+
+.workout-separator {
+    height: 1px;
+    background-color: #eaeaea;
+}
+
+.workout-cta-container {
+    margin-top: 32px;
+}
+
+a.workout-cta, a.workout-cta:visited {
+    background-color: #5756D5;
+    color: white;
+    text-decoration: none;
+    padding: 16px;
+    border-radius: 16px;
+    display: inline-block;
+    margin-bottom: 16px;
+}
+
+.workout-cta-instructions {
+    color: #777;
+    background-color: #eaeaea;
+    padding: 16px;
+    border-radius: 16px;
+    font-size: 0.9em;
+}
+
+@media (max-width: 860px) {
+    .images-header img:not(:first-child) {
+        display: none;
+    }
+
+    .images-header img {
+        width: 60%;
+    }
+}
