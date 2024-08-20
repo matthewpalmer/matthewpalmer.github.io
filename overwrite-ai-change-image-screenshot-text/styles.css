@@ -32,7 +32,7 @@ a, a:visited {
 .header {
     height: 20px;
     background: #5756D5;
-    margin-bottom: 96px;
+    margin-bottom: 40px;
 }
 
 .images-header {
@@ -43,23 +43,20 @@ a, a:visited {
     justify-content: space-evenly;
 }
 
-
-.overwrite-header .right img {
-    width: 100%;
-    max-width: 600px;
-    border: 2px solid gainsboro;
-    border-radius: 10px;
-}
-
 .overwrite-header {
     display: flex;
     align-items: center;
+    flex-direction: column-reverse;
+}
+
+.overwrite-header .right video {
+    max-width: 580px;
 }
 
 .overwrite-header .left {
-    text-align: left;
+    text-align: center;
     padding: 20px;
-    width: 60%;
+    max-width: 700px;
 }
 
 .overwrite-header .right {
@@ -71,37 +68,84 @@ a, a:visited {
 }
 
 h1 {
-    font-size: 48px;
+    font-size: 40px;
     line-height: 1.2;
     margin: 0;
 }
 
-
-.tagline {
-    font-size: 24px;
-    line-height: 1.2;
+#js-get-started-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
 }
 
+#js-get-started-modal .get-started-modal-background {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width:  100%;
+    position: absolute;
+}
 
-@media (max-width: 860px) {
-    .overwrite-header {
-        flex-direction: column;
-    }
+#js-get-started-modal .get-started-modal-content {
+    background-color: white;
+    padding:  60px;
+    border-radius: 20px;
+    border: 2px solid gainsboro;
+    margin: auto;
+    z-index: 9999999;
+    max-width: 600px;
+}
 
-    .overwrite-header .left {
-        padding: 20px;
-        width: 95%;
-    }
+#js-get-started-modal .get-started-modal-content h2 {
+    margin: 0;
+}
+
+#js-get-started-modal.active {
+    display: flex;
+}
+
+.overwrite-big-features {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 80px 10px;
+}
+
+.overwrite-big-features h2 {
+    padding: 20px;
+    color:  #5756D5;
+    background-color: white;
+    border-radius: 20px;
+    margin: 20px;
+    max-width: 260px;
+    text-align: center;
+    font-size: 20px;
+    border:  2px solid #5756D5;
+    border-radius: 20px;
+}
+
+.tagline {
+    font-size: 20px;
+    line-height: 1.2;
 }
 
 .overwrite-header .download-link {
     display: inline-block;
-    padding: 10px 30px;
+    padding: 15px 40px;
     text-decoration: none;
     background-color: #5756D5;
     color: white;
     border-radius: 20px;   
     font-weight: bold;
+    font-size: 20px;
+    margin-top: 20px;
 }
 
 .app-details {
