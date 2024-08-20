@@ -51,6 +51,7 @@ a, a:visited {
 
 .overwrite-header .right video {
     max-width: 580px;
+    width: 100%;
 }
 
 .overwrite-header .left {
