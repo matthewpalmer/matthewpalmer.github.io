@@ -271,6 +271,11 @@ a.workout-cta, a.workout-cta:visited {
 }
 
 @media (max-width: 860px) {
+    .header > div:nth-child(2) > a:nth-child(2),
+    .header > div:nth-child(2) > a:nth-child(1) {
+        display: none;
+    }
+
     .images-header img:not(:first-child) {
         display: none;
     }
@@ -278,4 +283,25 @@ a.workout-cta, a.workout-cta:visited {
     .images-header img {
         width: 60%;
     }
+
+    .overwrite-big-feature, .overwrite-big-feature.reverse {
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 40px 10px;
+    }
+
+    .overwrite-big-feature h2 {
+        padding: 20px 10px;
+        margin: 0;
+        text-align: center;
+        font-size: 36px;
+    }
+
+    .overwrite-big-feature img {
+        height: 200px;
+        max-width: 100%;
+        /*border-radius: 50%;*/
+    }
 }
+
+
