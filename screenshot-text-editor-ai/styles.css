@@ -17,7 +17,7 @@ body {
   font-weight: 400;
   font-style: normal;
     line-height: 1.5;
-    color: #0f135e;
+    color: #3A3A3A;
     margin: 0;
     padding: 0;
     text-rendering: optimizeLegibility;
@@ -30,9 +30,32 @@ a, a:visited {
 }
 
 .header {
-    height: 20px;
-    background: #5756D5;
-    margin-bottom: 40px;
+    border-top: 5px solid #3A3A3A;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10px;
+}
+
+.header a, .header a:visited {
+    text-decoration: none;
+    color: #3A3A3A;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.header a:hover {
+    text-decoration: underline;
+}
+
+.demo-icon {
+    width:  25px;
+    height:  25px;
+    background-color: #3A3A3A;
+    border-radius: 50%;
+    color:  white;
+    text-align: center;
+    display: inline-block;
 }
 
 .images-header {
@@ -47,6 +70,7 @@ a, a:visited {
     display: flex;
     align-items: center;
     flex-direction: column-reverse;
+    margin-bottom: 150px;
 }
 
 .overwrite-header .right video {
@@ -116,20 +140,31 @@ h1 {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    margin: 80px 10px;
+    margin: 80px 0;
 }
 
 .overwrite-big-features h2 {
-    padding: 20px;
-    color:  #5756D5;
-    background-color: white;
-    border-radius: 20px;
-    margin: 20px;
-    max-width: 260px;
-    text-align: center;
-    font-size: 20px;
-    border:  2px solid #5756D5;
-    border-radius: 20px;
+    padding: 20px 40px;
+    font-size: 50px;
+    line-height: 1;
+    letter-spacing: -1px;
+    font-weight: bold;
+}
+
+.overwrite-big-feature {
+    display: flex;
+    align-items: center;
+    padding: 60px;
+    color:  #3A3A3A;
+    width: 100%;
+}
+
+.overwrite-big-feature.reverse {
+    flex-direction: row-reverse;
+}
+
+.overwrite-big-feature img {
+    max-width: 400px;
 }
 
 .tagline {
@@ -141,12 +176,13 @@ h1 {
     display: inline-block;
     padding: 15px 40px;
     text-decoration: none;
-    background-color: #5756D5;
+    background-color: #3A3A3A;
     color: white;
-    border-radius: 20px;   
+    border-radius: 10px;   
     font-weight: bold;
     font-size: 20px;
     margin-top: 20px;
+    box-shadow: 0px 1px 4px 0 rgba(100, 100, 100, 0.4);
 }
 
 .app-details {
