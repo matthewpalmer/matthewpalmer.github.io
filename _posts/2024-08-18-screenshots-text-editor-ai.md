@@ -8,8 +8,6 @@ I’ve created a new app called Screenshot Text Editor AI that lets you edit tex
 
 <a href="https://matthewpalmer.net/screenshot-text-editor-ai/">Get Started with Screenshot Text Editor AI here</a> for free.
 
-It’s available on iOS and macOS.
-
 ## Why use Screenshot Text Editor AI?
 
 Before Screenshot Text Editor AI, when I had to create screenshots for the App Store, marketing websites, platform marketplaces, and presentations, I had to set up a whole demo account with content that was suitable for sharing publicly.
