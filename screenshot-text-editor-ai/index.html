@@ -28,7 +28,7 @@
         <div class="right">
             <a href="#benefits">Benefits</a>
             <a href="#about">About</a>
-            <a target="_blank" href="./app.html">Get Started</a>
+            <a href="#pricing">Get Started</a>
         </div>
     </div>
 
@@ -38,7 +38,7 @@
             <h1>Edit text in screenshots and images… <i>no Photoshop required</i></h1>
             <p class="tagline">Use Screenshot Text Editor AI to change text in screenshots, product demos, and images</p>
 
-            <a id="js-get-started" target="_blank" class="download-link" href="./app.html">
+            <a id="js-get-started" class="download-link" href="#pricing">
                 Get Started
             </a>
         </div>
@@ -128,6 +128,122 @@
   <li><strong>Enhanced Collaboration:</strong> Share clean, professional screenshots with your team or clients, making communication smoother and more efficient.</li>
   <li><strong>Flexible Usage:</strong> Perfect for everything from app store images to pitch decks and beyond.</li>
 </ul>
+
+<style>
+    .pricing-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 2rem;
+        margin: 40px 0;
+        width: 100%;
+    }
+    .pricing-tier {
+        display: flex;
+        justify-content: space-evenly;
+        background-color: #fff;
+        border: 1px solid #e0e0e0;
+        border-radius: 8px;
+        padding: 2rem;
+        flex: 1;
+        text-align: left;
+        box-shadow: 0 0 0 1px rgba(0,0,0,.03), 0 2px 4px rgba(0,0,0,.05);
+        transition: all 0.3s ease;
+    }
+    .pricing-tier:hover {
+        box-shadow: 0 0 0 1px rgba(0,0,0,.05), 0 4px 8px rgba(0,0,0,.08);
+    }
+    .pricing-tier h3 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+        color: #1a1f36;
+    }
+    .pricing-tier .price {
+        font-size: 2.25rem;
+        font-weight: 700;
+        margin-bottom: 1.5rem;
+        color: #1a1f36;
+    }
+    .pricing-tier ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    .pricing-tier li {
+        margin-bottom: 0.75rem;
+        color: #3c4257;
+        display: flex;
+        align-items: center;
+    }
+    .pricing-tier li::before {
+        content: "✓";
+        color: #0050ff;
+        font-weight: bold;
+        margin-right: 0.5rem;
+    }
+    .pricing-tier .cta-button {
+        display: inline-block;
+        background-color: #0050ff;
+        color: white;
+        padding: 0.75rem 1rem;
+        border-radius: 30px;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+        width: 100%;
+        text-align: center;
+        font-weight: 600;
+    }
+    .pricing-tier .cta-button:hover {
+        background-color: #0040cc;
+    }
+</style>
+
+<br/><br/><br/><br/>
+
+<h2 id="pricing">Pricing Plans</h2>
+<div class="pricing-container">
+    <div class="pricing-tier">
+        <div>
+            <h3>Personal</h3>
+            <div class="price">$29/month</div>
+        </div>
+        <ul>
+            <li>20 image generations</li>
+            <li>Basic support</li>
+            <li>Personal use only</li>
+            <a href="./app.html?plan=personal" class="cta-button">Get Started</a>
+        </ul>
+        
+    </div>
+    <div class="pricing-tier">
+        <div>
+            <h3>Business</h3>
+            <div class="price">$59/month</div>
+        </div>
+        <ul>
+            <li>100 image generations</li>
+            <li>Priority support</li>
+            <li>Commercial use</li>
+            <a href="./app.html?plan=business" class="cta-button">Get Started</a>
+        </ul>
+        
+    </div>
+    <div class="pricing-tier">
+        <div>
+            <h3>Enterprise</h3>
+            <div class="price">Contact Us</div>
+        </div>
+        <ul>
+            <li>Custom image generation limits</li>
+            <li>Dedicated support</li>
+            <li>Advanced features</li>
+
+            <a href="mailto:screenshotai@matthewpalmer.net" class="cta-button">Contact Us</a>
+        </ul>
+        
+    </div>
+</div>
+
 
 <br/><br/><br/><br/>
 

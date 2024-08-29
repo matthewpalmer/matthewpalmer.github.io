@@ -563,7 +563,12 @@
 
                 $('#download-status').text('');
                 $('#request-id').text(uuidPrefix);
-                $('#submit-queue-link').attr('href', `https://app.youform.com/forms/t5riigqz?request_id=${uuidPrefix}`);
+
+                let formLink = `https://app.youform.com/forms/t5riigqz?request_id=${uuidPrefix}`
+                const urlParams = new URLSearchParams(window.location.search);
+                const plan = urlParams.get('plan') || 'unknown';
+                formLink += `_${plan}`;
+                $('#submit-queue-link').attr('href', formLink);
                 $('#modal-sheet-container').toggleClass('active');
             }
 
