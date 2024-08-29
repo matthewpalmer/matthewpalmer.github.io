@@ -6,7 +6,7 @@ category: ios
 
 I’ve created a new app called Screenshot Text Editor AI that lets you edit text in screenshots and product demos. 
 
-<a href="https://matthewpalmer.net/screenshot-text-editor-ai/">Get Started with Screenshot Text Editor AI here</a> for free.
+<a href="https://matthewpalmer.net/screenshot-text-editor-ai/">Get Started with Screenshot Text Editor AI here</a>
 
 ## Why use Screenshot Text Editor AI?
 
