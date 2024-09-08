@@ -394,27 +394,26 @@
         <div id="modal-sheet-container">
             <div class="modal-sheet-content">
                 <div class="modal-sheet-header">
-                    <h2>Download and Submit Your Files</h2>
+                    <h2>Submit Your Files</h2>
                     <button class="button" id="close-modal">Close</button>
                 </div>
 
                 <div class="instructions">
-                    <p>1. Click <strong>Download Zip</strong> to generate a zip file for your AI editor submission</p>
+                    <!-- <p>1. Click <strong>Download Zip</strong> to generate a zip file for your AI editor submission</p>
                     <p>2. Extract the .zip file on your computer</p>
                     <p><small>This .zip file contains three files:
                             <em>base.png</em>,
                             <em>mask.png</em>, and
                             <em>regions.csv</em></small>
-                    </p>
-                    <p>3. Click <strong>Submit to Queue</strong> to submit your files to the AI editor queue</p>
-                    <p>4. Complete the form that opens after you click <strong>Submit to Queue</strong></p>
+                    </p> -->
+                    <p>1. Click <strong>Submit to Queue</strong> to submit your files to the AI editor queue</p>
+                    <p>2. <strong>Complete the form</strong> that opens after you click Submit to Queue</p>
                 </div>
 
                 <div class="actions">
-                    <p>Your request ID is <span id="request-id">b97a0edf</span></p>
-                    <button id="download-zip" class="button">Download Zip</button><span id="download-status"></span>
+                    <!-- <button id="download-zip" class="button">Download Zip</button><span id="download-status"></span> -->
                     <br />
-                    <a class="button" id="submit-queue-link" target="_blank" href="https://app.youform.com/forms/t5riigqz">Submit to Queue</a>
+                    <a class="button" id="submit-queue-link" target="_blank" href="https://app.youform.com/forms/v0ojdfo2">Submit to Queue</a>
                 </div>
             </div>
         </div>
@@ -546,7 +545,7 @@
                 );
             }
 
-            $('#canvas').mousedown(function (e) {
+            $('#canvas').on('mousedown touchstart', function (e) {
                 if (!activeImage) {
                     displayImagePicker();
                     return;
@@ -563,7 +562,7 @@
                 };
             })
 
-            $('#canvas').mousemove(function (e) {
+            $('#canvas').on('mousemove touchmove', function (e) {
                 if (!hasMouseDown || !pendingEditRegion) return;
 
                 pendingEditRegion.width = e.offsetX - pendingEditRegion.x;
@@ -572,7 +571,7 @@
                 redrawCanvas();
             })
 
-            $('#canvas').mouseup(function (e) {
+            $('#canvas').on('mouseup touchup', function (e) {
                 if (!hasMouseDown) return;
 
                 if (pendingEditRegion.width < 1 || pendingEditRegion.height < 1) {
@@ -591,10 +590,13 @@
                 const uuid = uuidv4();
                 const uuidPrefix = uuid.split('-')[0];
 
+                const csvRegions = jsonToCsv(detectedRegions);
+                const uuidWithCsv = uuidPrefix + '_' + btoa(csvRegions);
+
                 $('#download-status').text('');
                 $('#request-id').text(uuidPrefix);
 
-                let formLink = `https://app.youform.com/forms/t5riigqz?request_id=${uuidPrefix}`
+                let formLink = `https://app.youform.com/forms/v0ojdfo2?request_id=${uuidWithCsv}`
                 const urlParams = new URLSearchParams(window.location.search);
                 const plan = urlParams.get('plan') || 'unknown';
                 formLink += `_${plan}`;
@@ -797,7 +799,7 @@
 
                 const $outputLabel = $('<label>Change To</label>');
                 const $outputInput = $('<input type="text"></input>');
-                $outputInput.val(detectedRegion.outputText);
+                $outputInput.attr('placeholder', detectedRegion.outputText);
 
                 const $outputRow = $('<div class="region-item-field-row"></div>');
 
