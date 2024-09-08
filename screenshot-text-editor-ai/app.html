@@ -416,10 +416,14 @@
                 <div class="actions">
                     <!-- <button id="download-zip" class="button">Download Zip</button><span id="download-status"></span> -->
                     <br />
-                    <a class="button" id="submit-queue-link" target="_blank" href="https://app.youform.com/forms/v0ojdfo2">Submit to Queue</a>
+                    <a class="button" id="submit-queue-link" target="_blank"
+                        href="https://app.youform.com/forms/v0ojdfo2">Submit to Queue</a>
                 </div>
             </div>
         </div>
+    </div>
+
+    <div id="debug-edit-regions">
     </div>
 
     <div class="footer">
@@ -558,9 +562,11 @@
 
                 hasMouseDown = true;
 
+                const pos = getEventPosition(e);
+
                 pendingEditRegion = {
-                    x: e.offsetX,
-                    y: e.offsetY,
+                    x: pos.x,
+                    y: pos.y,
                     width: 0,
                     height: 0,
                     color: rgbaColors[editRegions.length % rgbaColors.length]
@@ -571,13 +577,15 @@
                 e.preventDefault();
                 if (!hasMouseDown || !pendingEditRegion) return;
 
-                pendingEditRegion.width = e.offsetX - pendingEditRegion.x;
-                pendingEditRegion.height = e.offsetY - pendingEditRegion.y;
+                const pos = getEventPosition(e);
+
+                pendingEditRegion.width = pos.x - pendingEditRegion.x;
+                pendingEditRegion.height = pos.y - pendingEditRegion.y;
 
                 redrawCanvas();
             })
 
-            $('#canvas').on('mouseup touchup', function (e) {
+            $('#canvas').on('mouseup touchend', function (e) {
                 e.preventDefault();
                 if (!hasMouseDown) return;
 
@@ -723,6 +731,19 @@
                 });
             }
 
+            function getEventPosition(e) {
+                let x, y;
+                if (e.type.startsWith('touch')) {
+                    const touch = e.originalEvent.touches[0] || e.originalEvent.changedTouches[0];
+                    x = touch.pageX - $('#canvas').offset().left;
+                    y = touch.pageY - $('#canvas').offset().top;
+                } else {
+                    x = e.offsetX;
+                    y = e.offsetY;
+                }
+                return { x, y };
+            }
+
             function drawImage() {
                 if (!activeImage) return;
 
@@ -762,6 +783,8 @@
                 if (pendingEditRegion) {
                     drawRegion(ctx, pendingEditRegion);
                 }
+
+                $('#debug-edit-regions').text(JSON.stringify(editRegions) + JSON.stringify(pendingEditRegion));
             }
 
             function drawEmptyState() {
