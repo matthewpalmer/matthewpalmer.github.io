@@ -28,7 +28,7 @@
         <div class="right">
             <a href="#benefits">Benefits</a>
             <a href="#about">About</a>
-            <a href="#pricing">Get Started</a>
+            <a href="#pricing">Pricing</a>
         </div>
     </div>
 
@@ -53,22 +53,22 @@
 
     <div id="benefits" class="overwrite-big-features">
         <div class="overwrite-big-feature" style="background-color: #efe4da;">
-            <h2>Clean Up Screenshots for Demos and Powerpoints</h2>
+            <h2>Clean Up Text in Your Screenshots and Images</h2>
             <img src="./magic-wand-laptop-2.png">
         </div>
         
         <div class="overwrite-big-feature reverse" style="background-color: #f1efe8;">
-            <h2>Remove Sensitive User Data &amp; PII from Screenshots</h2>
+            <h2>Remove Sensitive &amp; Private Information from Screenshots</h2>
             <img src="./computer-cleanup.png">
         </div>
 
         <div class="overwrite-big-feature" style="background-color: #fdf4ea;">
-            <h2>Edit Your Screenshots Naturally</h2>
+            <h2>Edit Text in Your Screenshots in Seconds</h2>
             <img src="./busy-office.png">
         </div>
         
         <div class="overwrite-big-feature reverse" style="background-color: #f7e3cc;">
-            <h2>Save Time Setting Up Demos</h2>
+            <h2>Faster and Easier than Photoshop</h2>
             <img src="./tablet-in-cafe.png">
         </div>
 
@@ -140,11 +140,13 @@
     }
     .pricing-tier {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-evenly;
         background-color: #fff;
         border: 1px solid #e0e0e0;
         border-radius: 8px;
-        padding: 2rem;
+        padding: 20px;
+        box-sizing: border-box;
         flex: 1;
         text-align: left;
         box-shadow: 0 0 0 1px rgba(0,0,0,.03), 0 2px 4px rgba(0,0,0,.05);
@@ -190,8 +192,10 @@
         text-decoration: none;
         transition: background-color 0.3s ease;
         width: 100%;
+        box-sizing: border-box;
         text-align: center;
         font-weight: 600;
+        margin-top: 20px;
     }
     .pricing-tier .cta-button:hover {
         background-color: #0040cc;
@@ -200,34 +204,36 @@
 
 <br/><br/><br/><br/>
 
-<h2 id="pricing">Pricing Plans</h2>
+<h2 id="pricing">Pricing</h2>
 <div class="pricing-container">
     <div class="pricing-tier">
         <div>
 
-            <h3>Hobby</h3>
-            <div class="price">$9<small>/month</small></div>
+            <h3>One-Time</h3>
+            <div class="price">$7<small> for 7 days</small></div>
+            <h4>One-Time Purchase</h4>
         </div>
         <ul>
-            <li>5 edited images per month</li>
+            <li>7 days of access</li>
+            <li>10 edited images over 7 days</li>
             <li>No customer support</li>
             <li>Personal use only</li>
             <li>Low resolution images</li>
-            <a href="./app.html?plan=hobby" class="cta-button">Get Started</a>
+            <a href="./app.html?plan=onetime" class="cta-button">Get Started for Free</a>
         </ul>
         
     </div>
     <div class="pricing-tier">
         <div>
             <h3>Professional</h3>
-            <div class="price">$39<small>/month</small></div>
+            <div class="price">$24<small>/month</small></div>
         </div>
         <ul>
             <li>50 edited images per month</li>
             <li>Priority support</li>
             <li>Commercial use</li>
             <li>High resolution images</li>
-            <a href="./app.html?plan=professional" class="cta-button">Get Started</a>
+            <a href="./app.html?plan=professional" class="cta-button">Get Started for Free</a>
         </ul>
         
     </div>
@@ -242,7 +248,7 @@
             <li>Commercial use</li>
             <li>Advanced features</li>
 
-            <a href="./app.html?plan=business" class="cta-button">Get Started</a>
+            <a href="./app.html?plan=business" class="cta-button">Get Started fore Free</a>
         </ul>
         
     </div>
