@@ -46,6 +46,7 @@
             display: flex;
             justify-content: space-between;
             margin: 20px;
+            position: relative;
         }
 
         #canvas {
@@ -75,6 +76,32 @@
             right: 0;
             box-shadow: 0px 1px 4px 0 rgba(100, 100, 100, 0.4);
             overflow-y: scroll;
+        }
+
+        .toggle-sidebar-btn {
+            cursor: pointer;
+            background-color: #7487b7;
+            color: white;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            font-size: 12px;
+            font-weight: 600;
+            padding: 5px 10px;
+            margin: 10px;
+            border-radius: 10px;
+            display: inline-block;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+
+        .toggle-sidebar-btn:hover {
+            background-color: #8596c3;
+        }
+
+        .show-sidebar-btn {
+            top: 10px;
+            right: 0;
         }
 
         .button {
@@ -195,28 +222,27 @@
             padding: 10px;
             font-size: 12px;
             font-weight: 500;
-            color: #1d4ed8;
-            background-color: #ccd5f0;
+            color: #999;
+            background-color: #f6f6f6;
             border: none;
             border-radius: 0.375rem;
             cursor: pointer;
             transition: background-color 0.2s ease-in-out;
         }
 
-        #choose-screenshot:hover {
-            background-color: #b6c3ec;
-        }
-
-        #choose-screenshot:hover::before {
-            background-color: #b6c3ec;
-        }
-
         #choose-screenshot::-webkit-file-upload-button {
-            visibility: hidden;
+            background-color: #1d4ed8;
+            color: white;
+            border: none;
+            outline: none;
+            padding: 10px;
+            display: inline-block;
+            margin-right: 10px;
+            border-radius: 10px;
         }
 
         #choose-screenshot::before {
-            content: 'Upload File…';
+            /* content: 'Upload File…'; */
             display: inline-block;
             background-color: #ccd5f0;
             border-radius: 0.375rem;
@@ -333,7 +359,7 @@
 
 <body>
     <div class="header">
-        <h1>Screenshot Text Editor AI <span class="beta-badge">BETA</span></h1>
+        <h1>EditScreenshot AI <span class="beta-badge">BETA</span></h1>
         <a class="button" target="_blank" href="https://app.youform.com/forms/m8skm0gi">Send Feedback</a>
     </div>
 
@@ -341,7 +367,11 @@
         <canvas id="canvas">
         </canvas>
 
+        <div class="toggle-sidebar-btn show-sidebar-btn">Show Sidebar</div>
+
         <div class="sidebar">
+            <div class="toggle-sidebar-btn">Hide</div>
+
             <div id="choose-screenshot-container" class="sidebar-item">
                 <label for="choose-screenshot">Choose Screenshot (.png)</label>
                 <input type="file" id="choose-screenshot" accept="image/png">
@@ -811,6 +841,14 @@
                 redrawDetectedRegionsList();
                 redrawGenerateImageButton();
             }
+
+            function toggleSidebar() {
+                $('.sidebar').toggle();
+                $('.show-sidebar-btn').toggle();
+            }
+
+            $('.toggle-sidebar-btn').click(toggleSidebar);
+            $('.show-sidebar-btn').hide();
 
             redrawCanvas();
         })
