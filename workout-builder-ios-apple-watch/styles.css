@@ -87,6 +87,9 @@ a, a:visited {
 .workouts-content .hero-image {
     max-width: 100%;
     border-radius: 20px;
+    max-height: 350px;
+    object-fit: cover;
+    width: 100%;
 }
 
 .workout-category-description {
@@ -155,4 +158,25 @@ a.workout-cta, a.workout-cta:visited {
     .images-header img {
         width: 60%;
     }
+}
+
+.guides-container {
+    margin-bottom: 150px;
+}
+
+.guide-step {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 10px;
+    border-bottom: 10px solid  #f2f2f7;
+    margin: 20px 0;
+}
+
+.guide-step img {
+    border-radius: 10px;
+}
+
+.guides-footer {
+    margin-top: 100px;
 }
