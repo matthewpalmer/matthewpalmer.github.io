@@ -23,6 +23,7 @@ body {
   background: #f1f2f3;
   object-fit: cover;
   border: 2px solid #cfd5e2;
+  width: 100%;
 }
 
 .hero {
