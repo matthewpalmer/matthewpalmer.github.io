@@ -500,3 +500,60 @@ code {
 .rocket-snippet-table code {
   letter-spacing: 0;
 }
+
+
+
+.my-apps-list-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 720px;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+.my-apps-list-section .my-apps-header {
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: -1px;
+  margin-bottom: 16px;
+}
+
+.my-apps-list-section .my-apps-footer {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.my-apps-list-section .my-apps-icons {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  /* background-image: url('background.svg'); */
+  background-size: cover;
+  padding: 8px;
+  background-position-y: -100px;
+  border-radius: 16px;
+}
+
+.my-app-item, .my-app-item:visited {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 14px;
+  padding: 8px;
+  border-radius: 16px;
+  color: gray;
+  transition: all 0.2s ease;
+  
+}
+
+.my-app-item:hover {
+  transform: scale(1.025);
+}
+
+.my-app-item img {
+  width: 96px;
+}
