@@ -41,18 +41,17 @@
 
       <br/>
 
+      <p id="golden-gate"><strong>How do I use Vanilla on macOS 27 Golden Gate?</strong></p>
+      <p>
+        The Vanilla 3 beta for macOS 27 is now available! To enable beta releases,
 
-      <p>
-        <strong>I can’t see Vanilla’s dots in the menu bar… how do I set up Vanilla?</strong>
-      </p>
-      <p>
-        If the number of icons in the menu bar exceeds the limits set by macOS, the extra icons are hidden.
-        This is particularly likely to happen if you are using a MacBook with a notch in the display.
-      </p>
-      <p>
-        Vanilla can still work in this scenario, it just requires a bit of extra setup.
-        You can read <a href="./vanilla-macbook-notch.html">our guide here</a> to set up Vanilla if this happens to you.
-      </p>
+      <p>&nbsp;&nbsp;1. Quit <strong>Vanilla</strong> if it's running</p>
+      <p>&nbsp;&nbsp;2. Open your <strong>Terminal</strong> and paste in <br/>
+      <pre>defaults write net.matthewpalmer.Vanilla vanilla-updater-use-beta -bool true</pre></p>
+      <p>&nbsp;&nbsp;3. Hit <strong>Return</strong></p>
+      <p>&nbsp;&nbsp;4. Open <strong>Vanilla</strong> again</p>
+      <p>When you open Vanilla again, you should see a notification to update to the latest version. If not, you may need to enable notifications for Vanilla in System Settings or turn off Focus mode if it's enabled.</p>
+      <p>Please send feedback to hello@matthewpalmer.net</p>
       <br />
 
       <p id="gap-124"><strong>How do I fix the gap with Vanilla’s arrow in macOS 12.4 and above?</strong></p>

@@ -62,8 +62,17 @@ a:visited {
 }
 
 .faq-link {
-  margin-top: 60px;
   color: gray;
+}
+
+.vanilla-golden-gate {
+  text-align: center;
+  margin-top: 50px;
+  color: gray;
+}
+
+.vanilla-golden-gate a {
+  font-weight: 500;
 }
 
 .download-ab-dec {
